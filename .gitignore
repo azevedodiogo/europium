@@ -1,0 +1,49 @@
+# Dependências instaladas localmente.
+node_modules/
+.pnpm-store/
+.yarn/
+.npm/
+
+# Builds e caches geradas pelas ferramentas.
+dist/
+.vite/
+node_modules/.vite/
+
+# Relatórios e ficheiros temporários de execução.
+coverage/
+tmp/
+temp/
+output/
+
+# Logs gerados por npm, pnpm, yarn, Vite ou ferramentas auxiliares.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variáveis de ambiente locais.
+.env
+.env.*
+!.env.example
+
+# Ficheiros do sistema operativo.
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Configurações pessoais de editores.
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Caches auxiliares.
+.eslintcache
+*.tsbuildinfo
+
+# A pasta docs fica disponível para o relatório do projeto.
+!docs/
+!docs/**
+
+# O ficheiro db.json fica versionável porque é a base usada pelo json-server.
