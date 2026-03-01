@@ -1,0 +1,31 @@
+{
+  "name": "europium",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "db:build": "node scripts/build-jsondb.mjs",
+    "db:serve": "json-server --host 127.0.0.1 --port 3000 db.json",
+    "db:start": "npm run db:build && npm run db:serve",
+    "build": "vite build",
+    "commit:series": "node scripts/commit-series.mjs",
+    "commit:series:dry": "node scripts/commit-series.mjs --dry-run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tabler/icons-vue": "^3.40.0",
+    "chart.js": "^4.5.1",
+    "d3-geo": "^3.1.1",
+    "pinia": "^2.1.7",
+    "topojson-client": "^3.1.0",
+    "vue": "^3.4.0",
+    "vue-chartjs": "^5.3.3",
+    "vue-router": "^4.3.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "json-server": "^1.0.0-beta.15",
+    "vite": "^5.2.0"
+  }
+}
