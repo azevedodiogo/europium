@@ -1,0 +1,3378 @@
+{
+  "meta": {
+    "project": "Europium",
+    "source": "https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/",
+    "generatedAt": "2026-04-29T00:33:12.435Z",
+    "note": "Dados estruturados para o projeto IPM com base no modelo público do Recovery and Resilience Scoreboard.",
+    "resources": [
+      "dashboard",
+      "compare",
+      "disbursements",
+      "glossary",
+      "timeline",
+      "map",
+      "more"
+    ]
+  },
+  "dashboard": {
+    "kpis": [
+      {
+        "id": "fundos-alocados",
+        "label": "Fundos Alocados",
+        "value": "589 mil M€",
+        "description": "Total agregado dos Estados-Membros no mapa",
+        "badge": null,
+        "icon": "euro"
+      },
+      {
+        "id": "total-desembolsado",
+        "label": "Total Desembolsado",
+        "value": "279 mil M€",
+        "description": "Pagamentos já efetuados pela UE",
+        "badge": {
+          "text": "47% do total",
+          "color": "green"
+        },
+        "icon": "arrow-down"
+      },
+      {
+        "id": "marcos-metas",
+        "label": "Marcos e Metas",
+        "value": "4944",
+        "description": "2769 já cumpridos",
+        "badge": null,
+        "icon": "target"
+      },
+      {
+        "id": "progresso-global",
+        "label": "Progresso Global",
+        "value": "58%",
+        "description": "Progresso médio dos Estados-Membros",
+        "badge": {
+          "text": "+8% vs. semestre anterior",
+          "color": "green"
+        },
+        "icon": "chart"
+      }
+    ],
+    "heroStats": [
+      {
+        "label": "Fundos Totais RRF",
+        "value": "589 mil M€"
+      },
+      {
+        "label": "Estados-Membros",
+        "value": "27"
+      },
+      {
+        "label": "Obj. Climático Médio",
+        "value": "43%"
+      },
+      {
+        "label": "Obj. Digital Médio",
+        "value": "25%"
+      }
+    ],
+    "pillars": [
+      {
+        "id": "ecologia",
+        "name": "Ecologia",
+        "description": "Transição ecológica",
+        "progress": 37.5,
+        "icon": "leaf"
+      },
+      {
+        "id": "digital",
+        "name": "Digital",
+        "description": "Transformação digital",
+        "progress": 26.4,
+        "icon": "monitor"
+      },
+      {
+        "id": "crescimento",
+        "name": "Crescimento",
+        "description": "Crescimento inteligente, sustentável e inclusivo.",
+        "progress": 33.1,
+        "icon": "trending-up"
+      },
+      {
+        "id": "coesao",
+        "name": "Coesão",
+        "description": "Coesão social & territorial",
+        "progress": 28.2,
+        "icon": "users"
+      },
+      {
+        "id": "saude",
+        "name": "Saúde",
+        "description": "Resiliência sanitária, econômica, social e institucional",
+        "progress": 19.8,
+        "icon": "heart"
+      },
+      {
+        "id": "proxima-geracao",
+        "name": "Próxima geração",
+        "description": "Políticas para a próxima geração",
+        "progress": 15,
+        "icon": "star"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Itália",
+        "total": 191.5,
+        "disbursed": 113.5,
+        "progress": 61
+      },
+      {
+        "name": "Espanha",
+        "total": 160.4,
+        "disbursed": 52,
+        "progress": 61
+      },
+      {
+        "name": "França",
+        "total": 40.3,
+        "disbursed": 26.4,
+        "progress": 63
+      },
+      {
+        "name": "Polónia",
+        "total": 35.4,
+        "disbursed": 6.3,
+        "progress": 30
+      },
+      {
+        "name": "Grécia",
+        "total": 30.1,
+        "disbursed": 15.6,
+        "progress": 60
+      },
+      {
+        "name": "Roménia",
+        "total": 27.1,
+        "disbursed": 9.2,
+        "progress": 35
+      },
+      {
+        "name": "Alemanha",
+        "total": 26.4,
+        "disbursed": 13.5,
+        "progress": 69
+      },
+      {
+        "name": "Portugal",
+        "total": 16.6,
+        "disbursed": 10.2,
+        "progress": 62
+      },
+      {
+        "name": "Croácia",
+        "total": 6.4,
+        "disbursed": 3.4,
+        "progress": 55
+      },
+      {
+        "name": "Países Baixos",
+        "total": 4.7,
+        "disbursed": 2.8,
+        "progress": 56
+      },
+      {
+        "name": "Bélgica",
+        "total": 4.5,
+        "disbursed": 3.1,
+        "progress": 68
+      },
+      {
+        "name": "Áustria",
+        "total": 3.5,
+        "disbursed": 2.4,
+        "progress": 69
+      }
+    ],
+    "climateDigitalData": [
+      {
+        "code": "PT",
+        "climate": 61,
+        "digital": 22
+      },
+      {
+        "code": "ES",
+        "climate": 40,
+        "digital": 30
+      },
+      {
+        "code": "FR",
+        "climate": 46,
+        "digital": 25
+      },
+      {
+        "code": "IT",
+        "climate": 37,
+        "digital": 26
+      },
+      {
+        "code": "DE",
+        "climate": 42,
+        "digital": 27
+      },
+      {
+        "code": "GR",
+        "climate": 38,
+        "digital": 23
+      },
+      {
+        "code": "PL",
+        "climate": 42,
+        "digital": 21
+      },
+      {
+        "code": "RO",
+        "climate": 41,
+        "digital": 22
+      }
+    ],
+    "exploreLinks": [
+      {
+        "id": "marcos-metas",
+        "title": "Marcos e Metas",
+        "description": "Explore objetivos especificos de cada país, prazos e estado de execução",
+        "route": "/marcos-metas",
+        "icon": "target"
+      },
+      {
+        "id": "indicadores",
+        "title": "Indicadores Comuns",
+        "description": "14 indicadores de reporte obrigatório com dados por país.",
+        "route": "/indicadores",
+        "icon": "bar-chart"
+      },
+      {
+        "id": "desembolsos",
+        "title": "Desembolsos",
+        "description": "Pagamentos efetuados, datas e montantes discriminados por país",
+        "route": "/desembolsos",
+        "icon": "credit-card"
+      },
+      {
+        "id": "comparacao",
+        "title": "Comparação",
+        "description": "Compare o desempenho e investimento entre diferentes países.",
+        "route": "/comparar-paises",
+        "icon": "globe"
+      }
+    ],
+    "countryStats": {
+      "country": "Portugal",
+      "flag": "🇵🇹",
+      "total": 247,
+      "cumpridos": {
+        "count": 170,
+        "pct": 69
+      },
+      "parciais": {
+        "count": 48,
+        "pct": 19
+      },
+      "naoCumpridos": {
+        "count": 29,
+        "pct": 12
+      }
+    },
+    "marcosStatusLabels": {
+      "cumprido": "Cumprido",
+      "parcial": "Parcial",
+      "nao-cumprido": "Não cumprido"
+    },
+    "marcos": [
+      {
+        "id": 1,
+        "ref": "PT-M001",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Empresas 4.0",
+        "description": "Adoção de tecnologias digitais por 15.000 PMEs",
+        "status": "cumprido",
+        "deadline": "Q4 2022",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Estado atualizado para cumprido",
+            "date": "2024-06-15",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Prazo revisto para Q4 2024",
+            "date": "2024-03-10",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Documentação submetida para avaliação",
+            "date": "2023-12-01",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2023-06-20",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "ref": "PT-M002",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Escola Digital",
+        "description": "Distribuição de equipamentos digitais a escolas",
+        "status": "cumprido",
+        "deadline": "Q2 2022",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco concluído com sucesso",
+            "date": "2022-06-30",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Relatório final submetido",
+            "date": "2022-05-15",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "ref": "PT-M003",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Eficiência energética em edifícios públicos",
+        "description": "Renovação energética de 3000 edifícios públicos",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Obras concluídas e auditadas",
+            "date": "2023-12-20",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "ref": "PT-M004",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Meta",
+        "name": "Hidrogénio Verde",
+        "description": "Produção de 264 MW de hidrogénio renovável",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Progresso parcial verificado",
+            "date": "2024-06-01",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Prazo inicial Q2 2025 revisto",
+            "date": "2023-12-01",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta criada no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "ref": "PT-M005",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Reforma do SNS",
+        "description": "Modernização de unidades de saúde primárias",
+        "status": "cumprido",
+        "deadline": "Q2 2023",
+        "pillar": "Saúde",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Legislação publicada em Diário da República",
+            "date": "2023-05-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "ref": "PT-M006",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Meta",
+        "name": "Habitação Acessível",
+        "description": "26.000 novas habitações a preços acessíveis",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2024",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Meta reavaliada — incumprimento parcial",
+            "date": "2024-06-15",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Atraso comunicado à Comissão",
+            "date": "2024-01-10",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta criada no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "ref": "PT-M007",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Investimento em creches",
+        "description": "Criação de 25.000 novos lugares em creches",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Próxima geração",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Marco verificado e validado",
+            "date": "2024-01-15",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "ref": "PT-M008",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Capitalização de empresas",
+        "description": "Programa de capitalização de PMEs",
+        "status": "cumprido",
+        "deadline": "Q2 2023",
+        "pillar": "Crescimento",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Fundos distribuídos e auditados",
+            "date": "2023-06-20",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "ref": "PT-M009",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Meta",
+        "name": "Qualificações e competências",
+        "description": "Formação de 200.000 adultos em competências digitais",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Crescimento",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Progresso parcial — 120.000 formados",
+            "date": "2024-06-01",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta criada no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "ref": "PT-M010",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Administração pública digital",
+        "description": "500 serviços públicos digitalizados",
+        "status": "cumprido",
+        "deadline": "Q4 2022",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco verificado pela Comissão",
+            "date": "2023-01-10",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Marco criado no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      }
+    ],
+    "indicadores": [
+      {
+        "num": 1,
+        "iconType": "leaf",
+        "unit": "GWh/ano",
+        "name": "Poupança no consumo energético anual",
+        "description": "Redução do consumo de energia nos edifícios renovados",
+        "techDefinition": "Redução total no consumo de energia primária resultante de intervenções de eficiência energética em edifícios residenciais e públicos financiados pelo RRF.",
+        "methodology": "Medição baseada na diferença de consumo energético antes e após renovações em edifícios, utilizando medições de contadores inteligentes e auditorias energéticas.",
+        "source": "Eurostat, Agências Nacionais de Energia",
+        "frequency": "Semestral",
+        "related": [
+          "Habitações renovadas",
+          "Edifícios públicos renovados"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 3200
+          },
+          {
+            "country": "Espanha",
+            "value": 2100
+          },
+          {
+            "country": "França",
+            "value": 1800
+          },
+          {
+            "country": "Alemanha",
+            "value": 1400
+          },
+          {
+            "country": "Portugal",
+            "value": 543
+          },
+          {
+            "country": "Grécia",
+            "value": 420
+          }
+        ]
+      },
+      {
+        "num": 2,
+        "iconType": "leaf",
+        "unit": "MW",
+        "name": "Capacidade adicional de energia renovável",
+        "description": "Capacidade instalada adicional de fontes de energia renovável",
+        "techDefinition": "Capacidade de geração elétrica adicional instalada a partir de fontes renováveis (solar, eólica, hídrica, etc.) como resultado direto de investimentos RRF.",
+        "methodology": "Capacidade nominal instalada reportada pelos operadores de rede e verificada por entidades reguladoras nacionais.",
+        "source": "Agências Nacionais de Energia, ENTSO-E",
+        "frequency": "Semestral",
+        "related": [
+          "Poupança energética",
+          "Emissões CO₂ evitadas"
+        ],
+        "chartData": [
+          {
+            "country": "Espanha",
+            "value": 8500
+          },
+          {
+            "country": "Itália",
+            "value": 6200
+          },
+          {
+            "country": "Alemanha",
+            "value": 5800
+          },
+          {
+            "country": "França",
+            "value": 3200
+          },
+          {
+            "country": "Portugal",
+            "value": 1800
+          },
+          {
+            "country": "Grécia",
+            "value": 980
+          }
+        ]
+      },
+      {
+        "num": 3,
+        "iconType": "trending",
+        "unit": "n.º",
+        "name": "Empresas apoiadas",
+        "description": "Número de empresas apoiadas em processos de inovação e digitalização",
+        "techDefinition": "Empresas que receberam apoio financeiro direto (subsídios, empréstimos garantidos) para projetos de inovação, digitalização ou transição energética no âmbito do RRF.",
+        "methodology": "Contagem de entidades empresariais únicas que beneficiaram de apoios RRF, com base nos registos dos organismos pagadores nacionais.",
+        "source": "Organismos Pagadores Nacionais, IAPMEI",
+        "frequency": "Semestral",
+        "related": [
+          "Investigadores I&D",
+          "Digitalização PMEs"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 185000
+          },
+          {
+            "country": "Espanha",
+            "value": 95000
+          },
+          {
+            "country": "França",
+            "value": 38000
+          },
+          {
+            "country": "Alemanha",
+            "value": 42000
+          },
+          {
+            "country": "Portugal",
+            "value": 12400
+          },
+          {
+            "country": "Grécia",
+            "value": 8500
+          }
+        ]
+      },
+      {
+        "num": 4,
+        "iconType": "school",
+        "unit": "n.º",
+        "name": "Investigadores com melhores condições",
+        "description": "Investigadores em instituições de I&D apoiadas pelo RRF",
+        "techDefinition": "Número de investigadores (equivalente a tempo completo) em instituições de I&D que receberam financiamento RRF para melhoria de infraestruturas e condições de trabalho.",
+        "methodology": "Equivalente a Tempo Completo (ETC) reportado por instituições beneficiárias com base nos contratos de trabalho e bolsas ativas durante o período de referência.",
+        "source": "Fundações de Ciência nacionais, Eurostat",
+        "frequency": "Anual",
+        "related": [
+          "Empresas apoiadas",
+          "Patentes registadas"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 22000
+          },
+          {
+            "country": "Espanha",
+            "value": 18500
+          },
+          {
+            "country": "França",
+            "value": 9200
+          },
+          {
+            "country": "Alemanha",
+            "value": 8500
+          },
+          {
+            "country": "Portugal",
+            "value": 2800
+          },
+          {
+            "country": "Grécia",
+            "value": 1800
+          }
+        ]
+      },
+      {
+        "num": 5,
+        "iconType": "school",
+        "unit": "n.º",
+        "name": "Jovens com formação",
+        "description": "Jovens que concluíram programas de formação financiados pelo RRF",
+        "techDefinition": "Jovens (15-29 anos) que completaram com aproveitamento programas de formação profissional ou educação vocacional financiados pelo RRF.",
+        "methodology": "Contagem de certificados de conclusão emitidos em programas RRF para jovens, reportada por entidades formadoras credenciadas.",
+        "source": "Ministérios da Educação e Trabalho",
+        "frequency": "Semestral",
+        "related": [
+          "Salas de aula digitais",
+          "Participantes formação"
+        ],
+        "chartData": [
+          {
+            "country": "Espanha",
+            "value": 420000
+          },
+          {
+            "country": "Itália",
+            "value": 380000
+          },
+          {
+            "country": "França",
+            "value": 180000
+          },
+          {
+            "country": "Portugal",
+            "value": 85000
+          },
+          {
+            "country": "Grécia",
+            "value": 42000
+          },
+          {
+            "country": "Alemanha",
+            "value": 95000
+          }
+        ]
+      },
+      {
+        "num": 6,
+        "iconType": "monitor",
+        "unit": "n.º",
+        "name": "Salas de aula digitais",
+        "description": "Salas de aula equipadas com tecnologias digitais via RRF",
+        "techDefinition": "Salas de aula em estabelecimentos de ensino (básico, secundário e superior) que receberam equipamento digital (quadros interativos, tablets, etc.) financiado pelo RRF.",
+        "methodology": "Contagem de salas de aula validadas como equipadas segundo critérios mínimos estabelecidos pela Comissão Europeia.",
+        "source": "Ministérios da Educação nacionais",
+        "frequency": "Semestral",
+        "related": [
+          "Jovens com formação",
+          "Estudantes abrangidos"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 52000
+          },
+          {
+            "country": "Espanha",
+            "value": 38000
+          },
+          {
+            "country": "França",
+            "value": 22000
+          },
+          {
+            "country": "Alemanha",
+            "value": 18500
+          },
+          {
+            "country": "Portugal",
+            "value": 8200
+          },
+          {
+            "country": "Grécia",
+            "value": 4800
+          }
+        ]
+      },
+      {
+        "num": 7,
+        "iconType": "home",
+        "unit": "n.º",
+        "name": "Habitações renovadas",
+        "description": "Habitações com melhoria da classe energética após renovação RRF",
+        "techDefinition": "Habitações que melhoraram a sua classificação de eficiência energética em pelo menos uma classe (ex: D→C) como resultado de obras de reabilitação financiadas pelo RRF.",
+        "methodology": "Baseado em certificados energéticos emitidos antes e após obras, verificados por auditores certificados nacionais.",
+        "source": "Agências nacionais de energia, ADENE (PT)",
+        "frequency": "Semestral",
+        "related": [
+          "Poupança energética",
+          "Edifícios públicos renovados"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 4200000
+          },
+          {
+            "country": "Alemanha",
+            "value": 1800000
+          },
+          {
+            "country": "França",
+            "value": 750000
+          },
+          {
+            "country": "Espanha",
+            "value": 510000
+          },
+          {
+            "country": "Polónia",
+            "value": 280000
+          },
+          {
+            "country": "Portugal",
+            "value": 45000
+          }
+        ]
+      },
+      {
+        "num": 8,
+        "iconType": "bolt",
+        "unit": "n.º",
+        "name": "Pontos de carregamento EV",
+        "description": "Pontos de carregamento para veículos elétricos instalados",
+        "techDefinition": "Pontos de carregamento para veículos elétricos (normal e rápido) instalados em espaços públicos e semi-públicos com apoio direto de fundos RRF.",
+        "methodology": "Contagem de pontos de carregamento interoperáveis registados na plataforma OCPI nacional, com financiamento RRF verificável.",
+        "source": "Operadores nacionais de rede, MOBI.E (PT)",
+        "frequency": "Semestral",
+        "related": [
+          "Capacidade renovável",
+          "Emissões CO₂"
+        ],
+        "chartData": [
+          {
+            "country": "França",
+            "value": 85000
+          },
+          {
+            "country": "Alemanha",
+            "value": 72000
+          },
+          {
+            "country": "Espanha",
+            "value": 45000
+          },
+          {
+            "country": "Itália",
+            "value": 38000
+          },
+          {
+            "country": "Portugal",
+            "value": 12500
+          },
+          {
+            "country": "Grécia",
+            "value": 5200
+          }
+        ]
+      },
+      {
+        "num": 9,
+        "iconType": "leaf",
+        "unit": "ha",
+        "name": "Área protegida/restaurada",
+        "description": "Área natural protegida ou restaurada com apoio do RRF",
+        "techDefinition": "Área terrestre ou marinha (em hectares) sujeita a medidas de proteção, restauração de ecossistemas ou combate à desertificação financiadas pelo RRF.",
+        "methodology": "Medição de área via sistemas de informação geográfica (SIG) certificados, com validação por entidades ambientais competentes.",
+        "source": "Agências Ambiente nacionais, APA (PT)",
+        "frequency": "Anual",
+        "related": [
+          "Emissões CO₂",
+          "Biodiversidade"
+        ],
+        "chartData": [
+          {
+            "country": "Espanha",
+            "value": 285000
+          },
+          {
+            "country": "Portugal",
+            "value": 98000
+          },
+          {
+            "country": "Grécia",
+            "value": 75000
+          },
+          {
+            "country": "Itália",
+            "value": 64000
+          },
+          {
+            "country": "França",
+            "value": 48000
+          },
+          {
+            "country": "Alemanha",
+            "value": 22000
+          }
+        ]
+      },
+      {
+        "num": 10,
+        "iconType": "monitor",
+        "unit": "n.º",
+        "name": "População com acesso a banda larga",
+        "description": "Pessoas com acesso a banda larga de alta velocidade via RRF",
+        "techDefinition": "Número de residentes com acesso a serviços de banda larga de pelo menos 100 Mbps como resultado de investimentos em infraestrutura RRF.",
+        "methodology": "Baseado em cobertura de rede reportada por operadores de telecomunicações e verificada por autoridades reguladoras nacionais.",
+        "source": "Autoridades reguladoras telecomunicações, ANACOM (PT)",
+        "frequency": "Semestral",
+        "related": [
+          "Salas aula digitais",
+          "Digitalização empresas"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 8500000
+          },
+          {
+            "country": "Espanha",
+            "value": 6200000
+          },
+          {
+            "country": "França",
+            "value": 4800000
+          },
+          {
+            "country": "Alemanha",
+            "value": 3900000
+          },
+          {
+            "country": "Portugal",
+            "value": 1200000
+          },
+          {
+            "country": "Grécia",
+            "value": 850000
+          }
+        ]
+      },
+      {
+        "num": 11,
+        "iconType": "school",
+        "unit": "n.º",
+        "name": "Participantes em educação/formação",
+        "description": "Adultos que participaram em formação financiada pelo RRF",
+        "techDefinition": "Adultos (30+ anos) que participaram em pelo menos uma ação de formação ou educação de adultos financiada pelo RRF, independentemente da sua conclusão.",
+        "methodology": "Contagem de inscrições únicas em ações de formação RRF, reportadas por entidades formadoras acreditadas aos ministérios competentes.",
+        "source": "Ministérios Trabalho/Educação, IEFP (PT)",
+        "frequency": "Semestral",
+        "related": [
+          "Jovens formação",
+          "Qualificações digitais"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 580000
+          },
+          {
+            "country": "Espanha",
+            "value": 420000
+          },
+          {
+            "country": "França",
+            "value": 195000
+          },
+          {
+            "country": "Polónia",
+            "value": 145000
+          },
+          {
+            "country": "Portugal",
+            "value": 85000
+          },
+          {
+            "country": "Grécia",
+            "value": 48000
+          }
+        ]
+      },
+      {
+        "num": 12,
+        "iconType": "heart",
+        "unit": "n.º",
+        "name": "Capacidade de cuidados de saúde",
+        "description": "Novas camas hospitalares ou equivalente em capacidade de saúde",
+        "techDefinition": "Aumento de capacidade de internamento (camas hospitalares equivalentes) resultante de construção ou reabilitação de infraestruturas de saúde financiadas pelo RRF.",
+        "methodology": "Inventário de camas certificadas por autoridades de saúde nacionais em unidades inauguradas ou renovadas com fundos RRF.",
+        "source": "Ministérios da Saúde nacionais, DGS (PT)",
+        "frequency": "Anual",
+        "related": [
+          "Pessoas abrangidas saúde",
+          "Infraestrutura hospitalar"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 28000
+          },
+          {
+            "country": "Espanha",
+            "value": 22000
+          },
+          {
+            "country": "França",
+            "value": 7800
+          },
+          {
+            "country": "Polónia",
+            "value": 9500
+          },
+          {
+            "country": "Portugal",
+            "value": 3200
+          },
+          {
+            "country": "Grécia",
+            "value": 1800
+          }
+        ]
+      },
+      {
+        "num": 13,
+        "iconType": "home",
+        "unit": "m²",
+        "name": "Edifícios públicos renovados",
+        "description": "Área de edifícios públicos sujeita a reabilitação energética",
+        "techDefinition": "Área (m²) de edifícios da Administração Pública sujeita a obras de reabilitação com componente de eficiência energética, financiadas pelo RRF.",
+        "methodology": "Medição de área intervencionada declarada por entidades públicas e verificada por auditorias energéticas pré e pós-obras.",
+        "source": "Ministérios das Finanças e Ambiente nacionais",
+        "frequency": "Semestral",
+        "related": [
+          "Poupança energética",
+          "Habitações renovadas"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 4200000
+          },
+          {
+            "country": "Espanha",
+            "value": 2800000
+          },
+          {
+            "country": "França",
+            "value": 1500000
+          },
+          {
+            "country": "Alemanha",
+            "value": 1200000
+          },
+          {
+            "country": "Portugal",
+            "value": 320000
+          },
+          {
+            "country": "Grécia",
+            "value": 180000
+          }
+        ]
+      },
+      {
+        "num": 14,
+        "iconType": "home",
+        "unit": "km",
+        "name": "Km de rede ferroviária",
+        "description": "Quilómetros de linha ferroviária nova ou reabilitada",
+        "techDefinition": "Extensão de linha ferroviária (km) nova, reabilitada ou modernizada (incluindo eletrificação e sinalização digital) com financiamento RRF.",
+        "methodology": "Medição de extensão de via reportada pelos gestores de infraestrutura ferroviária nacionais, verificada por entidades reguladoras do setor.",
+        "source": "Gestores infraestrutura ferroviária, IP (PT)",
+        "frequency": "Semestral",
+        "related": [
+          "Emissões CO₂",
+          "Mobilidade sustentável"
+        ],
+        "chartData": [
+          {
+            "country": "Itália",
+            "value": 2800
+          },
+          {
+            "country": "Espanha",
+            "value": 2200
+          },
+          {
+            "country": "França",
+            "value": 850
+          },
+          {
+            "country": "Alemanha",
+            "value": 620
+          },
+          {
+            "country": "Portugal",
+            "value": 180
+          },
+          {
+            "country": "Grécia",
+            "value": 95
+          }
+        ]
+      }
+    ]
+  },
+  "compare": {
+    "barMax": 180,
+    "barTicks": [
+      {
+        "val": 0
+      },
+      {
+        "val": 45
+      },
+      {
+        "val": 90
+      },
+      {
+        "val": 135
+      },
+      {
+        "val": 180
+      }
+    ],
+    "barMetrics": [
+      {
+        "label": "Total",
+        "key": "total"
+      },
+      {
+        "label": "Subvenções",
+        "key": "grants"
+      },
+      {
+        "label": "Empréstimos",
+        "key": "loans"
+      },
+      {
+        "label": "Desembolsado",
+        "key": "disbursed"
+      }
+    ],
+    "radarAxes": [
+      {
+        "label": "Ecologia",
+        "angle": -90
+      },
+      {
+        "label": "Digital",
+        "angle": -30
+      },
+      {
+        "label": "Crescimento",
+        "angle": 30
+      },
+      {
+        "label": "Coesão",
+        "angle": 90
+      },
+      {
+        "label": "Saúde",
+        "angle": 150
+      },
+      {
+        "label": "Próxima geração",
+        "angle": 210
+      }
+    ],
+    "tableMetrics": [
+      {
+        "label": "Fundos totais (mil M)",
+        "key": "total",
+        "precision": 1
+      },
+      {
+        "label": "Subvenções (mil M)",
+        "key": "grants",
+        "precision": 1
+      },
+      {
+        "label": "Empréstimos (mil M)",
+        "key": "loans",
+        "precision": 1
+      },
+      {
+        "label": "Desembolsado (mil M)",
+        "key": "disbursed",
+        "precision": 1
+      },
+      {
+        "label": "% PIB",
+        "key": "pib",
+        "precision": 1
+      },
+      {
+        "label": "Marcos totais",
+        "key": "marcos",
+        "precision": 0
+      },
+      {
+        "label": "Marcos cumpridos",
+        "key": "marcosCumpridos",
+        "precision": 0
+      },
+      {
+        "label": "Objetivo climático (%)",
+        "key": "clima",
+        "precision": 0
+      },
+      {
+        "label": "Objetivo digital (%)",
+        "key": "digital",
+        "precision": 0
+      }
+    ],
+    "countries": [
+      {
+        "value": "PT",
+        "name": "Portugal",
+        "code": "PT",
+        "flag": "🇵🇹",
+        "total": 16.6,
+        "disbursed": 10.2,
+        "pib": 6.8,
+        "progress": 62,
+        "grants": 13.9,
+        "loans": 2.7,
+        "marcos": 20,
+        "marcosCumpridos": 24,
+        "clima": 38,
+        "digital": 22,
+        "radar": [
+          0.72,
+          0.62,
+          0.6,
+          0.58,
+          0.53,
+          0.61
+        ]
+      },
+      {
+        "value": "ES",
+        "name": "Espanha",
+        "code": "ES",
+        "flag": "🇪🇸",
+        "total": 160.4,
+        "disbursed": 52,
+        "pib": 11.5,
+        "progress": 61,
+        "grants": 77.2,
+        "loans": 83.2,
+        "marcos": 22,
+        "marcosCumpridos": 29,
+        "clima": 40,
+        "digital": 28,
+        "radar": [
+          0.8,
+          0.75,
+          0.72,
+          0.66,
+          0.68,
+          0.7
+        ]
+      },
+      {
+        "value": "IT",
+        "name": "Itália",
+        "code": "IT",
+        "flag": "🇮🇹",
+        "total": 191.5,
+        "disbursed": 113.5,
+        "pib": 9.8,
+        "progress": 61,
+        "grants": 122.6,
+        "loans": 68.9,
+        "marcos": 28,
+        "marcosCumpridos": 31,
+        "clima": 37,
+        "digital": 25,
+        "radar": [
+          0.69,
+          0.71,
+          0.78,
+          0.62,
+          0.59,
+          0.65
+        ]
+      },
+      {
+        "value": "FR",
+        "name": "França",
+        "code": "FR",
+        "flag": "🇫🇷",
+        "total": 40.3,
+        "disbursed": 26.4,
+        "pib": 1.4,
+        "progress": 63,
+        "grants": 40.3,
+        "loans": 0,
+        "marcos": 18,
+        "marcosCumpridos": 22,
+        "clima": 46,
+        "digital": 25,
+        "radar": [
+          0.82,
+          0.68,
+          0.64,
+          0.55,
+          0.6,
+          0.57
+        ]
+      },
+      {
+        "value": "DE",
+        "name": "Alemanha",
+        "code": "DE",
+        "flag": "🇩🇪",
+        "total": 26.4,
+        "disbursed": 13.5,
+        "pib": 0.6,
+        "progress": 69,
+        "grants": 26.4,
+        "loans": 0,
+        "marcos": 16,
+        "marcosCumpridos": 21,
+        "clima": 42,
+        "digital": 27,
+        "radar": [
+          0.75,
+          0.8,
+          0.7,
+          0.6,
+          0.65,
+          0.58
+        ]
+      },
+      {
+        "value": "PL",
+        "name": "Polónia",
+        "code": "PL",
+        "flag": "🇵🇱",
+        "total": 35.4,
+        "disbursed": 6.3,
+        "pib": 5.8,
+        "progress": 30,
+        "grants": 23.9,
+        "loans": 11.5,
+        "marcos": 14,
+        "marcosCumpridos": 8,
+        "clima": 42,
+        "digital": 21,
+        "radar": [
+          0.5,
+          0.45,
+          0.55,
+          0.4,
+          0.42,
+          0.35
+        ]
+      },
+      {
+        "value": "GR",
+        "name": "Grécia",
+        "code": "GR",
+        "flag": "🇬🇷",
+        "total": 30.1,
+        "disbursed": 15.6,
+        "pib": 13.2,
+        "progress": 60,
+        "grants": 18.4,
+        "loans": 11.7,
+        "marcos": 12,
+        "marcosCumpridos": 15,
+        "clima": 38,
+        "digital": 23,
+        "radar": [
+          0.65,
+          0.58,
+          0.6,
+          0.7,
+          0.55,
+          0.62
+        ]
+      },
+      {
+        "value": "RO",
+        "name": "Roménia",
+        "code": "RO",
+        "flag": "🇷🇴",
+        "total": 27.1,
+        "disbursed": 9.2,
+        "pib": 9,
+        "progress": 35,
+        "grants": 14.9,
+        "loans": 12.2,
+        "marcos": 10,
+        "marcosCumpridos": 6,
+        "clima": 41,
+        "digital": 22,
+        "radar": [
+          0.48,
+          0.42,
+          0.45,
+          0.38,
+          0.4,
+          0.32
+        ]
+      }
+    ]
+  },
+  "disbursements": {
+    "paymentPeriods": [
+      "08/21",
+      "01/22",
+      "11/22",
+      "07/23",
+      "03/24",
+      "09/24"
+    ],
+    "paymentTypeOrder": {
+      "pre": 0,
+      "subvencao": 1,
+      "emprestimo": 2
+    },
+    "countryOptions": [
+      {
+        "value": "PT",
+        "label": "Portugal",
+        "flag": "🇵🇹",
+        "planTotal": 16.6
+      },
+      {
+        "value": "ES",
+        "label": "Espanha",
+        "flag": "🇪🇸",
+        "planTotal": 160.4
+      },
+      {
+        "value": "IT",
+        "label": "Itália",
+        "flag": "🇮🇹",
+        "planTotal": 191.5
+      },
+      {
+        "value": "FR",
+        "label": "França",
+        "flag": "🇫🇷",
+        "planTotal": 40.3
+      },
+      {
+        "value": "DE",
+        "label": "Alemanha",
+        "flag": "🇩🇪",
+        "planTotal": 26.4
+      },
+      {
+        "value": "PL",
+        "label": "Polónia",
+        "flag": "🇵🇱",
+        "planTotal": 35.4
+      }
+    ],
+    "countryData": {
+      "PT": {
+        "payments": [
+          {
+            "id": "PT-01",
+            "date": "03/08/2021",
+            "dateLabel": "3 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 2.2,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "PT-02",
+            "date": "10/01/2022",
+            "dateLabel": "10 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 1.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PT-03",
+            "date": "15/11/2022",
+            "dateLabel": "15 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 1.8,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PT-04",
+            "date": "20/07/2023",
+            "dateLabel": "20 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 2.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PT-05",
+            "date": "15/03/2024",
+            "dateLabel": "15 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 1.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PT-06",
+            "date": "10/09/2024",
+            "dateLabel": "10 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 1.4,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "PT-B01",
+            "name": "CP - Comboios de Portugal",
+            "sector": "Transportes",
+            "amount": 742.5,
+            "project": "Modernização da frota ferroviária"
+          },
+          {
+            "id": "PT-B02",
+            "name": "Infraestruturas de Portugal",
+            "sector": "Infraestruturas",
+            "amount": 687.3,
+            "project": "Reabilitação da rede ferroviária"
+          },
+          {
+            "id": "PT-B03",
+            "name": "IHRU - Instituto da Habitação",
+            "sector": "Habitação",
+            "amount": 543.2,
+            "project": "Programa de habitação acessível"
+          },
+          {
+            "id": "PT-B04",
+            "name": "Agência para a Modernização Administrativa",
+            "sector": "Administração Pública",
+            "amount": 412.8,
+            "project": "Digitalização de serviços públicos"
+          },
+          {
+            "id": "PT-B05",
+            "name": "DGESTE - Estabelecimentos Escolares",
+            "sector": "Educação",
+            "amount": 398.6,
+            "project": "Escola Digital e equipamentos"
+          },
+          {
+            "id": "PT-B06",
+            "name": "ADENE - Agência para a Energia",
+            "sector": "Energia",
+            "amount": 356.4,
+            "project": "Eficiência energética em edifícios públicos"
+          },
+          {
+            "id": "PT-B07",
+            "name": "Metro do Porto",
+            "sector": "Transportes",
+            "amount": 324.1,
+            "project": "Expansão da rede de metro"
+          },
+          {
+            "id": "PT-B08",
+            "name": "APA - Agência Portuguesa do Ambiente",
+            "sector": "Ambiente",
+            "amount": 298.7,
+            "project": "Gestão sustentável de recursos hídricos"
+          }
+        ]
+      },
+      "ES": {
+        "payments": [
+          {
+            "id": "ES-01",
+            "date": "11/08/2021",
+            "dateLabel": "11 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 8.9,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "ES-02",
+            "date": "14/01/2022",
+            "dateLabel": "14 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 3.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "ES-03",
+            "date": "18/11/2022",
+            "dateLabel": "18 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 6.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "ES-04",
+            "date": "21/07/2023",
+            "dateLabel": "21 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 5.8,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "ES-05",
+            "date": "19/03/2024",
+            "dateLabel": "19 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 10.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "ES-06",
+            "date": "25/09/2024",
+            "dateLabel": "25 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 8.7,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "ES-B01",
+            "name": "ADIF Alta Velocidad",
+            "sector": "Infraestruturas",
+            "amount": 1800,
+            "project": "Corredores ferroviários de alta capacidade"
+          },
+          {
+            "id": "ES-B02",
+            "name": "Renfe Operadora",
+            "sector": "Transportes",
+            "amount": 1520,
+            "project": "Renovação de material circulante"
+          },
+          {
+            "id": "ES-B03",
+            "name": "Ministerio para la Transformación Digital",
+            "sector": "Administração Pública",
+            "amount": 1345,
+            "project": "Serviços públicos digitais"
+          },
+          {
+            "id": "ES-B04",
+            "name": "SEPI",
+            "sector": "Economia",
+            "amount": 1188,
+            "project": "Fundo de recapitalização empresarial"
+          },
+          {
+            "id": "ES-B05",
+            "name": "Red.es",
+            "sector": "Tecnologia",
+            "amount": 1024,
+            "project": "Conectividade e inclusão digital"
+          },
+          {
+            "id": "ES-B06",
+            "name": "Instituto para la Transición Justa",
+            "sector": "Energia",
+            "amount": 884,
+            "project": "Projetos de descarbonização industrial"
+          },
+          {
+            "id": "ES-B07",
+            "name": "Comunidad de Madrid",
+            "sector": "Administração Local",
+            "amount": 796,
+            "project": "Mobilidade urbana sustentável"
+          },
+          {
+            "id": "ES-B08",
+            "name": "Ajuntament de Barcelona",
+            "sector": "Administração Local",
+            "amount": 742,
+            "project": "Habitação e espaços públicos resilientes"
+          }
+        ]
+      },
+      "IT": {
+        "payments": [
+          {
+            "id": "IT-01",
+            "date": "13/08/2021",
+            "dateLabel": "13 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 24.9,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "IT-02",
+            "date": "12/01/2022",
+            "dateLabel": "12 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 17.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IT-03",
+            "date": "08/11/2022",
+            "dateLabel": "8 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 16.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IT-04",
+            "date": "28/07/2023",
+            "dateLabel": "28 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 16.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IT-05",
+            "date": "28/03/2024",
+            "dateLabel": "28 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 21.6,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          },
+          {
+            "id": "IT-06",
+            "date": "30/09/2024",
+            "dateLabel": "30 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 17.4,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "IT-B01",
+            "name": "Rete Ferroviaria Italiana",
+            "sector": "Infraestruturas",
+            "amount": 2650,
+            "project": "Modernização e sinalização da rede ferroviária"
+          },
+          {
+            "id": "IT-B02",
+            "name": "Enel Italia",
+            "sector": "Energia",
+            "amount": 2400,
+            "project": "Infraestruturas para energias renováveis"
+          },
+          {
+            "id": "IT-B03",
+            "name": "Invitalia",
+            "sector": "Economia",
+            "amount": 2250,
+            "project": "Apoio à inovação empresarial e PMEs"
+          },
+          {
+            "id": "IT-B04",
+            "name": "Ministero della Salute",
+            "sector": "Saúde",
+            "amount": 1980,
+            "project": "Digitalização hospitalar e cuidados primários"
+          },
+          {
+            "id": "IT-B05",
+            "name": "Trenitalia",
+            "sector": "Transportes",
+            "amount": 1865,
+            "project": "Comboios de baixa emissão"
+          },
+          {
+            "id": "IT-B06",
+            "name": "Cassa Depositi e Prestiti",
+            "sector": "Financeiro",
+            "amount": 1710,
+            "project": "Instrumentos financeiros para municípios"
+          },
+          {
+            "id": "IT-B07",
+            "name": "Comune di Roma",
+            "sector": "Administração Local",
+            "amount": 1624,
+            "project": "Requalificação urbana e habitação"
+          },
+          {
+            "id": "IT-B08",
+            "name": "Politecnico di Milano",
+            "sector": "Educação",
+            "amount": 1498,
+            "project": "Laboratórios de inovação e competências digitais"
+          }
+        ]
+      },
+      "FR": {
+        "payments": [
+          {
+            "id": "FR-01",
+            "date": "20/08/2021",
+            "dateLabel": "20 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 5.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "FR-02",
+            "date": "03/01/2022",
+            "dateLabel": "3 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 4.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FR-03",
+            "date": "16/11/2022",
+            "dateLabel": "16 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 4.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FR-04",
+            "date": "19/07/2023",
+            "dateLabel": "19 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 4.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FR-05",
+            "date": "14/03/2024",
+            "dateLabel": "14 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 3.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FR-06",
+            "date": "06/09/2024",
+            "dateLabel": "6 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "FR-B01",
+            "name": "SNCF Réseau",
+            "sector": "Transportes",
+            "amount": 980,
+            "project": "Rede ferroviária de baixa emissão"
+          },
+          {
+            "id": "FR-B02",
+            "name": "Bpifrance",
+            "sector": "Financeiro",
+            "amount": 872,
+            "project": "Capacitação e financiamento à transição industrial"
+          },
+          {
+            "id": "FR-B03",
+            "name": "ANRU",
+            "sector": "Habitação",
+            "amount": 798,
+            "project": "Renovação urbana e habitação sustentável"
+          },
+          {
+            "id": "FR-B04",
+            "name": "Ministère de la Transition écologique",
+            "sector": "Ambiente",
+            "amount": 742,
+            "project": "Eficiência energética e adaptação climática"
+          },
+          {
+            "id": "FR-B05",
+            "name": "AP-HP",
+            "sector": "Saúde",
+            "amount": 688,
+            "project": "Modernização digital hospitalar"
+          },
+          {
+            "id": "FR-B06",
+            "name": "Région Île-de-France",
+            "sector": "Administração Local",
+            "amount": 624,
+            "project": "Mobilidade limpa e interoperabilidade regional"
+          },
+          {
+            "id": "FR-B07",
+            "name": "ADEME",
+            "sector": "Energia",
+            "amount": 598,
+            "project": "Descarbonização de edifícios e indústria"
+          },
+          {
+            "id": "FR-B08",
+            "name": "Université PSL",
+            "sector": "Educação",
+            "amount": 534,
+            "project": "Centros de investigação e competências avançadas"
+          }
+        ]
+      },
+      "DE": {
+        "payments": [
+          {
+            "id": "DE-01",
+            "date": "25/08/2021",
+            "dateLabel": "25 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 3.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "DE-02",
+            "date": "18/01/2022",
+            "dateLabel": "18 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 2.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DE-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 2.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DE-04",
+            "date": "25/07/2023",
+            "dateLabel": "25 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 1.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DE-05",
+            "date": "21/03/2024",
+            "dateLabel": "21 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 2.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DE-06",
+            "date": "17/09/2024",
+            "dateLabel": "17 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 1.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "DE-B01",
+            "name": "Deutsche Bahn",
+            "sector": "Transportes",
+            "amount": 1120,
+            "project": "Eletrificação e interoperabilidade ferroviária"
+          },
+          {
+            "id": "DE-B02",
+            "name": "KfW",
+            "sector": "Financeiro",
+            "amount": 980,
+            "project": "Programas de investimento para municípios"
+          },
+          {
+            "id": "DE-B03",
+            "name": "Bundesagentur für Arbeit",
+            "sector": "Emprego",
+            "amount": 845,
+            "project": "Requalificação e competências digitais"
+          },
+          {
+            "id": "DE-B04",
+            "name": "Siemens Energy",
+            "sector": "Energia",
+            "amount": 792,
+            "project": "Modernização de redes energéticas"
+          },
+          {
+            "id": "DE-B05",
+            "name": "Fraunhofer-Gesellschaft",
+            "sector": "Ciência",
+            "amount": 688,
+            "project": "Investigação aplicada e transferência tecnológica"
+          },
+          {
+            "id": "DE-B06",
+            "name": "Charité Berlin",
+            "sector": "Saúde",
+            "amount": 624,
+            "project": "Dados clínicos e infraestruturas hospitalares"
+          },
+          {
+            "id": "DE-B07",
+            "name": "Freie Hansestadt Hamburg",
+            "sector": "Administração Local",
+            "amount": 578,
+            "project": "Porto sustentável e mobilidade urbana"
+          },
+          {
+            "id": "DE-B08",
+            "name": "Berliner Verkehrsbetriebe",
+            "sector": "Transportes",
+            "amount": 546,
+            "project": "Autocarros elétricos e pontos de carregamento"
+          }
+        ]
+      },
+      "PL": {
+        "payments": [
+          {
+            "id": "PL-01",
+            "date": "31/08/2021",
+            "dateLabel": "31 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 1.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "PL-02",
+            "date": "27/01/2022",
+            "dateLabel": "27 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PL-03",
+            "date": "29/11/2022",
+            "dateLabel": "29 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 1.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PL-04",
+            "date": "27/07/2023",
+            "dateLabel": "27 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PL-05",
+            "date": "04/03/2024",
+            "dateLabel": "4 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.9,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "PL-06",
+            "date": "24/09/2024",
+            "dateLabel": "24 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 1.3,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "PL-B01",
+            "name": "PKP Polskie Linie Kolejowe",
+            "sector": "Infraestruturas",
+            "amount": 684,
+            "project": "Corredores ferroviários e sinalização"
+          },
+          {
+            "id": "PL-B02",
+            "name": "Bank Gospodarstwa Krajowego",
+            "sector": "Financeiro",
+            "amount": 612,
+            "project": "Linhas de crédito para investimentos públicos"
+          },
+          {
+            "id": "PL-B03",
+            "name": "Narodowy Fundusz Ochrony Środowiska",
+            "sector": "Ambiente",
+            "amount": 558,
+            "project": "Eficiência energética e renováveis"
+          },
+          {
+            "id": "PL-B04",
+            "name": "Miasto Warszawa",
+            "sector": "Administração Local",
+            "amount": 512,
+            "project": "Mobilidade limpa e bairros resilientes"
+          },
+          {
+            "id": "PL-B05",
+            "name": "PGE Polska Grupa Energetyczna",
+            "sector": "Energia",
+            "amount": 488,
+            "project": "Armazenamento e redes inteligentes"
+          },
+          {
+            "id": "PL-B06",
+            "name": "Centralny Port Komunikacyjny",
+            "sector": "Transportes",
+            "amount": 446,
+            "project": "Integração de transportes e acessibilidades"
+          },
+          {
+            "id": "PL-B07",
+            "name": "Politechnika Warszawska",
+            "sector": "Educação",
+            "amount": 398,
+            "project": "Laboratórios de inovação industrial"
+          },
+          {
+            "id": "PL-B08",
+            "name": "Uniwersytet Jagielloński",
+            "sector": "Educação",
+            "amount": 352,
+            "project": "Centros de investigação biomédica"
+          }
+        ]
+      }
+    }
+  },
+  "glossary": {
+    "categoryOrder": [
+      "Estrutura",
+      "Execução",
+      "Financiamento",
+      "Avaliação",
+      "Governação",
+      "Indicadores"
+    ],
+    "terms": [
+      {
+        "term": "Acordo de Parceria",
+        "short": "Contrato estratégico entre Estado-Membro e Comissão Europeia.",
+        "definition": "Documento negociado entre um Estado-Membro e a Comissão Europeia que define a estratégia de utilização dos fundos estruturais e de investimento europeus para um determinado período de programação. Estabelece as prioridades de investimento, os objetivos temáticos e a repartição indicativa dos fundos.",
+        "category": "Estrutura",
+        "related": [
+          "Plano de Recuperação e Resiliência",
+          "Comissão Europeia"
+        ]
+      },
+      {
+        "term": "Auditoria de Desempenho",
+        "short": "Avaliação independente da eficiência e eficácia na utilização dos fundos.",
+        "definition": "Processo de controlo externo e independente que verifica se os fundos do MRR foram utilizados de forma eficaz, eficiente e económica. É conduzida pelo Tribunal de Contas Europeu e pelos órgãos nacionais de controlo, podendo conduzir à suspensão ou recuperação de fundos.",
+        "category": "Avaliação",
+        "example": "O Tribunal de Contas Europeu auditou regularmente o progresso dos PRR, identificando lacunas na monitorização de marcos e metas em vários Estados-Membros.",
+        "related": [
+          "Marcos",
+          "Metas",
+          "Tribunal de Contas Europeu"
+        ]
+      },
+      {
+        "term": "Avaliação de Impacto",
+        "short": "Estudo que mede os efeitos das reformas e investimentos do PRR.",
+        "definition": "Análise sistemática dos efeitos — esperados ou verificados — das medidas incluídas no PRR sobre a economia, sociedade e ambiente. É obrigatória para determinadas categorias de intervenção e serve para justificar a pertinência e dimensão dos investimentos propostos.",
+        "category": "Avaliação",
+        "related": [
+          "Plano de Recuperação e Resiliência",
+          "Indicadores Comuns"
+        ]
+      },
+      {
+        "term": "Beneficiário",
+        "short": "Entidade pública ou privada que recebe fundos do PRR.",
+        "definition": "Pessoa singular ou coletiva, entidade pública ou privada, que recebe e utiliza diretamente os fundos atribuídos no âmbito do PRR para realizar projetos, reformas ou investimentos aprovados. Os beneficiários são responsáveis pelo cumprimento dos marcos e metas associados às suas intervenções.",
+        "category": "Execução",
+        "example": "O CP — Comboios de Portugal é um dos maiores beneficiários do PRR português, com verbas destinadas à modernização da frota ferroviária.",
+        "related": [
+          "Fundos",
+          "Marcos",
+          "Metas"
+        ]
+      },
+      {
+        "term": "Componente",
+        "short": "Agrupamento de medidas coerentes dentro de um PRR.",
+        "definition": "Conjunto lógico de reformas e investimentos relacionados que contribuem para um objetivo específico dentro do PRR. Cada componente está associada a pelo menos um dos seis pilares do MRR e tem um orçamento, marcos e metas próprios. O PRR português está organizado em 20 componentes.",
+        "category": "Estrutura",
+        "example": "A Componente C01 — \"Digitalização da Administração Pública\" inclui medidas de modernização dos serviços públicos digitais, como o portal ePortugal.",
+        "related": [
+          "Pilar",
+          "Marco",
+          "Meta",
+          "Plano de Recuperação e Resiliência"
+        ]
+      },
+      {
+        "term": "Comissão Europeia",
+        "short": "Órgão executivo da UE responsável pela gestão do MRR.",
+        "definition": "Instituição da União Europeia que actua como órgão executivo, tendo a responsabilidade de avaliar os PRR dos Estados-Membros, aprovar os pedidos de pagamento e monitorizar o cumprimento dos marcos e metas. Emite avaliações positivas que habilitam os pagamentos a cada país.",
+        "category": "Governação",
+        "related": [
+          "MRR",
+          "Plano de Recuperação e Resiliência",
+          "Pedido de Pagamento"
+        ]
+      },
+      {
+        "term": "Conselho da União Europeia",
+        "short": "Órgão que aprova formalmente os PRR dos Estados-Membros.",
+        "definition": "Instituição da UE composta pelos ministros de cada Estado-Membro. No contexto do MRR, é o Conselho que aprova formalmente, por via de decisão de execução, os PRR apresentados pelos Estados-Membros, com base na avaliação positiva da Comissão Europeia. Também autoriza os pedidos de pagamento.",
+        "category": "Governação",
+        "related": [
+          "Comissão Europeia",
+          "Plano de Recuperação e Resiliência"
+        ]
+      },
+      {
+        "term": "Controlo e Auditoria",
+        "short": "Sistema de verificação da legalidade e regularidade das despesas.",
+        "definition": "Conjunto de mecanismos — internos e externos — que garantem que os fundos do MRR são utilizados em conformidade com a lei e com os objetivos definidos. Inclui controlos de primeiro nível (entidade gestora), segundo nível (autoridade de auditoria) e auditorias externas (Tribunal de Contas Europeu, OLAF).",
+        "category": "Governação",
+        "related": [
+          "OLAF",
+          "Tribunal de Contas Europeu",
+          "Auditoria de Desempenho"
+        ]
+      },
+      {
+        "term": "Desembolso",
+        "short": "Transferência efetiva de fundos da UE para o Estado-Membro.",
+        "definition": "Pagamento efectivo realizado pela Comissão Europeia a um Estado-Membro após verificação do cumprimento satisfatório dos marcos e metas acordados. Os desembolsos dividem-se em pré-financiamento (automático, no início) e pagamentos intercalares/finais (condicionados ao cumprimento de compromissos).",
+        "category": "Financiamento",
+        "example": "Portugal recebeu um pré-financiamento de 2,2 mil milhões de euros em agosto de 2021 e o 1º pedido de pagamento de 1,2 mil milhões em janeiro de 2022.",
+        "related": [
+          "Pré-financiamento",
+          "Pedido de Pagamento",
+          "MRR"
+        ]
+      },
+      {
+        "term": "DGTF",
+        "short": "Direção-Geral do Tesouro e Finanças — coordenadora do PRR em Portugal.",
+        "definition": "Entidade responsável em Portugal pela coordenação global do PRR, incluindo a articulação com a Comissão Europeia, a preparação dos pedidos de pagamento e a monitorização do cumprimento dos marcos e metas. Funciona como ponto focal nacional do mecanismo.",
+        "category": "Governação"
+      },
+      {
+        "term": "Empréstimo RRF",
+        "short": "Componente reembolsável dos fundos do MRR.",
+        "definition": "Forma de apoio financeiro do MRR que, ao contrário das subvenções, tem de ser reembolsado pelo Estado-Membro ao longo do tempo. Os empréstimos estão disponíveis até 6,8% do Rendimento Nacional Bruto de cada país e são contratados a taxas favoráveis, refletindo o custo de financiamento da UE.",
+        "category": "Financiamento",
+        "related": [
+          "Subvenção",
+          "MRR",
+          "Dotação Nacional"
+        ]
+      },
+      {
+        "term": "Envelope Financeiro",
+        "short": "Montante total de fundos atribuídos a um país no âmbito do MRR.",
+        "definition": "Valor máximo de fundos (subvenções e/ou empréstimos) que um Estado-Membro pode solicitar no âmbito do MRR. Para as subvenções, 70% foi distribuído em 2021 com base em critérios socioeconómicos históricos; os restantes 30% foram distribuídos em 2022 com base na queda real do PIB em 2020-2021.",
+        "category": "Financiamento",
+        "example": "Portugal tem um envelope de 16,6 mil milhões de euros — composto por 13,9 mil M em subvenções e 2,7 mil M em empréstimos.",
+        "related": [
+          "Subvenção",
+          "Empréstimo RRF",
+          "Dotação Nacional"
+        ]
+      },
+      {
+        "term": "Fundo de Recuperação e Resiliência",
+        "short": "O instrumento central do pacote NextGenerationEU.",
+        "definition": "Principal instrumento financeiro do NextGenerationEU, com uma dotação total de até 723,8 mil milhões de euros (a preços correntes). Financia os PRR dos Estados-Membros através de subvenções (338 mil M€) e empréstimos (385,8 mil M€). O FRR foi criado pelo Regulamento (UE) 2021/241.",
+        "category": "Financiamento",
+        "related": [
+          "NextGenerationEU",
+          "MRR",
+          "Subvenção",
+          "Empréstimo RRF"
+        ]
+      },
+      {
+        "term": "Indicadores Comuns",
+        "short": "14 indicadores de reporte obrigatório para todos os Estados-Membros.",
+        "definition": "Conjunto de 14 indicadores definidos pela Comissão Europeia que todos os Estados-Membros devem reportar semestralmente, independentemente do conteúdo dos seus PRR. Cobrem áreas como energia renovável, eficiência energética, digitalização, educação, emprego e saúde, permitindo comparações entre países.",
+        "category": "Indicadores",
+        "example": "O Indicador Comum 2 mede a \"Capacidade adicional de energia renovável instalada\" em MW. Portugal reporta este valor semestralmente à Comissão.",
+        "related": [
+          "MRR",
+          "Relatório de Progresso",
+          "Marco",
+          "Meta"
+        ]
+      },
+      {
+        "term": "Interoperabilidade",
+        "short": "Capacidade de sistemas de TI comunicarem entre si sem fricção.",
+        "definition": "No contexto do PRR, refere-se especificamente à capacidade dos sistemas informáticos de diferentes entidades públicas — e entre países da UE — partilharem e utilizarem dados de forma fluida e normalizada. É um objetivo transversal do pilar digital do MRR e um critério de avaliação de várias medidas de digitalização.",
+        "category": "Indicadores",
+        "related": [
+          "Transformação Digital",
+          "Pilar Digital"
+        ]
+      },
+      {
+        "term": "Jalão",
+        "short": "Sinónimo de \"Marco\" — compromisso qualitativo do PRR.",
+        "definition": "Termo alternativo para \"Marco\" (do inglês \"milestone\"), utilizado em alguns documentos oficiais portugueses. Representa um compromisso qualitativo — aprovação de legislação, adoção de estratégia, lançamento de programa — que deve ser cumprido numa data específica para desbloquear pagamentos do MRR.",
+        "category": "Execução",
+        "related": [
+          "Marco",
+          "Meta",
+          "Pedido de Pagamento"
+        ]
+      },
+      {
+        "term": "Marco",
+        "short": "Compromisso qualitativo do PRR associado a uma data de cumprimento.",
+        "definition": "Indicador qualitativo que representa um compromisso específico (aprovação de lei, criação de entidade, lançamento de programa) que deve ser cumprido até uma data definida. O cumprimento de marcos é uma condição necessária para a aprovação dos pedidos de pagamento pelo Conselho da UE. Também designado como \"jalão\" ou \"milestone\".",
+        "category": "Execução",
+        "example": "O Marco PT-M001 exigia a aprovação do quadro legal para o Banco de Fomento até Q2 2022 como condição para o 1º pedido de pagamento de Portugal.",
+        "related": [
+          "Meta",
+          "Componente",
+          "Pedido de Pagamento",
+          "Jalão"
+        ]
+      },
+      {
+        "term": "Mecanismo de Recuperação e Resiliência (MRR)",
+        "short": "O principal instrumento da política de recuperação pós-COVID da UE.",
+        "definition": "Instrumento central da resposta da União Europeia à crise pandémica COVID-19, criado pelo Regulamento (UE) 2021/241. Disponibiliza até 723,8 mil milhões de euros para apoiar reformas e investimentos nos Estados-Membros até 2026. Os fundos são condicionados ao cumprimento de marcos e metas acordados com a Comissão Europeia.",
+        "category": "Estrutura",
+        "related": [
+          "NextGenerationEU",
+          "Fundo de Recuperação e Resiliência",
+          "PRR"
+        ]
+      },
+      {
+        "term": "Meta",
+        "short": "Compromisso quantitativo do PRR com um valor-alvo mensurável.",
+        "definition": "Indicador quantitativo e mensurável que define um valor-alvo a atingir (número de habitações renovadas, capacidade instalada em MW, percentagem de PMEs apoiadas, etc.) até uma data determinada. Como os marcos, o cumprimento das metas é verificado antes da aprovação de cada pedido de pagamento.",
+        "category": "Execução",
+        "example": "A Meta PT-T027 exige que 15.000 PMEs adotem tecnologias digitais até Q4 2025 como parte da Componente de Digitalização da Economia.",
+        "related": [
+          "Marco",
+          "Componente",
+          "Indicadores Comuns",
+          "Pedido de Pagamento"
+        ]
+      },
+      {
+        "term": "NextGenerationEU",
+        "short": "Pacote de recuperação económica da UE no valor de 807 mil M€.",
+        "definition": "Instrumento temporário criado pela Comissão Europeia para ajudar a reparar os danos económicos e sociais imediatos causados pela pandemia COVID-19. Com um valor total de 807 mil milhões de euros, financia o Fundo de Recuperação e Resiliência (principal componente) e outros programas como o React-EU e o InvestEU.",
+        "category": "Estrutura",
+        "related": [
+          "Fundo de Recuperação e Resiliência",
+          "MRR",
+          "PRR"
+        ]
+      },
+      {
+        "term": "Objetivo Climático",
+        "short": "Requisito de afetação mínima de 37% dos fundos ao clima.",
+        "definition": "O Regulamento do MRR exige que pelo menos 37% das despesas de cada PRR contribuam para os objetivos climáticos da UE. Cada medida é marcada com um coeficiente climático (0%, 40% ou 100%) e a soma ponderada deve atingir o limiar obrigatório. Este requisito promove a transição para uma economia neutra em carbono.",
+        "category": "Avaliação",
+        "related": [
+          "Objetivo Digital",
+          "Pilar Ecológico",
+          "Etiquetagem Climática"
+        ]
+      },
+      {
+        "term": "Objetivo Digital",
+        "short": "Requisito de afetação mínima de 20% dos fundos à digitalização.",
+        "definition": "O Regulamento do MRR exige que pelo menos 20% das despesas de cada PRR contribuam para a transformação digital. Cada medida é classificada com um coeficiente digital (0%, 40% ou 100%), e a soma ponderada deve atingir o limiar obrigatório. Este requisito apoia a agenda digital europeia.",
+        "category": "Avaliação",
+        "related": [
+          "Objetivo Climático",
+          "Pilar Digital",
+          "Indicadores Comuns"
+        ]
+      },
+      {
+        "term": "OLAF",
+        "short": "Organismo europeu de luta antifraude.",
+        "definition": "Organismo Europeu de Luta Antifraude, responsável por investigar fraudes, corrupção e irregularidades que afetam os interesses financeiros da UE. No âmbito do MRR, o OLAF tem poderes para investigar suspeitas de fraude ou conflito de interesses na utilização dos fundos do PRR, podendo recomendar recuperações e sanções.",
+        "category": "Governação",
+        "related": [
+          "Controlo e Auditoria",
+          "Tribunal de Contas Europeu"
+        ]
+      },
+      {
+        "term": "Parceria Público-Privada",
+        "short": "Modalidade de execução que envolve o setor privado no PRR.",
+        "definition": "Forma de contratação em que uma entidade pública e uma ou mais entidades privadas colaboram para realizar um projeto de interesse público. No contexto do PRR, as PPPs são permitidas em determinadas condições e devem respeitar as regras de contratação pública e as disposições específicas do Regulamento MRR.",
+        "category": "Execução",
+        "related": [
+          "Beneficiário",
+          "Fundos"
+        ]
+      },
+      {
+        "term": "Pedido de Pagamento",
+        "short": "Solicitação formal de desembolso de fundos após cumprimento de marcos e metas.",
+        "definition": "Documento formal apresentado por um Estado-Membro à Comissão Europeia solicitando o pagamento de uma tranche de fundos do MRR. Para ser aprovado, o pedido deve demonstrar o cumprimento satisfatório de todos os marcos e metas previstos para esse pagamento. Pode ser apresentado até duas vezes por ano.",
+        "category": "Execução",
+        "example": "Portugal apresentou o 1º Pedido de Pagamento em outubro de 2021, demonstrando o cumprimento de 38 marcos e metas, tendo recebido 1,2 mil M€ em janeiro de 2022.",
+        "related": [
+          "Marco",
+          "Meta",
+          "Desembolso",
+          "Comissão Europeia"
+        ]
+      },
+      {
+        "term": "Pilar",
+        "short": "Uma das seis áreas temáticas estruturais do MRR.",
+        "definition": "Os seis pilares do MRR são os eixos temáticos que organizam todas as reformas e investimentos dos PRR: (1) Transição Ecológica, (2) Transformação Digital, (3) Crescimento Inteligente, Sustentável e Inclusivo, (4) Coesão Social e Territorial, (5) Saúde e Resiliência, (6) Políticas para a Próxima Geração. Cada componente do PRR é associada a pelo menos um pilar.",
+        "category": "Estrutura",
+        "related": [
+          "Componente",
+          "MRR",
+          "Objetivo Climático",
+          "Objetivo Digital"
+        ]
+      },
+      {
+        "term": "Pilar Digital",
+        "short": "Pilar 2 do MRR — Transformação Digital.",
+        "definition": "Segundo pilar do MRR, que agrupa as medidas de transformação digital da economia e da sociedade. Inclui investimentos em conectividade, competências digitais, digitalização das administrações públicas e das empresas. Exige que pelo menos 20% das despesas do PRR contribuam para a transformação digital.",
+        "category": "Estrutura",
+        "related": [
+          "Pilar",
+          "Objetivo Digital",
+          "Indicadores Comuns"
+        ]
+      },
+      {
+        "term": "Pilar Ecológico",
+        "short": "Pilar 1 do MRR — Transição Ecológica.",
+        "definition": "Primeiro pilar do MRR, que agrupa as medidas de descarbonização, eficiência energética, energias renováveis e proteção do ambiente. Exige que pelo menos 37% das despesas do PRR contribuam para os objetivos climáticos da UE, aplicando a metodologia de etiquetagem climática europeia.",
+        "category": "Estrutura",
+        "related": [
+          "Pilar",
+          "Objetivo Climático",
+          "Transição Ecológica"
+        ]
+      },
+      {
+        "term": "Plano de Recuperação e Resiliência (PRR)",
+        "short": "O documento nacional que descreve as reformas e investimentos financiados pelo MRR.",
+        "definition": "Documento elaborado por cada Estado-Membro que descreve as reformas estruturais e os investimentos prioritários que serão financiados pelo MRR. Deve ser coerente com os pilares do MRR, respeitar os limiares climático (37%) e digital (20%) e incluir marcos e metas mensuráveis. Em Portugal, o PRR vale 16,6 mil milhões de euros.",
+        "category": "Estrutura",
+        "example": "O PRR português — \"Recuperar Portugal, Construindo o Futuro\" — está organizado em 3 dimensões (Resiliência, Transição Climática, Transição Digital) e 20 componentes.",
+        "related": [
+          "MRR",
+          "Componente",
+          "Marco",
+          "Meta",
+          "NextGenerationEU"
+        ]
+      },
+      {
+        "term": "Pré-financiamento",
+        "short": "Adiantamento automático de fundos no início do PRR.",
+        "definition": "Pagamento inicial efectuado pela Comissão Europeia a cada Estado-Membro, correspondente a 13% do total das subvenções e 13% dos empréstimos solicitados, sem necessidade de cumprimento prévio de marcos ou metas. O pré-financiamento visou proporcionar liquidez imediata para iniciar as medidas do PRR.",
+        "category": "Financiamento",
+        "example": "Portugal recebeu 2,2 mil milhões de euros de pré-financiamento em agosto de 2021, após a ratificação da decisão de recursos próprios pelo parlamento.",
+        "related": [
+          "Desembolso",
+          "Pedido de Pagamento",
+          "Subvenção"
+        ]
+      },
+      {
+        "term": "Princípio DNSH",
+        "short": "\"Do No Significant Harm\" — não causar dano significativo.",
+        "definition": "Princípio do MRR que exige que nenhuma medida dos PRR cause dano significativo a nenhum dos seis objetivos ambientais da UE: mitigação das alterações climáticas, adaptação às alterações climáticas, utilização sustentável de recursos hídricos, economia circular, prevenção da poluição e proteção da biodiversidade. As medidas devem demonstrar conformidade com o DNSH.",
+        "category": "Avaliação",
+        "related": [
+          "Objetivo Climático",
+          "Pilar Ecológico"
+        ]
+      },
+      {
+        "term": "Reforma",
+        "short": "Mudança estrutural de política pública ou quadro legal incluída no PRR.",
+        "definition": "Alteração duradoura de um sistema, política pública ou quadro legal — distinguindo-se de um investimento físico. As reformas podem incluir alterações legislativas, criação de novas entidades, reorganização de serviços públicos ou mudanças de procedimento. São geralmente associadas a marcos (não a metas) porque têm natureza qualitativa.",
+        "category": "Execução",
+        "related": [
+          "Marco",
+          "Investimento",
+          "Componente"
+        ]
+      },
+      {
+        "term": "Regulamento MRR",
+        "short": "Regulamento (UE) 2021/241 — base jurídica do MRR.",
+        "definition": "Regulamento do Parlamento Europeu e do Conselho, de 12 de fevereiro de 2021, que estabelece o Mecanismo de Recuperação e Resiliência. Define os objetivos, critérios de elegibilidade, requisitos de conteúdo dos PRR, condições de pagamento, sistema de governação e as disposições relativas aos pilares temáticos.",
+        "category": "Estrutura",
+        "related": [
+          "MRR",
+          "PRR",
+          "Fundo de Recuperação e Resiliência"
+        ]
+      },
+      {
+        "term": "Relatório de Progresso",
+        "short": "Relatório semestral sobre o avanço na execução do PRR.",
+        "definition": "Documento que cada Estado-Membro apresenta semestralmente à Comissão Europeia com informação sobre o progresso na implementação do PRR — reformas aprovadas, investimentos iniciados, marcos e metas cumpridos, montantes gastos e indicadores comuns reportados. Serve de base para a avaliação dos pedidos de pagamento.",
+        "category": "Avaliação",
+        "related": [
+          "Marco",
+          "Meta",
+          "Indicadores Comuns",
+          "Pedido de Pagamento"
+        ]
+      },
+      {
+        "term": "Scoreboard de Recuperação",
+        "short": "Painel de monitorização online do progresso dos PRR na UE.",
+        "definition": "Plataforma digital da Comissão Europeia que disponibiliza publicamente dados sobre o progresso de todos os PRR dos 27 Estados-Membros — incluindo marcos e metas cumpridos, montantes desembolsados e indicadores comuns reportados. É a principal fonte de dados para visualizações como as do Europium.",
+        "category": "Avaliação",
+        "related": [
+          "MRR",
+          "Indicadores Comuns",
+          "Relatório de Progresso"
+        ]
+      },
+      {
+        "term": "Subvenção",
+        "short": "Apoio financeiro não reembolsável do MRR.",
+        "definition": "Componente não reembolsável do financiamento do MRR, que não tem de ser devolvida ao orçamento da UE. Representa cerca de 47% do total do FRR (338 mil M€ a preços de 2018). A atribuição de subvenções a cada país depende de critérios populacionais, do inverso do PIB per capita e da taxa de desemprego.",
+        "category": "Financiamento",
+        "example": "A subvenção portuguesa no MRR é de 13,9 mil milhões de euros, enquanto os empréstimos disponíveis ascendem a 2,7 mil milhões.",
+        "related": [
+          "Empréstimo RRF",
+          "Envelope Financeiro",
+          "Desembolso"
+        ]
+      },
+      {
+        "term": "Transição Ecológica",
+        "short": "Processo de descarbonização e modernização sustentável da economia.",
+        "definition": "Processo de transformação da economia e da sociedade em direção à neutralidade climática, eficiência energética e proteção ambiental. No âmbito do MRR, corresponde ao Pilar 1 e inclui medidas de energias renováveis, renovação de edifícios, transporte sustentável, hidrogénio verde, agricultura sustentável e economia circular.",
+        "category": "Estrutura",
+        "related": [
+          "Pilar Ecológico",
+          "Objetivo Climático",
+          "Princípio DNSH"
+        ]
+      },
+      {
+        "term": "Tribunal de Contas Europeu",
+        "short": "Organismo independente de auditoria externa da UE.",
+        "definition": "Instituição da UE responsável pela auditoria externa independente das finanças europeias. Verifica se os fundos do MRR foram recebidos e utilizados de forma legal, regular e eficiente. Publica relatórios especiais sobre a implementação do MRR e pode formular recomendações à Comissão e aos Estados-Membros.",
+        "category": "Governação",
+        "related": [
+          "OLAF",
+          "Controlo e Auditoria",
+          "Auditoria de Desempenho"
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "mechanism": {
+      "start": "2020-05-27T00:00:00.000Z",
+      "end": "2026-08-31T23:59:59.000Z",
+      "finalDateLabel": "31 agosto 2026",
+      "finalDescription": "Data limite para conclusão de todos os investimentos e reformas dos PRR e submissão dos pedidos de pagamento finais."
+    },
+    "shortMonths": [
+      "jan",
+      "fev",
+      "mar",
+      "abr",
+      "mai",
+      "jun",
+      "jul",
+      "ago",
+      "set",
+      "out",
+      "nov",
+      "dez"
+    ],
+    "categories": [
+      {
+        "key": "todos",
+        "label": "Todos"
+      },
+      {
+        "key": "legislacao",
+        "label": "Legislação"
+      },
+      {
+        "key": "execucao",
+        "label": "Execução UE"
+      },
+      {
+        "key": "pagamento",
+        "label": "Pagamentos"
+      },
+      {
+        "key": "alerta",
+        "label": "Marcos Críticos"
+      }
+    ],
+    "legend": [
+      {
+        "key": "legislacao",
+        "label": "Legislação",
+        "color": "#6366f1"
+      },
+      {
+        "key": "execucao",
+        "label": "Execução UE",
+        "color": "#1d4587"
+      },
+      {
+        "key": "pagamento",
+        "label": "Pagamento",
+        "color": "#d97706"
+      },
+      {
+        "key": "alerta",
+        "label": "Marco crítico",
+        "color": "#dc2626"
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "type": "legislacao",
+        "typeLabel": "Legislação",
+        "date": "Maio 2020",
+        "title": "Proposta do NextGenerationEU",
+        "description": "A Comissão Europeia apresenta o pacote NextGenerationEU no valor de 750 mil M€, em resposta à crise pandémica COVID-19. O maior estímulo financeiro alguma vez aprovado pela União Europeia.",
+        "impact": "Representa 5,4% do PIB da UE — o maior pacote de recuperação económica da história europeia.",
+        "countries": "Todos os 27 Estados-Membros da União Europeia"
+      },
+      {
+        "id": 2,
+        "type": "legislacao",
+        "typeLabel": "Legislação",
+        "date": "Fevereiro 2021",
+        "title": "Regulamento MRR entra em vigor",
+        "description": "O Regulamento (UE) 2021/241 é publicado no Jornal Oficial e entra em vigor. Define os seis pilares, os critérios de elegibilidade, os limiares obrigatórios de 37% (clima) e 20% (digital) e as regras de governação.",
+        "impact": "Base jurídica única para todos os PRR europeus. O princípio DNSH torna-se obrigatório em todas as medidas."
+      },
+      {
+        "id": 3,
+        "type": "execucao",
+        "typeLabel": "Execução UE",
+        "date": "Abril–Maio 2021",
+        "title": "Estados-Membros submetem os 27 PRR",
+        "description": "Os 27 países entregam os seus Planos de Recuperação e Resiliência à Comissão Europeia. Os primeiros 12 planos chegam em abril; a Hungria é o último país a submeter, em maio de 2022.",
+        "impact": "Mais de 700 mil M€ em reformas e investimentos planeados, cobrindo energia, digitalização, coesão social e saúde.",
+        "countries": "27 Estados-Membros — todos submeteram plano antes do prazo"
+      },
+      {
+        "id": 4,
+        "type": "execucao",
+        "typeLabel": "Execução UE",
+        "date": "Junho–Julho 2021",
+        "title": "Primeiros PRR aprovados pelo Conselho da UE",
+        "description": "A Comissão emite avaliações positivas e o Conselho aprova formalmente os primeiros planos. Espanha, Itália, França, Alemanha, Grécia e mais 12 países recebem luz verde na primeira vaga.",
+        "impact": "Aprovações simultâneas sinalizam o início do maior programa de investimento coordenado da história da UE.",
+        "countries": "Espanha (€69,5 mil M), Itália (€191,5 mil M), França (€40,3 mil M), Alemanha (€26,4 mil M) entre os primeiros"
+      },
+      {
+        "id": 5,
+        "type": "pagamento",
+        "typeLabel": "Pagamento",
+        "date": "Agosto–Setembro 2021",
+        "title": "Pré-financiamentos desembolsados a 26 países",
+        "description": "A Comissão Europeia transfere os pré-financiamentos automáticos — 13% das subvenções e 13% dos empréstimos — a todos os Estados-Membros com PRR aprovado, sem necessidade de cumprimento prévio de marcos.",
+        "impact": "Mais de 56 mil M€ imediatamente nas economias europeias para dar início aos investimentos.",
+        "countries": "26 Estados-Membros receberam pré-financiamento em 2021"
+      },
+      {
+        "id": 6,
+        "type": "execucao",
+        "typeLabel": "Execução UE",
+        "date": "2021–2022",
+        "title": "Primeiros pedidos de pagamento regulares",
+        "description": "Espanha, Itália, Grécia, França e outros países submetem os primeiros pedidos de pagamento após demonstrarem o cumprimento de conjuntos específicos de marcos e metas legislativas.",
+        "impact": "Os primeiros pagamentos regulares confirmam que o mecanismo funciona: reformas concretas em troca de financiamento.",
+        "countries": "Espanha (€10 mil M), Itália (€21 mil M), Grécia (€3,6 mil M) entre os primeiros a receber"
+      },
+      {
+        "id": 7,
+        "type": "legislacao",
+        "typeLabel": "Legislação",
+        "date": "Março 2022",
+        "title": "REPowerEU — resposta à crise energética",
+        "description": "Na sequência da invasão da Ucrânia, a Comissão propõe o REPowerEU — um capítulo adicional aos PRR para reduzir a dependência dos combustíveis fósseis russos e acelerar as energias renováveis.",
+        "impact": "20 mil M€ em subvenções adicionais. 25 dos 27 países reveem os seus PRR para incluir o capítulo REPowerEU.",
+        "countries": "Todos os 27 Estados-Membros — revisão dos PRR em 2022–2023"
+      },
+      {
+        "id": 8,
+        "type": "alerta",
+        "typeLabel": "Marco Crítico",
+        "date": "Agosto 2023",
+        "title": "Avaliação intercalar do MRR",
+        "description": "A Comissão Europeia e o Tribunal de Contas publicam avaliações intercalares. O relatório identifica progressos em energias renováveis e digitalização, mas atrasos em habitação e transportes em vários países.",
+        "impact": "Países com execução abaixo do plano ajustam cronogramas. Hungria mantém fundos suspensos por questões de Estado de direito.",
+        "countries": "Todos os 27 países avaliados — atrasos identificados em média em 18% dos marcos"
+      },
+      {
+        "id": 9,
+        "type": "pagamento",
+        "typeLabel": "Pagamento",
+        "date": "2023–2024",
+        "title": "Aceleração dos desembolsos europeus",
+        "description": "Os desembolsos aceleram significativamente. Itália, Espanha e outros grandes beneficiários recebem múltiplos pedidos de pagamento aprovados. O total desembolsado ultrapassa os 200 mil M€.",
+        "impact": "A maioria dos países cumpre os marcos climáticos e digitais. Energias renováveis superam as metas em 14 países.",
+        "countries": "Itália (>113 mil M€), Espanha (>52 mil M€), Roménia, Polónia e Grécia entre os maiores beneficiários"
+      },
+      {
+        "id": 10,
+        "type": "execucao",
+        "typeLabel": "Execução UE",
+        "date": "2024–2025",
+        "title": "Revisão dos planos — adaptação pós-pandemia",
+        "description": "Vários Estados-Membros solicitam revisões adicionais dos seus PRR para adaptar investimentos à nova realidade — inflação, aumento dos custos de construção e mudanças de prioridade após as eleições europeias de 2024.",
+        "impact": "As revisões mantêm os envelopes financeiros mas reorientam alguns investimentos para setores com maior impacto. 19 países completaram pelo menos uma revisão.",
+        "countries": "Maioria dos 27 países solicitou pelo menos uma revisão ao PRR original"
+      },
+      {
+        "id": 11,
+        "type": "alerta",
+        "typeLabel": "Marco Crítico",
+        "date": "2025",
+        "title": "Contagem decrescente — 12 meses para concluir",
+        "description": "Com apenas 12 meses para o prazo final, os Estados-Membros intensificam a execução. A Comissão emite alertas formais a países com taxas de execução abaixo de 40%.",
+        "impact": "Estimativa de 150 mil M€ ainda por desembolsar. Países em risco podem perder parte dos fundos.",
+        "countries": "6 países com alertas formais por execução insuficiente"
+      },
+      {
+        "id": 12,
+        "type": "execucao",
+        "typeLabel": "Execução UE",
+        "date": "2025–2026",
+        "title": "Fase final — conclusão dos investimentos",
+        "description": "Período crítico para conclusão de todos os projetos, reformas e pedidos de pagamento finais. Os países devem demonstrar que todos os marcos e metas foram cumpridos e submeter os pedidos até 31 de agosto de 2026.",
+        "impact": "Totalidade dos 723,8 mil M€ do FRR a ser comprometida. O legado estará visível em 350.000+ projetos na Europa.",
+        "countries": "Todos os 27 Estados-Membros — prazo final improrrogável: 31 agosto 2026"
+      }
+    ],
+    "stats": [
+      {
+        "value": "2020–2026",
+        "label": "Período histórico"
+      },
+      {
+        "value": "5 anos",
+        "label": "Duração do mecanismo"
+      },
+      {
+        "value": "723,8 mil M€",
+        "label": "Valor total do FRR"
+      },
+      {
+        "value": "27",
+        "label": "Planos nacionais"
+      },
+      {
+        "value": ">350.000",
+        "label": "Projetos na Europa"
+      }
+    ]
+  },
+  "map": {
+    "euNumToIso": {
+      "100": "BG",
+      "191": "HR",
+      "196": "CY",
+      "203": "CZ",
+      "208": "DK",
+      "233": "EE",
+      "246": "FI",
+      "250": "FR",
+      "276": "DE",
+      "300": "GR",
+      "348": "HU",
+      "372": "IE",
+      "380": "IT",
+      "428": "LV",
+      "440": "LT",
+      "442": "LU",
+      "470": "MT",
+      "528": "NL",
+      "616": "PL",
+      "620": "PT",
+      "642": "RO",
+      "703": "SK",
+      "705": "SI",
+      "724": "ES",
+      "752": "SE",
+      "040": "AT",
+      "056": "BE"
+    },
+    "contextNums": [
+      "826",
+      "578",
+      "756",
+      "804",
+      "112",
+      "688",
+      "070",
+      "008",
+      "499",
+      "807",
+      "498",
+      "792",
+      "643"
+    ],
+    "contextNames": {
+      "112": {
+        "name": "Bielorrússia",
+        "flag": "🇧🇾"
+      },
+      "498": {
+        "name": "Moldávia",
+        "flag": "🇲🇩"
+      },
+      "499": {
+        "name": "Montenegro",
+        "flag": "🇲🇪"
+      },
+      "578": {
+        "name": "Noruega",
+        "flag": "🇳🇴"
+      },
+      "643": {
+        "name": "Rússia",
+        "flag": "🇷🇺"
+      },
+      "688": {
+        "name": "Sérvia",
+        "flag": "🇷🇸"
+      },
+      "756": {
+        "name": "Suíça",
+        "flag": "🇨🇭"
+      },
+      "792": {
+        "name": "Turquia",
+        "flag": "🇹🇷"
+      },
+      "804": {
+        "name": "Ucrânia",
+        "flag": "🇺🇦"
+      },
+      "807": {
+        "name": "Macedónia do Norte",
+        "flag": "🇲🇰"
+      },
+      "826": {
+        "name": "Reino Unido",
+        "flag": "🇬🇧"
+      },
+      "070": {
+        "name": "Bósnia e Herzegovina",
+        "flag": "🇧🇦"
+      },
+      "008": {
+        "name": "Albânia",
+        "flag": "🇦🇱"
+      }
+    },
+    "metrics": [
+      {
+        "key": "progress",
+        "label": "Progresso %",
+        "suffix": "%"
+      },
+      {
+        "key": "funds",
+        "label": "Fundos",
+        "suffix": " mil M€"
+      },
+      {
+        "key": "disbursed",
+        "label": "Desembolsado",
+        "suffix": " mil M€"
+      },
+      {
+        "key": "climate",
+        "label": "Obj. Climático",
+        "suffix": "%"
+      },
+      {
+        "key": "digital",
+        "label": "Obj. Digital",
+        "suffix": "%"
+      }
+    ],
+    "palette": [
+      "#dbeafe",
+      "#93c5fd",
+      "#3b82f6",
+      "#1d4587",
+      "#003399"
+    ],
+    "countryMeta": {
+      "PT": {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "funds": 16.6,
+        "disbursed": 10.2,
+        "progress": 62,
+        "marcos": 20,
+        "climate": 38,
+        "digital": 22
+      },
+      "ES": {
+        "name": "Espanha",
+        "flag": "🇪🇸",
+        "funds": 160.4,
+        "disbursed": 52,
+        "progress": 61,
+        "marcos": 22,
+        "climate": 40,
+        "digital": 28
+      },
+      "IT": {
+        "name": "Itália",
+        "flag": "🇮🇹",
+        "funds": 191.5,
+        "disbursed": 113.5,
+        "progress": 61,
+        "marcos": 27,
+        "climate": 37,
+        "digital": 25
+      },
+      "FR": {
+        "name": "França",
+        "flag": "🇫🇷",
+        "funds": 40.3,
+        "disbursed": 26.4,
+        "progress": 63,
+        "marcos": 18,
+        "climate": 46,
+        "digital": 25
+      },
+      "DE": {
+        "name": "Alemanha",
+        "flag": "🇩🇪",
+        "funds": 26.4,
+        "disbursed": 13.5,
+        "progress": 69,
+        "marcos": 15,
+        "climate": 42,
+        "digital": 27
+      },
+      "PL": {
+        "name": "Polónia",
+        "flag": "🇵🇱",
+        "funds": 35.4,
+        "disbursed": 6.3,
+        "progress": 30,
+        "marcos": 14,
+        "climate": 42,
+        "digital": 21
+      },
+      "NL": {
+        "name": "Países Baixos",
+        "flag": "🇳🇱",
+        "funds": 4.7,
+        "disbursed": 2.8,
+        "progress": 56,
+        "marcos": 10,
+        "climate": 48,
+        "digital": 28
+      },
+      "BE": {
+        "name": "Bélgica",
+        "flag": "🇧🇪",
+        "funds": 4.5,
+        "disbursed": 3.1,
+        "progress": 68,
+        "marcos": 12,
+        "climate": 44,
+        "digital": 26
+      },
+      "AT": {
+        "name": "Áustria",
+        "flag": "🇦🇹",
+        "funds": 3.5,
+        "disbursed": 2.4,
+        "progress": 69,
+        "marcos": 8,
+        "climate": 43,
+        "digital": 28
+      },
+      "GR": {
+        "name": "Grécia",
+        "flag": "🇬🇷",
+        "funds": 30.1,
+        "disbursed": 15.6,
+        "progress": 60,
+        "marcos": 16,
+        "climate": 38,
+        "digital": 23
+      },
+      "RO": {
+        "name": "Roménia",
+        "flag": "🇷🇴",
+        "funds": 27.1,
+        "disbursed": 9.2,
+        "progress": 35,
+        "marcos": 12,
+        "climate": 41,
+        "digital": 22
+      },
+      "CZ": {
+        "name": "República Checa",
+        "flag": "🇨🇿",
+        "funds": 7.1,
+        "disbursed": 3.2,
+        "progress": 45,
+        "marcos": 13,
+        "climate": 41,
+        "digital": 20
+      },
+      "HU": {
+        "name": "Hungria",
+        "flag": "🇭🇺",
+        "funds": 5.8,
+        "disbursed": 1.5,
+        "progress": 26,
+        "marcos": 12,
+        "climate": 39,
+        "digital": 19
+      },
+      "SK": {
+        "name": "Eslováquia",
+        "flag": "🇸🇰",
+        "funds": 6.3,
+        "disbursed": 2.8,
+        "progress": 44,
+        "marcos": 10,
+        "climate": 40,
+        "digital": 21
+      },
+      "HR": {
+        "name": "Croácia",
+        "flag": "🇭🇷",
+        "funds": 6.4,
+        "disbursed": 3.4,
+        "progress": 55,
+        "marcos": 11,
+        "climate": 42,
+        "digital": 24
+      },
+      "BG": {
+        "name": "Bulgária",
+        "flag": "🇧🇬",
+        "funds": 6.3,
+        "disbursed": 2.5,
+        "progress": 40,
+        "marcos": 11,
+        "climate": 40,
+        "digital": 20
+      },
+      "SE": {
+        "name": "Suécia",
+        "flag": "🇸🇪",
+        "funds": 3.2,
+        "disbursed": 2.1,
+        "progress": 66,
+        "marcos": 8,
+        "climate": 49,
+        "digital": 30
+      },
+      "FI": {
+        "name": "Finlândia",
+        "flag": "🇫🇮",
+        "funds": 2.4,
+        "disbursed": 1.7,
+        "progress": 71,
+        "marcos": 7,
+        "climate": 47,
+        "digital": 29
+      },
+      "DK": {
+        "name": "Dinamarca",
+        "flag": "🇩🇰",
+        "funds": 0.7,
+        "disbursed": 0.5,
+        "progress": 71,
+        "marcos": 5,
+        "climate": 52,
+        "digital": 31
+      },
+      "IE": {
+        "name": "Irlanda",
+        "flag": "🇮🇪",
+        "funds": 1,
+        "disbursed": 0.7,
+        "progress": 70,
+        "marcos": 6,
+        "climate": 45,
+        "digital": 28
+      },
+      "LT": {
+        "name": "Lituânia",
+        "flag": "🇱🇹",
+        "funds": 2.2,
+        "disbursed": 1.4,
+        "progress": 64,
+        "marcos": 9,
+        "climate": 43,
+        "digital": 25
+      },
+      "LV": {
+        "name": "Letónia",
+        "flag": "🇱🇻",
+        "funds": 1.8,
+        "disbursed": 1.1,
+        "progress": 61,
+        "marcos": 8,
+        "climate": 41,
+        "digital": 24
+      },
+      "EE": {
+        "name": "Estónia",
+        "flag": "🇪🇪",
+        "funds": 1,
+        "disbursed": 0.7,
+        "progress": 70,
+        "marcos": 7,
+        "climate": 48,
+        "digital": 28
+      },
+      "SI": {
+        "name": "Eslovénia",
+        "flag": "🇸🇮",
+        "funds": 2.5,
+        "disbursed": 1.6,
+        "progress": 64,
+        "marcos": 8,
+        "climate": 42,
+        "digital": 25
+      },
+      "LU": {
+        "name": "Luxemburgo",
+        "flag": "🇱🇺",
+        "funds": 0.2,
+        "disbursed": 0.1,
+        "progress": 50,
+        "marcos": 4,
+        "climate": 44,
+        "digital": 26
+      },
+      "MT": {
+        "name": "Malta",
+        "flag": "🇲🇹",
+        "funds": 0.4,
+        "disbursed": 0.3,
+        "progress": 75,
+        "marcos": 6,
+        "climate": 43,
+        "digital": 24
+      },
+      "CY": {
+        "name": "Chipre",
+        "flag": "🇨🇾",
+        "funds": 1.1,
+        "disbursed": 0.8,
+        "progress": 73,
+        "marcos": 8,
+        "climate": 42,
+        "digital": 25
+      }
+    }
+  },
+  "more": {
+    "resources": [
+      {
+        "id": "mapa",
+        "to": "/mapa",
+        "title": "Mapa da União Europeia",
+        "description": "Visualização coroplética dos 27 Estados-Membros com dados do MRR — progresso de execução, fundos alocados e objectivos climáticos e digitais por país.",
+        "iconTone": "blue",
+        "icon": "globe",
+        "chips": [
+          "27 países",
+          "Mapa interativo",
+          "5 métricas"
+        ]
+      },
+      {
+        "id": "glossario",
+        "to": "/glossario",
+        "title": "Glossário PRR",
+        "description": "Definições técnicas completas dos termos do MRR — marcos, metas, pilares, indicadores comuns, governação e muito mais. Com pesquisa e filtro por categoria.",
+        "iconTone": "slate",
+        "icon": "document",
+        "chips": [
+          "40+ termos",
+          "Pesquisa",
+          "6 categorias"
+        ]
+      },
+      {
+        "id": "linha-tempo",
+        "to": "/linha-tempo",
+        "title": "Linha do Tempo RRF",
+        "description": "Os 12 marcos institucionais do Mecanismo — da proposta legislativa de 2020 ao prazo final de execução em agosto de 2026. Filtre por categoria e explore cada evento em detalhe.",
+        "iconTone": "amber",
+        "icon": "timeline",
+        "full": true,
+        "chips": [
+          {
+            "label": "Legislação",
+            "tone": "leg"
+          },
+          {
+            "label": "Execução UE",
+            "tone": "exec"
+          },
+          {
+            "label": "Pagamentos",
+            "tone": "pay"
+          },
+          {
+            "label": "Marcos críticos",
+            "tone": "alert"
+          }
+        ],
+        "previewEvents": [
+          {
+            "left": "6%",
+            "year": "2020",
+            "color": "#6366f1"
+          },
+          {
+            "left": "22%",
+            "year": "2021",
+            "color": "#1d4587"
+          },
+          {
+            "left": "39%",
+            "year": "2021",
+            "color": "#d97706"
+          },
+          {
+            "left": "56%",
+            "year": "2022",
+            "color": "#6366f1"
+          },
+          {
+            "left": "72%",
+            "year": "2023",
+            "color": "#dc2626"
+          },
+          {
+            "left": "88%",
+            "year": "2025",
+            "color": "#d97706"
+          }
+        ]
+      }
+    ]
+  }
+}
