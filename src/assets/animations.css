@@ -1,0 +1,85 @@
+/* Classes base das animações usadas pela diretiva `v-scroll-animate`. */
+.sa-fade-up,
+.sa-fade-down,
+.sa-fade-left,
+.sa-fade-right,
+.sa-scale,
+.sa-fade {
+  opacity: 0;
+  transition:
+    /* Suaviza a entrada do elemento. */
+    opacity  0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    /* Move o elemento até à posição final. */
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Ajuda o browser a preparar estas propriedades para animação. */
+  will-change: opacity, transform;
+}
+
+/* Cada variante começa deslocada numa direção diferente. */
+.sa-fade-up    { transform: translateY(28px); }
+.sa-fade-down  { transform: translateY(-20px); }
+.sa-fade-left  { transform: translateX(-28px); }
+.sa-fade-right { transform: translateX(28px); }
+.sa-scale      { transform: scale(0.94) translateY(16px); }
+.sa-fade       { transform: none; }
+
+/* Quando a diretiva marca o elemento como visível, ele entra no estado final. */
+.sa-fade-up.sa-visible,
+.sa-fade-down.sa-visible,
+.sa-fade-left.sa-visible,
+.sa-fade-right.sa-visible,
+.sa-scale.sa-visible,
+.sa-fade.sa-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Variante usada quando a animação é aplicada em cascata aos filhos. */
+.sa-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity  0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Estado final dos filhos já animados. */
+.sa-child.sa-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Pequena entrada do cabeçalho interno das páginas. */
+.page-hero {
+  animation: pageHeroIn 0.55s cubic-bezier(0.22,1,0.36,1) both;
+  animation-delay: 0.05s;
+}
+
+/* Animação simples de baixo para cima. */
+@keyframes pageHeroIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Animação usada nos vários elementos da hero inicial. */
+@keyframes heroLineIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Cada linha da hero entra com um atraso diferente. */
+.hero__badge    { animation: heroLineIn 0.6s cubic-bezier(0.22,1,0.36,1) 0.10s both; }
+.hero__title    { animation: heroLineIn 0.7s cubic-bezier(0.22,1,0.36,1) 0.20s both; }
+.hero__subtitle { animation: heroLineIn 0.7s cubic-bezier(0.22,1,0.36,1) 0.32s both; }
+.hero__actions  { animation: heroLineIn 0.65s cubic-bezier(0.22,1,0.36,1) 0.44s both; }
+
+/* Os cartões estatísticos entram em sequência. */
+.hero__stat     { animation: heroLineIn 0.6s cubic-bezier(0.22,1,0.36,1) both; }
+.hero__stat:nth-child(1) { animation-delay: 0.55s; }
+.hero__stat:nth-child(2) { animation-delay: 0.65s; }
+.hero__stat:nth-child(3) { animation-delay: 0.75s; }
+.hero__stat:nth-child(4) { animation-delay: 0.85s; }
+
+/* O indicador de scroll entra no fim. */
+.hero__scroll { animation: heroLineIn 0.5s cubic-bezier(0.22,1,0.36,1) 1.0s both; }
