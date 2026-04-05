@@ -146,15 +146,6 @@ Neste projeto, responsive significa que a interface se adapta a diferentes taman
 - world-atlas
 - json-server
 
-## Notas de desenvolvimento
-
-- Manter os dados de origem em `src/dados/`.
-- Regenerar `db.json` depois de alterar datasets locais.
-- Validar a build de produção antes de publicar alterações.
-- Confirmar que a navegação principal continua acessível em mobile.
-- Rever tabelas com scroll horizontal em ecrãs pequenos.
-- Manter os componentes reutilizáveis separados por área funcional.
-
 ## Observações
 
 O projeto está preparado para evoluir gradualmente para uma dependência maior do `json-server`, mas mantém dados locais para não bloquear o desenvolvimento visual e funcional enquanto a base de dados final não estiver completa.
