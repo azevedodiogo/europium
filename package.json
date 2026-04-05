@@ -8,8 +8,6 @@
     "db:serve": "json-server --host 127.0.0.1 --port 3000 db.json",
     "db:start": "npm run db:build && npm run db:serve",
     "build": "vite build",
-    "commit:series": "node scripts/commit-series.mjs",
-    "commit:series:dry": "node scripts/commit-series.mjs --dry-run",
     "preview": "vite preview"
   },
   "dependencies": {
