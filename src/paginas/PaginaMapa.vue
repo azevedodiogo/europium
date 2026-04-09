@@ -373,7 +373,7 @@ const stats = computed(() => {
   const summary = calculateRrfSummary(COUNTRY_META.value)
   return [
     { value: String(summary.memberStates), label: 'Estados-Membros'      },
-    { value: `${Math.round(summary.funds)} mil M€`,  label: 'Fundos Totais RRF'   },
+    { value: `${Math.round(summary.funds)} mil M€`,  label: 'Fundos totais do MRR' },
     { value: `${Math.round(summary.disbursed)} mil M€`, label: 'Total Desembolsado'  },
     { value: `${summary.progress}%`,       label: 'Progresso Médio'      },
     { value: `${summary.climate}%`,        label: 'Obj. Climático Médio' },

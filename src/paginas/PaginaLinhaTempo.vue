@@ -10,7 +10,7 @@
       <!-- Cabeçalho textual: explica ao utilizador o intervalo histórico que está a consultar. -->
       <div class="page-hero">
         
-        <h1 class="page-hero__title">Linha do Tempo RRF</h1>
+        <h1 class="page-hero__title">Linha do Tempo MRR</h1>
         
         <p class="page-hero__desc">
           

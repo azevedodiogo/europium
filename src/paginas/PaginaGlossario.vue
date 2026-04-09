@@ -10,13 +10,13 @@
       <!-- Cabeçalho da página: introduz o objetivo do glossário antes dos filtros. -->
       <div class="page-hero">
         
-        <h1 class="page-hero__title">Glossário PRR</h1>
+        <h1 class="page-hero__title">Glossário MRR</h1>
         
         <p class="page-hero__desc">
           
-          Definições de todos os termos técnicos relativos ao Plano de Recuperação e Resiliência
+          Definições dos principais termos técnicos relativos ao Mecanismo de Recuperação e Resiliência
           
-          e ao Mecanismo de Recuperação e Resiliência da União Europeia.
+          e aos Planos de Recuperação e Resiliência dos Estados-Membros.
         </p>
       </div>
 

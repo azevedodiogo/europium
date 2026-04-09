@@ -37,7 +37,7 @@
               
               <h2 id="countries-title" class="home__section-title">Países por Alocação</h2>
               
-              <p class="home__section-subtitle">Fundos alocados e progresso na execução dos marcos e metas.</p>
+              <p class="home__section-subtitle">Fundos atribuídos e progresso na execução dos marcos e metas.</p>
             </header>
             
             <TabelaPaises />

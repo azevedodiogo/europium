@@ -51,7 +51,7 @@
         <h3 class="footer__section-title">Recursos</h3>
         <nav class="footer__nav">
           <RouterLink to="/mapa"         class="footer__nav-link">Mapa UE</RouterLink>
-          <RouterLink to="/glossario"    class="footer__nav-link">Glossário PRR</RouterLink>
+          <RouterLink to="/glossario"    class="footer__nav-link">Glossário MRR</RouterLink>
           <RouterLink to="/linha-tempo"  class="footer__nav-link">Linha do Tempo</RouterLink>
           <RouterLink to="/mais"         class="footer__nav-link">Ver mais</RouterLink>
         </nav>

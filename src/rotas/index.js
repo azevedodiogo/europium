@@ -68,14 +68,14 @@ const routes = [
     path: '/glossario',
     name: 'glossario',
     component: PaginaGlossario,
-    meta: { title: 'Glossário PRR — Europium' }
+    meta: { title: 'Glossário MRR — Europium' }
   },
   {
     // Página da linha do tempo.
     path: '/linha-tempo',
     name: 'linha-tempo',
     component: PaginaLinhaTempo,
-    meta: { title: 'Linha do Tempo RRF — Europium' }
+    meta: { title: 'Linha do Tempo MRR — Europium' }
   },
   {
     // Se o caminho não existir, volta para a página inicial.

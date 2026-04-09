@@ -81,7 +81,7 @@ src/
 
 `src/servicos/` contém a camada central de acesso a dados, incluindo a tentativa de ler dados da API local, a recuperação dos fallbacks e o carregamento de vários recursos em paralelo.
 
-`src/utilitarios/` contém funções auxiliares sem dependência direta de Vue, como tooltips de gráficos e cálculos de resumo do RRF.
+`src/utilitarios/` contém funções auxiliares sem dependência direta de Vue, como tooltips de gráficos e cálculos de resumo do MRR.
 
 ## Páginas da aplicação
 

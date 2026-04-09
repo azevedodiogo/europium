@@ -1,4 +1,4 @@
-// Funções comuns para calcular totais do RRF a partir dos países disponíveis.
+// Funções comuns para calcular totais do MRR a partir dos países disponíveis.
 
 // Soma uma métrica numérica em todos os países recebidos.
 function sumMetric(countries, key) {
@@ -59,7 +59,7 @@ export function alignDashboardWithRrfSummary(dashboard, countryMeta) {
       return kpi
     }),
     heroStats: [
-      { label: 'Fundos Totais RRF', value: formatBillions(summary.funds) },
+      { label: 'Fundos totais do MRR', value: formatBillions(summary.funds) },
       { label: 'Estados-Membros', value: String(summary.memberStates) },
       { label: 'Obj. Climático Médio', value: `${summary.climate}%` },
       { label: 'Obj. Digital Médio', value: `${summary.digital}%` },

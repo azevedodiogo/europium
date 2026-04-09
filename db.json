@@ -2,7 +2,7 @@
   "meta": {
     "project": "Europium",
     "source": "https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/",
-    "generatedAt": "2026-04-29T00:33:12.435Z",
+    "generatedAt": "2026-05-05T18:36:30.848Z",
     "note": "Dados estruturados para o projeto IPM com base no modelo público do Recovery and Resilience Scoreboard.",
     "resources": [
       "dashboard",
@@ -18,7 +18,7 @@
     "kpis": [
       {
         "id": "fundos-alocados",
-        "label": "Fundos Alocados",
+        "label": "Fundos atribuídos",
         "value": "589 mil M€",
         "description": "Total agregado dos Estados-Membros no mapa",
         "badge": null,
@@ -57,7 +57,7 @@
     ],
     "heroStats": [
       {
-        "label": "Fundos Totais RRF",
+        "label": "Fundos totais do MRR",
         "value": "589 mil M€"
       },
       {
@@ -105,7 +105,7 @@
       {
         "id": "saude",
         "name": "Saúde",
-        "description": "Resiliência sanitária, econômica, social e institucional",
+        "description": "Resiliência sanitária, económica, social e institucional",
         "progress": 19.8,
         "icon": "heart"
       },
@@ -237,7 +237,7 @@
       {
         "id": "marcos-metas",
         "title": "Marcos e Metas",
-        "description": "Explore objetivos especificos de cada país, prazos e estado de execução",
+        "description": "Explore objetivos específicos de cada país, prazos e estado de execução.",
         "route": "/marcos-metas",
         "icon": "target"
       },
@@ -251,7 +251,7 @@
       {
         "id": "desembolsos",
         "title": "Desembolsos",
-        "description": "Pagamentos efetuados, datas e montantes discriminados por país",
+        "description": "Pagamentos efetuados, datas e montantes discriminados por país.",
         "route": "/desembolsos",
         "icon": "credit-card"
       },
@@ -292,31 +292,26 @@
         "country": "Portugal",
         "flag": "🇵🇹",
         "type": "Marco",
-        "name": "Empresas 4.0",
-        "description": "Adoção de tecnologias digitais por 15.000 PMEs",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
         "status": "cumprido",
-        "deadline": "Q4 2022",
+        "deadline": "Q4 2023",
         "pillar": "Digital",
         "component": "C01",
         "history": [
           {
-            "event": "Estado atualizado para cumprido",
-            "date": "2024-06-15",
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Prazo revisto para Q4 2024",
-            "date": "2024-03-10",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Documentação submetida para avaliação",
-            "date": "2023-12-01",
-            "source": "Estado-Membro"
-          },
-          {
-            "event": "Marco criado no plano nacional",
-            "date": "2023-06-20",
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
         ]
@@ -326,26 +321,26 @@
         "ref": "PT-M002",
         "country": "Portugal",
         "flag": "🇵🇹",
-        "type": "Marco",
-        "name": "Escola Digital",
-        "description": "Distribuição de equipamentos digitais a escolas",
-        "status": "cumprido",
-        "deadline": "Q2 2022",
-        "pillar": "Digital",
-        "component": "C01",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
         "history": [
           {
-            "event": "Marco concluído com sucesso",
-            "date": "2022-06-30",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Relatório final submetido",
-            "date": "2022-05-15",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Meta inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -357,20 +352,25 @@
         "country": "Portugal",
         "flag": "🇵🇹",
         "type": "Marco",
-        "name": "Eficiência energética em edifícios públicos",
-        "description": "Renovação energética de 3000 edifícios públicos",
-        "status": "cumprido",
-        "deadline": "Q4 2023",
-        "pillar": "Ecologia",
-        "component": "C02",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
         "history": [
           {
-            "event": "Obras concluídas e auditadas",
-            "date": "2023-12-20",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -378,29 +378,29 @@
       },
       {
         "id": 4,
-        "ref": "PT-M004",
-        "country": "Portugal",
-        "flag": "🇵🇹",
-        "type": "Meta",
-        "name": "Hidrogénio Verde",
-        "description": "Produção de 264 MW de hidrogénio renovável",
+        "ref": "ES-M001",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
         "status": "parcial",
-        "deadline": "Q4 2025",
-        "pillar": "Ecologia",
-        "component": "C02",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
         "history": [
           {
-            "event": "Progresso parcial verificado",
-            "date": "2024-06-01",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Prazo inicial Q2 2025 revisto",
-            "date": "2023-12-01",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Meta criada no plano nacional",
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -408,24 +408,29 @@
       },
       {
         "id": 5,
-        "ref": "PT-M005",
-        "country": "Portugal",
-        "flag": "🇵🇹",
-        "type": "Marco",
-        "name": "Reforma do SNS",
-        "description": "Modernização de unidades de saúde primárias",
-        "status": "cumprido",
-        "deadline": "Q2 2023",
-        "pillar": "Saúde",
-        "component": "C03",
+        "ref": "ES-M002",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
         "history": [
           {
-            "event": "Legislação publicada em Diário da República",
-            "date": "2023-05-30",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Meta inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -433,29 +438,29 @@
       },
       {
         "id": 6,
-        "ref": "PT-M006",
-        "country": "Portugal",
-        "flag": "🇵🇹",
-        "type": "Meta",
-        "name": "Habitação Acessível",
-        "description": "26.000 novas habitações a preços acessíveis",
-        "status": "nao-cumprido",
-        "deadline": "Q2 2024",
-        "pillar": "Coesão",
-        "component": "C04",
+        "ref": "ES-M003",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
         "history": [
           {
-            "event": "Meta reavaliada — incumprimento parcial",
-            "date": "2024-06-15",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Atraso comunicado à Comissão",
-            "date": "2024-01-10",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Meta criada no plano nacional",
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -463,24 +468,29 @@
       },
       {
         "id": 7,
-        "ref": "PT-M007",
-        "country": "Portugal",
-        "flag": "🇵🇹",
+        "ref": "IT-M001",
+        "country": "Itália",
+        "flag": "🇮🇹",
         "type": "Marco",
-        "name": "Investimento em creches",
-        "description": "Criação de 25.000 novos lugares em creches",
-        "status": "cumprido",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
         "deadline": "Q4 2023",
-        "pillar": "Próxima geração",
-        "component": "C05",
+        "pillar": "Digital",
+        "component": "C01",
         "history": [
           {
-            "event": "Marco verificado e validado",
-            "date": "2024-01-15",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -488,24 +498,29 @@
       },
       {
         "id": 8,
-        "ref": "PT-M008",
-        "country": "Portugal",
-        "flag": "🇵🇹",
-        "type": "Marco",
-        "name": "Capitalização de empresas",
-        "description": "Programa de capitalização de PMEs",
-        "status": "cumprido",
-        "deadline": "Q2 2023",
-        "pillar": "Crescimento",
-        "component": "C06",
+        "ref": "IT-M002",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
         "history": [
           {
-            "event": "Fundos distribuídos e auditados",
-            "date": "2023-06-20",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -513,24 +528,29 @@
       },
       {
         "id": 9,
-        "ref": "PT-M009",
-        "country": "Portugal",
-        "flag": "🇵🇹",
-        "type": "Meta",
-        "name": "Qualificações e competências",
-        "description": "Formação de 200.000 adultos em competências digitais",
+        "ref": "IT-M003",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
         "status": "parcial",
-        "deadline": "Q4 2024",
+        "deadline": "Q2 2025",
         "pillar": "Crescimento",
-        "component": "C06",
+        "component": "C03",
         "history": [
           {
-            "event": "Progresso parcial — 120.000 formados",
-            "date": "2024-06-01",
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
             "source": "Estado-Membro"
           },
           {
-            "event": "Meta criada no plano nacional",
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -538,24 +558,2159 @@
       },
       {
         "id": 10,
-        "ref": "PT-M010",
-        "country": "Portugal",
-        "flag": "🇵🇹",
+        "ref": "FR-M001",
+        "country": "França",
+        "flag": "🇫🇷",
         "type": "Marco",
-        "name": "Administração pública digital",
-        "description": "500 serviços públicos digitalizados",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
         "status": "cumprido",
-        "deadline": "Q4 2022",
+        "deadline": "Q4 2023",
         "pillar": "Digital",
         "component": "C01",
         "history": [
           {
-            "event": "Marco verificado pela Comissão",
-            "date": "2023-01-10",
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
             "source": "Comissão Europeia"
           },
           {
-            "event": "Marco criado no plano nacional",
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "ref": "FR-M002",
+        "country": "França",
+        "flag": "🇫🇷",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "ref": "FR-M003",
+        "country": "França",
+        "flag": "🇫🇷",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "ref": "DE-M001",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "ref": "DE-M002",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "ref": "DE-M003",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "ref": "PL-M001",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "ref": "PL-M002",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "ref": "PL-M003",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "ref": "NL-M001",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "ref": "NL-M002",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "ref": "NL-M003",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "ref": "BE-M001",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "ref": "BE-M002",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "ref": "BE-M003",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "ref": "AT-M001",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "ref": "AT-M002",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "ref": "AT-M003",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "ref": "GR-M001",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "ref": "GR-M002",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "ref": "GR-M003",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "ref": "RO-M001",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "ref": "RO-M002",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "ref": "RO-M003",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "ref": "CZ-M001",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "ref": "CZ-M002",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "ref": "CZ-M003",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "ref": "HU-M001",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "ref": "HU-M002",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "ref": "HU-M003",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "ref": "SK-M001",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "ref": "SK-M002",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "ref": "SK-M003",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "ref": "HR-M001",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "ref": "HR-M002",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "ref": "HR-M003",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "ref": "BG-M001",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "ref": "BG-M002",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "ref": "BG-M003",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "ref": "SE-M001",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "ref": "SE-M002",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "ref": "SE-M003",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "ref": "FI-M001",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "ref": "FI-M002",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "ref": "FI-M003",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "ref": "DK-M001",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "ref": "DK-M002",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "ref": "DK-M003",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "ref": "IE-M001",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "ref": "IE-M002",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "ref": "IE-M003",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "ref": "LT-M001",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "ref": "LT-M002",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "ref": "LT-M003",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "ref": "LV-M001",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "ref": "LV-M002",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "ref": "LV-M003",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 67,
+        "ref": "EE-M001",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 68,
+        "ref": "EE-M002",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 69,
+        "ref": "EE-M003",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "ref": "SI-M001",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "ref": "SI-M002",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "ref": "SI-M003",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 73,
+        "ref": "LU-M001",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "parcial",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "ref": "LU-M002",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "parcial",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "ref": "LU-M003",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 76,
+        "ref": "MT-M001",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "ref": "MT-M002",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "ref": "MT-M003",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 79,
+        "ref": "CY-M001",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Marco",
+        "name": "Modernização dos serviços públicos digitais",
+        "description": "Entrada em funcionamento de serviços públicos digitais interoperáveis para cidadãos e empresas.",
+        "status": "cumprido",
+        "deadline": "Q4 2023",
+        "pillar": "Digital",
+        "component": "C01",
+        "history": [
+          {
+            "event": "Marco validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "ref": "CY-M002",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Meta",
+        "name": "Reforço da eficiência energética",
+        "description": "Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.",
+        "status": "cumprido",
+        "deadline": "Q4 2024",
+        "pillar": "Ecologia",
+        "component": "C02",
+        "history": [
+          {
+            "event": "Meta validado pela Comissão Europeia",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 81,
+        "ref": "CY-M003",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Marco",
+        "name": "Execução de reformas estruturais",
+        "description": "Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.",
+        "status": "parcial",
+        "deadline": "Q2 2025",
+        "pillar": "Crescimento",
+        "component": "C03",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -569,7 +2724,7 @@
         "unit": "GWh/ano",
         "name": "Poupança no consumo energético anual",
         "description": "Redução do consumo de energia nos edifícios renovados",
-        "techDefinition": "Redução total no consumo de energia primária resultante de intervenções de eficiência energética em edifícios residenciais e públicos financiados pelo RRF.",
+        "techDefinition": "Redução total no consumo de energia primária resultante de intervenções de eficiência energética em edifícios residenciais e públicos financiados pelo MRR.",
         "methodology": "Medição baseada na diferença de consumo energético antes e após renovações em edifícios, utilizando medições de contadores inteligentes e auditorias energéticas.",
         "source": "Eurostat, Agências Nacionais de Energia",
         "frequency": "Semestral",
@@ -610,7 +2765,7 @@
         "unit": "MW",
         "name": "Capacidade adicional de energia renovável",
         "description": "Capacidade instalada adicional de fontes de energia renovável",
-        "techDefinition": "Capacidade de geração elétrica adicional instalada a partir de fontes renováveis (solar, eólica, hídrica, etc.) como resultado direto de investimentos RRF.",
+        "techDefinition": "Capacidade de geração elétrica adicional instalada a partir de fontes renováveis (solar, eólica, hídrica, etc.) como resultado direto de investimentos MRR.",
         "methodology": "Capacidade nominal instalada reportada pelos operadores de rede e verificada por entidades reguladoras nacionais.",
         "source": "Agências Nacionais de Energia, ENTSO-E",
         "frequency": "Semestral",
@@ -651,8 +2806,8 @@
         "unit": "n.º",
         "name": "Empresas apoiadas",
         "description": "Número de empresas apoiadas em processos de inovação e digitalização",
-        "techDefinition": "Empresas que receberam apoio financeiro direto (subsídios, empréstimos garantidos) para projetos de inovação, digitalização ou transição energética no âmbito do RRF.",
-        "methodology": "Contagem de entidades empresariais únicas que beneficiaram de apoios RRF, com base nos registos dos organismos pagadores nacionais.",
+        "techDefinition": "Empresas que receberam apoio financeiro direto (subsídios, empréstimos garantidos) para projetos de inovação, digitalização ou transição energética no âmbito do MRR.",
+        "methodology": "Contagem de entidades empresariais únicas que beneficiaram de apoios MRR, com base nos registos dos organismos pagadores nacionais.",
         "source": "Organismos Pagadores Nacionais, IAPMEI",
         "frequency": "Semestral",
         "related": [
@@ -691,8 +2846,8 @@
         "iconType": "school",
         "unit": "n.º",
         "name": "Investigadores com melhores condições",
-        "description": "Investigadores em instituições de I&D apoiadas pelo RRF",
-        "techDefinition": "Número de investigadores (equivalente a tempo completo) em instituições de I&D que receberam financiamento RRF para melhoria de infraestruturas e condições de trabalho.",
+        "description": "Investigadores em instituições de I&D apoiadas pelo MRR",
+        "techDefinition": "Número de investigadores (equivalente a tempo completo) em instituições de I&D que receberam financiamento MRR para melhoria de infraestruturas e condições de trabalho.",
         "methodology": "Equivalente a Tempo Completo (ETC) reportado por instituições beneficiárias com base nos contratos de trabalho e bolsas ativas durante o período de referência.",
         "source": "Fundações de Ciência nacionais, Eurostat",
         "frequency": "Anual",
@@ -732,9 +2887,9 @@
         "iconType": "school",
         "unit": "n.º",
         "name": "Jovens com formação",
-        "description": "Jovens que concluíram programas de formação financiados pelo RRF",
-        "techDefinition": "Jovens (15-29 anos) que completaram com aproveitamento programas de formação profissional ou educação vocacional financiados pelo RRF.",
-        "methodology": "Contagem de certificados de conclusão emitidos em programas RRF para jovens, reportada por entidades formadoras credenciadas.",
+        "description": "Jovens que concluíram programas de formação financiados pelo MRR",
+        "techDefinition": "Jovens (15-29 anos) que completaram com aproveitamento programas de formação profissional ou educação vocacional financiados pelo MRR.",
+        "methodology": "Contagem de certificados de conclusão emitidos em programas MRR para jovens, reportada por entidades formadoras credenciadas.",
         "source": "Ministérios da Educação e Trabalho",
         "frequency": "Semestral",
         "related": [
@@ -773,8 +2928,8 @@
         "iconType": "monitor",
         "unit": "n.º",
         "name": "Salas de aula digitais",
-        "description": "Salas de aula equipadas com tecnologias digitais via RRF",
-        "techDefinition": "Salas de aula em estabelecimentos de ensino (básico, secundário e superior) que receberam equipamento digital (quadros interativos, tablets, etc.) financiado pelo RRF.",
+        "description": "Salas de aula equipadas com tecnologias digitais via MRR",
+        "techDefinition": "Salas de aula em estabelecimentos de ensino (básico, secundário e superior) que receberam equipamento digital (quadros interativos, tablets, etc.) financiado pelo MRR.",
         "methodology": "Contagem de salas de aula validadas como equipadas segundo critérios mínimos estabelecidos pela Comissão Europeia.",
         "source": "Ministérios da Educação nacionais",
         "frequency": "Semestral",
@@ -814,8 +2969,8 @@
         "iconType": "home",
         "unit": "n.º",
         "name": "Habitações renovadas",
-        "description": "Habitações com melhoria da classe energética após renovação RRF",
-        "techDefinition": "Habitações que melhoraram a sua classificação de eficiência energética em pelo menos uma classe (ex: D→C) como resultado de obras de reabilitação financiadas pelo RRF.",
+        "description": "Habitações com melhoria da classe energética após renovação MRR",
+        "techDefinition": "Habitações que melhoraram a sua classificação de eficiência energética em pelo menos uma classe (ex: D→C) como resultado de obras de reabilitação financiadas pelo MRR.",
         "methodology": "Baseado em certificados energéticos emitidos antes e após obras, verificados por auditores certificados nacionais.",
         "source": "Agências nacionais de energia, ADENE (PT)",
         "frequency": "Semestral",
@@ -856,8 +3011,8 @@
         "unit": "n.º",
         "name": "Pontos de carregamento EV",
         "description": "Pontos de carregamento para veículos elétricos instalados",
-        "techDefinition": "Pontos de carregamento para veículos elétricos (normal e rápido) instalados em espaços públicos e semi-públicos com apoio direto de fundos RRF.",
-        "methodology": "Contagem de pontos de carregamento interoperáveis registados na plataforma OCPI nacional, com financiamento RRF verificável.",
+        "techDefinition": "Pontos de carregamento para veículos elétricos (normal e rápido) instalados em espaços públicos e semi-públicos com apoio direto de fundos MRR.",
+        "methodology": "Contagem de pontos de carregamento interoperáveis registados na plataforma OCPI nacional, com financiamento MRR verificável.",
         "source": "Operadores nacionais de rede, MOBI.E (PT)",
         "frequency": "Semestral",
         "related": [
@@ -896,8 +3051,8 @@
         "iconType": "leaf",
         "unit": "ha",
         "name": "Área protegida/restaurada",
-        "description": "Área natural protegida ou restaurada com apoio do RRF",
-        "techDefinition": "Área terrestre ou marinha (em hectares) sujeita a medidas de proteção, restauração de ecossistemas ou combate à desertificação financiadas pelo RRF.",
+        "description": "Área natural protegida ou restaurada com apoio do MRR",
+        "techDefinition": "Área terrestre ou marinha (em hectares) sujeita a medidas de proteção, restauração de ecossistemas ou combate à desertificação financiadas pelo MRR.",
         "methodology": "Medição de área via sistemas de informação geográfica (SIG) certificados, com validação por entidades ambientais competentes.",
         "source": "Agências Ambiente nacionais, APA (PT)",
         "frequency": "Anual",
@@ -937,8 +3092,8 @@
         "iconType": "monitor",
         "unit": "n.º",
         "name": "População com acesso a banda larga",
-        "description": "Pessoas com acesso a banda larga de alta velocidade via RRF",
-        "techDefinition": "Número de residentes com acesso a serviços de banda larga de pelo menos 100 Mbps como resultado de investimentos em infraestrutura RRF.",
+        "description": "Pessoas com acesso a banda larga de alta velocidade via MRR",
+        "techDefinition": "Número de residentes com acesso a serviços de banda larga de pelo menos 100 Mbps como resultado de investimentos em infraestrutura MRR.",
         "methodology": "Baseado em cobertura de rede reportada por operadores de telecomunicações e verificada por autoridades reguladoras nacionais.",
         "source": "Autoridades reguladoras telecomunicações, ANACOM (PT)",
         "frequency": "Semestral",
@@ -978,9 +3133,9 @@
         "iconType": "school",
         "unit": "n.º",
         "name": "Participantes em educação/formação",
-        "description": "Adultos que participaram em formação financiada pelo RRF",
-        "techDefinition": "Adultos (30+ anos) que participaram em pelo menos uma ação de formação ou educação de adultos financiada pelo RRF, independentemente da sua conclusão.",
-        "methodology": "Contagem de inscrições únicas em ações de formação RRF, reportadas por entidades formadoras acreditadas aos ministérios competentes.",
+        "description": "Adultos que participaram em formação financiada pelo MRR",
+        "techDefinition": "Adultos (30+ anos) que participaram em pelo menos uma ação de formação ou educação de adultos financiada pelo MRR, independentemente da sua conclusão.",
+        "methodology": "Contagem de inscrições únicas em ações de formação MRR, reportadas por entidades formadoras acreditadas aos ministérios competentes.",
         "source": "Ministérios Trabalho/Educação, IEFP (PT)",
         "frequency": "Semestral",
         "related": [
@@ -1020,8 +3175,8 @@
         "unit": "n.º",
         "name": "Capacidade de cuidados de saúde",
         "description": "Novas camas hospitalares ou equivalente em capacidade de saúde",
-        "techDefinition": "Aumento de capacidade de internamento (camas hospitalares equivalentes) resultante de construção ou reabilitação de infraestruturas de saúde financiadas pelo RRF.",
-        "methodology": "Inventário de camas certificadas por autoridades de saúde nacionais em unidades inauguradas ou renovadas com fundos RRF.",
+        "techDefinition": "Aumento de capacidade de internamento (camas hospitalares equivalentes) resultante de construção ou reabilitação de infraestruturas de saúde financiadas pelo MRR.",
+        "methodology": "Inventário de camas certificadas por autoridades de saúde nacionais em unidades inauguradas ou renovadas com fundos MRR.",
         "source": "Ministérios da Saúde nacionais, DGS (PT)",
         "frequency": "Anual",
         "related": [
@@ -1061,7 +3216,7 @@
         "unit": "m²",
         "name": "Edifícios públicos renovados",
         "description": "Área de edifícios públicos sujeita a reabilitação energética",
-        "techDefinition": "Área (m²) de edifícios da Administração Pública sujeita a obras de reabilitação com componente de eficiência energética, financiadas pelo RRF.",
+        "techDefinition": "Área (m²) de edifícios da Administração Pública sujeita a obras de reabilitação com componente de eficiência energética, financiadas pelo MRR.",
         "methodology": "Medição de área intervencionada declarada por entidades públicas e verificada por auditorias energéticas pré e pós-obras.",
         "source": "Ministérios das Finanças e Ambiente nacionais",
         "frequency": "Semestral",
@@ -1102,7 +3257,7 @@
         "unit": "km",
         "name": "Km de rede ferroviária",
         "description": "Quilómetros de linha ferroviária nova ou reabilitada",
-        "techDefinition": "Extensão de linha ferroviária (km) nova, reabilitada ou modernizada (incluindo eletrificação e sinalização digital) com financiamento RRF.",
+        "techDefinition": "Extensão de linha ferroviária (km) nova, reabilitada ou modernizada (incluindo eletrificação e sinalização digital) com financiamento MRR.",
         "methodology": "Medição de extensão de via reportada pelos gestores de infraestrutura ferroviária nacionais, verificada por entidades reguladoras do setor.",
         "source": "Gestores infraestrutura ferroviária, IP (PT)",
         "frequency": "Semestral",
@@ -1140,22 +3295,22 @@
     ]
   },
   "compare": {
-    "barMax": 180,
+    "barMax": 200,
     "barTicks": [
       {
         "val": 0
       },
       {
-        "val": 45
+        "val": 50
       },
       {
-        "val": 90
+        "val": 100
       },
       {
-        "val": 135
+        "val": 150
       },
       {
-        "val": 180
+        "val": 200
       }
     ],
     "barMetrics": [
@@ -1204,22 +3359,22 @@
     ],
     "tableMetrics": [
       {
-        "label": "Fundos totais (mil M)",
+        "label": "Fundos totais (mil M€)",
         "key": "total",
         "precision": 1
       },
       {
-        "label": "Subvenções (mil M)",
+        "label": "Subvenções (mil M€)",
         "key": "grants",
         "precision": 1
       },
       {
-        "label": "Empréstimos (mil M)",
+        "label": "Empréstimos (mil M€)",
         "key": "loans",
         "precision": 1
       },
       {
-        "label": "Desembolsado (mil M)",
+        "label": "Desembolsado (mil M€)",
         "key": "disbursed",
         "precision": 1
       },
@@ -1262,16 +3417,16 @@
         "grants": 13.9,
         "loans": 2.7,
         "marcos": 20,
-        "marcosCumpridos": 24,
+        "marcosCumpridos": 12,
         "clima": 38,
         "digital": 22,
         "radar": [
-          0.72,
-          0.62,
-          0.6,
-          0.58,
-          0.53,
-          0.61
+          0.6333333333333333,
+          0.6285714285714286,
+          0.775,
+          0.7680722891566263,
+          0.6666666666666666,
+          0.7636363636363637
         ]
       },
       {
@@ -1283,19 +3438,19 @@
         "disbursed": 52,
         "pib": 11.5,
         "progress": 61,
-        "grants": 77.2,
-        "loans": 83.2,
+        "grants": 77,
+        "loans": 83.4,
         "marcos": 22,
-        "marcosCumpridos": 29,
+        "marcosCumpridos": 13,
         "clima": 40,
         "digital": 28,
         "radar": [
+          0.6666666666666666,
           0.8,
-          0.75,
-          0.72,
-          0.66,
-          0.68,
-          0.7
+          0.7625,
+          0.40523690773067333,
+          0.7333333333333333,
+          0.8090909090909091
         ]
       },
       {
@@ -1309,17 +3464,17 @@
         "progress": 61,
         "grants": 122.6,
         "loans": 68.9,
-        "marcos": 28,
-        "marcosCumpridos": 31,
+        "marcos": 27,
+        "marcosCumpridos": 16,
         "clima": 37,
         "digital": 25,
         "radar": [
-          0.69,
-          0.71,
-          0.78,
-          0.62,
-          0.59,
-          0.65
+          0.6166666666666667,
+          0.7142857142857143,
+          0.7625,
+          0.7408616187989555,
+          0.9,
+          0.7818181818181819
         ]
       },
       {
@@ -1334,16 +3489,16 @@
         "grants": 40.3,
         "loans": 0,
         "marcos": 18,
-        "marcosCumpridos": 22,
+        "marcosCumpridos": 11,
         "clima": 46,
         "digital": 25,
         "radar": [
-          0.82,
-          0.68,
-          0.64,
-          0.55,
+          0.7666666666666667,
+          0.7142857142857143,
+          0.7875,
+          0.8188585607940446,
           0.6,
-          0.57
+          0.8
         ]
       },
       {
@@ -1357,17 +3512,17 @@
         "progress": 69,
         "grants": 26.4,
         "loans": 0,
-        "marcos": 16,
-        "marcosCumpridos": 21,
+        "marcos": 15,
+        "marcosCumpridos": 10,
         "clima": 42,
         "digital": 27,
         "radar": [
-          0.75,
-          0.8,
           0.7,
-          0.6,
-          0.65,
-          0.58
+          0.7714285714285715,
+          0.8625,
+          0.6392045454545454,
+          0.5,
+          0.8727272727272727
         ]
       },
       {
@@ -1379,19 +3534,91 @@
         "disbursed": 6.3,
         "pib": 5.8,
         "progress": 30,
-        "grants": 23.9,
-        "loans": 11.5,
+        "grants": 24.1,
+        "loans": 11.3,
         "marcos": 14,
-        "marcosCumpridos": 8,
+        "marcosCumpridos": 4,
         "clima": 42,
         "digital": 21,
         "radar": [
-          0.5,
-          0.45,
-          0.55,
+          0.7,
+          0.6,
+          0.375,
+          0.22245762711864406,
+          0.4666666666666667,
+          0.4636363636363636
+        ]
+      },
+      {
+        "value": "NL",
+        "name": "Países Baixos",
+        "code": "NL",
+        "flag": "🇳🇱",
+        "total": 4.7,
+        "disbursed": 2.8,
+        "pib": 0.5,
+        "progress": 56,
+        "grants": 4.7,
+        "loans": 0,
+        "marcos": 10,
+        "marcosCumpridos": 6,
+        "clima": 48,
+        "digital": 28,
+        "radar": [
+          0.8,
+          0.8,
+          0.7,
+          0.7446808510638298,
+          0.3333333333333333,
+          0.7636363636363637
+        ]
+      },
+      {
+        "value": "BE",
+        "name": "Bélgica",
+        "code": "BE",
+        "flag": "🇧🇪",
+        "total": 4.5,
+        "disbursed": 3.1,
+        "pib": 0.9,
+        "progress": 68,
+        "grants": 4.5,
+        "loans": 0,
+        "marcos": 12,
+        "marcosCumpridos": 8,
+        "clima": 44,
+        "digital": 26,
+        "radar": [
+          0.7333333333333333,
+          0.7428571428571429,
+          0.85,
+          0.861111111111111,
           0.4,
-          0.42,
-          0.35
+          0.8545454545454545
+        ]
+      },
+      {
+        "value": "AT",
+        "name": "Áustria",
+        "code": "AT",
+        "flag": "🇦🇹",
+        "total": 3.5,
+        "disbursed": 2.4,
+        "pib": 0.8,
+        "progress": 69,
+        "grants": 3.5,
+        "loans": 0,
+        "marcos": 8,
+        "marcosCumpridos": 6,
+        "clima": 43,
+        "digital": 28,
+        "radar": [
+          0.7166666666666667,
+          0.8,
+          0.8625,
+          0.8571428571428571,
+          0.26666666666666666,
+          0.8818181818181818
         ]
       },
       {
@@ -1405,17 +3632,17 @@
         "progress": 60,
         "grants": 18.4,
         "loans": 11.7,
-        "marcos": 12,
-        "marcosCumpridos": 15,
+        "marcos": 16,
+        "marcosCumpridos": 10,
         "clima": 38,
         "digital": 23,
         "radar": [
-          0.65,
-          0.58,
-          0.6,
-          0.7,
-          0.55,
-          0.62
+          0.6333333333333333,
+          0.6571428571428571,
+          0.75,
+          0.6478405315614617,
+          0.5333333333333333,
+          0.7545454545454545
         ]
       },
       {
@@ -1429,17 +3656,401 @@
         "progress": 35,
         "grants": 14.9,
         "loans": 12.2,
-        "marcos": 10,
-        "marcosCumpridos": 6,
+        "marcos": 12,
+        "marcosCumpridos": 4,
         "clima": 41,
         "digital": 22,
         "radar": [
-          0.48,
-          0.42,
-          0.45,
-          0.38,
+          0.6833333333333333,
+          0.6285714285714286,
+          0.4375,
+          0.42435424354243534,
           0.4,
-          0.32
+          0.5181818181818182
+        ]
+      },
+      {
+        "value": "CZ",
+        "name": "República Checa",
+        "code": "CZ",
+        "flag": "🇨🇿",
+        "total": 7.1,
+        "disbursed": 3.2,
+        "pib": 2.6,
+        "progress": 45,
+        "grants": 7.1,
+        "loans": 0,
+        "marcos": 13,
+        "marcosCumpridos": 6,
+        "clima": 41,
+        "digital": 20,
+        "radar": [
+          0.6833333333333333,
+          0.5714285714285714,
+          0.5625,
+          0.5633802816901409,
+          0.43333333333333335,
+          0.5909090909090909
+        ]
+      },
+      {
+        "value": "HU",
+        "name": "Hungria",
+        "code": "HU",
+        "flag": "🇭🇺",
+        "total": 5.8,
+        "disbursed": 1.5,
+        "pib": 3.4,
+        "progress": 26,
+        "grants": 5.8,
+        "loans": 0,
+        "marcos": 12,
+        "marcosCumpridos": 3,
+        "clima": 39,
+        "digital": 19,
+        "radar": [
+          0.65,
+          0.5428571428571428,
+          0.325,
+          0.3232758620689655,
+          0.4,
+          0.4090909090909091
+        ]
+      },
+      {
+        "value": "SK",
+        "name": "Eslováquia",
+        "code": "SK",
+        "flag": "🇸🇰",
+        "total": 6.3,
+        "disbursed": 2.8,
+        "pib": 5.7,
+        "progress": 44,
+        "grants": 6.3,
+        "loans": 0,
+        "marcos": 10,
+        "marcosCumpridos": 4,
+        "clima": 40,
+        "digital": 21,
+        "radar": [
+          0.6666666666666666,
+          0.6,
+          0.55,
+          0.5555555555555555,
+          0.3333333333333333,
+          0.5909090909090909
+        ]
+      },
+      {
+        "value": "HR",
+        "name": "Croácia",
+        "code": "HR",
+        "flag": "🇭🇷",
+        "total": 6.4,
+        "disbursed": 3.4,
+        "pib": 10,
+        "progress": 55,
+        "grants": 6.4,
+        "loans": 0,
+        "marcos": 11,
+        "marcosCumpridos": 6,
+        "clima": 42,
+        "digital": 24,
+        "radar": [
+          0.7,
+          0.6857142857142857,
+          0.6875,
+          0.6640625,
+          0.36666666666666664,
+          0.7181818181818181
+        ]
+      },
+      {
+        "value": "BG",
+        "name": "Bulgária",
+        "code": "BG",
+        "flag": "🇧🇬",
+        "total": 6.3,
+        "disbursed": 2.5,
+        "pib": 9.1,
+        "progress": 40,
+        "grants": 6.3,
+        "loans": 0,
+        "marcos": 11,
+        "marcosCumpridos": 4,
+        "clima": 40,
+        "digital": 20,
+        "radar": [
+          0.6666666666666666,
+          0.5714285714285714,
+          0.5,
+          0.49603174603174605,
+          0.36666666666666664,
+          0.5454545454545454
+        ]
+      },
+      {
+        "value": "SE",
+        "name": "Suécia",
+        "code": "SE",
+        "flag": "🇸🇪",
+        "total": 3.2,
+        "disbursed": 2.1,
+        "pib": 0.6,
+        "progress": 66,
+        "grants": 3.2,
+        "loans": 0,
+        "marcos": 8,
+        "marcosCumpridos": 5,
+        "clima": 49,
+        "digital": 30,
+        "radar": [
+          0.8166666666666667,
+          0.8571428571428571,
+          0.825,
+          0.8203125,
+          0.26666666666666666,
+          0.8727272727272727
+        ]
+      },
+      {
+        "value": "FI",
+        "name": "Finlândia",
+        "code": "FI",
+        "flag": "🇫🇮",
+        "total": 2.4,
+        "disbursed": 1.7,
+        "pib": 0.9,
+        "progress": 71,
+        "grants": 2.4,
+        "loans": 0,
+        "marcos": 7,
+        "marcosCumpridos": 5,
+        "clima": 47,
+        "digital": 29,
+        "radar": [
+          0.7833333333333333,
+          0.8285714285714286,
+          0.8875,
+          0.8854166666666666,
+          0.23333333333333334,
+          0.9090909090909091
+        ]
+      },
+      {
+        "value": "DK",
+        "name": "Dinamarca",
+        "code": "DK",
+        "flag": "🇩🇰",
+        "total": 0.7,
+        "disbursed": 0.5,
+        "pib": 0.2,
+        "progress": 71,
+        "grants": 0.7,
+        "loans": 0,
+        "marcos": 5,
+        "marcosCumpridos": 4,
+        "clima": 52,
+        "digital": 31,
+        "radar": [
+          0.8666666666666667,
+          0.8857142857142857,
+          0.8875,
+          0.8928571428571428,
+          0.16666666666666666,
+          0.9272727272727272
+        ]
+      },
+      {
+        "value": "IE",
+        "name": "Irlanda",
+        "code": "IE",
+        "flag": "🇮🇪",
+        "total": 1,
+        "disbursed": 0.7,
+        "pib": 0.2,
+        "progress": 70,
+        "grants": 1,
+        "loans": 0,
+        "marcos": 6,
+        "marcosCumpridos": 4,
+        "clima": 45,
+        "digital": 28,
+        "radar": [
+          0.75,
+          0.8,
+          0.875,
+          0.8749999999999999,
+          0.2,
+          0.8909090909090909
+        ]
+      },
+      {
+        "value": "LT",
+        "name": "Lituânia",
+        "code": "LT",
+        "flag": "🇱🇹",
+        "total": 2.2,
+        "disbursed": 1.4,
+        "pib": 3.5,
+        "progress": 64,
+        "grants": 2.2,
+        "loans": 0,
+        "marcos": 9,
+        "marcosCumpridos": 6,
+        "clima": 43,
+        "digital": 25,
+        "radar": [
+          0.7166666666666667,
+          0.7142857142857143,
+          0.8,
+          0.7954545454545453,
+          0.3,
+          0.8090909090909091
+        ]
+      },
+      {
+        "value": "LV",
+        "name": "Letónia",
+        "code": "LV",
+        "flag": "🇱🇻",
+        "total": 1.8,
+        "disbursed": 1.1,
+        "pib": 5.1,
+        "progress": 61,
+        "grants": 1.8,
+        "loans": 0,
+        "marcos": 8,
+        "marcosCumpridos": 5,
+        "clima": 41,
+        "digital": 24,
+        "radar": [
+          0.6833333333333333,
+          0.6857142857142857,
+          0.7625,
+          0.763888888888889,
+          0.26666666666666666,
+          0.7727272727272727
+        ]
+      },
+      {
+        "value": "EE",
+        "name": "Estónia",
+        "code": "EE",
+        "flag": "🇪🇪",
+        "total": 1,
+        "disbursed": 0.7,
+        "pib": 3,
+        "progress": 70,
+        "grants": 1,
+        "loans": 0,
+        "marcos": 7,
+        "marcosCumpridos": 5,
+        "clima": 48,
+        "digital": 28,
+        "radar": [
+          0.8,
+          0.8,
+          0.875,
+          0.8749999999999999,
+          0.23333333333333334,
+          0.8909090909090909
+        ]
+      },
+      {
+        "value": "SI",
+        "name": "Eslovénia",
+        "code": "SI",
+        "flag": "🇸🇮",
+        "total": 2.5,
+        "disbursed": 1.6,
+        "pib": 4.5,
+        "progress": 64,
+        "grants": 1.8,
+        "loans": 0.7,
+        "marcos": 8,
+        "marcosCumpridos": 5,
+        "clima": 42,
+        "digital": 25,
+        "radar": [
+          0.7,
+          0.7142857142857143,
+          0.8,
+          0.7999999999999999,
+          0.26666666666666666,
+          0.8090909090909091
+        ]
+      },
+      {
+        "value": "LU",
+        "name": "Luxemburgo",
+        "code": "LU",
+        "flag": "🇱🇺",
+        "total": 0.2,
+        "disbursed": 0.1,
+        "pib": 0.2,
+        "progress": 50,
+        "grants": 0.2,
+        "loans": 0,
+        "marcos": 4,
+        "marcosCumpridos": 2,
+        "clima": 44,
+        "digital": 26,
+        "radar": [
+          0.7333333333333333,
+          0.7428571428571429,
+          0.625,
+          0.625,
+          0.13333333333333333,
+          0.6909090909090909
+        ]
+      },
+      {
+        "value": "MT",
+        "name": "Malta",
+        "code": "MT",
+        "flag": "🇲🇹",
+        "total": 0.4,
+        "disbursed": 0.3,
+        "pib": 2.5,
+        "progress": 75,
+        "grants": 0.4,
+        "loans": 0,
+        "marcos": 6,
+        "marcosCumpridos": 5,
+        "clima": 43,
+        "digital": 24,
+        "radar": [
+          0.7166666666666667,
+          0.6857142857142857,
+          0.9375,
+          0.9374999999999998,
+          0.2,
+          0.9
+        ]
+      },
+      {
+        "value": "CY",
+        "name": "Chipre",
+        "code": "CY",
+        "flag": "🇨🇾",
+        "total": 1.1,
+        "disbursed": 0.8,
+        "pib": 4.1,
+        "progress": 73,
+        "grants": 0.9,
+        "loans": 0.2,
+        "marcos": 8,
+        "marcosCumpridos": 6,
+        "clima": 42,
+        "digital": 25,
+        "radar": [
+          0.7,
+          0.7142857142857143,
+          0.9125,
+          0.9090909090909091,
+          0.26666666666666666,
+          0.8909090909090909
         ]
       }
     ]
@@ -2301,7 +4912,7 @@
       {
         "term": "Comissão Europeia",
         "short": "Órgão executivo da UE responsável pela gestão do MRR.",
-        "definition": "Instituição da União Europeia que actua como órgão executivo, tendo a responsabilidade de avaliar os PRR dos Estados-Membros, aprovar os pedidos de pagamento e monitorizar o cumprimento dos marcos e metas. Emite avaliações positivas que habilitam os pagamentos a cada país.",
+        "definition": "Instituição da União Europeia que atua como órgão executivo, tendo a responsabilidade de avaliar os PRR dos Estados-Membros, aprovar os pedidos de pagamento e monitorizar o cumprimento dos marcos e metas. Emite avaliações positivas que habilitam os pagamentos a cada país.",
         "category": "Governação",
         "related": [
           "MRR",
@@ -2333,7 +4944,7 @@
       {
         "term": "Desembolso",
         "short": "Transferência efetiva de fundos da UE para o Estado-Membro.",
-        "definition": "Pagamento efectivo realizado pela Comissão Europeia a um Estado-Membro após verificação do cumprimento satisfatório dos marcos e metas acordados. Os desembolsos dividem-se em pré-financiamento (automático, no início) e pagamentos intercalares/finais (condicionados ao cumprimento de compromissos).",
+        "definition": "Pagamento efetivo realizado pela Comissão Europeia a um Estado-Membro após verificação do cumprimento satisfatório dos marcos e metas acordados. Os desembolsos dividem-se em pré-financiamento (automático, no início) e pagamentos intercalares/finais (condicionados ao cumprimento de compromissos).",
         "category": "Financiamento",
         "example": "Portugal recebeu um pré-financiamento de 2,2 mil milhões de euros em agosto de 2021 e o 1º pedido de pagamento de 1,2 mil milhões em janeiro de 2022.",
         "related": [
@@ -2349,7 +4960,7 @@
         "category": "Governação"
       },
       {
-        "term": "Empréstimo RRF",
+        "term": "Empréstimo MRR",
         "short": "Componente reembolsável dos fundos do MRR.",
         "definition": "Forma de apoio financeiro do MRR que, ao contrário das subvenções, tem de ser reembolsado pelo Estado-Membro ao longo do tempo. Os empréstimos estão disponíveis até 6,8% do Rendimento Nacional Bruto de cada país e são contratados a taxas favoráveis, refletindo o custo de financiamento da UE.",
         "category": "Financiamento",
@@ -2367,20 +4978,8 @@
         "example": "Portugal tem um envelope de 16,6 mil milhões de euros — composto por 13,9 mil M em subvenções e 2,7 mil M em empréstimos.",
         "related": [
           "Subvenção",
-          "Empréstimo RRF",
+          "Empréstimo MRR",
           "Dotação Nacional"
-        ]
-      },
-      {
-        "term": "Fundo de Recuperação e Resiliência",
-        "short": "O instrumento central do pacote NextGenerationEU.",
-        "definition": "Principal instrumento financeiro do NextGenerationEU, com uma dotação total de até 723,8 mil milhões de euros (a preços correntes). Financia os PRR dos Estados-Membros através de subvenções (338 mil M€) e empréstimos (385,8 mil M€). O FRR foi criado pelo Regulamento (UE) 2021/241.",
-        "category": "Financiamento",
-        "related": [
-          "NextGenerationEU",
-          "MRR",
-          "Subvenção",
-          "Empréstimo RRF"
         ]
       },
       {
@@ -2407,27 +5006,15 @@
         ]
       },
       {
-        "term": "Jalão",
-        "short": "Sinónimo de \"Marco\" — compromisso qualitativo do PRR.",
-        "definition": "Termo alternativo para \"Marco\" (do inglês \"milestone\"), utilizado em alguns documentos oficiais portugueses. Representa um compromisso qualitativo — aprovação de legislação, adoção de estratégia, lançamento de programa — que deve ser cumprido numa data específica para desbloquear pagamentos do MRR.",
-        "category": "Execução",
-        "related": [
-          "Marco",
-          "Meta",
-          "Pedido de Pagamento"
-        ]
-      },
-      {
         "term": "Marco",
         "short": "Compromisso qualitativo do PRR associado a uma data de cumprimento.",
-        "definition": "Indicador qualitativo que representa um compromisso específico (aprovação de lei, criação de entidade, lançamento de programa) que deve ser cumprido até uma data definida. O cumprimento de marcos é uma condição necessária para a aprovação dos pedidos de pagamento pelo Conselho da UE. Também designado como \"jalão\" ou \"milestone\".",
+        "definition": "Indicador qualitativo que representa um compromisso específico (aprovação de lei, criação de entidade, lançamento de programa) que deve ser cumprido até uma data definida. O cumprimento de marcos é uma condição necessária para a aprovação dos pedidos de pagamento pelo Conselho da UE.",
         "category": "Execução",
         "example": "O Marco PT-M001 exigia a aprovação do quadro legal para o Banco de Fomento até Q2 2022 como condição para o 1º pedido de pagamento de Portugal.",
         "related": [
           "Meta",
           "Componente",
-          "Pedido de Pagamento",
-          "Jalão"
+          "Pedido de Pagamento"
         ]
       },
       {
@@ -2437,8 +5024,8 @@
         "category": "Estrutura",
         "related": [
           "NextGenerationEU",
-          "Fundo de Recuperação e Resiliência",
-          "PRR"
+          "PRR",
+          "Regulamento MRR"
         ]
       },
       {
@@ -2457,12 +5044,12 @@
       {
         "term": "NextGenerationEU",
         "short": "Pacote de recuperação económica da UE no valor de 807 mil M€.",
-        "definition": "Instrumento temporário criado pela Comissão Europeia para ajudar a reparar os danos económicos e sociais imediatos causados pela pandemia COVID-19. Com um valor total de 807 mil milhões de euros, financia o Fundo de Recuperação e Resiliência (principal componente) e outros programas como o React-EU e o InvestEU.",
+        "definition": "Instrumento temporário criado pela Comissão Europeia para ajudar a reparar os danos económicos e sociais imediatos causados pela pandemia COVID-19. Com um valor total de 807 mil milhões de euros, financia principalmente o Mecanismo de Recuperação e Resiliência, além de programas como o React-EU e o InvestEU.",
         "category": "Estrutura",
         "related": [
-          "Fundo de Recuperação e Resiliência",
           "MRR",
-          "PRR"
+          "PRR",
+          "Subvenção"
         ]
       },
       {
@@ -2571,7 +5158,7 @@
       {
         "term": "Pré-financiamento",
         "short": "Adiantamento automático de fundos no início do PRR.",
-        "definition": "Pagamento inicial efectuado pela Comissão Europeia a cada Estado-Membro, correspondente a 13% do total das subvenções e 13% dos empréstimos solicitados, sem necessidade de cumprimento prévio de marcos ou metas. O pré-financiamento visou proporcionar liquidez imediata para iniciar as medidas do PRR.",
+        "definition": "Pagamento inicial efetuado pela Comissão Europeia a cada Estado-Membro, correspondente a 13% do total das subvenções e 13% dos empréstimos solicitados, sem necessidade de cumprimento prévio de marcos ou metas. O pré-financiamento visou proporcionar liquidez imediata para iniciar as medidas do PRR.",
         "category": "Financiamento",
         "example": "Portugal recebeu 2,2 mil milhões de euros de pré-financiamento em agosto de 2021, após a ratificação da decisão de recursos próprios pelo parlamento.",
         "related": [
@@ -2609,7 +5196,7 @@
         "related": [
           "MRR",
           "PRR",
-          "Fundo de Recuperação e Resiliência"
+          "NextGenerationEU"
         ]
       },
       {
@@ -2638,11 +5225,11 @@
       {
         "term": "Subvenção",
         "short": "Apoio financeiro não reembolsável do MRR.",
-        "definition": "Componente não reembolsável do financiamento do MRR, que não tem de ser devolvida ao orçamento da UE. Representa cerca de 47% do total do FRR (338 mil M€ a preços de 2018). A atribuição de subvenções a cada país depende de critérios populacionais, do inverso do PIB per capita e da taxa de desemprego.",
+        "definition": "Componente não reembolsável do financiamento do MRR, que não tem de ser devolvida ao orçamento da UE. Representa cerca de 47% da dotação total do mecanismo (338 mil M€ a preços de 2018). A atribuição de subvenções a cada país depende de critérios populacionais, do inverso do PIB per capita e da taxa de desemprego.",
         "category": "Financiamento",
         "example": "A subvenção portuguesa no MRR é de 13,9 mil milhões de euros, enquanto os empréstimos disponíveis ascendem a 2,7 mil milhões.",
         "related": [
-          "Empréstimo RRF",
+          "Empréstimo MRR",
           "Envelope Financeiro",
           "Desembolso"
         ]
@@ -3292,7 +5879,7 @@
         "id": "mapa",
         "to": "/mapa",
         "title": "Mapa da União Europeia",
-        "description": "Visualização coroplética dos 27 Estados-Membros com dados do MRR — progresso de execução, fundos alocados e objectivos climáticos e digitais por país.",
+        "description": "Visualização coroplética dos 27 Estados-Membros com dados do MRR — progresso de execução, fundos atribuídos e objetivos climáticos e digitais por país.",
         "iconTone": "blue",
         "icon": "globe",
         "chips": [
@@ -3304,12 +5891,12 @@
       {
         "id": "glossario",
         "to": "/glossario",
-        "title": "Glossário PRR",
+        "title": "Glossário MRR",
         "description": "Definições técnicas completas dos termos do MRR — marcos, metas, pilares, indicadores comuns, governação e muito mais. Com pesquisa e filtro por categoria.",
         "iconTone": "slate",
         "icon": "document",
         "chips": [
-          "40+ termos",
+          "36 termos",
           "Pesquisa",
           "6 categorias"
         ]
@@ -3317,7 +5904,7 @@
       {
         "id": "linha-tempo",
         "to": "/linha-tempo",
-        "title": "Linha do Tempo RRF",
+        "title": "Linha do Tempo MRR",
         "description": "Os 12 marcos institucionais do Mecanismo — da proposta legislativa de 2020 ao prazo final de execução em agosto de 2026. Filtre por categoria e explore cada evento em detalhe.",
         "iconTone": "amber",
         "icon": "timeline",

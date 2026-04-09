@@ -1,9 +1,64 @@
 // Dados locais da página de comparação.
+import { mapData } from './mapa.mjs'
+
+// Percentagem estimada de empréstimos dentro do envelope financeiro, quando aplicável.
+const loanShareByCountry = {
+  PT: 0.16,
+  ES: 0.52,
+  IT: 0.36,
+  PL: 0.32,
+  GR: 0.39,
+  RO: 0.45,
+  SI: 0.28,
+  CY: 0.18,
+}
+
+// Peso aproximado do plano face ao PIB nacional, usado apenas na tabela comparativa.
+const gdpShareByCountry = {
+  AT: 0.8, BE: 0.9, BG: 9.1, CY: 4.1, CZ: 2.6, DE: 0.6, DK: 0.2, EE: 3.0, ES: 11.5,
+  FI: 0.9, FR: 1.4, GR: 13.2, HR: 10.0, HU: 3.4, IE: 0.2, IT: 9.8, LT: 3.5, LU: 0.2,
+  LV: 5.1, MT: 2.5, NL: 0.5, PL: 5.8, PT: 6.8, RO: 9.0, SE: 0.6, SI: 4.5, SK: 5.7,
+}
+
+// Converte os metadados do mapa no formato completo usado pela página de comparação.
+function buildComparisonCountries(countryMeta) {
+  return Object.entries(countryMeta).map(([code, country]) => {
+    const loanShare = loanShareByCountry[code] ?? 0
+    const loans = +(country.funds * loanShare).toFixed(1)
+    const grants = +(country.funds - loans).toFixed(1)
+
+    return {
+      value: code,
+      name: country.name,
+      code,
+      flag: country.flag,
+      total: country.funds,
+      disbursed: country.disbursed,
+      pib: gdpShareByCountry[code] ?? 1,
+      progress: country.progress,
+      grants,
+      loans,
+      marcos: country.marcos,
+      marcosCumpridos: Math.round(country.marcos * country.progress / 100),
+      clima: country.climate,
+      digital: country.digital,
+      radar: [
+        country.climate / 60,
+        country.digital / 35,
+        country.progress / 80,
+        Math.min((country.disbursed / Math.max(country.funds, 0.1)) / 0.8, 1),
+        Math.min(country.marcos / 30, 1),
+        Math.min((country.progress + country.digital) / 110, 1),
+      ],
+    }
+  })
+}
+
 export const compareData = {
   // Limite superior usado no gráfico de barras financeiro.
-  barMax: 180,
+  barMax: 200,
   // Marcas do eixo vertical no gráfico de barras.
-  barTicks: [{ val: 0 }, { val: 45 }, { val: 90 }, { val: 135 }, { val: 180 }],
+  barTicks: [{ val: 0 }, { val: 50 }, { val: 100 }, { val: 150 }, { val: 200 }],
   // Métricas usadas nas barras comparativas.
   barMetrics: [
     { label: 'Total', key: 'total' },
@@ -22,10 +77,10 @@ export const compareData = {
   ],
   // Linhas que compõem a tabela comparativa final.
   tableMetrics: [
-    { label: 'Fundos totais (mil M)', key: 'total', precision: 1 },
-    { label: 'Subvenções (mil M)', key: 'grants', precision: 1 },
-    { label: 'Empréstimos (mil M)', key: 'loans', precision: 1 },
-    { label: 'Desembolsado (mil M)', key: 'disbursed', precision: 1 },
+    { label: 'Fundos totais (mil M€)', key: 'total', precision: 1 },
+    { label: 'Subvenções (mil M€)', key: 'grants', precision: 1 },
+    { label: 'Empréstimos (mil M€)', key: 'loans', precision: 1 },
+    { label: 'Desembolsado (mil M€)', key: 'disbursed', precision: 1 },
     { label: '% PIB', key: 'pib', precision: 1 },
     { label: 'Marcos totais', key: 'marcos', precision: 0 },
     { label: 'Marcos cumpridos', key: 'marcosCumpridos', precision: 0 },
@@ -33,150 +88,5 @@ export const compareData = {
     { label: 'Objetivo digital (%)', key: 'digital', precision: 0 },
   ],
   // Cada país contém métricas financeiras, execução e valores normalizados para radar.
-  countries: [
-    {
-      // Portugal é o país inicial do lado A.
-      value: 'PT',
-      name: 'Portugal',
-      code: 'PT',
-      flag: '🇵🇹',
-      total: 16.6,
-      disbursed: 10.2,
-      pib: 6.8,
-      progress: 62,
-      grants: 13.9,
-      loans: 2.7,
-      marcos: 20,
-      marcosCumpridos: 24,
-      clima: 38,
-      digital: 22,
-      radar: [0.72, 0.62, 0.6, 0.58, 0.53, 0.61],
-    },
-    {
-      // Espanha é o país inicial do lado B.
-      value: 'ES',
-      name: 'Espanha',
-      code: 'ES',
-      flag: '🇪🇸',
-      total: 160.4,
-      disbursed: 52.0,
-      pib: 11.5,
-      progress: 61,
-      grants: 77.2,
-      loans: 83.2,
-      marcos: 22,
-      marcosCumpridos: 29,
-      clima: 40,
-      digital: 28,
-      radar: [0.8, 0.75, 0.72, 0.66, 0.68, 0.7],
-    },
-    {
-      // Itália representa o maior envelope financeiro desta amostra.
-      value: 'IT',
-      name: 'Itália',
-      code: 'IT',
-      flag: '🇮🇹',
-      total: 191.5,
-      disbursed: 113.5,
-      pib: 9.8,
-      progress: 61,
-      grants: 122.6,
-      loans: 68.9,
-      marcos: 28,
-      marcosCumpridos: 31,
-      clima: 37,
-      digital: 25,
-      radar: [0.69, 0.71, 0.78, 0.62, 0.59, 0.65],
-    },
-    {
-      // França permite comparar um plano só com subvenções.
-      value: 'FR',
-      name: 'França',
-      code: 'FR',
-      flag: '🇫🇷',
-      total: 40.3,
-      disbursed: 26.4,
-      pib: 1.4,
-      progress: 63,
-      grants: 40.3,
-      loans: 0,
-      marcos: 18,
-      marcosCumpridos: 22,
-      clima: 46,
-      digital: 25,
-      radar: [0.82, 0.68, 0.64, 0.55, 0.6, 0.57],
-    },
-    {
-      // Alemanha funciona como exemplo de progresso elevado com envelope mais baixo.
-      value: 'DE',
-      name: 'Alemanha',
-      code: 'DE',
-      flag: '🇩🇪',
-      total: 26.4,
-      disbursed: 13.5,
-      pib: 0.6,
-      progress: 69,
-      grants: 26.4,
-      loans: 0,
-      marcos: 16,
-      marcosCumpridos: 21,
-      clima: 42,
-      digital: 27,
-      radar: [0.75, 0.8, 0.7, 0.6, 0.65, 0.58],
-    },
-    {
-      // Polónia mostra um caso com execução mais baixa.
-      value: 'PL',
-      name: 'Polónia',
-      code: 'PL',
-      flag: '🇵🇱',
-      total: 35.4,
-      disbursed: 6.3,
-      pib: 5.8,
-      progress: 30,
-      grants: 23.9,
-      loans: 11.5,
-      marcos: 14,
-      marcosCumpridos: 8,
-      clima: 42,
-      digital: 21,
-      radar: [0.5, 0.45, 0.55, 0.4, 0.42, 0.35],
-    },
-    {
-      // Grécia tem peso relativo elevado no PIB.
-      value: 'GR',
-      name: 'Grécia',
-      code: 'GR',
-      flag: '🇬🇷',
-      total: 30.1,
-      disbursed: 15.6,
-      pib: 13.2,
-      progress: 60,
-      grants: 18.4,
-      loans: 11.7,
-      marcos: 12,
-      marcosCumpridos: 15,
-      clima: 38,
-      digital: 23,
-      radar: [0.65, 0.58, 0.6, 0.7, 0.55, 0.62],
-    },
-    {
-      // Roménia fecha a lista usada nos seletores.
-      value: 'RO',
-      name: 'Roménia',
-      code: 'RO',
-      flag: '🇷🇴',
-      total: 27.1,
-      disbursed: 9.2,
-      pib: 9.0,
-      progress: 35,
-      grants: 14.9,
-      loans: 12.2,
-      marcos: 10,
-      marcosCumpridos: 6,
-      clima: 41,
-      digital: 22,
-      radar: [0.48, 0.42, 0.45, 0.38, 0.4, 0.32],
-    },
-  ],
+  countries: buildComparisonCountries(mapData.countryMeta),
 }

@@ -51,7 +51,7 @@ export const glossaryData = {
       // Instituição europeia que avalia planos e pedidos de pagamento.
       term: 'Comissão Europeia',
       short: 'Órgão executivo da UE responsável pela gestão do MRR.',
-      definition: 'Instituição da União Europeia que actua como órgão executivo, tendo a responsabilidade de avaliar os PRR dos Estados-Membros, aprovar os pedidos de pagamento e monitorizar o cumprimento dos marcos e metas. Emite avaliações positivas que habilitam os pagamentos a cada país.',
+      definition: 'Instituição da União Europeia que atua como órgão executivo, tendo a responsabilidade de avaliar os PRR dos Estados-Membros, aprovar os pedidos de pagamento e monitorizar o cumprimento dos marcos e metas. Emite avaliações positivas que habilitam os pagamentos a cada país.',
       category: 'Governação',
       related: ['MRR', 'Plano de Recuperação e Resiliência', 'Pedido de Pagamento'],
     },
@@ -75,7 +75,7 @@ export const glossaryData = {
       // Conceito financeiro que representa a transferência efetiva de fundos.
       term: 'Desembolso',
       short: 'Transferência efetiva de fundos da UE para o Estado-Membro.',
-      definition: 'Pagamento efectivo realizado pela Comissão Europeia a um Estado-Membro após verificação do cumprimento satisfatório dos marcos e metas acordados. Os desembolsos dividem-se em pré-financiamento (automático, no início) e pagamentos intercalares/finais (condicionados ao cumprimento de compromissos).',
+      definition: 'Pagamento efetivo realizado pela Comissão Europeia a um Estado-Membro após verificação do cumprimento satisfatório dos marcos e metas acordados. Os desembolsos dividem-se em pré-financiamento (automático, no início) e pagamentos intercalares/finais (condicionados ao cumprimento de compromissos).',
       category: 'Financiamento',
       example: 'Portugal recebeu um pré-financiamento de 2,2 mil milhões de euros em agosto de 2021 e o 1º pedido de pagamento de 1,2 mil milhões em janeiro de 2022.',
       related: ['Pré-financiamento', 'Pedido de Pagamento', 'MRR'],
@@ -89,7 +89,7 @@ export const glossaryData = {
     },
     {
       // Tipo de apoio financeiro reembolsável.
-      term: 'Empréstimo RRF',
+      term: 'Empréstimo MRR',
       short: 'Componente reembolsável dos fundos do MRR.',
       definition: 'Forma de apoio financeiro do MRR que, ao contrário das subvenções, tem de ser reembolsado pelo Estado-Membro ao longo do tempo. Os empréstimos estão disponíveis até 6,8% do Rendimento Nacional Bruto de cada país e são contratados a taxas favoráveis, refletindo o custo de financiamento da UE.',
       category: 'Financiamento',
@@ -102,15 +102,7 @@ export const glossaryData = {
       definition: 'Valor máximo de fundos (subvenções e/ou empréstimos) que um Estado-Membro pode solicitar no âmbito do MRR. Para as subvenções, 70% foi distribuído em 2021 com base em critérios socioeconómicos históricos; os restantes 30% foram distribuídos em 2022 com base na queda real do PIB em 2020-2021.',
       category: 'Financiamento',
       example: 'Portugal tem um envelope de 16,6 mil milhões de euros — composto por 13,9 mil M em subvenções e 2,7 mil M em empréstimos.',
-      related: ['Subvenção', 'Empréstimo RRF', 'Dotação Nacional'],
-    },
-    {
-      // Instrumento financeiro central do NextGenerationEU.
-      term: 'Fundo de Recuperação e Resiliência',
-      short: 'O instrumento central do pacote NextGenerationEU.',
-      definition: 'Principal instrumento financeiro do NextGenerationEU, com uma dotação total de até 723,8 mil milhões de euros (a preços correntes). Financia os PRR dos Estados-Membros através de subvenções (338 mil M€) e empréstimos (385,8 mil M€). O FRR foi criado pelo Regulamento (UE) 2021/241.',
-      category: 'Financiamento',
-      related: ['NextGenerationEU', 'MRR', 'Subvenção', 'Empréstimo RRF'],
+      related: ['Subvenção', 'Empréstimo MRR', 'Dotação Nacional'],
     },
     {
       // Indicadores que permitem comparar execução entre países.
@@ -130,21 +122,13 @@ export const glossaryData = {
       related: ['Transformação Digital', 'Pilar Digital'],
     },
     {
-      // Sinónimo português frequentemente usado para "Marco".
-      term: 'Jalão',
-      short: 'Sinónimo de "Marco" — compromisso qualitativo do PRR.',
-      definition: 'Termo alternativo para "Marco" (do inglês "milestone"), utilizado em alguns documentos oficiais portugueses. Representa um compromisso qualitativo — aprovação de legislação, adoção de estratégia, lançamento de programa — que deve ser cumprido numa data específica para desbloquear pagamentos do MRR.',
-      category: 'Execução',
-      related: ['Marco', 'Meta', 'Pedido de Pagamento'],
-    },
-    {
       // Compromisso qualitativo usado para desbloquear pagamentos.
       term: 'Marco',
       short: 'Compromisso qualitativo do PRR associado a uma data de cumprimento.',
-      definition: 'Indicador qualitativo que representa um compromisso específico (aprovação de lei, criação de entidade, lançamento de programa) que deve ser cumprido até uma data definida. O cumprimento de marcos é uma condição necessária para a aprovação dos pedidos de pagamento pelo Conselho da UE. Também designado como "jalão" ou "milestone".',
+      definition: 'Indicador qualitativo que representa um compromisso específico (aprovação de lei, criação de entidade, lançamento de programa) que deve ser cumprido até uma data definida. O cumprimento de marcos é uma condição necessária para a aprovação dos pedidos de pagamento pelo Conselho da UE.',
       category: 'Execução',
       example: 'O Marco PT-M001 exigia a aprovação do quadro legal para o Banco de Fomento até Q2 2022 como condição para o 1º pedido de pagamento de Portugal.',
-      related: ['Meta', 'Componente', 'Pedido de Pagamento', 'Jalão'],
+      related: ['Meta', 'Componente', 'Pedido de Pagamento'],
     },
     {
       // Nome formal do instrumento europeu em análise no projeto.
@@ -152,7 +136,7 @@ export const glossaryData = {
       short: 'O principal instrumento da política de recuperação pós-COVID da UE.',
       definition: 'Instrumento central da resposta da União Europeia à crise pandémica COVID-19, criado pelo Regulamento (UE) 2021/241. Disponibiliza até 723,8 mil milhões de euros para apoiar reformas e investimentos nos Estados-Membros até 2026. Os fundos são condicionados ao cumprimento de marcos e metas acordados com a Comissão Europeia.',
       category: 'Estrutura',
-      related: ['NextGenerationEU', 'Fundo de Recuperação e Resiliência', 'PRR'],
+      related: ['NextGenerationEU', 'PRR', 'Regulamento MRR'],
     },
     {
       // Compromisso quantitativo com valor-alvo mensurável.
@@ -167,9 +151,9 @@ export const glossaryData = {
       // Pacote europeu que financia a recuperação pós-pandemia.
       term: 'NextGenerationEU',
       short: 'Pacote de recuperação económica da UE no valor de 807 mil M€.',
-      definition: 'Instrumento temporário criado pela Comissão Europeia para ajudar a reparar os danos económicos e sociais imediatos causados pela pandemia COVID-19. Com um valor total de 807 mil milhões de euros, financia o Fundo de Recuperação e Resiliência (principal componente) e outros programas como o React-EU e o InvestEU.',
+      definition: 'Instrumento temporário criado pela Comissão Europeia para ajudar a reparar os danos económicos e sociais imediatos causados pela pandemia COVID-19. Com um valor total de 807 mil milhões de euros, financia principalmente o Mecanismo de Recuperação e Resiliência, além de programas como o React-EU e o InvestEU.',
       category: 'Estrutura',
-      related: ['Fundo de Recuperação e Resiliência', 'MRR', 'PRR'],
+      related: ['MRR', 'PRR', 'Subvenção'],
     },
     {
       // Requisito mínimo de contribuição climática.
@@ -249,7 +233,7 @@ export const glossaryData = {
       // Pagamento inicial automático no arranque dos planos.
       term: 'Pré-financiamento',
       short: 'Adiantamento automático de fundos no início do PRR.',
-      definition: 'Pagamento inicial efectuado pela Comissão Europeia a cada Estado-Membro, correspondente a 13% do total das subvenções e 13% dos empréstimos solicitados, sem necessidade de cumprimento prévio de marcos ou metas. O pré-financiamento visou proporcionar liquidez imediata para iniciar as medidas do PRR.',
+      definition: 'Pagamento inicial efetuado pela Comissão Europeia a cada Estado-Membro, correspondente a 13% do total das subvenções e 13% dos empréstimos solicitados, sem necessidade de cumprimento prévio de marcos ou metas. O pré-financiamento visou proporcionar liquidez imediata para iniciar as medidas do PRR.',
       category: 'Financiamento',
       example: 'Portugal recebeu 2,2 mil milhões de euros de pré-financiamento em agosto de 2021, após a ratificação da decisão de recursos próprios pelo parlamento.',
       related: ['Desembolso', 'Pedido de Pagamento', 'Subvenção'],
@@ -273,7 +257,7 @@ export const glossaryData = {
       short: 'Regulamento (UE) 2021/241 — base jurídica do MRR.',
       definition: 'Regulamento do Parlamento Europeu e do Conselho, de 12 de fevereiro de 2021, que estabelece o Mecanismo de Recuperação e Resiliência. Define os objetivos, critérios de elegibilidade, requisitos de conteúdo dos PRR, condições de pagamento, sistema de governação e as disposições relativas aos pilares temáticos.',
       category: 'Estrutura',
-      related: ['MRR', 'PRR', 'Fundo de Recuperação e Resiliência'],
+      related: ['MRR', 'PRR', 'NextGenerationEU'],
     },
     {
       term: 'Relatório de Progresso',
@@ -292,10 +276,10 @@ export const glossaryData = {
     {
       term: 'Subvenção',
       short: 'Apoio financeiro não reembolsável do MRR.',
-      definition: 'Componente não reembolsável do financiamento do MRR, que não tem de ser devolvida ao orçamento da UE. Representa cerca de 47% do total do FRR (338 mil M€ a preços de 2018). A atribuição de subvenções a cada país depende de critérios populacionais, do inverso do PIB per capita e da taxa de desemprego.',
+      definition: 'Componente não reembolsável do financiamento do MRR, que não tem de ser devolvida ao orçamento da UE. Representa cerca de 47% da dotação total do mecanismo (338 mil M€ a preços de 2018). A atribuição de subvenções a cada país depende de critérios populacionais, do inverso do PIB per capita e da taxa de desemprego.',
       category: 'Financiamento',
       example: 'A subvenção portuguesa no MRR é de 13,9 mil milhões de euros, enquanto os empréstimos disponíveis ascendem a 2,7 mil milhões.',
-      related: ['Empréstimo RRF', 'Envelope Financeiro', 'Desembolso'],
+      related: ['Empréstimo MRR', 'Envelope Financeiro', 'Desembolso'],
     },
     {
       term: 'Transição Ecológica',

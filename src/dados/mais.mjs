@@ -1,4 +1,6 @@
 // Dados da página "Mais recursos".
+import { glossaryData } from './glossario.mjs'
+
 export const moreData = {
   // Recursos apresentados nos cartões desta página.
   resources: [
@@ -6,7 +8,7 @@ export const moreData = {
       id: 'mapa',
       to: '/mapa',
       title: 'Mapa da União Europeia',
-      description: 'Visualização coroplética dos 27 Estados-Membros com dados do MRR — progresso de execução, fundos alocados e objectivos climáticos e digitais por país.',
+      description: 'Visualização coroplética dos 27 Estados-Membros com dados do MRR — progresso de execução, fundos atribuídos e objetivos climáticos e digitais por país.',
       iconTone: 'blue',
       icon: 'globe',
       chips: ['27 países', 'Mapa interativo', '5 métricas'],
@@ -14,16 +16,16 @@ export const moreData = {
     {
       id: 'glossario',
       to: '/glossario',
-      title: 'Glossário PRR',
+      title: 'Glossário MRR',
       description: 'Definições técnicas completas dos termos do MRR — marcos, metas, pilares, indicadores comuns, governação e muito mais. Com pesquisa e filtro por categoria.',
       iconTone: 'slate',
       icon: 'document',
-      chips: ['40+ termos', 'Pesquisa', '6 categorias'],
+      chips: [`${glossaryData.terms.length} termos`, 'Pesquisa', '6 categorias'],
     },
     {
       id: 'linha-tempo',
       to: '/linha-tempo',
-      title: 'Linha do Tempo RRF',
+      title: 'Linha do Tempo MRR',
       description: 'Os 12 marcos institucionais do Mecanismo — da proposta legislativa de 2020 ao prazo final de execução em agosto de 2026. Filtre por categoria e explore cada evento em detalhe.',
       iconTone: 'amber',
       icon: 'timeline',
