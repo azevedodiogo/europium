@@ -90,6 +90,9 @@ defineEmits(['update:countryA', 'update:countryB'])
   
   padding: 16px;
   margin: 20px 32px 0;
+  position: relative;
+  z-index: 20;
+  overflow: visible;
 }
 /* Grupo dos dois seletores. */
 .cp-filter-pair {
