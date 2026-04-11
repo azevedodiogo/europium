@@ -45,5 +45,6 @@ Desktop.ini
 # A pasta docs fica disponível para o relatório do projeto.
 !docs/
 !docs/**
+docs/.DS_Store
 
 # O ficheiro db.json fica versionável porque é a base usada pelo json-server.
