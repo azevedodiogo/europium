@@ -251,6 +251,7 @@ import { storeToRefs } from 'pinia'
 import MarcosMetasFilterBar from '@/componentes/marcos-metas/BarraFiltrosMarcosMetas.vue'
 import MarcosMetasStatsCard from '@/componentes/marcos-metas/CartaoEstatisticasMarcosMetas.vue'
 import MarcosMetasEmptyState from '@/componentes/marcos-metas/EstadoVazioMarcosMetas.vue'
+import { criarOpcoesPaisesEuropeus } from '@/utilitarios/paises.mjs'
 const store = useDashboardStore()
 const { marcos, marcosCountries, marcosPillars, marcosTypes, marcosStatusLabels } = storeToRefs(store)
 // Filtros independentes da página.
@@ -284,42 +285,13 @@ const currentPage   = ref(1)
 const perPage       = ref(10)
 const showDetail    = ref(false)
 const selectedMarco = ref(null)
-// Bandeiras usadas quando um país aparece nos dados de marcos e metas.
-const COUNTRY_FLAGS = {
-  Alemanha: '🇩🇪',
-  Áustria: '🇦🇹',
-  Bélgica: '🇧🇪',
-  Bulgária: '🇧🇬',
-  Chipre: '🇨🇾',
-  Croácia: '🇭🇷',
-  Dinamarca: '🇩🇰',
-  Eslováquia: '🇸🇰',
-  Eslovénia: '🇸🇮',
-  Espanha: '🇪🇸',
-  Estónia: '🇪🇪',
-  Finlândia: '🇫🇮',
-  França: '🇫🇷',
-  Grécia: '🇬🇷',
-  Hungria: '🇭🇺',
-  Irlanda: '🇮🇪',
-  Itália: '🇮🇹',
-  Letónia: '🇱🇻',
-  Lituânia: '🇱🇹',
-  Luxemburgo: '🇱🇺',
-  Malta: '🇲🇹',
-  'Países Baixos': '🇳🇱',
-  Polónia: '🇵🇱',
-  Portugal: '🇵🇹',
-  'República Checa': '🇨🇿',
-  Roménia: '🇷🇴',
-  Suécia: '🇸🇪',
-}
-// Lista de países construída a partir dos próprios dados para aceitar novos países.
-const countryOptions = computed(() => marcosCountries.value.map(country => ({
-  value: country,
-  label: country,
-  flag: COUNTRY_FLAGS[country] ?? '🇪🇺',
-})))
+// Lista comum de países, filtrada pelos países presentes nos marcos e metas.
+const countryOptions = computed(() => {
+  const availableCountryNames = new Set(marcosCountries.value)
+  return criarOpcoesPaisesEuropeus()
+    .filter((country) => availableCountryNames.has(country.label))
+    .map((country) => ({ ...country, value: country.label }))
+})
 // Opções dos pilares do MRR, derivadas dos dados recebidos.
 const pillarOptions = computed(() => marcosPillars.value.map(pillar => ({ value: pillar, label: pillar })))
 // Estados existentes nos dados atuais de marcos/metas.

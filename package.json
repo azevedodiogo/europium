@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "vite",
     "db:build": "node scripts/build-jsondb.mjs",
-    "db:serve": "json-server --host 127.0.0.1 --port 3000 db.json",
-    "db:start": "npm run db:build && npm run db:serve",
+    "copy-db": "node db-copy.mjs",
+    "db:serve": "json-server .db-new.json",
+    "db:start": "npm run copy-db && npm run db:serve",
     "build": "vite build",
     "preview": "vite preview"
   },

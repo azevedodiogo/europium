@@ -118,15 +118,19 @@ const resource = usarRecursoApi('disbursements')
 const countryOptions = computed(() => resource.value.countryOptions)
 // Metadados por código de país para evitar procurar a opção várias vezes.
 const countryMeta = computed(() => Object.fromEntries(countryOptions.value.map((option) => [option.value, option])))
-// Lista de códigos usada na vista agregada.
-const allCountryCodes = computed(() => countryOptions.value.map((option) => option.value))
 // Dados brutos dos países.
 const countryData = computed(() => resource.value.countryData)
+// Lista de códigos com dados de pagamentos/beneficiários mockados.
+const countriesWithData = computed(() =>
+  Object.keys(countryData.value ?? {})
+    .filter((countryCode) => countryMeta.value[countryCode])
+    .sort((a, b) => countryMeta.value[a].label.localeCompare(countryMeta.value[b].label, 'pt-PT'))
+)
 // Períodos do gráfico vindos do recurso ativo.
 const paymentPeriods = computed(() => {
   if (resource.value.paymentPeriods?.length) return resource.value.paymentPeriods
-  const periods = allCountryCodes.value.flatMap(countryCode =>
-    countryData.value[countryCode].payments.map((paymentItem) => paymentItem.chartDate)
+  const periods = countriesWithData.value.flatMap(countryCode =>
+    (countryData.value[countryCode]?.payments ?? []).map((paymentItem) => paymentItem.chartDate)
   )
   return [...new Set(periods)]
 })
@@ -183,18 +187,18 @@ function sortPaymentsByTimeline(a, b) {
 }
 function getCountryPayments(countryCode) {
   // Pagamentos de um país já enriquecidos com metadados visuais.
-  return countryData.value[countryCode].payments.map((item) => withCountryMeta(countryCode, item))
+  return (countryData.value[countryCode]?.payments ?? []).map((item) => withCountryMeta(countryCode, item))
 }
 function getCountryBeneficiaries(countryCode) {
   // Beneficiários de um país já enriquecidos com metadados visuais.
-  return countryData.value[countryCode].beneficiaries.map((item) => withCountryMeta(countryCode, item))
+  return (countryData.value[countryCode]?.beneficiaries ?? []).map((item) => withCountryMeta(countryCode, item))
 }
 // Base de pagamentos ativa para país único ou agregação total.
 const activePaymentsBase = computed(() => {
   if (selectedCountry.value) {
     return getCountryPayments(selectedCountry.value)
   }
-  return allCountryCodes.value
+  return countriesWithData.value
     .flatMap(countryCode => getCountryPayments(countryCode))
     .sort(sortPaymentsByTimeline)
 })
@@ -202,15 +206,16 @@ const activePaymentsBase = computed(() => {
 const activeBeneficiariesBase = computed(() => {
   const baseList = selectedCountry.value
     ? getCountryBeneficiaries(selectedCountry.value)
-    : allCountryCodes.value.flatMap(countryCode => getCountryBeneficiaries(countryCode))
-  return [...baseList].sort((a, b) => b.amount - a.amount)
+    : countriesWithData.value.flatMap(countryCode => getCountryBeneficiaries(countryCode))
+  const sortedList = [...baseList].sort((a, b) => b.amount - a.amount)
+  return selectedCountry.value ? sortedList : sortedList.slice(0, 100)
 })
 // Total do plano usado para calcular percentagem de execução.
 const activePlanTotal = computed(() => {
   if (selectedCountry.value) {
-    return countryMeta.value[selectedCountry.value].planTotal
+    return countryMeta.value[selectedCountry.value]?.planTotal ?? 0
   }
-  return countryOptions.value.reduce((sum, country) => sum + country.planTotal, 0)
+  return countriesWithData.value.reduce((sum, countryCode) => sum + (countryMeta.value[countryCode]?.planTotal ?? 0), 0)
 })
 // Informação do país selecionado, quando existe.
 const selectedCountryInfo = computed(() =>
@@ -257,8 +262,8 @@ const raw = computed(() => {
   }
   let cumulative = 0
   return paymentPeriods.value.map(period => {
-    const periodTotal = allCountryCodes.value.reduce((sum, countryCode) => {
-      const paymentItem = countryData.value[countryCode].payments.find((item) => item.chartDate === period)
+    const periodTotal = countriesWithData.value.reduce((sum, countryCode) => {
+      const paymentItem = countryData.value[countryCode]?.payments?.find((item) => item.chartDate === period)
       return sum + (paymentItem?.amount ?? 0)
     }, 0)
     cumulative = roundToOne(cumulative + periodTotal)
@@ -359,7 +364,7 @@ const filteredTotal = computed(() => {
 // Subtítulo muda conforme a página está agregada ou filtrada por país.
 const beneficiariesSubtitle = computed(() => {
   if (selectedCountry.value) {
-    return `Principais entidades que receberam fundos do MRR em ${countryMeta.value[selectedCountry.value].label}`
+    return `Principais entidades que receberam fundos do MRR em ${countryMeta.value[selectedCountry.value]?.label ?? 'este país'}`
   }
   return 'Principais entidades que receberam fundos do MRR nos países em análise'
 })

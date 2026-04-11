@@ -3,24 +3,24 @@ import { defineStore } from 'pinia'
 
 // Função comum que mantém homepage e mapa com os mesmos totais.
 import { alignDashboardWithRrfSummary } from '@/utilitarios/resumoRrf.mjs'
-// Funções auxiliares para clonar dados e tentar a API.
-import { cloneData, getLocalResource, loadJsonResources } from '@/servicos/api'
+// Funções auxiliares para clonar dados e consultar a API.
+import { cloneData, getEmptyResource, loadJsonResources } from '@/servicos/api'
 
 // Cria uma cópia limpa do estado inicial.
 function createDashboardState() {
-  return getLocalResource('dashboard')
+  return getEmptyResource('dashboard')
 }
 
 // Store de dados principais do projeto.
 export const useDashboardStore = defineStore('dashboard', {
   // Estado reativo base.
   state: () => ({
-    // Espalha o conteúdo do dataset local.
+    // Começa vazio e é preenchido pelo json-server.
     ...createDashboardState(),
     // Diz se já tentámos carregar os dados.
     isLoaded: false,
     // Guarda a origem do que está atualmente em uso.
-    dataSource: 'local',
+    dataSource: 'empty',
   }),
 
   // Getters usados pelas páginas e componentes.
@@ -46,7 +46,7 @@ export const useDashboardStore = defineStore('dashboard', {
       this.$patch({
         ...cloneData(alignedData),
         isLoaded: true,
-        dataSource: results.dashboard.source === 'api' || results.map.source === 'api' ? 'api' : 'local',
+        dataSource: 'json-server',
       })
     },
   },

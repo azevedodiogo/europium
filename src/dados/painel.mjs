@@ -35,6 +35,36 @@ const commitmentTemplates = [
     deadline: 'Q2 2025',
     progressOffset: 16,
   },
+  {
+    ref: 'M004',
+    type: 'Meta',
+    name: 'Reforço da coesão social e territorial',
+    description: 'Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.',
+    pillar: 'Coesão',
+    component: 'C04',
+    deadline: 'Q4 2025',
+    progressOffset: 24,
+  },
+  {
+    ref: 'M005',
+    type: 'Marco',
+    name: 'Modernização dos serviços de saúde',
+    description: 'Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.',
+    pillar: 'Saúde',
+    component: 'C05',
+    deadline: 'Q2 2026',
+    progressOffset: 32,
+  },
+  {
+    ref: 'M006',
+    type: 'Meta',
+    name: 'Políticas para a próxima geração',
+    description: 'Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.',
+    pillar: 'Próxima geração',
+    component: 'C06',
+    deadline: 'Q3 2026',
+    progressOffset: 40,
+  },
 ]
 
 // Converte o progresso global do país num estado legível de execução.

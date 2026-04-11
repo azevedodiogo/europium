@@ -165,7 +165,11 @@ onUnmounted(() => {
   
   position: absolute; top: calc(100% + 4px); left: 0;
   
-  min-width: 100%; max-height: 320px; overflow-y: auto;
+  min-width: 100%; max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   
   background: white; border: 1px solid var(--color-border);
   
@@ -174,6 +178,9 @@ onUnmounted(() => {
   box-shadow: 0 4px 16px rgba(0,0,0,.10);
   z-index: 500;
 }
+.cbox__panel::-webkit-scrollbar {
+  display: none;
+}
 .cbox__option {
   width: 100%; height: 36px;
   
@@ -181,7 +188,7 @@ onUnmounted(() => {
   
   padding: 0 10px;
   
-  background: transparent; border: none;
+  background: white; border: none;
   
   border-bottom: .8px solid var(--color-border);
   
@@ -243,6 +250,8 @@ onUnmounted(() => {
   box-shadow: 0 18px 34px rgba(11,17,29,0.24);
 }
 [data-theme="dark"] .cbox__option {
+  
+  background: #213044;
   
   color: var(--color-text-primary);
   

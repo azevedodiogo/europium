@@ -1,4 +1,6 @@
 // Dados locais usados na secção de desembolsos.
+import { criarOpcoesPaisesEuropeus } from '../utilitarios/paises.mjs'
+import { mapData } from './mapa.mjs'
 // Mapa de etiquetas para converter chaves técnicas em texto apresentado ao utilizador.
 const TYPE_LABELS = {
   pre: 'Pré-financiamento',
@@ -13,20 +15,56 @@ function beneficiary(id, name, sector, amount, project) {
   // Cria um beneficiário com os campos usados pela tabela e pela pesquisa.
   return { id, name, sector, amount, project }
 }
+
+function roundToOne(value) {
+  return Math.round(value * 10) / 10
+}
+
+function buildCountryPayments(countryCode, country) {
+  const parts = [0.18, 0.14, 0.18, 0.17, 0.16]
+  const amounts = parts.map((part) => roundToOne(country.disbursed * part))
+  amounts.push(roundToOne(country.disbursed - amounts.reduce((sum, amount) => sum + amount, 0)))
+
+  return [
+    payment(`${countryCode}-01`, '18/08/2021', '18 de agosto de 2021', '08/21', 'Pré-financiamento', amounts[0], 'pre'),
+    payment(`${countryCode}-02`, '20/01/2022', '20 de janeiro de 2022', '01/22', '1º pedido de pagamento', amounts[1], 'subvencao'),
+    payment(`${countryCode}-03`, '22/11/2022', '22 de novembro de 2022', '11/22', '2º pedido de pagamento', amounts[2], 'subvencao'),
+    payment(`${countryCode}-04`, '24/07/2023', '24 de julho de 2023', '07/23', '3º pedido de pagamento', amounts[3], 'subvencao'),
+    payment(`${countryCode}-05`, '18/03/2024', '18 de março de 2024', '03/24', '4º pedido de pagamento', amounts[4], 'subvencao'),
+    payment(`${countryCode}-06`, '18/09/2024', '18 de setembro de 2024', '09/24', '5º pedido de pagamento', amounts[5], country.funds > 20 ? 'emprestimo' : 'subvencao'),
+  ]
+}
+
+function buildCountryBeneficiaries(countryCode, country) {
+  const base = Math.max(country.disbursed * 1000, 120)
+  const rows = [
+    ['Autoridade Nacional do PRR', 'Administração Pública', 0.18, 'Coordenação e execução do plano nacional'],
+    ['Operador Ferroviário Nacional', 'Transportes', 0.15, 'Modernização de infraestruturas e material circulante'],
+    ['Agência para a Transição Energética', 'Energia', 0.13, 'Eficiência energética e energias renováveis'],
+    ['Fundo de Habitação e Coesão', 'Habitação', 0.11, 'Habitação acessível e reabilitação urbana'],
+    ['Rede Nacional de Escolas Digitais', 'Educação', 0.1, 'Equipamentos e competências digitais'],
+    ['Agência de Inovação Empresarial', 'Economia', 0.09, 'Digitalização e competitividade das empresas'],
+    ['Serviço Nacional de Saúde', 'Saúde', 0.08, 'Modernização de cuidados de saúde'],
+    ['Administrações Locais', 'Administração Local', 0.07, 'Projetos municipais de proximidade'],
+  ]
+
+  return rows.map(([name, sector, part, project], index) =>
+    beneficiary(
+      `${countryCode}-B${String(index + 1).padStart(2, '0')}`,
+      `${name} - ${country.name}`,
+      sector,
+      roundToOne(base * part),
+      project,
+    )
+  )
+}
 export const disbursementsData = {
   // Períodos usados no eixo X do gráfico cumulativo de pagamentos.
   paymentPeriods: ['08/21', '01/22', '11/22', '07/23', '03/24', '09/24'],
   // Ordem lógica dos tipos de pagamento para ordenação da tabela.
   paymentTypeOrder: { pre: 0, subvencao: 1, emprestimo: 2 },
   // Países disponíveis no filtro e respetivo total de plano.
-  countryOptions: [
-    { value: 'PT', label: 'Portugal', flag: '🇵🇹', planTotal: 16.6 },
-    { value: 'ES', label: 'Espanha', flag: '🇪🇸', planTotal: 160.4 },
-    { value: 'IT', label: 'Itália', flag: '🇮🇹', planTotal: 191.5 },
-    { value: 'FR', label: 'França', flag: '🇫🇷', planTotal: 40.3 },
-    { value: 'DE', label: 'Alemanha', flag: '🇩🇪', planTotal: 26.4 },
-    { value: 'PL', label: 'Polónia', flag: '🇵🇱', planTotal: 35.4 },
-  ],
+  countryOptions: criarOpcoesPaisesEuropeus(),
   // Dados organizados por código de país para facilitar a troca de filtro.
   countryData: {
     PT: {
@@ -163,3 +201,12 @@ export const disbursementsData = {
     },
   },
 }
+
+Object.entries(mapData.countryMeta).forEach(([countryCode, country]) => {
+  if (!disbursementsData.countryData[countryCode]) {
+    disbursementsData.countryData[countryCode] = {
+      payments: buildCountryPayments(countryCode, country),
+      beneficiaries: buildCountryBeneficiaries(countryCode, country),
+    }
+  }
+})

@@ -2,7 +2,7 @@
   "meta": {
     "project": "Europium",
     "source": "https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/",
-    "generatedAt": "2026-05-05T18:41:10.299Z",
+    "generatedAt": "2026-05-14T22:53:23.335Z",
     "note": "Dados estruturados para o projeto IPM com base no modelo público do Recovery and Resilience Scoreboard.",
     "resources": [
       "dashboard",
@@ -378,6 +378,96 @@
       },
       {
         "id": 4,
+        "ref": "PT-M004",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "ref": "PT-M005",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "ref": "PT-M006",
+        "country": "Portugal",
+        "flag": "🇵🇹",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 7,
         "ref": "ES-M001",
         "country": "Espanha",
         "flag": "🇪🇸",
@@ -407,7 +497,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 8,
         "ref": "ES-M002",
         "country": "Espanha",
         "flag": "🇪🇸",
@@ -437,7 +527,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 9,
         "ref": "ES-M003",
         "country": "Espanha",
         "flag": "🇪🇸",
@@ -467,7 +557,97 @@
         ]
       },
       {
-        "id": 7,
+        "id": 10,
+        "ref": "ES-M004",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "ref": "ES-M005",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "ref": "ES-M006",
+        "country": "Espanha",
+        "flag": "🇪🇸",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 13,
         "ref": "IT-M001",
         "country": "Itália",
         "flag": "🇮🇹",
@@ -497,7 +677,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 14,
         "ref": "IT-M002",
         "country": "Itália",
         "flag": "🇮🇹",
@@ -527,7 +707,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 15,
         "ref": "IT-M003",
         "country": "Itália",
         "flag": "🇮🇹",
@@ -557,7 +737,97 @@
         ]
       },
       {
-        "id": 10,
+        "id": 16,
+        "ref": "IT-M004",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "ref": "IT-M005",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "ref": "IT-M006",
+        "country": "Itália",
+        "flag": "🇮🇹",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 19,
         "ref": "FR-M001",
         "country": "França",
         "flag": "🇫🇷",
@@ -587,7 +857,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 20,
         "ref": "FR-M002",
         "country": "França",
         "flag": "🇫🇷",
@@ -617,7 +887,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 21,
         "ref": "FR-M003",
         "country": "França",
         "flag": "🇫🇷",
@@ -647,7 +917,97 @@
         ]
       },
       {
-        "id": 13,
+        "id": 22,
+        "ref": "FR-M004",
+        "country": "França",
+        "flag": "🇫🇷",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "ref": "FR-M005",
+        "country": "França",
+        "flag": "🇫🇷",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "ref": "FR-M006",
+        "country": "França",
+        "flag": "🇫🇷",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 25,
         "ref": "DE-M001",
         "country": "Alemanha",
         "flag": "🇩🇪",
@@ -677,7 +1037,7 @@
         ]
       },
       {
-        "id": 14,
+        "id": 26,
         "ref": "DE-M002",
         "country": "Alemanha",
         "flag": "🇩🇪",
@@ -707,7 +1067,7 @@
         ]
       },
       {
-        "id": 15,
+        "id": 27,
         "ref": "DE-M003",
         "country": "Alemanha",
         "flag": "🇩🇪",
@@ -737,7 +1097,97 @@
         ]
       },
       {
-        "id": 16,
+        "id": 28,
+        "ref": "DE-M004",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "ref": "DE-M005",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "ref": "DE-M006",
+        "country": "Alemanha",
+        "flag": "🇩🇪",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 31,
         "ref": "PL-M001",
         "country": "Polónia",
         "flag": "🇵🇱",
@@ -767,7 +1217,7 @@
         ]
       },
       {
-        "id": 17,
+        "id": 32,
         "ref": "PL-M002",
         "country": "Polónia",
         "flag": "🇵🇱",
@@ -797,7 +1247,7 @@
         ]
       },
       {
-        "id": 18,
+        "id": 33,
         "ref": "PL-M003",
         "country": "Polónia",
         "flag": "🇵🇱",
@@ -827,7 +1277,97 @@
         ]
       },
       {
-        "id": 19,
+        "id": 34,
+        "ref": "PL-M004",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "ref": "PL-M005",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "ref": "PL-M006",
+        "country": "Polónia",
+        "flag": "🇵🇱",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 37,
         "ref": "NL-M001",
         "country": "Países Baixos",
         "flag": "🇳🇱",
@@ -857,7 +1397,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 38,
         "ref": "NL-M002",
         "country": "Países Baixos",
         "flag": "🇳🇱",
@@ -887,7 +1427,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 39,
         "ref": "NL-M003",
         "country": "Países Baixos",
         "flag": "🇳🇱",
@@ -917,7 +1457,97 @@
         ]
       },
       {
-        "id": 22,
+        "id": 40,
+        "ref": "NL-M004",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "ref": "NL-M005",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "ref": "NL-M006",
+        "country": "Países Baixos",
+        "flag": "🇳🇱",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 43,
         "ref": "BE-M001",
         "country": "Bélgica",
         "flag": "🇧🇪",
@@ -947,7 +1577,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 44,
         "ref": "BE-M002",
         "country": "Bélgica",
         "flag": "🇧🇪",
@@ -977,7 +1607,7 @@
         ]
       },
       {
-        "id": 24,
+        "id": 45,
         "ref": "BE-M003",
         "country": "Bélgica",
         "flag": "🇧🇪",
@@ -1007,7 +1637,97 @@
         ]
       },
       {
-        "id": 25,
+        "id": 46,
+        "ref": "BE-M004",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "ref": "BE-M005",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "ref": "BE-M006",
+        "country": "Bélgica",
+        "flag": "🇧🇪",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 49,
         "ref": "AT-M001",
         "country": "Áustria",
         "flag": "🇦🇹",
@@ -1037,7 +1757,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 50,
         "ref": "AT-M002",
         "country": "Áustria",
         "flag": "🇦🇹",
@@ -1067,7 +1787,7 @@
         ]
       },
       {
-        "id": 27,
+        "id": 51,
         "ref": "AT-M003",
         "country": "Áustria",
         "flag": "🇦🇹",
@@ -1097,7 +1817,97 @@
         ]
       },
       {
-        "id": 28,
+        "id": 52,
+        "ref": "AT-M004",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "ref": "AT-M005",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "ref": "AT-M006",
+        "country": "Áustria",
+        "flag": "🇦🇹",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 55,
         "ref": "GR-M001",
         "country": "Grécia",
         "flag": "🇬🇷",
@@ -1127,7 +1937,7 @@
         ]
       },
       {
-        "id": 29,
+        "id": 56,
         "ref": "GR-M002",
         "country": "Grécia",
         "flag": "🇬🇷",
@@ -1157,7 +1967,7 @@
         ]
       },
       {
-        "id": 30,
+        "id": 57,
         "ref": "GR-M003",
         "country": "Grécia",
         "flag": "🇬🇷",
@@ -1187,7 +1997,97 @@
         ]
       },
       {
-        "id": 31,
+        "id": 58,
+        "ref": "GR-M004",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "ref": "GR-M005",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "ref": "GR-M006",
+        "country": "Grécia",
+        "flag": "🇬🇷",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 61,
         "ref": "RO-M001",
         "country": "Roménia",
         "flag": "🇷🇴",
@@ -1217,7 +2117,7 @@
         ]
       },
       {
-        "id": 32,
+        "id": 62,
         "ref": "RO-M002",
         "country": "Roménia",
         "flag": "🇷🇴",
@@ -1247,7 +2147,7 @@
         ]
       },
       {
-        "id": 33,
+        "id": 63,
         "ref": "RO-M003",
         "country": "Roménia",
         "flag": "🇷🇴",
@@ -1277,7 +2177,97 @@
         ]
       },
       {
-        "id": 34,
+        "id": 64,
+        "ref": "RO-M004",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "ref": "RO-M005",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "ref": "RO-M006",
+        "country": "Roménia",
+        "flag": "🇷🇴",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 67,
         "ref": "CZ-M001",
         "country": "República Checa",
         "flag": "🇨🇿",
@@ -1307,7 +2297,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 68,
         "ref": "CZ-M002",
         "country": "República Checa",
         "flag": "🇨🇿",
@@ -1337,7 +2327,7 @@
         ]
       },
       {
-        "id": 36,
+        "id": 69,
         "ref": "CZ-M003",
         "country": "República Checa",
         "flag": "🇨🇿",
@@ -1367,7 +2357,97 @@
         ]
       },
       {
-        "id": 37,
+        "id": 70,
+        "ref": "CZ-M004",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 71,
+        "ref": "CZ-M005",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "ref": "CZ-M006",
+        "country": "República Checa",
+        "flag": "🇨🇿",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 73,
         "ref": "HU-M001",
         "country": "Hungria",
         "flag": "🇭🇺",
@@ -1397,7 +2477,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 74,
         "ref": "HU-M002",
         "country": "Hungria",
         "flag": "🇭🇺",
@@ -1427,7 +2507,7 @@
         ]
       },
       {
-        "id": 39,
+        "id": 75,
         "ref": "HU-M003",
         "country": "Hungria",
         "flag": "🇭🇺",
@@ -1457,7 +2537,97 @@
         ]
       },
       {
-        "id": 40,
+        "id": 76,
+        "ref": "HU-M004",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "ref": "HU-M005",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "ref": "HU-M006",
+        "country": "Hungria",
+        "flag": "🇭🇺",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 79,
         "ref": "SK-M001",
         "country": "Eslováquia",
         "flag": "🇸🇰",
@@ -1487,7 +2657,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 80,
         "ref": "SK-M002",
         "country": "Eslováquia",
         "flag": "🇸🇰",
@@ -1517,7 +2687,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 81,
         "ref": "SK-M003",
         "country": "Eslováquia",
         "flag": "🇸🇰",
@@ -1547,7 +2717,97 @@
         ]
       },
       {
-        "id": 43,
+        "id": 82,
+        "ref": "SK-M004",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "ref": "SK-M005",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "ref": "SK-M006",
+        "country": "Eslováquia",
+        "flag": "🇸🇰",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 85,
         "ref": "HR-M001",
         "country": "Croácia",
         "flag": "🇭🇷",
@@ -1577,7 +2837,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 86,
         "ref": "HR-M002",
         "country": "Croácia",
         "flag": "🇭🇷",
@@ -1607,7 +2867,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 87,
         "ref": "HR-M003",
         "country": "Croácia",
         "flag": "🇭🇷",
@@ -1637,7 +2897,97 @@
         ]
       },
       {
-        "id": 46,
+        "id": 88,
+        "ref": "HR-M004",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "ref": "HR-M005",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 90,
+        "ref": "HR-M006",
+        "country": "Croácia",
+        "flag": "🇭🇷",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 91,
         "ref": "BG-M001",
         "country": "Bulgária",
         "flag": "🇧🇬",
@@ -1667,7 +3017,7 @@
         ]
       },
       {
-        "id": 47,
+        "id": 92,
         "ref": "BG-M002",
         "country": "Bulgária",
         "flag": "🇧🇬",
@@ -1697,7 +3047,7 @@
         ]
       },
       {
-        "id": 48,
+        "id": 93,
         "ref": "BG-M003",
         "country": "Bulgária",
         "flag": "🇧🇬",
@@ -1727,7 +3077,97 @@
         ]
       },
       {
-        "id": 49,
+        "id": 94,
+        "ref": "BG-M004",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 95,
+        "ref": "BG-M005",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 96,
+        "ref": "BG-M006",
+        "country": "Bulgária",
+        "flag": "🇧🇬",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 97,
         "ref": "SE-M001",
         "country": "Suécia",
         "flag": "🇸🇪",
@@ -1757,7 +3197,7 @@
         ]
       },
       {
-        "id": 50,
+        "id": 98,
         "ref": "SE-M002",
         "country": "Suécia",
         "flag": "🇸🇪",
@@ -1787,7 +3227,7 @@
         ]
       },
       {
-        "id": 51,
+        "id": 99,
         "ref": "SE-M003",
         "country": "Suécia",
         "flag": "🇸🇪",
@@ -1817,7 +3257,97 @@
         ]
       },
       {
-        "id": 52,
+        "id": 100,
+        "ref": "SE-M004",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 101,
+        "ref": "SE-M005",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "ref": "SE-M006",
+        "country": "Suécia",
+        "flag": "🇸🇪",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 103,
         "ref": "FI-M001",
         "country": "Finlândia",
         "flag": "🇫🇮",
@@ -1847,7 +3377,7 @@
         ]
       },
       {
-        "id": 53,
+        "id": 104,
         "ref": "FI-M002",
         "country": "Finlândia",
         "flag": "🇫🇮",
@@ -1877,7 +3407,7 @@
         ]
       },
       {
-        "id": 54,
+        "id": 105,
         "ref": "FI-M003",
         "country": "Finlândia",
         "flag": "🇫🇮",
@@ -1907,7 +3437,97 @@
         ]
       },
       {
-        "id": 55,
+        "id": 106,
+        "ref": "FI-M004",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 107,
+        "ref": "FI-M005",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 108,
+        "ref": "FI-M006",
+        "country": "Finlândia",
+        "flag": "🇫🇮",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 109,
         "ref": "DK-M001",
         "country": "Dinamarca",
         "flag": "🇩🇰",
@@ -1937,7 +3557,7 @@
         ]
       },
       {
-        "id": 56,
+        "id": 110,
         "ref": "DK-M002",
         "country": "Dinamarca",
         "flag": "🇩🇰",
@@ -1967,7 +3587,7 @@
         ]
       },
       {
-        "id": 57,
+        "id": 111,
         "ref": "DK-M003",
         "country": "Dinamarca",
         "flag": "🇩🇰",
@@ -1997,7 +3617,97 @@
         ]
       },
       {
-        "id": 58,
+        "id": 112,
+        "ref": "DK-M004",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 113,
+        "ref": "DK-M005",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 114,
+        "ref": "DK-M006",
+        "country": "Dinamarca",
+        "flag": "🇩🇰",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 115,
         "ref": "IE-M001",
         "country": "Irlanda",
         "flag": "🇮🇪",
@@ -2027,7 +3737,7 @@
         ]
       },
       {
-        "id": 59,
+        "id": 116,
         "ref": "IE-M002",
         "country": "Irlanda",
         "flag": "🇮🇪",
@@ -2057,7 +3767,7 @@
         ]
       },
       {
-        "id": 60,
+        "id": 117,
         "ref": "IE-M003",
         "country": "Irlanda",
         "flag": "🇮🇪",
@@ -2087,7 +3797,97 @@
         ]
       },
       {
-        "id": 61,
+        "id": 118,
+        "ref": "IE-M004",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 119,
+        "ref": "IE-M005",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 120,
+        "ref": "IE-M006",
+        "country": "Irlanda",
+        "flag": "🇮🇪",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 121,
         "ref": "LT-M001",
         "country": "Lituânia",
         "flag": "🇱🇹",
@@ -2117,7 +3917,7 @@
         ]
       },
       {
-        "id": 62,
+        "id": 122,
         "ref": "LT-M002",
         "country": "Lituânia",
         "flag": "🇱🇹",
@@ -2147,7 +3947,7 @@
         ]
       },
       {
-        "id": 63,
+        "id": 123,
         "ref": "LT-M003",
         "country": "Lituânia",
         "flag": "🇱🇹",
@@ -2177,7 +3977,97 @@
         ]
       },
       {
-        "id": 64,
+        "id": 124,
+        "ref": "LT-M004",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 125,
+        "ref": "LT-M005",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 126,
+        "ref": "LT-M006",
+        "country": "Lituânia",
+        "flag": "🇱🇹",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 127,
         "ref": "LV-M001",
         "country": "Letónia",
         "flag": "🇱🇻",
@@ -2207,7 +4097,7 @@
         ]
       },
       {
-        "id": 65,
+        "id": 128,
         "ref": "LV-M002",
         "country": "Letónia",
         "flag": "🇱🇻",
@@ -2237,7 +4127,7 @@
         ]
       },
       {
-        "id": 66,
+        "id": 129,
         "ref": "LV-M003",
         "country": "Letónia",
         "flag": "🇱🇻",
@@ -2267,7 +4157,97 @@
         ]
       },
       {
-        "id": 67,
+        "id": 130,
+        "ref": "LV-M004",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 131,
+        "ref": "LV-M005",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 132,
+        "ref": "LV-M006",
+        "country": "Letónia",
+        "flag": "🇱🇻",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 133,
         "ref": "EE-M001",
         "country": "Estónia",
         "flag": "🇪🇪",
@@ -2297,7 +4277,7 @@
         ]
       },
       {
-        "id": 68,
+        "id": 134,
         "ref": "EE-M002",
         "country": "Estónia",
         "flag": "🇪🇪",
@@ -2327,7 +4307,7 @@
         ]
       },
       {
-        "id": 69,
+        "id": 135,
         "ref": "EE-M003",
         "country": "Estónia",
         "flag": "🇪🇪",
@@ -2357,7 +4337,97 @@
         ]
       },
       {
-        "id": 70,
+        "id": 136,
+        "ref": "EE-M004",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 137,
+        "ref": "EE-M005",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 138,
+        "ref": "EE-M006",
+        "country": "Estónia",
+        "flag": "🇪🇪",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 139,
         "ref": "SI-M001",
         "country": "Eslovénia",
         "flag": "🇸🇮",
@@ -2387,7 +4457,7 @@
         ]
       },
       {
-        "id": 71,
+        "id": 140,
         "ref": "SI-M002",
         "country": "Eslovénia",
         "flag": "🇸🇮",
@@ -2417,7 +4487,7 @@
         ]
       },
       {
-        "id": 72,
+        "id": 141,
         "ref": "SI-M003",
         "country": "Eslovénia",
         "flag": "🇸🇮",
@@ -2447,7 +4517,97 @@
         ]
       },
       {
-        "id": 73,
+        "id": 142,
+        "ref": "SI-M004",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 143,
+        "ref": "SI-M005",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 144,
+        "ref": "SI-M006",
+        "country": "Eslovénia",
+        "flag": "🇸🇮",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 145,
         "ref": "LU-M001",
         "country": "Luxemburgo",
         "flag": "🇱🇺",
@@ -2477,7 +4637,7 @@
         ]
       },
       {
-        "id": 74,
+        "id": 146,
         "ref": "LU-M002",
         "country": "Luxemburgo",
         "flag": "🇱🇺",
@@ -2507,7 +4667,7 @@
         ]
       },
       {
-        "id": 75,
+        "id": 147,
         "ref": "LU-M003",
         "country": "Luxemburgo",
         "flag": "🇱🇺",
@@ -2537,7 +4697,97 @@
         ]
       },
       {
-        "id": 76,
+        "id": 148,
+        "ref": "LU-M004",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "nao-cumprido",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 149,
+        "ref": "LU-M005",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 150,
+        "ref": "LU-M006",
+        "country": "Luxemburgo",
+        "flag": "🇱🇺",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 151,
         "ref": "MT-M001",
         "country": "Malta",
         "flag": "🇲🇹",
@@ -2567,7 +4817,7 @@
         ]
       },
       {
-        "id": 77,
+        "id": 152,
         "ref": "MT-M002",
         "country": "Malta",
         "flag": "🇲🇹",
@@ -2597,7 +4847,7 @@
         ]
       },
       {
-        "id": 78,
+        "id": 153,
         "ref": "MT-M003",
         "country": "Malta",
         "flag": "🇲🇹",
@@ -2627,7 +4877,97 @@
         ]
       },
       {
-        "id": 79,
+        "id": 154,
+        "ref": "MT-M004",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 155,
+        "ref": "MT-M005",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "parcial",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 156,
+        "ref": "MT-M006",
+        "country": "Malta",
+        "flag": "🇲🇹",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 157,
         "ref": "CY-M001",
         "country": "Chipre",
         "flag": "🇨🇾",
@@ -2657,7 +4997,7 @@
         ]
       },
       {
-        "id": 80,
+        "id": 158,
         "ref": "CY-M002",
         "country": "Chipre",
         "flag": "🇨🇾",
@@ -2687,7 +5027,7 @@
         ]
       },
       {
-        "id": 81,
+        "id": 159,
         "ref": "CY-M003",
         "country": "Chipre",
         "flag": "🇨🇾",
@@ -2711,6 +5051,96 @@
           },
           {
             "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 160,
+        "ref": "CY-M004",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Meta",
+        "name": "Reforço da coesão social e territorial",
+        "description": "Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.",
+        "status": "parcial",
+        "deadline": "Q4 2025",
+        "pillar": "Coesão",
+        "component": "C04",
+        "history": [
+          {
+            "event": "Evidência parcial submetida para avaliação",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 161,
+        "ref": "CY-M005",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Marco",
+        "name": "Modernização dos serviços de saúde",
+        "description": "Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.",
+        "status": "nao-cumprido",
+        "deadline": "Q2 2026",
+        "pillar": "Saúde",
+        "component": "C05",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do marco",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Marco inscrito no plano nacional",
+            "date": "2021-08-01",
+            "source": "Comissão Europeia"
+          }
+        ]
+      },
+      {
+        "id": 162,
+        "ref": "CY-M006",
+        "country": "Chipre",
+        "flag": "🇨🇾",
+        "type": "Meta",
+        "name": "Políticas para a próxima geração",
+        "description": "Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.",
+        "status": "nao-cumprido",
+        "deadline": "Q3 2026",
+        "pillar": "Próxima geração",
+        "component": "C06",
+        "history": [
+          {
+            "event": "Atraso comunicado no cumprimento do meta",
+            "date": "2025-03-31",
+            "source": "Comissão Europeia"
+          },
+          {
+            "event": "Documentação nacional submetida para análise",
+            "date": "2024-11-30",
+            "source": "Estado-Membro"
+          },
+          {
+            "event": "Meta inscrito no plano nacional",
             "date": "2021-08-01",
             "source": "Comissão Europeia"
           }
@@ -4071,10 +6501,58 @@
     },
     "countryOptions": [
       {
-        "value": "PT",
-        "label": "Portugal",
-        "flag": "🇵🇹",
-        "planTotal": 16.6
+        "value": "DE",
+        "label": "Alemanha",
+        "flag": "🇩🇪",
+        "planTotal": 26.4
+      },
+      {
+        "value": "AT",
+        "label": "Áustria",
+        "flag": "🇦🇹",
+        "planTotal": 3.5
+      },
+      {
+        "value": "BE",
+        "label": "Bélgica",
+        "flag": "🇧🇪",
+        "planTotal": 4.5
+      },
+      {
+        "value": "BG",
+        "label": "Bulgária",
+        "flag": "🇧🇬",
+        "planTotal": 6.3
+      },
+      {
+        "value": "CY",
+        "label": "Chipre",
+        "flag": "🇨🇾",
+        "planTotal": 1.1
+      },
+      {
+        "value": "HR",
+        "label": "Croácia",
+        "flag": "🇭🇷",
+        "planTotal": 6.4
+      },
+      {
+        "value": "DK",
+        "label": "Dinamarca",
+        "flag": "🇩🇰",
+        "planTotal": 0.7
+      },
+      {
+        "value": "SK",
+        "label": "Eslováquia",
+        "flag": "🇸🇰",
+        "planTotal": 6.3
+      },
+      {
+        "value": "SI",
+        "label": "Eslovénia",
+        "flag": "🇸🇮",
+        "planTotal": 2.5
       },
       {
         "value": "ES",
@@ -4083,10 +6561,16 @@
         "planTotal": 160.4
       },
       {
-        "value": "IT",
-        "label": "Itália",
-        "flag": "🇮🇹",
-        "planTotal": 191.5
+        "value": "EE",
+        "label": "Estónia",
+        "flag": "🇪🇪",
+        "planTotal": 1
+      },
+      {
+        "value": "FI",
+        "label": "Finlândia",
+        "flag": "🇫🇮",
+        "planTotal": 2.4
       },
       {
         "value": "FR",
@@ -4095,16 +6579,88 @@
         "planTotal": 40.3
       },
       {
-        "value": "DE",
-        "label": "Alemanha",
-        "flag": "🇩🇪",
-        "planTotal": 26.4
+        "value": "GR",
+        "label": "Grécia",
+        "flag": "🇬🇷",
+        "planTotal": 30.1
+      },
+      {
+        "value": "HU",
+        "label": "Hungria",
+        "flag": "🇭🇺",
+        "planTotal": 5.8
+      },
+      {
+        "value": "IE",
+        "label": "Irlanda",
+        "flag": "🇮🇪",
+        "planTotal": 1
+      },
+      {
+        "value": "IT",
+        "label": "Itália",
+        "flag": "🇮🇹",
+        "planTotal": 191.5
+      },
+      {
+        "value": "LV",
+        "label": "Letónia",
+        "flag": "🇱🇻",
+        "planTotal": 1.8
+      },
+      {
+        "value": "LT",
+        "label": "Lituânia",
+        "flag": "🇱🇹",
+        "planTotal": 2.2
+      },
+      {
+        "value": "LU",
+        "label": "Luxemburgo",
+        "flag": "🇱🇺",
+        "planTotal": 0.2
+      },
+      {
+        "value": "MT",
+        "label": "Malta",
+        "flag": "🇲🇹",
+        "planTotal": 0.4
+      },
+      {
+        "value": "NL",
+        "label": "Países Baixos",
+        "flag": "🇳🇱",
+        "planTotal": 4.7
       },
       {
         "value": "PL",
         "label": "Polónia",
         "flag": "🇵🇱",
         "planTotal": 35.4
+      },
+      {
+        "value": "PT",
+        "label": "Portugal",
+        "flag": "🇵🇹",
+        "planTotal": 16.6
+      },
+      {
+        "value": "CZ",
+        "label": "República Checa",
+        "flag": "🇨🇿",
+        "planTotal": 7.1
+      },
+      {
+        "value": "RO",
+        "label": "Roménia",
+        "flag": "🇷🇴",
+        "planTotal": 27.1
+      },
+      {
+        "value": "SE",
+        "label": "Suécia",
+        "flag": "🇸🇪",
+        "planTotal": 3.2
       }
     ],
     "countryData": {
@@ -4837,6 +7393,2568 @@
             "sector": "Educação",
             "amount": 352,
             "project": "Centros de investigação biomédica"
+          }
+        ]
+      },
+      "NL": {
+        "payments": [
+          {
+            "id": "NL-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.5,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "NL-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "NL-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "NL-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "NL-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "NL-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "NL-B01",
+            "name": "Autoridade Nacional do PRR - Países Baixos",
+            "sector": "Administração Pública",
+            "amount": 504,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "NL-B02",
+            "name": "Operador Ferroviário Nacional - Países Baixos",
+            "sector": "Transportes",
+            "amount": 420,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "NL-B03",
+            "name": "Agência para a Transição Energética - Países Baixos",
+            "sector": "Energia",
+            "amount": 364,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "NL-B04",
+            "name": "Fundo de Habitação e Coesão - Países Baixos",
+            "sector": "Habitação",
+            "amount": 308,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "NL-B05",
+            "name": "Rede Nacional de Escolas Digitais - Países Baixos",
+            "sector": "Educação",
+            "amount": 280,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "NL-B06",
+            "name": "Agência de Inovação Empresarial - Países Baixos",
+            "sector": "Economia",
+            "amount": 252,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "NL-B07",
+            "name": "Serviço Nacional de Saúde - Países Baixos",
+            "sector": "Saúde",
+            "amount": 224,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "NL-B08",
+            "name": "Administrações Locais - Países Baixos",
+            "sector": "Administração Local",
+            "amount": 196,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "BE": {
+        "payments": [
+          {
+            "id": "BE-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.6,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "BE-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BE-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BE-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BE-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BE-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "BE-B01",
+            "name": "Autoridade Nacional do PRR - Bélgica",
+            "sector": "Administração Pública",
+            "amount": 558,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "BE-B02",
+            "name": "Operador Ferroviário Nacional - Bélgica",
+            "sector": "Transportes",
+            "amount": 465,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "BE-B03",
+            "name": "Agência para a Transição Energética - Bélgica",
+            "sector": "Energia",
+            "amount": 403,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "BE-B04",
+            "name": "Fundo de Habitação e Coesão - Bélgica",
+            "sector": "Habitação",
+            "amount": 341,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "BE-B05",
+            "name": "Rede Nacional de Escolas Digitais - Bélgica",
+            "sector": "Educação",
+            "amount": 310,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "BE-B06",
+            "name": "Agência de Inovação Empresarial - Bélgica",
+            "sector": "Economia",
+            "amount": 279,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "BE-B07",
+            "name": "Serviço Nacional de Saúde - Bélgica",
+            "sector": "Saúde",
+            "amount": 248,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "BE-B08",
+            "name": "Administrações Locais - Bélgica",
+            "sector": "Administração Local",
+            "amount": 217,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "AT": {
+        "payments": [
+          {
+            "id": "AT-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.4,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "AT-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "AT-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "AT-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "AT-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "AT-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "AT-B01",
+            "name": "Autoridade Nacional do PRR - Áustria",
+            "sector": "Administração Pública",
+            "amount": 432,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "AT-B02",
+            "name": "Operador Ferroviário Nacional - Áustria",
+            "sector": "Transportes",
+            "amount": 360,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "AT-B03",
+            "name": "Agência para a Transição Energética - Áustria",
+            "sector": "Energia",
+            "amount": 312,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "AT-B04",
+            "name": "Fundo de Habitação e Coesão - Áustria",
+            "sector": "Habitação",
+            "amount": 264,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "AT-B05",
+            "name": "Rede Nacional de Escolas Digitais - Áustria",
+            "sector": "Educação",
+            "amount": 240,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "AT-B06",
+            "name": "Agência de Inovação Empresarial - Áustria",
+            "sector": "Economia",
+            "amount": 216,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "AT-B07",
+            "name": "Serviço Nacional de Saúde - Áustria",
+            "sector": "Saúde",
+            "amount": 192,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "AT-B08",
+            "name": "Administrações Locais - Áustria",
+            "sector": "Administração Local",
+            "amount": 168,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "GR": {
+        "payments": [
+          {
+            "id": "GR-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 2.8,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "GR-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 2.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "GR-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 2.8,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "GR-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 2.7,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "GR-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 2.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "GR-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 2.6,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "GR-B01",
+            "name": "Autoridade Nacional do PRR - Grécia",
+            "sector": "Administração Pública",
+            "amount": 2808,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "GR-B02",
+            "name": "Operador Ferroviário Nacional - Grécia",
+            "sector": "Transportes",
+            "amount": 2340,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "GR-B03",
+            "name": "Agência para a Transição Energética - Grécia",
+            "sector": "Energia",
+            "amount": 2028,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "GR-B04",
+            "name": "Fundo de Habitação e Coesão - Grécia",
+            "sector": "Habitação",
+            "amount": 1716,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "GR-B05",
+            "name": "Rede Nacional de Escolas Digitais - Grécia",
+            "sector": "Educação",
+            "amount": 1560,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "GR-B06",
+            "name": "Agência de Inovação Empresarial - Grécia",
+            "sector": "Economia",
+            "amount": 1404,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "GR-B07",
+            "name": "Serviço Nacional de Saúde - Grécia",
+            "sector": "Saúde",
+            "amount": 1248,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "GR-B08",
+            "name": "Administrações Locais - Grécia",
+            "sector": "Administração Local",
+            "amount": 1092,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "RO": {
+        "payments": [
+          {
+            "id": "RO-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 1.7,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "RO-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 1.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "RO-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 1.7,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "RO-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 1.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "RO-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 1.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "RO-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 1.4,
+            "type": "emprestimo",
+            "typeLabel": "Empréstimo"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "RO-B01",
+            "name": "Autoridade Nacional do PRR - Roménia",
+            "sector": "Administração Pública",
+            "amount": 1656,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "RO-B02",
+            "name": "Operador Ferroviário Nacional - Roménia",
+            "sector": "Transportes",
+            "amount": 1380,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "RO-B03",
+            "name": "Agência para a Transição Energética - Roménia",
+            "sector": "Energia",
+            "amount": 1196,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "RO-B04",
+            "name": "Fundo de Habitação e Coesão - Roménia",
+            "sector": "Habitação",
+            "amount": 1012,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "RO-B05",
+            "name": "Rede Nacional de Escolas Digitais - Roménia",
+            "sector": "Educação",
+            "amount": 920,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "RO-B06",
+            "name": "Agência de Inovação Empresarial - Roménia",
+            "sector": "Economia",
+            "amount": 828,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "RO-B07",
+            "name": "Serviço Nacional de Saúde - Roménia",
+            "sector": "Saúde",
+            "amount": 736,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "RO-B08",
+            "name": "Administrações Locais - Roménia",
+            "sector": "Administração Local",
+            "amount": 644,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "CZ": {
+        "payments": [
+          {
+            "id": "CZ-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.6,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "CZ-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CZ-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CZ-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CZ-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CZ-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "CZ-B01",
+            "name": "Autoridade Nacional do PRR - República Checa",
+            "sector": "Administração Pública",
+            "amount": 576,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "CZ-B02",
+            "name": "Operador Ferroviário Nacional - República Checa",
+            "sector": "Transportes",
+            "amount": 480,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "CZ-B03",
+            "name": "Agência para a Transição Energética - República Checa",
+            "sector": "Energia",
+            "amount": 416,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "CZ-B04",
+            "name": "Fundo de Habitação e Coesão - República Checa",
+            "sector": "Habitação",
+            "amount": 352,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "CZ-B05",
+            "name": "Rede Nacional de Escolas Digitais - República Checa",
+            "sector": "Educação",
+            "amount": 320,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "CZ-B06",
+            "name": "Agência de Inovação Empresarial - República Checa",
+            "sector": "Economia",
+            "amount": 288,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "CZ-B07",
+            "name": "Serviço Nacional de Saúde - República Checa",
+            "sector": "Saúde",
+            "amount": 256,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "CZ-B08",
+            "name": "Administrações Locais - República Checa",
+            "sector": "Administração Local",
+            "amount": 224,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "HU": {
+        "payments": [
+          {
+            "id": "HU-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.3,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "HU-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HU-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HU-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HU-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HU-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "HU-B01",
+            "name": "Autoridade Nacional do PRR - Hungria",
+            "sector": "Administração Pública",
+            "amount": 270,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "HU-B02",
+            "name": "Operador Ferroviário Nacional - Hungria",
+            "sector": "Transportes",
+            "amount": 225,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "HU-B03",
+            "name": "Agência para a Transição Energética - Hungria",
+            "sector": "Energia",
+            "amount": 195,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "HU-B04",
+            "name": "Fundo de Habitação e Coesão - Hungria",
+            "sector": "Habitação",
+            "amount": 165,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "HU-B05",
+            "name": "Rede Nacional de Escolas Digitais - Hungria",
+            "sector": "Educação",
+            "amount": 150,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "HU-B06",
+            "name": "Agência de Inovação Empresarial - Hungria",
+            "sector": "Economia",
+            "amount": 135,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "HU-B07",
+            "name": "Serviço Nacional de Saúde - Hungria",
+            "sector": "Saúde",
+            "amount": 120,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "HU-B08",
+            "name": "Administrações Locais - Hungria",
+            "sector": "Administração Local",
+            "amount": 105,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "SK": {
+        "payments": [
+          {
+            "id": "SK-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.5,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "SK-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SK-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SK-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SK-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SK-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "SK-B01",
+            "name": "Autoridade Nacional do PRR - Eslováquia",
+            "sector": "Administração Pública",
+            "amount": 504,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "SK-B02",
+            "name": "Operador Ferroviário Nacional - Eslováquia",
+            "sector": "Transportes",
+            "amount": 420,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "SK-B03",
+            "name": "Agência para a Transição Energética - Eslováquia",
+            "sector": "Energia",
+            "amount": 364,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "SK-B04",
+            "name": "Fundo de Habitação e Coesão - Eslováquia",
+            "sector": "Habitação",
+            "amount": 308,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "SK-B05",
+            "name": "Rede Nacional de Escolas Digitais - Eslováquia",
+            "sector": "Educação",
+            "amount": 280,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "SK-B06",
+            "name": "Agência de Inovação Empresarial - Eslováquia",
+            "sector": "Economia",
+            "amount": 252,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "SK-B07",
+            "name": "Serviço Nacional de Saúde - Eslováquia",
+            "sector": "Saúde",
+            "amount": 224,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "SK-B08",
+            "name": "Administrações Locais - Eslováquia",
+            "sector": "Administração Local",
+            "amount": 196,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "HR": {
+        "payments": [
+          {
+            "id": "HR-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.6,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "HR-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HR-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HR-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HR-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "HR-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.6,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "HR-B01",
+            "name": "Autoridade Nacional do PRR - Croácia",
+            "sector": "Administração Pública",
+            "amount": 612,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "HR-B02",
+            "name": "Operador Ferroviário Nacional - Croácia",
+            "sector": "Transportes",
+            "amount": 510,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "HR-B03",
+            "name": "Agência para a Transição Energética - Croácia",
+            "sector": "Energia",
+            "amount": 442,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "HR-B04",
+            "name": "Fundo de Habitação e Coesão - Croácia",
+            "sector": "Habitação",
+            "amount": 374,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "HR-B05",
+            "name": "Rede Nacional de Escolas Digitais - Croácia",
+            "sector": "Educação",
+            "amount": 340,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "HR-B06",
+            "name": "Agência de Inovação Empresarial - Croácia",
+            "sector": "Economia",
+            "amount": 306,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "HR-B07",
+            "name": "Serviço Nacional de Saúde - Croácia",
+            "sector": "Saúde",
+            "amount": 272,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "HR-B08",
+            "name": "Administrações Locais - Croácia",
+            "sector": "Administração Local",
+            "amount": 238,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "BG": {
+        "payments": [
+          {
+            "id": "BG-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.5,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "BG-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BG-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.5,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BG-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BG-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "BG-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "BG-B01",
+            "name": "Autoridade Nacional do PRR - Bulgária",
+            "sector": "Administração Pública",
+            "amount": 450,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "BG-B02",
+            "name": "Operador Ferroviário Nacional - Bulgária",
+            "sector": "Transportes",
+            "amount": 375,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "BG-B03",
+            "name": "Agência para a Transição Energética - Bulgária",
+            "sector": "Energia",
+            "amount": 325,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "BG-B04",
+            "name": "Fundo de Habitação e Coesão - Bulgária",
+            "sector": "Habitação",
+            "amount": 275,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "BG-B05",
+            "name": "Rede Nacional de Escolas Digitais - Bulgária",
+            "sector": "Educação",
+            "amount": 250,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "BG-B06",
+            "name": "Agência de Inovação Empresarial - Bulgária",
+            "sector": "Economia",
+            "amount": 225,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "BG-B07",
+            "name": "Serviço Nacional de Saúde - Bulgária",
+            "sector": "Saúde",
+            "amount": 200,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "BG-B08",
+            "name": "Administrações Locais - Bulgária",
+            "sector": "Administração Local",
+            "amount": 175,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "SE": {
+        "payments": [
+          {
+            "id": "SE-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.4,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "SE-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SE-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SE-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.4,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SE-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SE-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "SE-B01",
+            "name": "Autoridade Nacional do PRR - Suécia",
+            "sector": "Administração Pública",
+            "amount": 378,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "SE-B02",
+            "name": "Operador Ferroviário Nacional - Suécia",
+            "sector": "Transportes",
+            "amount": 315,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "SE-B03",
+            "name": "Agência para a Transição Energética - Suécia",
+            "sector": "Energia",
+            "amount": 273,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "SE-B04",
+            "name": "Fundo de Habitação e Coesão - Suécia",
+            "sector": "Habitação",
+            "amount": 231,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "SE-B05",
+            "name": "Rede Nacional de Escolas Digitais - Suécia",
+            "sector": "Educação",
+            "amount": 210,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "SE-B06",
+            "name": "Agência de Inovação Empresarial - Suécia",
+            "sector": "Economia",
+            "amount": 189,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "SE-B07",
+            "name": "Serviço Nacional de Saúde - Suécia",
+            "sector": "Saúde",
+            "amount": 168,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "SE-B08",
+            "name": "Administrações Locais - Suécia",
+            "sector": "Administração Local",
+            "amount": 147,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "FI": {
+        "payments": [
+          {
+            "id": "FI-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.3,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "FI-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FI-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FI-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FI-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "FI-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "FI-B01",
+            "name": "Autoridade Nacional do PRR - Finlândia",
+            "sector": "Administração Pública",
+            "amount": 306,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "FI-B02",
+            "name": "Operador Ferroviário Nacional - Finlândia",
+            "sector": "Transportes",
+            "amount": 255,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "FI-B03",
+            "name": "Agência para a Transição Energética - Finlândia",
+            "sector": "Energia",
+            "amount": 221,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "FI-B04",
+            "name": "Fundo de Habitação e Coesão - Finlândia",
+            "sector": "Habitação",
+            "amount": 187,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "FI-B05",
+            "name": "Rede Nacional de Escolas Digitais - Finlândia",
+            "sector": "Educação",
+            "amount": 170,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "FI-B06",
+            "name": "Agência de Inovação Empresarial - Finlândia",
+            "sector": "Economia",
+            "amount": 153,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "FI-B07",
+            "name": "Serviço Nacional de Saúde - Finlândia",
+            "sector": "Saúde",
+            "amount": 136,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "FI-B08",
+            "name": "Administrações Locais - Finlândia",
+            "sector": "Administração Local",
+            "amount": 119,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "DK": {
+        "payments": [
+          {
+            "id": "DK-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "DK-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DK-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DK-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DK-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "DK-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "DK-B01",
+            "name": "Autoridade Nacional do PRR - Dinamarca",
+            "sector": "Administração Pública",
+            "amount": 90,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "DK-B02",
+            "name": "Operador Ferroviário Nacional - Dinamarca",
+            "sector": "Transportes",
+            "amount": 75,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "DK-B03",
+            "name": "Agência para a Transição Energética - Dinamarca",
+            "sector": "Energia",
+            "amount": 65,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "DK-B04",
+            "name": "Fundo de Habitação e Coesão - Dinamarca",
+            "sector": "Habitação",
+            "amount": 55,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "DK-B05",
+            "name": "Rede Nacional de Escolas Digitais - Dinamarca",
+            "sector": "Educação",
+            "amount": 50,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "DK-B06",
+            "name": "Agência de Inovação Empresarial - Dinamarca",
+            "sector": "Economia",
+            "amount": 45,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "DK-B07",
+            "name": "Serviço Nacional de Saúde - Dinamarca",
+            "sector": "Saúde",
+            "amount": 40,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "DK-B08",
+            "name": "Administrações Locais - Dinamarca",
+            "sector": "Administração Local",
+            "amount": 35,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "IE": {
+        "payments": [
+          {
+            "id": "IE-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "IE-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IE-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IE-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IE-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "IE-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "IE-B01",
+            "name": "Autoridade Nacional do PRR - Irlanda",
+            "sector": "Administração Pública",
+            "amount": 126,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "IE-B02",
+            "name": "Operador Ferroviário Nacional - Irlanda",
+            "sector": "Transportes",
+            "amount": 105,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "IE-B03",
+            "name": "Agência para a Transição Energética - Irlanda",
+            "sector": "Energia",
+            "amount": 91,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "IE-B04",
+            "name": "Fundo de Habitação e Coesão - Irlanda",
+            "sector": "Habitação",
+            "amount": 77,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "IE-B05",
+            "name": "Rede Nacional de Escolas Digitais - Irlanda",
+            "sector": "Educação",
+            "amount": 70,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "IE-B06",
+            "name": "Agência de Inovação Empresarial - Irlanda",
+            "sector": "Economia",
+            "amount": 63,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "IE-B07",
+            "name": "Serviço Nacional de Saúde - Irlanda",
+            "sector": "Saúde",
+            "amount": 56,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "IE-B08",
+            "name": "Administrações Locais - Irlanda",
+            "sector": "Administração Local",
+            "amount": 49,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "LT": {
+        "payments": [
+          {
+            "id": "LT-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.3,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "LT-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LT-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LT-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LT-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LT-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "LT-B01",
+            "name": "Autoridade Nacional do PRR - Lituânia",
+            "sector": "Administração Pública",
+            "amount": 252,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "LT-B02",
+            "name": "Operador Ferroviário Nacional - Lituânia",
+            "sector": "Transportes",
+            "amount": 210,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "LT-B03",
+            "name": "Agência para a Transição Energética - Lituânia",
+            "sector": "Energia",
+            "amount": 182,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "LT-B04",
+            "name": "Fundo de Habitação e Coesão - Lituânia",
+            "sector": "Habitação",
+            "amount": 154,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "LT-B05",
+            "name": "Rede Nacional de Escolas Digitais - Lituânia",
+            "sector": "Educação",
+            "amount": 140,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "LT-B06",
+            "name": "Agência de Inovação Empresarial - Lituânia",
+            "sector": "Economia",
+            "amount": 126,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "LT-B07",
+            "name": "Serviço Nacional de Saúde - Lituânia",
+            "sector": "Saúde",
+            "amount": 112,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "LT-B08",
+            "name": "Administrações Locais - Lituânia",
+            "sector": "Administração Local",
+            "amount": 98,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "LV": {
+        "payments": [
+          {
+            "id": "LV-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.2,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "LV-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LV-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LV-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LV-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LV-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "LV-B01",
+            "name": "Autoridade Nacional do PRR - Letónia",
+            "sector": "Administração Pública",
+            "amount": 198,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "LV-B02",
+            "name": "Operador Ferroviário Nacional - Letónia",
+            "sector": "Transportes",
+            "amount": 165,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "LV-B03",
+            "name": "Agência para a Transição Energética - Letónia",
+            "sector": "Energia",
+            "amount": 143,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "LV-B04",
+            "name": "Fundo de Habitação e Coesão - Letónia",
+            "sector": "Habitação",
+            "amount": 121,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "LV-B05",
+            "name": "Rede Nacional de Escolas Digitais - Letónia",
+            "sector": "Educação",
+            "amount": 110,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "LV-B06",
+            "name": "Agência de Inovação Empresarial - Letónia",
+            "sector": "Economia",
+            "amount": 99,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "LV-B07",
+            "name": "Serviço Nacional de Saúde - Letónia",
+            "sector": "Saúde",
+            "amount": 88,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "LV-B08",
+            "name": "Administrações Locais - Letónia",
+            "sector": "Administração Local",
+            "amount": 77,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "EE": {
+        "payments": [
+          {
+            "id": "EE-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "EE-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "EE-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "EE-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "EE-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "EE-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "EE-B01",
+            "name": "Autoridade Nacional do PRR - Estónia",
+            "sector": "Administração Pública",
+            "amount": 126,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "EE-B02",
+            "name": "Operador Ferroviário Nacional - Estónia",
+            "sector": "Transportes",
+            "amount": 105,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "EE-B03",
+            "name": "Agência para a Transição Energética - Estónia",
+            "sector": "Energia",
+            "amount": 91,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "EE-B04",
+            "name": "Fundo de Habitação e Coesão - Estónia",
+            "sector": "Habitação",
+            "amount": 77,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "EE-B05",
+            "name": "Rede Nacional de Escolas Digitais - Estónia",
+            "sector": "Educação",
+            "amount": 70,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "EE-B06",
+            "name": "Agência de Inovação Empresarial - Estónia",
+            "sector": "Economia",
+            "amount": 63,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "EE-B07",
+            "name": "Serviço Nacional de Saúde - Estónia",
+            "sector": "Saúde",
+            "amount": 56,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "EE-B08",
+            "name": "Administrações Locais - Estónia",
+            "sector": "Administração Local",
+            "amount": 49,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "SI": {
+        "payments": [
+          {
+            "id": "SI-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.3,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "SI-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SI-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SI-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SI-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "SI-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.2,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "SI-B01",
+            "name": "Autoridade Nacional do PRR - Eslovénia",
+            "sector": "Administração Pública",
+            "amount": 288,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "SI-B02",
+            "name": "Operador Ferroviário Nacional - Eslovénia",
+            "sector": "Transportes",
+            "amount": 240,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "SI-B03",
+            "name": "Agência para a Transição Energética - Eslovénia",
+            "sector": "Energia",
+            "amount": 208,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "SI-B04",
+            "name": "Fundo de Habitação e Coesão - Eslovénia",
+            "sector": "Habitação",
+            "amount": 176,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "SI-B05",
+            "name": "Rede Nacional de Escolas Digitais - Eslovénia",
+            "sector": "Educação",
+            "amount": 160,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "SI-B06",
+            "name": "Agência de Inovação Empresarial - Eslovénia",
+            "sector": "Economia",
+            "amount": 144,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "SI-B07",
+            "name": "Serviço Nacional de Saúde - Eslovénia",
+            "sector": "Saúde",
+            "amount": 128,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "SI-B08",
+            "name": "Administrações Locais - Eslovénia",
+            "sector": "Administração Local",
+            "amount": 112,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "LU": {
+        "payments": [
+          {
+            "id": "LU-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "LU-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LU-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LU-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LU-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "LU-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "LU-B01",
+            "name": "Autoridade Nacional do PRR - Luxemburgo",
+            "sector": "Administração Pública",
+            "amount": 21.6,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "LU-B02",
+            "name": "Operador Ferroviário Nacional - Luxemburgo",
+            "sector": "Transportes",
+            "amount": 18,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "LU-B03",
+            "name": "Agência para a Transição Energética - Luxemburgo",
+            "sector": "Energia",
+            "amount": 15.6,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "LU-B04",
+            "name": "Fundo de Habitação e Coesão - Luxemburgo",
+            "sector": "Habitação",
+            "amount": 13.2,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "LU-B05",
+            "name": "Rede Nacional de Escolas Digitais - Luxemburgo",
+            "sector": "Educação",
+            "amount": 12,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "LU-B06",
+            "name": "Agência de Inovação Empresarial - Luxemburgo",
+            "sector": "Economia",
+            "amount": 10.8,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "LU-B07",
+            "name": "Serviço Nacional de Saúde - Luxemburgo",
+            "sector": "Saúde",
+            "amount": 9.6,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "LU-B08",
+            "name": "Administrações Locais - Luxemburgo",
+            "sector": "Administração Local",
+            "amount": 8.4,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "MT": {
+        "payments": [
+          {
+            "id": "MT-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "MT-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "MT-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "MT-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "MT-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "MT-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "MT-B01",
+            "name": "Autoridade Nacional do PRR - Malta",
+            "sector": "Administração Pública",
+            "amount": 54,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "MT-B02",
+            "name": "Operador Ferroviário Nacional - Malta",
+            "sector": "Transportes",
+            "amount": 45,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "MT-B03",
+            "name": "Agência para a Transição Energética - Malta",
+            "sector": "Energia",
+            "amount": 39,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "MT-B04",
+            "name": "Fundo de Habitação e Coesão - Malta",
+            "sector": "Habitação",
+            "amount": 33,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "MT-B05",
+            "name": "Rede Nacional de Escolas Digitais - Malta",
+            "sector": "Educação",
+            "amount": 30,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "MT-B06",
+            "name": "Agência de Inovação Empresarial - Malta",
+            "sector": "Economia",
+            "amount": 27,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "MT-B07",
+            "name": "Serviço Nacional de Saúde - Malta",
+            "sector": "Saúde",
+            "amount": 24,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "MT-B08",
+            "name": "Administrações Locais - Malta",
+            "sector": "Administração Local",
+            "amount": 21,
+            "project": "Projetos municipais de proximidade"
+          }
+        ]
+      },
+      "CY": {
+        "payments": [
+          {
+            "id": "CY-01",
+            "date": "18/08/2021",
+            "dateLabel": "18 de agosto de 2021",
+            "chartDate": "08/21",
+            "parcel": "Pré-financiamento",
+            "amount": 0.1,
+            "type": "pre",
+            "typeLabel": "Pré-financiamento"
+          },
+          {
+            "id": "CY-02",
+            "date": "20/01/2022",
+            "dateLabel": "20 de janeiro de 2022",
+            "chartDate": "01/22",
+            "parcel": "1º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CY-03",
+            "date": "22/11/2022",
+            "dateLabel": "22 de novembro de 2022",
+            "chartDate": "11/22",
+            "parcel": "2º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CY-04",
+            "date": "24/07/2023",
+            "dateLabel": "24 de julho de 2023",
+            "chartDate": "07/23",
+            "parcel": "3º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CY-05",
+            "date": "18/03/2024",
+            "dateLabel": "18 de março de 2024",
+            "chartDate": "03/24",
+            "parcel": "4º pedido de pagamento",
+            "amount": 0.1,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          },
+          {
+            "id": "CY-06",
+            "date": "18/09/2024",
+            "dateLabel": "18 de setembro de 2024",
+            "chartDate": "09/24",
+            "parcel": "5º pedido de pagamento",
+            "amount": 0.3,
+            "type": "subvencao",
+            "typeLabel": "Subvenção"
+          }
+        ],
+        "beneficiaries": [
+          {
+            "id": "CY-B01",
+            "name": "Autoridade Nacional do PRR - Chipre",
+            "sector": "Administração Pública",
+            "amount": 144,
+            "project": "Coordenação e execução do plano nacional"
+          },
+          {
+            "id": "CY-B02",
+            "name": "Operador Ferroviário Nacional - Chipre",
+            "sector": "Transportes",
+            "amount": 120,
+            "project": "Modernização de infraestruturas e material circulante"
+          },
+          {
+            "id": "CY-B03",
+            "name": "Agência para a Transição Energética - Chipre",
+            "sector": "Energia",
+            "amount": 104,
+            "project": "Eficiência energética e energias renováveis"
+          },
+          {
+            "id": "CY-B04",
+            "name": "Fundo de Habitação e Coesão - Chipre",
+            "sector": "Habitação",
+            "amount": 88,
+            "project": "Habitação acessível e reabilitação urbana"
+          },
+          {
+            "id": "CY-B05",
+            "name": "Rede Nacional de Escolas Digitais - Chipre",
+            "sector": "Educação",
+            "amount": 80,
+            "project": "Equipamentos e competências digitais"
+          },
+          {
+            "id": "CY-B06",
+            "name": "Agência de Inovação Empresarial - Chipre",
+            "sector": "Economia",
+            "amount": 72,
+            "project": "Digitalização e competitividade das empresas"
+          },
+          {
+            "id": "CY-B07",
+            "name": "Serviço Nacional de Saúde - Chipre",
+            "sector": "Saúde",
+            "amount": 64,
+            "project": "Modernização de cuidados de saúde"
+          },
+          {
+            "id": "CY-B08",
+            "name": "Administrações Locais - Chipre",
+            "sector": "Administração Local",
+            "amount": 56,
+            "project": "Projetos municipais de proximidade"
           }
         ]
       }

@@ -214,6 +214,7 @@ import { usarRecursoApi } from '@/composicoes/usarRecursoApi'
 import { usarModoEscuro } from '@/composicoes/usarModoEscuro'
 // Paleta comum usada pelos tooltips de gráficos.
 import { getChartTooltipColors } from '@/utilitarios/tooltipsGraficos'
+import { ordenarPaisesPorNome } from '@/utilitarios/paises.mjs'
 // Recurso ativo da página.
 const resource = usarRecursoApi('compare')
 // Estado global do tema atual.
@@ -226,11 +227,11 @@ const ALL = computed(() => resource.value.countries)
 const countryA = ref('PT')
 const countryB = ref('ES')
 // Opções enviadas para o componente de filtros.
-const countryOptions = computed(() => ALL.value.map((country) => ({
+const countryOptions = computed(() => ordenarPaisesPorNome(ALL.value.map((country) => ({
   value: country.value,
   label: country.name,
   flag: country.flag,
-})))
+}))))
 // País A válido; fica nulo se for igual ao país B para impedir comparação repetida.
 const dataA = computed(() => {
   const c = ALL.value.find((country) => country.value === countryA.value)

@@ -16,7 +16,7 @@ Executar apenas o frontend:
 npm run dev
 ```
 
-Executar com `json-server`:
+Executar a API mock com `json-server`:
 
 ```bash
 npm run db:start
@@ -59,7 +59,7 @@ src/
 
 `public/` contém ficheiros estáticos que o Vite copia diretamente para a aplicação final, sem passarem pelo sistema de imports do Vue. Neste projeto é usada para recursos públicos como `eu-flag.webp`.
 
-`scripts/` contém automatizações auxiliares do projeto. O caso principal é `build-jsondb.mjs`, que constrói o ficheiro `db.json` usado pelo `json-server`.
+`scripts/` contém automatizações auxiliares do projeto. O caso principal é `build-jsondb.mjs`, que pode reconstruir o ficheiro `db.json` a partir dos dados locais.
 
 `src/assets/` contém estilos globais, variáveis CSS, animações e regras visuais partilhadas.
 
@@ -69,7 +69,7 @@ src/
 
 `src/configuracoes/` contém configuração de bibliotecas externas, como Chart.js.
 
-`src/dados/` contém os datasets estruturados que servem para gerar o `db.json` e para fallback local quando o `json-server` não está ativo.
+`src/dados/` contém os datasets estruturados que servem para gerar o `db.json`.
 
 `src/diretivas/` contém diretivas Vue próprias, como a animação ao fazer scroll.
 
@@ -79,7 +79,7 @@ src/
 
 `src/rotas/` contém as rotas da aplicação.
 
-`src/servicos/` contém a camada central de acesso a dados, incluindo a tentativa de ler dados da API local, a recuperação dos fallbacks e o carregamento de vários recursos em paralelo.
+`src/servicos/` contém a camada central de acesso a dados, incluindo os pedidos diretos ao `json-server` e o carregamento de vários recursos em paralelo.
 
 `src/utilitarios/` contém funções auxiliares sem dependência direta de Vue, como tooltips de gráficos e cálculos de resumo do MRR.
 
@@ -105,11 +105,17 @@ src/
 
 ## Dados e `json-server`
 
-O projeto usa uma arquitetura híbrida. Primeiro tenta obter dados através da API local em `/api`. Se o servidor não estiver ativo ou se faltar algum recurso, a aplicação continua a funcionar com os dados locais em `src/dados/`.
+O projeto usa o `json-server` no formato simples usado nas aulas: existe um ficheiro `db.json` na raiz do projeto e esse ficheiro é servido como API REST local.
 
-Os dados de origem estão organizados em `src/dados/`. O ficheiro `db.json`, que fica na raiz do projeto, é a base lida pelo `json-server`. Esse ficheiro é gerado pelo comando `npm run db:build`, através do script `scripts/build-jsondb.mjs`.
+O comando `npm run db:start` copia primeiro `db.json` para `.db-new.json` e arranca o servidor com essa cópia, seguindo a mesma estratégia do projeto de referência. Assim, o ficheiro original `db.json` fica preservado.
 
-O comando `npm run db:start` gera o ficheiro `db.json` e inicia o `json-server` na porta `3000`. O Vite encaminha os pedidos `/api/*` para esse servidor durante o desenvolvimento.
+A API fica disponível diretamente em:
+
+```text
+http://localhost:3000
+```
+
+As páginas fazem pedidos diretos para esse servidor, por exemplo `http://localhost:3000/dashboard`.
 
 Os recursos principais disponíveis no `json-server` são:
 
@@ -121,9 +127,7 @@ Os recursos principais disponíveis no `json-server` são:
 - `/map`
 - `/more`
 
-Para acrescentar novos dados, o fluxo recomendado é atualizar os ficheiros em `src/dados/` e voltar a executar `npm run db:build`. As páginas carregam os recursos através de `usarRecursoApi`, que tenta primeiro o `json-server` e só usa os dados locais como fallback. A aplicação constrói filtros, listas e gráficos a partir dos próprios dados sempre que possível, por isso novos países ou novos registos passam a aparecer sem ser necessário criar componentes novos.
-
-Mesmo que o `json-server` falhe, existem dados estatísticos locais. Esses dados estão concentrados em `src/dados/baseSimulada.mjs` e nos módulos importados por esse ficheiro. A camada `src/servicos/api.js` é responsável por decidir se usa a API local ou esses fallbacks.
+Para acrescentar novos dados, o fluxo recomendado é atualizar os ficheiros em `src/dados/`, executar `npm run db:build` para regenerar `db.json`, e depois voltar a arrancar `npm run db:start`.
 
 ## Exportação
 
@@ -148,4 +152,4 @@ Neste projeto, responsive significa que a interface se adapta a diferentes taman
 
 ## Observações
 
-O projeto está preparado para evoluir gradualmente para uma dependência maior do `json-server`, mas mantém dados locais para não bloquear o desenvolvimento visual e funcional enquanto a base de dados final não estiver completa.
+O `json-server` deve estar ativo durante a demonstração para evidenciar a API mock usada pela aplicação.

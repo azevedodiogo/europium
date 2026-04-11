@@ -48,3 +48,4 @@ Desktop.ini
 docs/.DS_Store
 
 # O ficheiro db.json fica versionável porque é a base usada pelo json-server.
+.db-new.json
