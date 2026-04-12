@@ -2,17 +2,26 @@
   "name": "europium",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "db:build": "node scripts/build-jsondb.mjs",
     "copy-db": "node db-copy.mjs",
     "db:serve": "json-server .db-new.json",
     "db:start": "npm run copy-db && npm run db:serve",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test:data": "node scripts/check-data.mjs",
+    "test:api": "node scripts/check-api-required.mjs",
+    "test:static": "node scripts/check-static.mjs",
+    "test": "npm run test:data && npm run test:api && npm run test:static",
+    "verify": "npm run lint && npm run format:check && npm run test && npm run build",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tabler/icons-vue": "^3.40.0",
     "chart.js": "^4.5.1",
     "d3-geo": "^3.1.1",
     "pinia": "^2.1.7",
@@ -23,8 +32,13 @@
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^10.4.0",
+    "eslint-plugin-vue": "^10.9.1",
+    "globals": "^17.6.0",
     "json-server": "^1.0.0-beta.15",
+    "prettier": "^3.8.3",
     "vite": "^5.2.0"
   }
 }

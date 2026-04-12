@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+tmp/
+temp/
+.db-new.json
+db.json
+package-lock.json
