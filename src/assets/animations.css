@@ -83,3 +83,11 @@
 
 /* O indicador de scroll entra no fim. */
 .hero__scroll { animation: heroLineIn 0.5s cubic-bezier(0.22,1,0.36,1) 1.0s both; }
+
+/* Em mobile, evita que as animações laterais aumentem a largura da página. */
+@media (max-width: 640px) {
+  .sa-fade-left,
+  .sa-fade-right {
+    transform: translateY(24px);
+  }
+}

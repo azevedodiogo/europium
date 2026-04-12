@@ -200,6 +200,7 @@ defineEmits(['sort'])
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-width: 0;
 }
 /* Cartão do gráfico superior. */
 .des-chart-card {
@@ -211,6 +212,7 @@ defineEmits(['sort'])
   border-radius: var(--radius-md);
   
   padding: 24px;
+  min-width: 0;
 }
 .des-chart-title {
   font-size: 18px;
@@ -220,6 +222,7 @@ defineEmits(['sort'])
 }
 .des-chart-wrap {
   width: 100%;
+  min-width: 0;
 }
 /* Grelha inferior: cronologia à esquerda e tabela à direita. */
 .des-bottom-row {
@@ -228,7 +231,9 @@ defineEmits(['sort'])
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   align-items: start;
+  min-width: 0;
 }
+.des-bottom-row > * { min-width: 0; }
 .des-section-title {
   font-size: 18px;
   font-weight: 600;
@@ -343,6 +348,7 @@ defineEmits(['sort'])
   border-radius: var(--radius-md);
   overflow-x: auto;
   overflow-y: hidden;
+  max-width: 100%;
 }
 .des-table {
   width: 100%;
@@ -448,6 +454,16 @@ defineEmits(['sort'])
     
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .des-tabpanel {
+    margin: 8px 0 0;
+  }
+
+  .des-chart-card {
+    padding: 16px;
   }
 }
 [data-theme="dark"] .des-th {

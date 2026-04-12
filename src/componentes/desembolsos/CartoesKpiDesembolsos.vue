@@ -115,6 +115,7 @@ defineProps({
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   margin: 8px 32px 0;
+  min-width: 0;
 }
 /* Cartão individual de KPI. */
 .des-kpi {
@@ -125,6 +126,7 @@ defineProps({
   
   border-radius: var(--radius-md);
   padding: 20px;
+  min-width: 0;
 }
 /* Linha superior com etiqueta e ícone. */
 .des-kpi__top {
@@ -175,6 +177,13 @@ defineProps({
   .des-kpis {
     
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .des-kpis {
+    grid-template-columns: 1fr;
+    margin: 8px 0 0;
   }
 }
 </style>

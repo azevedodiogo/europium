@@ -228,7 +228,7 @@
 
 <script setup>
 // Estado local, cálculos derivados e ciclo de vida da página.
-import { ref, computed, onMounted, nextTick } from 'vue'
+import { ref, computed, onMounted, nextTick, watch } from 'vue'
 // Cálculo partilhado para manter os agregados iguais aos da homepage.
 import { calculateRrfSummary } from '@/utilitarios/resumoRrf.mjs'
 // Composição que carrega o recurso pelo json-server com fallback centralizado.
@@ -263,6 +263,7 @@ function formatVal(v) {
 // Intervalo mínimo/máximo usado na legenda e no cálculo da cor.
 const metricRange = computed(() => {
   const vals = Object.values(COUNTRY_META.value).map(c => c[activeMetric.value])
+  if (!vals.length) return { min: 0, max: 0 }
   return { min: Math.min(...vals), max: Math.max(...vals) }
 })
 // Limites apresentados na legenda.
@@ -284,6 +285,39 @@ const ready       = ref(false)
 const euPaths     = ref([])
 // Caminhos SVG dos países vizinhos de contexto.
 const contextPaths = ref([])
+// Geometria do atlas carregada uma vez; os paths só são construídos quando os dados da API já existem.
+const mapGeometry = ref(null)
+function hasMapData() {
+  return Object.keys(EU_NUM_TO_ISO.value).length > 0 && Object.keys(COUNTRY_META.value).length > 0
+}
+function rebuildMapPaths() {
+  if (!mapGeometry.value || !hasMapData()) return
+
+  const { features, path } = mapGeometry.value
+  const nextEuPaths = []
+  const nextContextPaths = []
+
+  features.forEach(f => {
+    // Cada feature do atlas é classificada como país UE ou país de contexto.
+    const numId = String(f.id).padStart(3, '0')
+    const isoId = EU_NUM_TO_ISO.value[numId]
+    const d = path(f)
+    if (!d) return
+    if (isoId) {
+      nextEuPaths.push({
+        id: isoId,
+        d,
+      })
+    } else if (CONTEXT_NUMS.value.has(numId)) {
+      const centroid = path.centroid(f)
+      nextContextPaths.push({ id: numId, d, cx: centroid[0], cy: centroid[1] })
+    }
+  })
+
+  euPaths.value = nextEuPaths
+  contextPaths.value = nextContextPaths
+  ready.value = true
+}
 onMounted(async () => {
   // Importa bibliotecas pesadas apenas nesta página para não carregar o resto da app.
   await nextTick()
@@ -301,24 +335,10 @@ onMounted(async () => {
     .translate([W / 2, H / 2])
   const path = geoPath(projection)
   const countries = topo.feature(topoJson, topoJson.objects.countries)
-  countries.features.forEach(f => {
-    // Cada feature do atlas é classificada como país UE ou país de contexto.
-    const numId = String(f.id).padStart(3, '0')
-    const isoId = EU_NUM_TO_ISO.value[numId]
-    const d = path(f)
-    if (!d) return
-    if (isoId) {
-      euPaths.value.push({
-        id: isoId,
-        d,
-      })
-    } else if (CONTEXT_NUMS.value.has(numId)) {
-      const centroid = path.centroid(f)
-      contextPaths.value.push({ id: numId, d, cx: centroid[0], cy: centroid[1] })
-    }
-  })
-  ready.value = true
+  mapGeometry.value = { features: countries.features, path }
+  rebuildMapPaths()
 })
+watch([EU_NUM_TO_ISO, COUNTRY_META, CONTEXT_NUMS], rebuildMapPaths)
 // Referência ao contentor onde os tooltips são posicionados.
 const mapShell  = ref(null)
 // Estado de hover para países da UE.

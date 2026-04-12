@@ -103,7 +103,9 @@ import SecaoExplorar from '@/componentes/inicio/SecaoExplorar.vue'
   gap: 32px;
   margin-top: 32px;
   align-items: start;
+  min-width: 0;
 }
+.home__data-row > * { min-width: 0; }
 
 /* Cabeçalhos das secções internas. */
 .home__section-header { margin-bottom: 16px; }
@@ -133,6 +135,7 @@ import SecaoExplorar from '@/componentes/inicio/SecaoExplorar.vue'
   padding: 16px; height: 390px;
   
   display: flex; flex-direction: column;
+  min-width: 0;
 }
 [data-theme="dark"] .home__chart-card {
   

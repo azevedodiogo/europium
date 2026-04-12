@@ -407,6 +407,20 @@ function sortPaymentsTable(key) {
 .des-tab { display: inline-flex; align-items: center; gap: 6px; height: 29px; padding: 0 16px; border-radius: var(--radius-sm); font-family: var(--font-family); font-size: var(--text-base); font-weight: 500; color: var(--color-text-primary); background: transparent; border: 1px solid transparent; cursor: pointer; min-width: 140px; justify-content: center; transition: background .12s; }
 
 .des-tab--active { background: #f9fafb; box-shadow: 0 1px 3px rgba(0,0,0,.10); }
+
+@media (max-width: 640px) {
+  .des-tablist {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 20px 0 0;
+  }
+
+  .des-tab {
+    width: 100%;
+    min-width: 0;
+  }
+}
 [data-theme="dark"] .des-tablist {
   
   background: rgba(232,240,252,0.06);
