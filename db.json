@@ -2,7 +2,7 @@
   "meta": {
     "project": "Europium",
     "source": "https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/",
-    "generatedAt": "2026-05-14T22:53:23.335Z",
+    "generatedAt": "2026-06-03T11:17:01.470Z",
     "note": "Dados estruturados para o projeto IPM com base no modelo público do Recovery and Resilience Scoreboard.",
     "resources": [
       "dashboard",
@@ -10558,7 +10558,7 @@
         "date": "2025–2026",
         "title": "Fase final — conclusão dos investimentos",
         "description": "Período crítico para conclusão de todos os projetos, reformas e pedidos de pagamento finais. Os países devem demonstrar que todos os marcos e metas foram cumpridos e submeter os pedidos até 31 de agosto de 2026.",
-        "impact": "Totalidade dos 723,8 mil M€ do FRR a ser comprometida. O legado estará visível em 350.000+ projetos na Europa.",
+        "impact": "Totalidade dos 589 mil M€ do MRR a ser comprometida. O legado estará visível em 350.000+ projetos na Europa.",
         "countries": "Todos os 27 Estados-Membros — prazo final improrrogável: 31 agosto 2026"
       }
     ],
@@ -10572,8 +10572,8 @@
         "label": "Duração do mecanismo"
       },
       {
-        "value": "723,8 mil M€",
-        "label": "Valor total do FRR"
+        "value": "589 mil M€",
+        "label": "Valor total do MRR"
       },
       {
         "value": "27",
