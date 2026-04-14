@@ -19,69 +19,69 @@ const routes = [
     path: '/',
     name: 'home',
     component: PaginaInicial,
-    meta: { title: 'Início — Europium' }
+    meta: { title: 'Início — Europium' },
   },
   {
     // Página de marcos e metas.
     path: '/marcos-metas',
     name: 'marcos-metas',
     component: PaginaMarcosMetas,
-    meta: { title: 'Marcos e Metas — Europium' }
+    meta: { title: 'Marcos e Metas — Europium' },
   },
   {
     // Página dos indicadores comuns.
     path: '/indicadores',
     name: 'indicadores',
     component: PaginaIndicadores,
-    meta: { title: 'Indicadores — Europium' }
+    meta: { title: 'Indicadores — Europium' },
   },
   {
     // Página de desembolsos.
     path: '/desembolsos',
     name: 'desembolsos',
     component: PaginaDesembolsos,
-    meta: { title: 'Desembolsos — Europium' }
+    meta: { title: 'Desembolsos — Europium' },
   },
   {
     // Página de comparação entre países.
     path: '/comparar-paises',
     name: 'comparar-paises',
     component: PaginaCompararPaises,
-    meta: { title: 'Comparar Países — Europium' }
+    meta: { title: 'Comparar Países — Europium' },
   },
   {
     // Página do mapa.
     path: '/mapa',
     name: 'mapa',
     component: PaginaMapa,
-    meta: { title: 'Mapa EU — Europium' }
+    meta: { title: 'Mapa EU — Europium' },
   },
   {
     // Página agregadora de recursos extra.
     path: '/mais',
     name: 'mais',
     component: PaginaMais,
-    meta: { title: 'Ver mais — Europium' }
+    meta: { title: 'Ver mais — Europium' },
   },
   {
     // Página do glossário.
     path: '/glossario',
     name: 'glossario',
     component: PaginaGlossario,
-    meta: { title: 'Glossário MRR — Europium' }
+    meta: { title: 'Glossário MRR — Europium' },
   },
   {
     // Página da linha do tempo.
     path: '/linha-tempo',
     name: 'linha-tempo',
     component: PaginaLinhaTempo,
-    meta: { title: 'Linha do Tempo MRR — Europium' }
+    meta: { title: 'Linha do Tempo MRR — Europium' },
   },
   {
     // Se o caminho não existir, volta para a página inicial.
     path: '/:pathMatch(.*)*',
-    redirect: '/'
-  }
+    redirect: '/',
+  },
 ]
 
 // Cria a instância do router.
@@ -99,7 +99,7 @@ const router = createRouter({
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
     // Caso normal: começa no topo da página.
     return { top: 0 }
-  }
+  },
 })
 
 // Atualiza o título do separador do browser sempre que a rota muda.

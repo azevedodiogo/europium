@@ -5,16 +5,13 @@
 <template>
   <!-- Cabeçalho sempre visível no topo. -->
   <CabecalhoPrincipal />
-
   <!-- Zona central onde o router troca as páginas. -->
   <main>
     <!-- A página atual entra aqui. -->
     <RouterView />
   </main>
-
   <!-- Rodapé comum a toda a aplicação. -->
   <RodapePrincipal />
-
   <!-- Notificação global usada nas exportações. -->
   <NotificacaoApp />
 </template>
@@ -51,5 +48,7 @@ onMounted(() => {
 }
 
 /* O conteúdo central cresce para empurrar o rodapé para baixo. */
-main { flex: 1; }
+main {
+  flex: 1;
+}
 </style>
