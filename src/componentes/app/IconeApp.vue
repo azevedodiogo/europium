@@ -1,22 +1,16 @@
-
 <!--
   Pequeno adaptador de ícones.
   Recebe um nome lógico e devolve o componente Tabler correspondente.
 -->
 <template>
-  <!-- Renderiza dinamicamente o ícone escolhido. -->
-  <component :is="iconComponent" :size="size" />
+  <!-- Mostra o ícone escolhido pelas props, os dados enviados para o componente. -->
+  <IconePublico :src="iconSrc" :size="size" />
 </template>
 
 <script setup>
-// `computed` escolhe o componente certo a partir do nome recebido.
+// `computed`, cálculo reativo do Vue, escolhe o componente certo a partir do nome recebido.
 import { computed } from 'vue'
-import {
-  IconCurrencyEuro, IconTrendingDown, IconTarget, IconChartBar,
-  IconLeaf, IconDeviceDesktop, IconTrendingUp, IconUsers,
-  IconHeart, IconShield, IconBook, IconFlag,
-  IconCreditCard, IconArrowsExchange, IconArrowRight,
-} from '@tabler/icons-vue'
+import IconePublico from '@/componentes/app/IconePublico.vue'
 
 // Props mínimas: nome do ícone e tamanho.
 const props = defineProps({
@@ -26,24 +20,24 @@ const props = defineProps({
 
 // Mapa entre o nome usado no projeto e o ícone real.
 const MAP = {
-  'euro':         IconCurrencyEuro,
-  'arrow-down':   IconTrendingDown,
-  'target':       IconTarget,
-  'chart':        IconChartBar,
-  'bar-chart':    IconChartBar,
-  'credit-card':  IconCreditCard,
-  'globe':        IconArrowsExchange,
-  'leaf':         IconLeaf,
-  'monitor':      IconDeviceDesktop,
-  'trending-up':  IconTrendingUp,
-  'users':        IconUsers,
-  'heart':        IconHeart,
-  'shield':       IconShield,
-  'book':         IconBook,
-  'flag':         IconFlag,
-  'arrow-right':  IconArrowRight,
+  euro: 'currency-euro',
+  'arrow-down': 'trending-down',
+  target: 'target',
+  chart: 'chart-bar',
+  'bar-chart': 'chart-bar',
+  'credit-card': 'credit-card',
+  globe: 'arrows-exchange',
+  leaf: 'leaf',
+  monitor: 'device-desktop',
+  'trending-up': 'trending-up',
+  users: 'users',
+  heart: 'heart',
+  shield: 'shield',
+  book: 'book',
+  flag: 'flag',
+  'arrow-right': 'arrow-right',
 }
 
 // Se o nome não existir no mapa, usa `IconTarget` como fallback.
-const iconComponent = computed(() => MAP[props.name] || IconTarget)
+const iconSrc = computed(() => `/icons/${MAP[props.name] || 'target'}.svg`)
 </script>

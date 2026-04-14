@@ -1,4 +1,3 @@
-
 <!--
   Ícone que muda conforme o estado da notificação.
   Pode mostrar erro, sucesso ou progresso.
@@ -10,24 +9,34 @@
       <!-- Estado de erro. -->
       <div v-if="isError" key="err" class="notif__icon-inner">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <circle cx="7" cy="7" r="6.5" stroke="#dc2626" stroke-width="1.3"/>
-          <path d="M7 4.5v3M7 9.5v.01" stroke="#dc2626" stroke-width="1.4" stroke-linecap="round"/>
+          <circle cx="7" cy="7" r="6.5" stroke="#dc2626" stroke-width="1.3" />
+          <path d="M7 4.5v3M7 9.5v.01" stroke="#dc2626" stroke-width="1.4" stroke-linecap="round" />
         </svg>
       </div>
-
       <!-- Estado concluído com sucesso. -->
       <div v-else-if="done" key="done" class="notif__icon-inner notif__icon-inner--done">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <circle cx="7" cy="7" r="6.5" stroke="#34c759" stroke-width="1.3"/>
-          <path d="M4.5 7l2 2 3.5-3.5" stroke="#34c759" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="7" cy="7" r="6.5" stroke="#34c759" stroke-width="1.3" />
+          <path
+            d="M4.5 7l2 2 3.5-3.5"
+            stroke="#34c759"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </svg>
       </div>
-
       <!-- Estado intermédio de carregamento. -->
       <div v-else key="loading" class="notif__icon-inner notif__icon-inner--spin">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <circle cx="7" cy="7" r="5.5" stroke="rgba(0,0,0,0.12)" stroke-width="1.5" fill="none"/>
-          <path d="M7 1.5A5.5 5.5 0 0 1 12.5 7" stroke="#1d4587" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <circle cx="7" cy="7" r="5.5" stroke="rgba(0,0,0,0.12)" stroke-width="1.5" fill="none" />
+          <path
+            d="M7 1.5A5.5 5.5 0 0 1 12.5 7"
+            stroke="#1d4587"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            fill="none"
+          />
         </svg>
       </div>
     </Transition>
@@ -59,7 +68,7 @@ defineProps({
   justify-content: center;
 }
 
-/* Centra o SVG dentro da caixa. */
+/* Centra o SVG, o desenho vetorial do ícone, dentro da caixa. */
 .notif__icon-inner {
   display: flex;
   align-items: center;
@@ -98,7 +107,9 @@ defineProps({
 /* Animação entre estados do ícone. */
 .notif-icon-enter-active,
 .notif-icon-leave-active {
-  transition: opacity .2s ease, transform .2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   position: absolute;
 }
 
