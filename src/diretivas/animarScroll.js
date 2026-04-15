@@ -23,10 +23,7 @@ function obterObserver() {
           // Quando o modo stagger está ativo, anima os filhos um a um.
           if (stagger) {
             Array.from(el.children).forEach((filho, i) => {
-              setTimeout(
-                () => filho.classList.add('sa-visible'),
-                atraso + i * (rapido ? 60 : 90)
-              )
+              setTimeout(() => filho.classList.add('sa-visible'), atraso + i * (rapido ? 60 : 90))
             })
           } else {
             // Caso normal: anima apenas o próprio elemento.
@@ -41,7 +38,7 @@ function obterObserver() {
         // Só dispara quando uma pequena parte do elemento entra no ecrã.
         threshold: 0.08,
         // Antecipação ligeira para a animação começar um pouco antes.
-        rootMargin: '0px 0px -32px 0px'
+        rootMargin: '0px 0px -32px 0px',
       }
     )
   }
@@ -52,7 +49,7 @@ function obterObserver() {
 // Diretiva usada como `v-scroll-animate`.
 export const scrollAnimateDirective = {
   mounted(el, { value, modifiers, arg }) {
-    // Tipo de animação pedido no template.
+    // Tipo de animação pedido no template, a parte visual do componente.
     const tipo = value ?? 'fade-up'
     // Ativa animação em cascata.
     const stagger = !!modifiers.stagger
@@ -62,7 +59,7 @@ export const scrollAnimateDirective = {
     const atraso = arg ? parseInt(arg, 10) : 0
 
     if (stagger) {
-      // Marca o contentor como stagger.
+      // Marca este bloco para animar os filhos em sequência.
       el.dataset.stagger = ''
 
       // Marca também a variante rápida quando pedida.
