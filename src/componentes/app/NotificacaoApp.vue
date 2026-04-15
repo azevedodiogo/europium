@@ -1,10 +1,9 @@
-
 <!--
   Notificação global das exportações.
   Lê o estado da store e mostra progresso, sucesso ou erro.
 -->
 <template>
-  <!-- Usa Teleport para aparecer por cima da interface inteira. -->
+  <!-- Usa Teleport, recurso do Vue que move este bloco para fora da árvore normal, para aparecer por cima da página. -->
   <Teleport to="body">
     <!-- Animação de entrada e saída da notificação. -->
     <Transition name="notif">
@@ -13,8 +12,8 @@
         v-if="store.visible"
         class="notif"
         :class="{
-          'notif--error':    store.isError,
-          'notif--done':     !store.isError && store.done,
+          'notif--error': store.isError,
+          'notif--done': !store.isError && store.done,
           'notif--progress': !store.isError && !store.done,
         }"
         role="status"
@@ -22,34 +21,31 @@
       >
         <!-- Ícone visual do estado atual. -->
         <NotificationStatusIcon :is-error="store.isError" :done="store.done" />
-
         <!-- Zona textual central. -->
         <div class="notif__body">
           <!-- Linha principal da notificação. -->
           <p class="notif__label">
             <span v-if="store.isError">{{ store.title || 'Erro na exportação' }}</span>
             <span v-else-if="store.done">{{ store.title || 'Download concluído' }}</span>
-            <span v-else>A exportar <strong>{{ store.title || 'documento' }}</strong></span>
+            <span v-else
+              >A exportar <strong>{{ store.title || 'documento' }}</strong></span
+            >
           </p>
-
           <!-- Nome do ficheiro quando existir. -->
           <p v-if="!store.isError && store.filename" class="notif__file">{{ store.filename }}</p>
-
           <!-- Barra de progresso enquanto a exportação está ativa. -->
           <div v-if="!store.isError && !store.done" class="notif__track">
             <div class="notif__fill" :style="{ width: store.progress + '%' }" />
           </div>
-
           <!-- Mensagem secundária: erro, detalhe ou percentagem. -->
           <p v-if="store.isError" class="notif__sub">{{ store.errorMsg }}</p>
           <p v-else-if="store.subtitle" class="notif__sub">{{ store.subtitle }}</p>
           <p v-else-if="!store.done" class="notif__pct">{{ store.progress }}%</p>
         </div>
-
         <!-- Botão para fechar manualmente. -->
         <button type="button" class="notif__close" @click="store.dismiss" aria-label="Fechar">
           <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-            <path d="M1 1l6 6M7 1L1 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            <path d="M1 1l6 6M7 1L1 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
           </svg>
         </button>
       </div>
@@ -105,9 +101,8 @@ const store = useNotificationStore()
   border: 1px solid var(--notif-border, rgba(0, 0, 0, 0.08));
   /* Sombras exteriores e brilho interior para criar profundidade. */
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.10),
+    0 4px 24px rgba(0, 0, 0, 0.1),
     0 1px 4px rgba(0, 0, 0, 0.06),
-    
     inset 0 0.5px 0 rgba(255, 255, 255, 0.08);
 }
 .notif--error {
@@ -117,7 +112,7 @@ const store = useNotificationStore()
   border-color: rgba(220, 38, 38, 0.12);
   /* Sombra afinada para o estado de erro. */
   box-shadow:
-    0 4px 20px rgba(220, 38, 38, 0.10),
+    0 4px 20px rgba(220, 38, 38, 0.1),
     0 1px 4px rgba(0, 0, 0, 0.05),
     inset 0 0.5px 0 rgba(255, 255, 255, 0.7);
 }
@@ -160,10 +155,13 @@ const store = useNotificationStore()
   color: var(--color-text-primary);
 }
 
+.notif--error .notif__label {
+  color: #b91c1c;
+}
 
-.notif--error .notif__label { color: #b91c1c; }
-
-.notif--done  .notif__label { color: rgba(0, 0, 0, 0.75); }
+.notif--done .notif__label {
+  color: rgba(0, 0, 0, 0.75);
+}
 .notif__file {
   /* Nome do ficheiro exportado, apresentado abaixo do título. */
   font-family: -apple-system, 'SF Pro Text', 'Inter', sans-serif;
@@ -204,7 +202,7 @@ const store = useNotificationStore()
   /* Pequeno afastamento da barra. */
   margin: 4px 0 0;
   /* Ajuste visual fino da percentagem. */
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
 }
 .notif__track {
   /* Altura fina para a barra de progresso. */
@@ -236,7 +234,7 @@ const store = useNotificationStore()
   height: 20px;
   /* Remove estilos nativos do botão. */
   border: none;
-  /* Fundo discreto, visível apenas no hover da notificação. */
+  /* Fundo discreto, visível apenas no hover, quando o rato passa por cima da notificação. */
   background: rgba(0, 0, 0, 0.06);
   /* Forma circular do botão. */
   border-radius: 50%;
@@ -244,7 +242,7 @@ const store = useNotificationStore()
   cursor: pointer;
   /* Cor subtil do ícone de fechar. */
   color: rgba(0, 0, 0, 0.4);
-  /* Centra o SVG dentro do círculo. */
+  /* Centra o SVG, o desenho vetorial do ícone, dentro do círculo. */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -253,77 +251,75 @@ const store = useNotificationStore()
   /* Esconde o botão até o utilizador passar o rato na notificação. */
   opacity: 0;
   /* Suaviza a entrada do botão e a mudança de fundo. */
-  transition: opacity .15s, background .15s;
+  transition:
+    opacity 0.15s,
+    background 0.15s;
   /* Alinha o botão ao topo do cartão. */
   align-self: flex-start;
   /* Corrige ligeiramente a posição vertical. */
   margin-top: 1px;
 }
 
+.notif:hover .notif__close {
+  opacity: 1;
+}
 
-.notif:hover .notif__close { opacity: 1; }
-
-.notif__close:hover { background: rgba(0, 0, 0, 0.12); color: rgba(0,0,0,.6); }
-[data-theme="dark"] .notif {
-  
+.notif__close:hover {
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.6);
+}
+[data-theme='dark'] .notif {
   background: rgba(33, 45, 64, 0.95);
-  
-  border-color: rgba(208,224,246,0.1);
+
+  border-color: rgba(208, 224, 246, 0.1);
   box-shadow:
     0 12px 28px rgba(9, 14, 24, 0.28),
     0 1px 4px rgba(9, 14, 24, 0.16),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
-[data-theme="dark"] .notif--error {
-  
+[data-theme='dark'] .notif--error {
   background: rgba(58, 25, 28, 0.96);
-  
+
   border-color: rgba(220, 38, 38, 0.2);
 }
-[data-theme="dark"] .notif__label,
-[data-theme="dark"] .notif__label strong,
-[data-theme="dark"] .notif--done .notif__label {
-  
+[data-theme='dark'] .notif__label,
+[data-theme='dark'] .notif__label strong,
+[data-theme='dark'] .notif--done .notif__label {
   color: var(--color-text-primary);
 }
-[data-theme="dark"] .notif__file,
-[data-theme="dark"] .notif__sub,
-[data-theme="dark"] .notif__pct {
-  
+[data-theme='dark'] .notif__file,
+[data-theme='dark'] .notif__sub,
+[data-theme='dark'] .notif__pct {
   color: var(--color-text-secondary);
 }
-[data-theme="dark"] .notif__close {
-  
+[data-theme='dark'] .notif__close {
   background: rgba(255, 255, 255, 0.08);
-  
-  color: rgba(255,255,255,0.52);
+
+  color: rgba(255, 255, 255, 0.52);
 }
-[data-theme="dark"] .notif__close:hover {
-  
+[data-theme='dark'] .notif__close:hover {
   background: rgba(255, 255, 255, 0.14);
-  
-  color: rgba(255,255,255,0.82);
+
+  color: rgba(255, 255, 255, 0.82);
 }
 .notif-enter-active {
   transition:
-    
-    opacity  0.32s cubic-bezier(0.22, 1, 0.36, 1),
-    
+    opacity 0.32s cubic-bezier(0.22, 1, 0.36, 1),
     transform 0.38s cubic-bezier(0.34, 1.4, 0.64, 1);
 }
 .notif-leave-active {
   transition:
-    opacity  0.22s ease,
+    opacity 0.22s ease,
     transform 0.22s ease;
 }
 .notif-enter-from {
   opacity: 0;
-  
+
   transform: translateY(12px) scale(0.94);
 }
 .notif-leave-to {
   opacity: 0;
-  
+
   transform: translateY(6px) scale(0.97);
 }
 </style>
