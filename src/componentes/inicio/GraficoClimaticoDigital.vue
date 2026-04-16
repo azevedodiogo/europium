@@ -1,13 +1,9 @@
-
 <!-- Gráfico que cruza o objetivo climático com o digital. -->
 <template>
-  
-  <!-- O wrapper organiza o canvas e a legenda manual numa coluna. -->
+  <!-- Este bloco organiza o canvas, onde o gráfico é desenhado, e a legenda manual numa coluna. -->
   <div class="chart-wrapper">
-    
-    <!-- Área do gráfico; a altura mínima evita que o Chart.js colapse. -->
+    <!-- Área do gráfico; a altura mínima evita que o Chart.js fique sem espaço para desenhar. -->
     <div class="chart-canvas-wrap">
-      
       <Bar
         :key="chartThemeKey"
         :data="chartData"
@@ -17,19 +13,14 @@
         :aria-label="ariaLabel"
       />
     </div>
-
-    
     <!-- Legenda própria para manter o aspeto consistente com o design do site. -->
     <div class="chart-legend" aria-hidden="true">
-      
       <span class="chart-legend__item chart-legend__item--climate">
-        
         <span class="chart-legend__dot" />
         Climático (min. 37%)
       </span>
-      
+
       <span class="chart-legend__item chart-legend__item--digital">
-        
         <span class="chart-legend__dot" />
         Digital (min. 20%)
       </span>
@@ -47,17 +38,17 @@ import { useDashboardStore } from '@/estado/painel'
 import { storeToRefs } from 'pinia'
 // Tema atual usado para trocar cores no gráfico.
 import { usarModoEscuro } from '@/composicoes/usarModoEscuro'
-// Tooltip HTML comum usado pelos gráficos Chart.js.
+// Tooltip HTML comum: a caixa de detalhe que aparece ao passar o rato nos gráficos Chart.js.
 import { createChartTooltip, getChartTooltipColors } from '@/utilitarios/tooltipsGraficos'
 const store = useDashboardStore()
 const { climateDigitalData: data } = storeToRefs(store)
 const { isDark } = usarModoEscuro()
 // Descrição acessível para leitores de ecrã.
 const ariaLabel = 'Gráfico de barras: percentagem climática e digital por país'
-// Força recriação do gráfico quando o tema muda, evitando cores antigas no canvas.
-const chartThemeKey = computed(() => isDark.value ? 'dark' : 'light')
+// Força recriação do gráfico quando o tema muda, evitando cores antigas na área desenhada.
+const chartThemeKey = computed(() => (isDark.value ? 'dark' : 'light'))
 // Paleta completa do gráfico para tema claro e escuro.
-const themeColors = computed(() => (
+const themeColors = computed(() =>
   isDark.value
     ? {
         climate: '#35a24c',
@@ -71,11 +62,11 @@ const themeColors = computed(() => (
         grid: '#d9dfe5',
         axis: '#5d646f',
       }
-))
-// Paleta comum do tooltip, derivada do tema atual.
+)
+// Paleta comum da caixa de detalhe, derivada do tema atual.
 const tooltipColors = computed(() => getChartTooltipColors(isDark.value))
 // Devolve o valor mínimo associado a cada tipo de objetivo.
-const getMinimumLabel = (label) => label === 'Climático' ? 'mín. 37%' : 'mín. 20%'
+const getMinimumLabel = (label) => (label === 'Climático' ? 'mín. 37%' : 'mín. 20%')
 // Estrutura de dados esperada pelo Chart.js.
 const chartData = computed(() => ({
   labels: data.value.map((item) => item.code),
@@ -127,12 +118,13 @@ const chartOptions = computed(() => ({
     tooltip: createChartTooltip({
       colors: tooltipColors.value,
       getTitle: ({ tooltip }) => tooltip.title?.[0] ?? '',
-      getRows: ({ tooltip }, getPointColor) => (tooltip.dataPoints ?? []).map((point) => ({
-        label: point.dataset.label,
-        value: `${point.parsed.y}%`,
-        detail: getMinimumLabel(point.dataset.label),
-        color: getPointColor(point),
-      })),
+      getRows: ({ tooltip }, getPointColor) =>
+        (tooltip.dataPoints ?? []).map((point) => ({
+          label: point.dataset.label,
+          value: `${point.parsed.y}%`,
+          detail: getMinimumLabel(point.dataset.label),
+          color: getPointColor(point),
+        })),
     }),
   },
   scales: {
@@ -167,9 +159,7 @@ const chartOptions = computed(() => ({
       },
       grid: {
         color(context) {
-          return [0, 20, 40, 70].includes(Number(context.tick.value))
-            ? themeColors.value.grid
-            : 'transparent'
+          return [0, 20, 40, 70].includes(Number(context.tick.value)) ? themeColors.value.grid : 'transparent'
         },
         borderDash: [4, 3],
         drawTicks: false,
@@ -185,13 +175,12 @@ const chartOptions = computed(() => ({
 <style scoped>
 /* Estrutura vertical do gráfico e da legenda. */
 .chart-wrapper {
-  
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
   height: 100%;
 }
-/* Contentor com altura mínima para o canvas. */
+/* Área com altura mínima para o canvas, onde o gráfico é desenhado. */
 .chart-canvas-wrap {
   position: relative;
   flex: 1;
@@ -204,14 +193,12 @@ const chartOptions = computed(() => ({
 }
 /* Legenda manual. */
 .chart-legend {
-  
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-5);
 }
 .chart-legend__item {
-  
   display: flex;
   align-items: center;
   gap: 6px;
@@ -229,7 +216,6 @@ const chartOptions = computed(() => ({
 }
 
 .chart-legend__item--climate .chart-legend__dot {
-  
   background: var(--color-green);
 }
 .chart-legend__item--digital {
@@ -237,25 +223,18 @@ const chartOptions = computed(() => ({
 }
 
 .chart-legend__item--digital .chart-legend__dot {
-  
   background: var(--color-navy);
 }
-[data-theme="dark"] .chart-legend__item--climate {
-  
+[data-theme='dark'] .chart-legend__item--climate {
   color: #6ad281;
 }
-[data-theme="dark"] .chart-legend__item--climate .chart-legend__dot {
-  
+[data-theme='dark'] .chart-legend__item--climate .chart-legend__dot {
   background: #35a24c;
-
 }
-[data-theme="dark"] .chart-legend__item--digital {
-  
+[data-theme='dark'] .chart-legend__item--digital {
   color: #9dc0f4;
 }
-[data-theme="dark"] .chart-legend__item--digital .chart-legend__dot {
-  
+[data-theme='dark'] .chart-legend__item--digital .chart-legend__dot {
   background: #4d86dd;
-
 }
 </style>
