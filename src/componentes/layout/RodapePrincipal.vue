@@ -1,4 +1,3 @@
-
 <!--
   Rodapé comum a toda a aplicação.
   Reúne a descrição do projeto e ligações úteis.
@@ -17,47 +16,42 @@
             <span class="footer__logo-tagline">Recuperação e Resiliência</span>
           </div>
         </RouterLink>
-
         <!-- Pequena descrição do objetivo da plataforma. -->
         <p class="footer__description">
-          Plataforma de visualização de dados do Mecanismo de
-          Recuperação e Resiliência da União Europeia. Dados
+          Plataforma de visualização de dados do Mecanismo de Recuperação e Resiliência da União Europeia. Dados
           baseados no <em>EU Recovery and Resilience Scoreboard</em>.
         </p>
-
         <!-- Ligação para a fonte oficial dos dados. -->
         <a
           href="https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/"
           target="_blank"
           rel="noopener"
           class="footer__source-link"
-        >EU Recovery and Resilience Scoreboard →</a>
+          >EU Recovery and Resilience Scoreboard →</a
+        >
       </div>
-
       <!-- Coluna com páginas principais da plataforma. -->
       <div class="footer__col">
         <h3 class="footer__section-title">Plataforma</h3>
         <nav class="footer__nav">
-          <RouterLink to="/"                class="footer__nav-link">Início</RouterLink>
-          <RouterLink to="/marcos-metas"    class="footer__nav-link">Marcos e Metas</RouterLink>
-          <RouterLink to="/indicadores"     class="footer__nav-link">Indicadores Comuns</RouterLink>
-          <RouterLink to="/desembolsos"     class="footer__nav-link">Desembolsos</RouterLink>
+          <RouterLink to="/" class="footer__nav-link">Início</RouterLink>
+          <RouterLink to="/marcos-metas" class="footer__nav-link">Marcos e Metas</RouterLink>
+          <RouterLink to="/indicadores" class="footer__nav-link">Indicadores Comuns</RouterLink>
+          <RouterLink to="/desembolsos" class="footer__nav-link">Desembolsos</RouterLink>
           <RouterLink to="/comparar-paises" class="footer__nav-link">Comparar Países</RouterLink>
         </nav>
       </div>
-
       <!-- Coluna com recursos adicionais. -->
       <div class="footer__col">
         <h3 class="footer__section-title">Recursos</h3>
         <nav class="footer__nav">
-          <RouterLink to="/mapa"         class="footer__nav-link">Mapa UE</RouterLink>
-          <RouterLink to="/glossario"    class="footer__nav-link">Glossário MRR</RouterLink>
-          <RouterLink to="/linha-tempo"  class="footer__nav-link">Linha do Tempo</RouterLink>
-          <RouterLink to="/mais"         class="footer__nav-link">Ver mais</RouterLink>
+          <RouterLink to="/mapa" class="footer__nav-link">Mapa UE</RouterLink>
+          <RouterLink to="/glossario" class="footer__nav-link">Glossário MRR</RouterLink>
+          <RouterLink to="/linha-tempo" class="footer__nav-link">Linha do Tempo</RouterLink>
+          <RouterLink to="/mais" class="footer__nav-link">Ver mais</RouterLink>
         </nav>
       </div>
     </div>
-
     <!-- Faixa inferior com os créditos. -->
     <div class="footer__bottom">
       <div class="footer__bottom-inner">
@@ -71,7 +65,7 @@
 
 <script setup>
 // Este componente não precisa de lógica JavaScript.
-// O conteúdo do rodapé é estático e está definido diretamente no template.
+// O conteúdo do rodapé é estático e está definido diretamente no template, a parte visual do componente.
 </script>
 
 <style scoped>
@@ -119,13 +113,31 @@
   text-decoration: none;
 }
 
-.footer__logo-flag    { border-radius: 5px; object-fit: cover; display: block; flex-shrink: 0; }
+.footer__logo-flag {
+  border-radius: 5px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
 
-.footer__logo-text    { display: flex; flex-direction: column; gap: 2px; }
+.footer__logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 
-.footer__logo-name    { font-size: var(--text-base); font-weight: 600; color: var(--color-text-primary); line-height: 1; }
+.footer__logo-name {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
 
-.footer__logo-tagline { font-size: 11px; color: var(--color-text-secondary); line-height: 1; }
+.footer__logo-tagline {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1;
+}
 .footer__description {
   /* Texto explicativo do objetivo do projeto. */
   font-size: var(--text-base);
@@ -137,7 +149,9 @@
   max-width: 340px;
 }
 
-.footer__description em { font-style: italic; }
+.footer__description em {
+  font-style: italic;
+}
 .footer__source-link {
   /* Link para a fonte oficial dos dados. */
   display: inline-block;
@@ -149,11 +163,13 @@
   text-decoration: underline;
   /* Afasta o sublinhado do texto. */
   text-underline-offset: 2px;
-  /* Suaviza o hover. */
+  /* Suaviza o hover, o estado ao passar o rato. */
   transition: opacity 0.15s;
 }
 
-.footer__source-link:hover { opacity: 0.7; }
+.footer__source-link:hover {
+  opacity: 0.7;
+}
 .footer__section-title {
   /* Título das colunas de navegação. */
   font-size: var(--text-base);
@@ -179,13 +195,15 @@
   color: var(--color-text-secondary);
   /* Remove sublinhado visual por defeito. */
   text-decoration: none;
-  /* Suaviza a mudança de cor no hover. */
+  /* Suaviza a mudança de cor no hover, o estado ao passar o rato. */
   transition: color 0.15s;
   /* Altura confortável para leitura. */
   line-height: 1.4;
 }
 
-.footer__nav-link:hover { color: var(--color-brand-blue); }
+.footer__nav-link:hover {
+  color: var(--color-brand-blue);
+}
 .footer__bottom {
   /* Linha separadora entre conteúdo do rodapé e créditos. */
   border-top: 0.8px solid var(--color-border);
@@ -209,29 +227,45 @@
   gap: 8px;
 }
 
-.footer__credits       { font-size: var(--text-sm); color: var(--color-text-secondary); }
+.footer__credits {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
 
-.footer__credits--muted{ color: #b0b0b0; }
+.footer__credits--muted {
+  color: #b0b0b0;
+}
 
-.footer__sep           { color: var(--color-border); font-size: var(--text-sm); }
-
+.footer__sep {
+  color: var(--color-border);
+  font-size: var(--text-sm);
+}
 
 @media (max-width: 1024px) {
   .footer__inner {
-    
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    
+
     padding: 40px 40px 36px;
   }
-  
-  .footer__brand { grid-column: 1 / -1; }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
 }
 
 @media (max-width: 640px) {
-  
-  .footer__inner  { grid-template-columns: 1fr; gap: 32px; padding: 32px 20px 28px; }
-  
-  .footer__bottom-inner { padding: 0 20px; flex-wrap: wrap; height: auto; padding: 14px 20px; }
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 20px 28px;
+  }
+
+  .footer__bottom-inner {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 14px 20px;
+  }
 }
 </style>
