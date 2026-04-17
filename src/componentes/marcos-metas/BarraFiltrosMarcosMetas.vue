@@ -1,15 +1,11 @@
-
 <!-- Barra de filtros principal da página de marcos e metas. -->
 <template>
-  
-  <!-- Contentor único dos filtros, animado quando entra no ecrã. -->
+  <!-- Bloco dos filtros, animado quando entra no ecrã. -->
   <div class="mm__filter-bar" v-scroll-animate="'fade-down'">
-    
     <!-- Filtro de país. -->
     <div class="mm__filter-group">
-      
       <label class="mm__filter-label">País</label>
-      
+
       <AppCombobox
         :model-value="filterCountry"
         :options="countryOptions"
@@ -19,13 +15,10 @@
         @update:model-value="$emit('update:filterCountry', $event)"
       />
     </div>
-
-    
     <!-- Filtro de pilar temático. -->
     <div class="mm__filter-group">
-      
       <label class="mm__filter-label">Pilar</label>
-      
+
       <AppCombobox
         :model-value="filterPillar"
         :options="pillarOptions"
@@ -34,13 +27,10 @@
         @update:model-value="$emit('update:filterPillar', $event)"
       />
     </div>
-
-    
     <!-- Filtro de estado de execução. -->
     <div class="mm__filter-group">
-      
       <label class="mm__filter-label">Estado</label>
-      
+
       <AppCombobox
         :model-value="filterStatus"
         :options="statusOptions"
@@ -49,13 +39,10 @@
         @update:model-value="$emit('update:filterStatus', $event)"
       />
     </div>
-
-    
     <!-- Filtro de tipo: marco ou meta. -->
     <div class="mm__filter-group">
-      
       <label class="mm__filter-label">Tipo</label>
-      
+
       <AppCombobox
         :model-value="filterType"
         :options="typeOptions"
@@ -64,13 +51,10 @@
         @update:model-value="$emit('update:filterType', $event)"
       />
     </div>
-
-    
     <!-- Ações finais: limpar filtros e exportar resultados. -->
     <div class="mm__filter-export">
-      
       <AppResetFilters @reset="$emit('reset')" />
-      
+
       <AppExportMenu
         filename="marcos-metas"
         document-label="Marcos e Metas"
@@ -115,30 +99,23 @@ defineProps({
   detailParts: { type: Array, default: () => [] },
 })
 // Eventos que mantêm o estado dos filtros na página pai.
-defineEmits([
-  'update:filterCountry',
-  'update:filterPillar',
-  'update:filterStatus',
-  'update:filterType',
-  'reset',
-])
+defineEmits(['update:filterCountry', 'update:filterPillar', 'update:filterStatus', 'update:filterType', 'reset'])
 </script>
 
 <style scoped>
 /* Barra horizontal com filtros e ações. */
 .mm__filter-bar {
-  
   display: flex;
   align-items: flex-end;
   gap: 10px;
   flex-wrap: wrap;
-  
+
   background: var(--color-bg-white);
-  
+
   border: 1px solid var(--color-border);
-  
+
   border-radius: var(--radius-md);
-  
+
   padding: 16px;
   margin: 20px 32px 0;
   position: relative;
@@ -146,9 +123,8 @@ defineEmits([
 }
 /* Grupo vertical com label e combobox. */
 .mm__filter-group {
-  
   display: flex;
-  
+
   flex-direction: column;
   gap: 5px;
 }
@@ -160,15 +136,14 @@ defineEmits([
 .mm__filter-export {
   margin-left: auto;
   align-self: flex-end;
-  
+
   display: flex;
   gap: 8px;
   align-items: center;
 }
-[data-theme="dark"] .mm__filter-bar {
-  
+[data-theme='dark'] .mm__filter-bar {
   background: var(--color-bg-white);
-  
+
   border-color: var(--color-border);
 }
 
@@ -185,7 +160,7 @@ defineEmits([
   }
 }
 
-/* No telemóvel, remove a margem lateral fixa para alinhar com o contentor. */
+/* No telemóvel, remove a margem lateral fixa para alinhar com a página. */
 @media (max-width: 640px) {
   .mm__filter-bar {
     margin: 20px 0 0;
