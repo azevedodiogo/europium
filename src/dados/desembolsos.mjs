@@ -27,11 +27,51 @@ function buildCountryPayments(countryCode, country) {
 
   return [
     payment(`${countryCode}-01`, '18/08/2021', '18 de agosto de 2021', '08/21', 'Pré-financiamento', amounts[0], 'pre'),
-    payment(`${countryCode}-02`, '20/01/2022', '20 de janeiro de 2022', '01/22', '1º pedido de pagamento', amounts[1], 'subvencao'),
-    payment(`${countryCode}-03`, '22/11/2022', '22 de novembro de 2022', '11/22', '2º pedido de pagamento', amounts[2], 'subvencao'),
-    payment(`${countryCode}-04`, '24/07/2023', '24 de julho de 2023', '07/23', '3º pedido de pagamento', amounts[3], 'subvencao'),
-    payment(`${countryCode}-05`, '18/03/2024', '18 de março de 2024', '03/24', '4º pedido de pagamento', amounts[4], 'subvencao'),
-    payment(`${countryCode}-06`, '18/09/2024', '18 de setembro de 2024', '09/24', '5º pedido de pagamento', amounts[5], country.funds > 20 ? 'emprestimo' : 'subvencao'),
+    payment(
+      `${countryCode}-02`,
+      '20/01/2022',
+      '20 de janeiro de 2022',
+      '01/22',
+      '1º pedido de pagamento',
+      amounts[1],
+      'subvencao'
+    ),
+    payment(
+      `${countryCode}-03`,
+      '22/11/2022',
+      '22 de novembro de 2022',
+      '11/22',
+      '2º pedido de pagamento',
+      amounts[2],
+      'subvencao'
+    ),
+    payment(
+      `${countryCode}-04`,
+      '24/07/2023',
+      '24 de julho de 2023',
+      '07/23',
+      '3º pedido de pagamento',
+      amounts[3],
+      'subvencao'
+    ),
+    payment(
+      `${countryCode}-05`,
+      '18/03/2024',
+      '18 de março de 2024',
+      '03/24',
+      '4º pedido de pagamento',
+      amounts[4],
+      'subvencao'
+    ),
+    payment(
+      `${countryCode}-06`,
+      '18/09/2024',
+      '18 de setembro de 2024',
+      '09/24',
+      '5º pedido de pagamento',
+      amounts[5],
+      country.funds > 20 ? 'emprestimo' : 'subvencao'
+    ),
   ]
 }
 
@@ -54,7 +94,7 @@ function buildCountryBeneficiaries(countryCode, country) {
       `${name} - ${country.name}`,
       sector,
       roundToOne(base * part),
-      project,
+      project
     )
   )
 }
@@ -80,13 +120,43 @@ export const disbursementsData = {
       // Beneficiários portugueses usados no ranking.
       beneficiaries: [
         beneficiary('PT-B01', 'CP - Comboios de Portugal', 'Transportes', 742.5, 'Modernização da frota ferroviária'),
-        beneficiary('PT-B02', 'Infraestruturas de Portugal', 'Infraestruturas', 687.3, 'Reabilitação da rede ferroviária'),
+        beneficiary(
+          'PT-B02',
+          'Infraestruturas de Portugal',
+          'Infraestruturas',
+          687.3,
+          'Reabilitação da rede ferroviária'
+        ),
         beneficiary('PT-B03', 'IHRU - Instituto da Habitação', 'Habitação', 543.2, 'Programa de habitação acessível'),
-        beneficiary('PT-B04', 'Agência para a Modernização Administrativa', 'Administração Pública', 412.8, 'Digitalização de serviços públicos'),
-        beneficiary('PT-B05', 'DGESTE - Estabelecimentos Escolares', 'Educação', 398.6, 'Escola Digital e equipamentos'),
-        beneficiary('PT-B06', 'ADENE - Agência para a Energia', 'Energia', 356.4, 'Eficiência energética em edifícios públicos'),
+        beneficiary(
+          'PT-B04',
+          'Agência para a Modernização Administrativa',
+          'Administração Pública',
+          412.8,
+          'Digitalização de serviços públicos'
+        ),
+        beneficiary(
+          'PT-B05',
+          'DGESTE - Estabelecimentos Escolares',
+          'Educação',
+          398.6,
+          'Escola Digital e equipamentos'
+        ),
+        beneficiary(
+          'PT-B06',
+          'ADENE - Agência para a Energia',
+          'Energia',
+          356.4,
+          'Eficiência energética em edifícios públicos'
+        ),
         beneficiary('PT-B07', 'Metro do Porto', 'Transportes', 324.1, 'Expansão da rede de metro'),
-        beneficiary('PT-B08', 'APA - Agência Portuguesa do Ambiente', 'Ambiente', 298.7, 'Gestão sustentável de recursos hídricos'),
+        beneficiary(
+          'PT-B08',
+          'APA - Agência Portuguesa do Ambiente',
+          'Ambiente',
+          298.7,
+          'Gestão sustentável de recursos hídricos'
+        ),
       ],
     },
     ES: {
@@ -101,14 +171,38 @@ export const disbursementsData = {
       ],
       // Beneficiários espanhóis usados no ranking.
       beneficiaries: [
-        beneficiary('ES-B01', 'ADIF Alta Velocidad', 'Infraestruturas', 1800, 'Corredores ferroviários de alta capacidade'),
+        beneficiary(
+          'ES-B01',
+          'ADIF Alta Velocidad',
+          'Infraestruturas',
+          1800,
+          'Corredores ferroviários de alta capacidade'
+        ),
         beneficiary('ES-B02', 'Renfe Operadora', 'Transportes', 1520, 'Renovação de material circulante'),
-        beneficiary('ES-B03', 'Ministerio para la Transformación Digital', 'Administração Pública', 1345, 'Serviços públicos digitais'),
+        beneficiary(
+          'ES-B03',
+          'Ministerio para la Transformación Digital',
+          'Administração Pública',
+          1345,
+          'Serviços públicos digitais'
+        ),
         beneficiary('ES-B04', 'SEPI', 'Economia', 1188, 'Fundo de recapitalização empresarial'),
         beneficiary('ES-B05', 'Red.es', 'Tecnologia', 1024, 'Conectividade e inclusão digital'),
-        beneficiary('ES-B06', 'Instituto para la Transición Justa', 'Energia', 884, 'Projetos de descarbonização industrial'),
+        beneficiary(
+          'ES-B06',
+          'Instituto para la Transición Justa',
+          'Energia',
+          884,
+          'Projetos de descarbonização industrial'
+        ),
         beneficiary('ES-B07', 'Comunidad de Madrid', 'Administração Local', 796, 'Mobilidade urbana sustentável'),
-        beneficiary('ES-B08', 'Ajuntament de Barcelona', 'Administração Local', 742, 'Habitação e espaços públicos resilientes'),
+        beneficiary(
+          'ES-B08',
+          'Ajuntament de Barcelona',
+          'Administração Local',
+          742,
+          'Habitação e espaços públicos resilientes'
+        ),
       ],
     },
     IT: {
@@ -123,14 +217,32 @@ export const disbursementsData = {
       ],
       // Beneficiários italianos usados no ranking.
       beneficiaries: [
-        beneficiary('IT-B01', 'Rete Ferroviaria Italiana', 'Infraestruturas', 2650, 'Modernização e sinalização da rede ferroviária'),
+        beneficiary(
+          'IT-B01',
+          'Rete Ferroviaria Italiana',
+          'Infraestruturas',
+          2650,
+          'Modernização e sinalização da rede ferroviária'
+        ),
         beneficiary('IT-B02', 'Enel Italia', 'Energia', 2400, 'Infraestruturas para energias renováveis'),
         beneficiary('IT-B03', 'Invitalia', 'Economia', 2250, 'Apoio à inovação empresarial e PMEs'),
         beneficiary('IT-B04', 'Ministero della Salute', 'Saúde', 1980, 'Digitalização hospitalar e cuidados primários'),
         beneficiary('IT-B05', 'Trenitalia', 'Transportes', 1865, 'Comboios de baixa emissão'),
-        beneficiary('IT-B06', 'Cassa Depositi e Prestiti', 'Financeiro', 1710, 'Instrumentos financeiros para municípios'),
+        beneficiary(
+          'IT-B06',
+          'Cassa Depositi e Prestiti',
+          'Financeiro',
+          1710,
+          'Instrumentos financeiros para municípios'
+        ),
         beneficiary('IT-B07', 'Comune di Roma', 'Administração Local', 1624, 'Requalificação urbana e habitação'),
-        beneficiary('IT-B08', 'Politecnico di Milano', 'Educação', 1498, 'Laboratórios de inovação e competências digitais'),
+        beneficiary(
+          'IT-B08',
+          'Politecnico di Milano',
+          'Educação',
+          1498,
+          'Laboratórios de inovação e competências digitais'
+        ),
       ],
     },
     FR: {
@@ -148,9 +260,21 @@ export const disbursementsData = {
         beneficiary('FR-B01', 'SNCF Réseau', 'Transportes', 980, 'Rede ferroviária de baixa emissão'),
         beneficiary('FR-B02', 'Bpifrance', 'Financeiro', 872, 'Capacitação e financiamento à transição industrial'),
         beneficiary('FR-B03', 'ANRU', 'Habitação', 798, 'Renovação urbana e habitação sustentável'),
-        beneficiary('FR-B04', 'Ministère de la Transition écologique', 'Ambiente', 742, 'Eficiência energética e adaptação climática'),
+        beneficiary(
+          'FR-B04',
+          'Ministère de la Transition écologique',
+          'Ambiente',
+          742,
+          'Eficiência energética e adaptação climática'
+        ),
         beneficiary('FR-B05', 'AP-HP', 'Saúde', 688, 'Modernização digital hospitalar'),
-        beneficiary('FR-B06', 'Région Île-de-France', 'Administração Local', 624, 'Mobilidade limpa e interoperabilidade regional'),
+        beneficiary(
+          'FR-B06',
+          'Région Île-de-France',
+          'Administração Local',
+          624,
+          'Mobilidade limpa e interoperabilidade regional'
+        ),
         beneficiary('FR-B07', 'ADEME', 'Energia', 598, 'Descarbonização de edifícios e indústria'),
         beneficiary('FR-B08', 'Université PSL', 'Educação', 534, 'Centros de investigação e competências avançadas'),
       ],
@@ -171,10 +295,28 @@ export const disbursementsData = {
         beneficiary('DE-B02', 'KfW', 'Financeiro', 980, 'Programas de investimento para municípios'),
         beneficiary('DE-B03', 'Bundesagentur für Arbeit', 'Emprego', 845, 'Requalificação e competências digitais'),
         beneficiary('DE-B04', 'Siemens Energy', 'Energia', 792, 'Modernização de redes energéticas'),
-        beneficiary('DE-B05', 'Fraunhofer-Gesellschaft', 'Ciência', 688, 'Investigação aplicada e transferência tecnológica'),
+        beneficiary(
+          'DE-B05',
+          'Fraunhofer-Gesellschaft',
+          'Ciência',
+          688,
+          'Investigação aplicada e transferência tecnológica'
+        ),
         beneficiary('DE-B06', 'Charité Berlin', 'Saúde', 624, 'Dados clínicos e infraestruturas hospitalares'),
-        beneficiary('DE-B07', 'Freie Hansestadt Hamburg', 'Administração Local', 578, 'Porto sustentável e mobilidade urbana'),
-        beneficiary('DE-B08', 'Berliner Verkehrsbetriebe', 'Transportes', 546, 'Autocarros elétricos e pontos de carregamento'),
+        beneficiary(
+          'DE-B07',
+          'Freie Hansestadt Hamburg',
+          'Administração Local',
+          578,
+          'Porto sustentável e mobilidade urbana'
+        ),
+        beneficiary(
+          'DE-B08',
+          'Berliner Verkehrsbetriebe',
+          'Transportes',
+          546,
+          'Autocarros elétricos e pontos de carregamento'
+        ),
       ],
     },
     PL: {
@@ -189,12 +331,36 @@ export const disbursementsData = {
       ],
       // Beneficiários polacos usados no ranking.
       beneficiaries: [
-        beneficiary('PL-B01', 'PKP Polskie Linie Kolejowe', 'Infraestruturas', 684, 'Corredores ferroviários e sinalização'),
-        beneficiary('PL-B02', 'Bank Gospodarstwa Krajowego', 'Financeiro', 612, 'Linhas de crédito para investimentos públicos'),
-        beneficiary('PL-B03', 'Narodowy Fundusz Ochrony Środowiska', 'Ambiente', 558, 'Eficiência energética e renováveis'),
+        beneficiary(
+          'PL-B01',
+          'PKP Polskie Linie Kolejowe',
+          'Infraestruturas',
+          684,
+          'Corredores ferroviários e sinalização'
+        ),
+        beneficiary(
+          'PL-B02',
+          'Bank Gospodarstwa Krajowego',
+          'Financeiro',
+          612,
+          'Linhas de crédito para investimentos públicos'
+        ),
+        beneficiary(
+          'PL-B03',
+          'Narodowy Fundusz Ochrony Środowiska',
+          'Ambiente',
+          558,
+          'Eficiência energética e renováveis'
+        ),
         beneficiary('PL-B04', 'Miasto Warszawa', 'Administração Local', 512, 'Mobilidade limpa e bairros resilientes'),
         beneficiary('PL-B05', 'PGE Polska Grupa Energetyczna', 'Energia', 488, 'Armazenamento e redes inteligentes'),
-        beneficiary('PL-B06', 'Centralny Port Komunikacyjny', 'Transportes', 446, 'Integração de transportes e acessibilidades'),
+        beneficiary(
+          'PL-B06',
+          'Centralny Port Komunikacyjny',
+          'Transportes',
+          446,
+          'Integração de transportes e acessibilidades'
+        ),
         beneficiary('PL-B07', 'Politechnika Warszawska', 'Educação', 398, 'Laboratórios de inovação industrial'),
         beneficiary('PL-B08', 'Uniwersytet Jagielloński', 'Educação', 352, 'Centros de investigação biomédica'),
       ],

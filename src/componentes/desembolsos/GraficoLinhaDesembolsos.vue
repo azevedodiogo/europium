@@ -1,10 +1,7 @@
-
 <!-- Gráfico principal dos pagamentos ao longo do tempo. -->
 <template>
-  
-  <!-- Wrapper com altura controlada para o canvas do Chart.js. -->
+  <!-- Área do gráfico com altura fixa para o canvas, onde o Chart.js desenha a linha. -->
   <div class="des-chart-canvas-wrap">
-    
     <Line
       :key="chartThemeKey"
       :data="chartData"
@@ -17,13 +14,13 @@
 </template>
 
 <script setup>
-// Computed mantém dados e opções do gráfico alinhados com props e tema.
+// Computed, cálculo reativo do Vue, recalcula dados e opções quando mudam as props, os dados recebidos pelo componente.
 import { computed } from 'vue'
 // Componente Vue do gráfico de linhas.
 import { Line } from 'vue-chartjs'
 // Hook interno que expõe o tema claro/escuro atual.
 import { usarModoEscuro } from '@/composicoes/usarModoEscuro'
-// Tooltip HTML comum usado pelos gráficos Chart.js.
+// Tooltip HTML comum: a caixa de detalhe que aparece ao passar o rato nos gráficos Chart.js.
 import { createChartTooltip, getChartTooltipColors } from '@/utilitarios/tooltipsGraficos'
 // Pontos da série cumulativa recebidos da página de desembolsos.
 const props = defineProps({
@@ -32,14 +29,14 @@ const props = defineProps({
     default: () => [],
   },
 })
-// Formatador português usado nos eixos e tooltips.
+// Formatador português usado nos eixos e nas caixas de detalhe.
 const BILLION_FORMATTER = new Intl.NumberFormat('pt-PT', {
   minimumFractionDigits: 0,
   maximumFractionDigits: 1,
 })
 const { isDark } = usarModoEscuro()
-// Recria o gráfico quando o tema muda, garantindo que o canvas recebe as novas cores.
-const chartThemeKey = computed(() => isDark.value ? 'dark' : 'light')
+// Recria o gráfico quando o tema muda, garantindo que o canvas, a zona desenhada do gráfico, recebe as novas cores.
+const chartThemeKey = computed(() => (isDark.value ? 'dark' : 'light'))
 function formatBillionAmount(value) {
   // Converte valores numéricos para a mesma unidade apresentada no resto da página.
   return `${BILLION_FORMATTER.format(value)} mil M`
@@ -47,7 +44,7 @@ function formatBillionAmount(value) {
 function measureTextWidth(text) {
   // Em ambiente sem DOM, usa uma aproximação simples baseada no número de caracteres.
   if (typeof document === 'undefined') return text.length * 6
-  // Reutiliza um canvas temporário para medir a largura real do texto do eixo.
+  // Reutiliza um canvas temporário, uma área de desenho invisível, para medir a largura real do texto do eixo.
   const canvas = measureTextWidth.canvas ?? (measureTextWidth.canvas = document.createElement('canvas'))
   // Obtém o contexto 2D necessário para medir texto.
   const context = canvas.getContext('2d')
@@ -93,7 +90,7 @@ const yAxisWidth = computed(() => {
 // Espaço entre os labels do eixo Y e a área útil do gráfico.
 const yAxisTickPadding = computed(() => 8)
 // Paleta do gráfico para modo claro e modo escuro.
-const themeColors = computed(() => (
+const themeColors = computed(() =>
   isDark.value
     ? {
         line: '#5d8fe4',
@@ -111,8 +108,8 @@ const themeColors = computed(() => (
         grid: '#eaeff5',
         axis: '#5d646f',
       }
-))
-// Paleta comum do tooltip, derivada do tema atual.
+)
+// Paleta comum da caixa de detalhe, derivada do tema atual.
 const tooltipColors = computed(() => getChartTooltipColors(isDark.value))
 // Dados no formato esperado pelo Chart.js.
 const chartData = computed(() => ({
@@ -138,7 +135,7 @@ const chartData = computed(() => ({
     },
   ],
 }))
-// Opções visuais, animação, tooltip e escalas do gráfico.
+// Opções visuais, animação, caixa de detalhe e escalas do gráfico.
 const chartOptions = computed(() => ({
   responsive: true,
   maintainAspectRatio: false,
@@ -165,11 +162,12 @@ const chartOptions = computed(() => ({
     tooltip: createChartTooltip({
       colors: tooltipColors.value,
       getTitle: ({ tooltip }) => tooltip.title?.[0] ?? '',
-      getRows: ({ tooltip }, getPointColor) => (tooltip.dataPoints ?? []).map((point) => ({
-        label: 'Total acumulado',
-        value: `${formatBillionAmount(point.parsed.y)} EUR`,
-        color: getPointColor(point),
-      })),
+      getRows: ({ tooltip }, getPointColor) =>
+        (tooltip.dataPoints ?? []).map((point) => ({
+          label: 'Total acumulado',
+          value: `${formatBillionAmount(point.parsed.y)} EUR`,
+          color: getPointColor(point),
+        })),
     }),
   },
   scales: {
@@ -221,21 +219,21 @@ const chartOptions = computed(() => ({
 </script>
 
 <style scoped>
-/* Contentor que fixa a altura real do gráfico conforme o frame do Figma. */
+/* Área que mantém o gráfico com a altura esperada no layout. */
 .des-chart-canvas-wrap {
-  /* Permite ao Chart.js posicionar o canvas dentro deste bloco. */
+  /* Permite ao Chart.js posicionar a zona desenhada do gráfico dentro deste bloco. */
   position: relative;
   /* Faz o gráfico ocupar toda a largura do card. */
   width: 100%;
-  /* No Figma, a área SVG do gráfico tem 280px de altura. */
+  /* No Figma, o desenho vetorial de referência do gráfico tem 280px de altura. */
   height: 280px;
-  /* Permite que o tooltip HTML apareça fora da área exata do canvas. */
+  /* Permite que a caixa de detalhe apareça fora da área exata do gráfico. */
   overflow: visible;
 }
 .des-chart-canvas {
-  /* O canvas acompanha a largura do wrapper. */
+  /* A zona desenhada do gráfico acompanha a largura do bloco. */
   width: 100%;
-  /* O canvas fica limitado à altura fixa definida acima. */
+  /* A zona desenhada do gráfico fica limitada à altura fixa definida acima. */
   height: 100%;
 }
 </style>

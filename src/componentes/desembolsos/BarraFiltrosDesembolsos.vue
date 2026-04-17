@@ -1,15 +1,11 @@
-
 <!-- Barra de filtros da página de desembolsos. -->
 <template>
-  
   <!-- Barra superior com filtro de país e exportação. -->
   <div class="des-filter-bar" v-scroll-animate="'fade-down'">
-    
     <!-- Seletor de país; null representa todos os países. -->
     <div class="des-filter-group">
-      
       <label class="des-filter-label">País</label>
-      
+
       <AppCombobox
         :model-value="modelValue"
         :options="countryOptions"
@@ -19,8 +15,6 @@
         @update:model-value="$emit('update:modelValue', $event)"
       />
     </div>
-
-    
     <!-- Exporta os pagamentos do contexto ativo. -->
     <AppExportMenu
       filename="desembolsos"
@@ -78,27 +72,28 @@ defineEmits(['update:modelValue'])
 <style scoped>
 /* Barra de filtro e exportação. */
 .des-filter-bar {
-  
   display: flex;
   align-items: flex-end;
-  
+
   justify-content: space-between;
   gap: 16px;
-  
+
   background: var(--color-bg-white);
-  
+
   border: 1px solid var(--color-border);
-  
+
   border-radius: var(--radius-md);
-  
+
   padding: 16px;
   margin: 20px 32px 0;
+  position: relative;
+  z-index: 50;
+  overflow: visible;
 }
 /* Grupo vertical com label e seletor. */
 .des-filter-group {
-  
   display: flex;
-  
+
   flex-direction: column;
   gap: 5px;
 }

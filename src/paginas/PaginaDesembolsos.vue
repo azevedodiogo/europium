@@ -1,21 +1,16 @@
-
 <!-- Página dos desembolsos com pagamentos e beneficiários. -->
 <template>
-  
   <div class="des-page">
-    
     <div class="des-container">
-
-      
       <!-- Cabeçalho da página com a descrição do tipo de dados apresentado. -->
       <div class="page-hero">
-        
         <h1 class="page-hero__title">Desembolsos</h1>
-        
-        <p class="page-hero__desc des-desc-width">Pagamentos efetuados pela União Europeia a cada Estado-Membro no âmbito do MRR, discriminado por data, montante e tipologia (subvenção, empréstimo ou pré-financiamento).</p>
-      </div>
 
-      
+        <p class="page-hero__desc des-desc-width">
+          Pagamentos efetuados pela União Europeia a cada Estado-Membro no âmbito do MRR, discriminado por data,
+          montante e tipologia (subvenção, empréstimo ou pré-financiamento).
+        </p>
+      </div>
       <!-- Filtro de país e menu de exportação dos pagamentos. -->
       <DisbursementsFilterBar
         v-model="selectedCountry"
@@ -25,42 +20,63 @@
         :fileContext="paymentsExportContext"
         :detailParts="paymentsExportDetails"
       />
-
-      
       <!-- Indicadores rápidos recalculados sempre que muda o país. -->
       <DisbursementsKpiCards :activeKpis="activeKpis" />
-
-      
       <!-- Alternância entre pagamentos e beneficiários. -->
       <div class="des-tablist" role="tablist">
-        
-        <button role="tab" class="des-tab" :class="{'des-tab--active': activeTab==='pagamentos'}" @click="activeTab='pagamentos'">
-          
+        <button
+          id="des-tab-pagamentos"
+          ref="paymentsTabRef"
+          type="button"
+          role="tab"
+          class="des-tab"
+          :class="{ 'des-tab--active': activeTab === 'pagamentos' }"
+          :aria-selected="activeTab === 'pagamentos'"
+          aria-controls="des-panel-pagamentos"
+          :tabindex="activeTab === 'pagamentos' ? 0 : -1"
+          @click="selectTab('pagamentos')"
+          @keydown.right.prevent="selectAdjacentTab(1)"
+          @keydown.left.prevent="selectAdjacentTab(-1)"
+          @keydown.home.prevent="selectTab('pagamentos', true)"
+          @keydown.end.prevent="selectTab('beneficiarios', true)"
+        >
           <IconFileText :size="16" />
           Pagamentos
         </button>
-        
-        <button role="tab" class="des-tab" :class="{'des-tab--active': activeTab==='beneficiarios'}" @click="activeTab='beneficiarios'">
-          
+
+        <button
+          id="des-tab-beneficiarios"
+          ref="beneficiariesTabRef"
+          type="button"
+          role="tab"
+          class="des-tab"
+          :class="{ 'des-tab--active': activeTab === 'beneficiarios' }"
+          :aria-selected="activeTab === 'beneficiarios'"
+          aria-controls="des-panel-beneficiarios"
+          :tabindex="activeTab === 'beneficiarios' ? 0 : -1"
+          @click="selectTab('beneficiarios')"
+          @keydown.right.prevent="selectAdjacentTab(1)"
+          @keydown.left.prevent="selectAdjacentTab(-1)"
+          @keydown.home.prevent="selectTab('pagamentos', true)"
+          @keydown.end.prevent="selectTab('beneficiarios', true)"
+        >
           <IconCircleCheckFilled :size="16" />
           Top 100 Beneficiários
         </button>
       </div>
-
-      
       <!-- Painel de pagamentos com gráfico, cronologia e tabela ordenável. -->
       <DisbursementsPaymentsPanel
-        v-if="activeTab==='pagamentos'"
+        v-if="activeTab === 'pagamentos'"
         :raw="raw"
         :timeline="timeline"
         :showCountryColumn="showCountryColumn"
         :sortedPayments="sortedPayments"
         :paymentSortKey="paymentSortKey"
         :paymentSortDir="paymentSortDir"
+        panel-id="des-panel-pagamentos"
+        labelled-by="des-tab-pagamentos"
         @sort="sortPaymentsTable"
       />
-
-      
       <!-- Painel de beneficiários com pesquisa, paginação e exportação própria. -->
       <DisbursementsBeneficiariesPanel
         v-else
@@ -76,6 +92,8 @@
         :exportContext="beneficiariesExportContext"
         :exportDetails="beneficiariesExportDetails"
         :exportData="filteredBen"
+        panel-id="des-panel-beneficiarios"
+        labelled-by="des-tab-beneficiarios"
         @update:searchQuery="searchQuery = $event"
         @update:currentPage="currentPage = $event"
       />
@@ -85,17 +103,20 @@
 
 <script setup>
 // Estado reativo, dados calculados e observadores usados na página.
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import DisbursementsFilterBar from '@/componentes/desembolsos/BarraFiltrosDesembolsos.vue'
 import DisbursementsKpiCards from '@/componentes/desembolsos/CartoesKpiDesembolsos.vue'
 import DisbursementsPaymentsPanel from '@/componentes/desembolsos/PainelPagamentosDesembolsos.vue'
 import DisbursementsBeneficiariesPanel from '@/componentes/desembolsos/PainelBeneficiariosDesembolsos.vue'
-// Composição que carrega o recurso pelo json-server com fallback centralizado.
+// Composição que carrega o recurso pelo json-server, a API local usada para simular dados.
 import { usarRecursoApi } from '@/composicoes/usarRecursoApi'
 // País selecionado; null significa vista agregada de todos os países.
 const selectedCountry = ref(null)
 // Separador ativo dentro da página.
 const activeTab = ref('pagamentos')
+const paymentsTabRef = ref(null)
+const beneficiariesTabRef = ref(null)
+const tabOrder = ['pagamentos', 'beneficiarios']
 // Campo e direção usados pela tabela de pagamentos.
 const paymentSortKey = ref('dateValue')
 const paymentSortDir = ref('asc')
@@ -103,11 +124,20 @@ const paymentSortDir = ref('asc')
 const searchQuery = ref('')
 const currentPage = ref(1)
 const perPage = 20
-// Etiquetas legíveis para tipos de pagamento quando os dados só trazem chaves técnicas.
-const TYPE_LABELS = {
-  pre: 'Pré-financiamento',
-  subvencao: 'Subvenção',
-  emprestimo: 'Empréstimo',
+function focusActiveTab() {
+  nextTick(() => {
+    const tabRef = activeTab.value === 'pagamentos' ? paymentsTabRef : beneficiariesTabRef
+    tabRef.value?.focus({ preventScroll: true })
+  })
+}
+function selectTab(tab, shouldFocus = false) {
+  activeTab.value = tab
+  if (shouldFocus) focusActiveTab()
+}
+function selectAdjacentTab(delta) {
+  const currentIndex = tabOrder.indexOf(activeTab.value)
+  const nextIndex = (currentIndex + delta + tabOrder.length) % tabOrder.length
+  selectTab(tabOrder[nextIndex], true)
 }
 // Formatadores reutilizados para valores em milhões e milhares de milhões.
 const BILLION_FORMATTER = new Intl.NumberFormat('pt-PT', { minimumFractionDigits: 0, maximumFractionDigits: 1 })
@@ -129,7 +159,7 @@ const countriesWithData = computed(() =>
 // Períodos do gráfico vindos do recurso ativo.
 const paymentPeriods = computed(() => {
   if (resource.value.paymentPeriods?.length) return resource.value.paymentPeriods
-  const periods = countriesWithData.value.flatMap(countryCode =>
+  const periods = countriesWithData.value.flatMap((countryCode) =>
     (countryData.value[countryCode]?.payments ?? []).map((paymentItem) => paymentItem.chartDate)
   )
   return [...new Set(periods)]
@@ -174,7 +204,7 @@ function parseDateValue(dateString) {
 function buildSeries(paymentsList) {
   // Constrói uma série cumulativa para o gráfico de linha.
   let cumulative = 0
-  return paymentsList.map(item => {
+  return paymentsList.map((item) => {
     cumulative = roundToOne(cumulative + item.amount)
     return { d: item.chartDate, v: cumulative }
   })
@@ -198,15 +228,13 @@ const activePaymentsBase = computed(() => {
   if (selectedCountry.value) {
     return getCountryPayments(selectedCountry.value)
   }
-  return countriesWithData.value
-    .flatMap(countryCode => getCountryPayments(countryCode))
-    .sort(sortPaymentsByTimeline)
+  return countriesWithData.value.flatMap((countryCode) => getCountryPayments(countryCode)).sort(sortPaymentsByTimeline)
 })
 // Base de beneficiários ativa, sempre ordenada pelo montante recebido.
 const activeBeneficiariesBase = computed(() => {
   const baseList = selectedCountry.value
     ? getCountryBeneficiaries(selectedCountry.value)
-    : countriesWithData.value.flatMap(countryCode => getCountryBeneficiaries(countryCode))
+    : countriesWithData.value.flatMap((countryCode) => getCountryBeneficiaries(countryCode))
   const sortedList = [...baseList].sort((a, b) => b.amount - a.amount)
   return selectedCountry.value ? sortedList : sortedList.slice(0, 100)
 })
@@ -218,41 +246,38 @@ const activePlanTotal = computed(() => {
   return countriesWithData.value.reduce((sum, countryCode) => sum + (countryMeta.value[countryCode]?.planTotal ?? 0), 0)
 })
 // Informação do país selecionado, quando existe.
-const selectedCountryInfo = computed(() =>
-  selectedCountry.value ? countryMeta.value[selectedCountry.value] : null
-)
+const selectedCountryInfo = computed(() => (selectedCountry.value ? countryMeta.value[selectedCountry.value] : null))
 // KPIs superiores da página.
 const activeKpis = computed(() => {
-  const summary = activePaymentsBase.value.reduce((acc, item) => {
-    acc.total += item.amount
-    acc.pagamentos += 1
-    if (item.type === 'pre') acc.pre += item.amount
-    if (item.type === 'subvencao') {
-      acc.subv += item.amount
-      acc.subvCount += 1
-    }
-    if (item.type === 'emprestimo') {
-      acc.empr += item.amount
-      acc.emprCount += 1
-    }
-    return acc
-  }, { total: 0, pre: 0, subv: 0, empr: 0, pagamentos: 0, subvCount: 0, emprCount: 0 })
+  const summary = activePaymentsBase.value.reduce(
+    (acc, item) => {
+      acc.total += item.amount
+      acc.pagamentos += 1
+      if (item.type === 'pre') acc.pre += item.amount
+      if (item.type === 'subvencao') {
+        acc.subv += item.amount
+        acc.subvCount += 1
+      }
+      if (item.type === 'emprestimo') {
+        acc.empr += item.amount
+        acc.emprCount += 1
+      }
+      return acc
+    },
+    { total: 0, pre: 0, subv: 0, empr: 0, pagamentos: 0, subvCount: 0, emprCount: 0 }
+  )
   const progressPct = activePlanTotal.value ? Math.round((summary.total / activePlanTotal.value) * 100) : 0
   return {
     total: formatBillionAmount(summary.total),
     totalSub: `${progressPct}% do plano de ${formatBillionAmount(activePlanTotal.value)}`,
     subv: formatBillionAmount(summary.subv),
-    subvSub: summary.subvCount
-      ? `${summary.subvCount} ${pluralize(summary.subvCount, 'pagamento')}`
-      : 'Sem pagamentos',
+    subvSub: summary.subvCount ? `${summary.subvCount} ${pluralize(summary.subvCount, 'pagamento')}` : 'Sem pagamentos',
     empr: formatBillionAmount(summary.empr),
     emprSub: summary.emprCount
       ? `${summary.emprCount} ${pluralize(summary.emprCount, 'pagamento')}`
       : 'Sem empréstimos',
     pagamentos: String(summary.pagamentos),
-    pagamentosSub: summary.pre
-      ? `Pré-financiamento: ${formatBillionAmount(summary.pre)}`
-      : 'Sem pré-financiamento',
+    pagamentosSub: summary.pre ? `Pré-financiamento: ${formatBillionAmount(summary.pre)}` : 'Sem pré-financiamento',
   }
 })
 // Série usada no gráfico de pagamentos.
@@ -261,7 +286,7 @@ const raw = computed(() => {
     return buildSeries(activePaymentsBase.value)
   }
   let cumulative = 0
-  return paymentPeriods.value.map(period => {
+  return paymentPeriods.value.map((period) => {
     const periodTotal = countriesWithData.value.reduce((sum, countryCode) => {
       const paymentItem = countryData.value[countryCode]?.payments?.find((item) => item.chartDate === period)
       return sum + (paymentItem?.amount ?? 0)
@@ -271,19 +296,21 @@ const raw = computed(() => {
   })
 })
 // Linhas normalizadas para a tabela de pagamentos.
-const payments = computed(() => activePaymentsBase.value.map(item => ({
-  id: item.id,
-  date: item.date,
-  dateValue: parseDateValue(item.date),
-  parcel: item.parcel,
-  amount: formatBillionAmount(item.amount),
-  amountValue: item.amount,
-  type: item.type,
-  typeLabel: item.typeLabel,
-  typeSortValue: paymentTypeOrder.value[item.type] ?? 99,
-  countryLabel: item.countryLabel,
-  countryFlag: item.countryFlag,
-})))
+const payments = computed(() =>
+  activePaymentsBase.value.map((item) => ({
+    id: item.id,
+    date: item.date,
+    dateValue: parseDateValue(item.date),
+    parcel: item.parcel,
+    amount: formatBillionAmount(item.amount),
+    amountValue: item.amount,
+    type: item.type,
+    typeLabel: item.typeLabel,
+    typeSortValue: paymentTypeOrder.value[item.type] ?? 99,
+    countryLabel: item.countryLabel,
+    countryFlag: item.countryFlag,
+  }))
+)
 // Ordenação da tabela de pagamentos, controlada pelo componente filho.
 const sortedPayments = computed(() => {
   return [...payments.value].sort((a, b) => {
@@ -302,20 +329,20 @@ const sortedPayments = computed(() => {
   })
 })
 // Dados da cronologia, derivados da mesma base que a tabela.
-const timeline = computed(() => activePaymentsBase.value.map(item => ({
-  id: item.id,
-  amount: formatBillionAmount(item.amount),
-  type: item.type,
-  typeLabel: item.typeLabel,
-  dateLabel: item.dateLabel,
-  description: item.parcel,
-  countryLabel: item.countryLabel,
-  countryFlag: item.countryFlag,
-})))
-// Contexto e detalhes da exportação dos pagamentos.
-const paymentsExportContext = computed(() =>
-  selectedCountryInfo.value ? [selectedCountryInfo.value.label] : []
+const timeline = computed(() =>
+  activePaymentsBase.value.map((item) => ({
+    id: item.id,
+    amount: formatBillionAmount(item.amount),
+    type: item.type,
+    typeLabel: item.typeLabel,
+    dateLabel: item.dateLabel,
+    description: item.parcel,
+    countryLabel: item.countryLabel,
+    countryFlag: item.countryFlag,
+  }))
 )
+// Contexto e detalhes da exportação dos pagamentos.
+const paymentsExportContext = computed(() => (selectedCountryInfo.value ? [selectedCountryInfo.value.label] : []))
 const paymentsExportDetails = computed(() => {
   const parts = [selectedCountryInfo.value ? `País: ${selectedCountryInfo.value.label}` : 'Todos os países']
   parts.push('Pagamentos')
@@ -331,17 +358,16 @@ const filteredBen = computed(() => {
   }))
   if (!searchQuery.value.trim()) return rankedList
   const query = searchQuery.value.toLowerCase()
-  return rankedList.filter(item =>
-    item.name.toLowerCase().includes(query) ||
-    item.project.toLowerCase().includes(query) ||
-    item.sector.toLowerCase().includes(query) ||
-    item.countryLabel.toLowerCase().includes(query)
+  return rankedList.filter(
+    (item) =>
+      item.name.toLowerCase().includes(query) ||
+      item.project.toLowerCase().includes(query) ||
+      item.sector.toLowerCase().includes(query) ||
+      item.countryLabel.toLowerCase().includes(query)
   )
 })
 // Contexto e detalhes da exportação dos beneficiários.
-const beneficiariesExportContext = computed(() =>
-  selectedCountryInfo.value ? [selectedCountryInfo.value.label] : []
-)
+const beneficiariesExportContext = computed(() => (selectedCountryInfo.value ? [selectedCountryInfo.value.label] : []))
 const beneficiariesExportDetails = computed(() => {
   const parts = [selectedCountryInfo.value ? `País: ${selectedCountryInfo.value.label}` : 'Todos os países']
   parts.push('Top beneficiários')
@@ -352,7 +378,9 @@ const beneficiariesExportDetails = computed(() => {
 })
 // Paginação da tabela de beneficiários.
 const totalPages = computed(() => Math.max(1, Math.ceil(filteredBen.value.length / perPage)))
-const paginatedBen = computed(() => filteredBen.value.slice((currentPage.value - 1) * perPage, currentPage.value * perPage))
+const paginatedBen = computed(() =>
+  filteredBen.value.slice((currentPage.value - 1) * perPage, currentPage.value * perPage)
+)
 // Total financeiro dos beneficiários visíveis.
 const filteredTotal = computed(() => {
   const numericTotal = filteredBen.value.reduce((sum, item) => sum + item.amountValue, 0)
@@ -371,12 +399,12 @@ const beneficiariesSubtitle = computed(() => {
 // Na vista agregada é necessário mostrar coluna de país.
 const showCountryColumn = computed(() => !selectedCountry.value)
 // Colspan do estado vazio acompanha a presença da coluna de país.
-const beneficiariesColspan = computed(() => showCountryColumn.value ? 6 : 5)
+const beneficiariesColspan = computed(() => (showCountryColumn.value ? 6 : 5))
 watch(selectedCountry, () => {
   // Mudar de país volta ao início da paginação para evitar páginas vazias.
   currentPage.value = 1
 })
-watch(totalPages, value => {
+watch(totalPages, (value) => {
   // Se uma pesquisa reduzir o total de páginas, corrige a página atual.
   if (currentPage.value > value) {
     currentPage.value = value
@@ -394,19 +422,53 @@ function sortPaymentsTable(key) {
 </script>
 
 <style scoped>
-
 /* Estrutura base da página. */
-.des-page      { background: var(--color-bg-page); min-height: 100vh; padding-bottom: 60px; }
+.des-page {
+  background: var(--color-bg-page);
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
 
-.des-container { max-width: 1520px; margin: 0 auto; padding: 0 var(--container-padding); }
-
+.des-container {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
 
 /* Separadores entre pagamentos e beneficiários. */
-.des-tablist { display: flex; gap: 2px; background: #ebeff4; border-radius: var(--radius-md); padding: 3px; width: fit-content; margin: 20px 32px 0; }
+.des-tablist {
+  display: flex;
+  gap: 2px;
+  background: #ebeff4;
+  border-radius: var(--radius-md);
+  padding: 3px;
+  width: fit-content;
+  margin: 20px 32px 0;
+}
 
-.des-tab { display: inline-flex; align-items: center; gap: 6px; height: 29px; padding: 0 16px; border-radius: var(--radius-sm); font-family: var(--font-family); font-size: var(--text-base); font-weight: 500; color: var(--color-text-primary); background: transparent; border: 1px solid transparent; cursor: pointer; min-width: 140px; justify-content: center; transition: background .12s; }
+.des-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 29px;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  min-width: 140px;
+  justify-content: center;
+  transition: background 0.12s;
+}
 
-.des-tab--active { background: #f9fafb; box-shadow: 0 1px 3px rgba(0,0,0,.10); }
+.des-tab--active {
+  background: #f9fafb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 640px) {
   .des-tablist {
@@ -421,14 +483,12 @@ function sortPaymentsTable(key) {
     min-width: 0;
   }
 }
-[data-theme="dark"] .des-tablist {
-  
-  background: rgba(232,240,252,0.06);
+[data-theme='dark'] .des-tablist {
+  background: rgba(232, 240, 252, 0.06);
 }
-[data-theme="dark"] .des-tab--active {
-  
+[data-theme='dark'] .des-tab--active {
   background: var(--color-bg-white);
-  
+
   color: var(--color-text-primary);
 }
 </style>
