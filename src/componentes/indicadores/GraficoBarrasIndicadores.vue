@@ -1,10 +1,7 @@
-
 <!-- Gráfico de barras usado para mostrar os indicadores por país. -->
 <template>
-  
-  <!-- Contentor com altura calculada a partir do número de países. -->
+  <!-- Área com altura calculada a partir do número de países. -->
   <div class="ind-chart-canvas-wrap" :style="{ height: chartHeight }">
-    
     <Bar
       :key="chartThemeKey"
       :data="chartData"
@@ -17,13 +14,13 @@
 </template>
 
 <script setup>
-// Computed mantém dados, altura e opções do gráfico sincronizados com as props.
+// Computed, cálculo reativo do Vue, recalcula dados, altura e opções quando mudam as props, os dados recebidos pelo componente.
 import { computed } from 'vue'
 // Componente Chart.js para gráfico de barras.
 import { Bar } from 'vue-chartjs'
 // Hook do tema atual para adaptar as cores ao dark mode.
 import { usarModoEscuro } from '@/composicoes/usarModoEscuro'
-// Tooltip HTML comum usado pelos gráficos Chart.js.
+// Tooltip HTML comum: a caixa de detalhe que aparece ao passar o rato nos gráficos Chart.js.
 import { createChartTooltip, getChartTooltipColors } from '@/utilitarios/tooltipsGraficos'
 // Dados recebidos da página de indicadores.
 const props = defineProps({
@@ -32,15 +29,15 @@ const props = defineProps({
     type: Array,
     default: () => [],
   },
-  // Unidade de medida apresentada nos tooltips.
+  // Unidade de medida apresentada nas caixas de detalhe.
   unit: {
     type: String,
     default: '',
   },
 })
 const { isDark } = usarModoEscuro()
-// Força recriação do canvas quando muda o tema.
-const chartThemeKey = computed(() => isDark.value ? 'dark' : 'light')
+// Força recriação do canvas, a área desenhada do gráfico, quando muda o tema.
+const chartThemeKey = computed(() => (isDark.value ? 'dark' : 'light'))
 // Altura dinâmica para evitar barras demasiado comprimidas.
 const chartHeight = computed(() => `${Math.max(280, props.rows.length * 56)}px`)
 function formatAxisLabel(value) {
@@ -51,7 +48,7 @@ function formatAxisLabel(value) {
   return Math.round(value).toString()
 }
 // Paleta clara/escura do gráfico.
-const themeColors = computed(() => (
+const themeColors = computed(() =>
   isDark.value
     ? {
         bar: '#5d8fe4',
@@ -63,8 +60,8 @@ const themeColors = computed(() => (
         grid: '#eaeff5',
         axis: '#5d646f',
       }
-))
-// Paleta comum do tooltip, derivada do tema atual.
+)
+// Paleta comum da caixa de detalhe, derivada do tema atual.
 const tooltipColors = computed(() => getChartTooltipColors(isDark.value))
 // Dados no formato esperado pelo Chart.js.
 const chartData = computed(() => ({
@@ -81,7 +78,7 @@ const chartData = computed(() => ({
     },
   ],
 }))
-// Opções de orientação horizontal, tooltip e escalas.
+// Opções de orientação horizontal, caixa de detalhe e escalas.
 const chartOptions = computed(() => ({
   indexAxis: 'y',
   responsive: true,
@@ -97,11 +94,12 @@ const chartOptions = computed(() => ({
     tooltip: createChartTooltip({
       colors: tooltipColors.value,
       getTitle: ({ tooltip }) => tooltip.title?.[0] ?? '',
-      getRows: ({ tooltip }, getPointColor) => (tooltip.dataPoints ?? []).map((point) => ({
-        label: props.unit || 'Valor',
-        value: `${point.parsed.x.toLocaleString('pt-PT')} ${props.unit}`.trim(),
-        color: getPointColor(point),
-      })),
+      getRows: ({ tooltip }, getPointColor) =>
+        (tooltip.dataPoints ?? []).map((point) => ({
+          label: props.unit || 'Valor',
+          value: `${point.parsed.x.toLocaleString('pt-PT')} ${props.unit}`.trim(),
+          color: getPointColor(point),
+        })),
     }),
   },
   scales: {
@@ -144,9 +142,8 @@ const chartOptions = computed(() => ({
 </script>
 
 <style scoped>
-/* Contentor relativo do canvas. */
+/* Área relativa do canvas, onde o gráfico é desenhado. */
 .ind-chart-canvas-wrap {
-  
   position: relative;
   width: 100%;
   overflow: visible;

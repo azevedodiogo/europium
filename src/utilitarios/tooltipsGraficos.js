@@ -1,24 +1,26 @@
 // Escapa caracteres especiais para impedir que texto dos dados seja interpretado como HTML.
 export function escapeHtml(value) {
   // Converte qualquer valor recebido para texto antes de aplicar as substituições.
-  return String(value ?? '')
-    // Substitui o símbolo `&`, que poderia iniciar entidades HTML.
-    .replaceAll('&', '&amp;')
-    // Substitui o sinal menor, evitando abertura de tags.
-    .replaceAll('<', '&lt;')
-    // Substitui o sinal maior, evitando fecho de tags.
-    .replaceAll('>', '&gt;')
-    // Substitui aspas duplas usadas em atributos HTML.
-    .replaceAll('"', '&quot;')
-    // Substitui aspas simples usadas em atributos HTML.
-    .replaceAll("'", '&#039;')
+  return (
+    String(value ?? '')
+      // Substitui o símbolo `&`, que poderia iniciar entidades HTML.
+      .replaceAll('&', '&amp;')
+      // Substitui o sinal menor, evitando abertura de tags.
+      .replaceAll('<', '&lt;')
+      // Substitui o sinal maior, evitando fecho de tags.
+      .replaceAll('>', '&gt;')
+      // Substitui aspas duplas usadas em atributos HTML.
+      .replaceAll('"', '&quot;')
+      // Substitui aspas simples usadas em atributos HTML.
+      .replaceAll("'", '&#039;')
+  )
 }
 
-// Paleta comum dos tooltips em modo claro e modo escuro.
+// Paleta comum dos tooltips, as caixas de detalhe que aparecem ao passar o rato no gráfico.
 export function getChartTooltipColors(isDark) {
   // Escolhe cores suaves quando a aplicação está em dark mode.
   if (isDark) {
-    // Devolve todas as variáveis necessárias ao cartão do tooltip.
+    // Devolve todas as variáveis necessárias à caixa de detalhe.
     return {
       // Fundo translúcido do cartão.
       bg: 'rgba(28, 28, 30, 0.88)',
@@ -32,7 +34,7 @@ export function getChartTooltipColors(isDark) {
       shadow: 'rgba(0, 0, 0, 0.18)',
     }
   }
-  // Devolve uma versão clara, mais limpa do que o tooltip preto nativo.
+  // Devolve uma versão clara, mais limpa do que a caixa preta nativa do Chart.js.
   return {
     // Fundo quase branco com ligeira transparência.
     bg: 'rgba(255, 255, 255, 0.9)',
@@ -47,21 +49,21 @@ export function getChartTooltipColors(isDark) {
   }
 }
 
-// Procura o elemento HTML do tooltip ou cria-o se ainda não existir.
+// Procura o elemento HTML do tooltip, a caixa flutuante do gráfico, ou cria-o se ainda não existir.
 function getTooltipElement(chart) {
-  // Usa o contentor direto do canvas para posicionar o tooltip relativamente ao gráfico.
+  // Usa a área do canvas, onde o gráfico é desenhado, para posicionar a caixa junto ao ponto.
   const wrapper = chart.canvas.parentNode
-  // Tenta reutilizar o tooltip já existente para evitar recriar nós a cada movimento do rato.
+  // Tenta reutilizar a caixa já existente para evitar recriar nós a cada movimento do rato.
   let tooltipElement = wrapper.querySelector('.grafico-tooltip')
-  // Cria o tooltip apenas na primeira interação.
+  // Cria a caixa apenas na primeira interação.
   if (!tooltipElement) {
     // Cria um elemento `div` normal para ter controlo total sobre o visual.
     tooltipElement = document.createElement('div')
     // Aplica a classe global usada por todos os gráficos.
     tooltipElement.className = 'grafico-tooltip'
-    // Esconde o tooltip dos leitores de ecrã porque o gráfico já tem descrição acessível.
+    // Esconde a caixa dos leitores de ecrã porque o gráfico já tem descrição acessível.
     tooltipElement.setAttribute('aria-hidden', 'true')
-    // Coloca o tooltip dentro do wrapper para respeitar a posição do gráfico.
+    // Coloca a caixa dentro da área do gráfico para respeitar a posição visual.
     wrapper.appendChild(tooltipElement)
   }
   // Devolve o elemento pronto a atualizar.
@@ -82,7 +84,7 @@ function getPointColor(point) {
   return backgroundColor || borderColor || '#1d4587'
 }
 
-// Transforma uma linha de dados do tooltip em HTML.
+// Transforma uma linha de dados da caixa de detalhe em HTML.
 function renderTooltipRow(row) {
   // Escapa a cor para impedir valores inválidos vindos de dados externos.
   const color = escapeHtml(row.color)
@@ -91,9 +93,7 @@ function renderTooltipRow(row) {
   // Escapa o valor numérico/textual.
   const value = escapeHtml(row.value)
   // Só mostra detalhe quando foi passado, por exemplo "mín. 37%".
-  const detail = row.detail
-    ? `<span class="grafico-tooltip__meta">· ${escapeHtml(row.detail)}</span>`
-    : ''
+  const detail = row.detail ? `<span class="grafico-tooltip__meta">· ${escapeHtml(row.detail)}</span>` : ''
   // Devolve uma linha consistente para todos os gráficos.
   return `
     <div class="grafico-tooltip__row">
@@ -106,18 +106,18 @@ function renderTooltipRow(row) {
   `
 }
 
-// Aplica cores e posicionamento ao tooltip HTML.
+// Aplica cores e posicionamento à caixa de detalhe em HTML.
 function positionTooltip({ chart, tooltip, tooltipElement, colors }) {
-  // Guarda a largura real para impedir que o tooltip fique cortado nas laterais.
+  // Guarda a largura real para impedir que a caixa fique cortada nas laterais.
   const tooltipWidth = tooltipElement.offsetWidth || 220
   // Guarda a altura real para decidir se aparece acima ou abaixo do ponto.
   const tooltipHeight = tooltipElement.offsetHeight || 96
-  // Mede a largura do canvas para calcular limites internos.
+  // Mede a largura do canvas, a área desenhada do gráfico, para calcular limites internos.
   const chartWidth = chart.canvas.offsetWidth
   // Garante uma margem mínima à esquerda.
-  const minX = Math.min((tooltipWidth / 2) + 8, chartWidth / 2)
+  const minX = Math.min(tooltipWidth / 2 + 8, chartWidth / 2)
   // Garante uma margem mínima à direita.
-  const maxX = Math.max(chartWidth - (tooltipWidth / 2) - 8, minX)
+  const maxX = Math.max(chartWidth - tooltipWidth / 2 - 8, minX)
   // Limita o X ao espaço disponível no gráfico.
   const safeX = Math.min(Math.max(tooltip.caretX, minX), maxX)
   // Mostra por baixo quando não existe espaço suficiente por cima.
@@ -134,27 +134,27 @@ function positionTooltip({ chart, tooltip, tooltipElement, colors }) {
   tooltipElement.style.setProperty('--grafico-tooltip-shadow', colors.shadow)
   // Guarda a posição para o CSS ajustar a direção da animação.
   tooltipElement.dataset.placement = showBelow ? 'bottom' : 'top'
-  // Posiciona horizontalmente o tooltip.
+  // Posiciona horizontalmente a caixa.
   tooltipElement.style.left = `${safeX}px`
-  // Posiciona verticalmente o tooltip acima ou abaixo do ponto ativo.
+  // Posiciona verticalmente a caixa acima ou abaixo do ponto ativo.
   tooltipElement.style.top = `${showBelow ? tooltip.caretY + 18 : tooltip.caretY - 14}px`
-  // Torna o tooltip visível.
+  // Torna a caixa visível.
   tooltipElement.style.opacity = '1'
 }
 
-// Cria uma configuração de tooltip externo para Chart.js com visual comum.
+// Cria uma configuração de tooltip externo, a caixa HTML que substitui a nativa do Chart.js.
 export function createChartTooltip({ colors, getTitle, getRows }) {
-  // Devolve o objeto esperado por `plugins.tooltip`.
+  // Devolve o objeto esperado por `plugins.tooltip`, a configuração da caixa de detalhe no Chart.js.
   return {
-    // Desativa o tooltip nativo para usar o HTML personalizado.
+    // Desativa a caixa nativa para usar o HTML personalizado.
     enabled: false,
     // Função chamada pelo Chart.js sempre que muda o ponto ativo.
     external(context) {
-      // Obtém o gráfico e o estado atual do tooltip.
+      // Obtém o gráfico e o estado atual da caixa.
       const { chart, tooltip } = context
-      // Obtém ou cria o elemento HTML do tooltip.
+      // Obtém ou cria o elemento HTML da caixa.
       const tooltipElement = getTooltipElement(chart)
-      // Esconde o tooltip quando o Chart.js indica opacidade zero.
+      // Esconde a caixa quando o Chart.js indica opacidade zero.
       if (tooltip.opacity === 0) {
         // Aplica a opacidade zero mantendo o elemento disponível para reutilização.
         tooltipElement.style.opacity = '0'
