@@ -1,9 +1,7 @@
 import { mapData } from '../dados/mapa.mjs'
 
 export function ordenarPaisesPorNome(paises) {
-  return [...paises].sort((a, b) =>
-    (a.label ?? a.name).localeCompare(b.label ?? b.name, 'pt-PT')
-  )
+  return [...paises].sort((a, b) => (a.label ?? a.name).localeCompare(b.label ?? b.name, 'pt-PT'))
 }
 
 export function criarOpcoesPaisesEuropeus(countryMeta = mapData.countryMeta) {

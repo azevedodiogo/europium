@@ -1,16 +1,12 @@
 <!-- Barra superior com os dois seletores de país e o botão de exportação. -->
 <template>
-  
   <!-- Barra de filtros da página de comparação. -->
   <div class="cp-filter-bar" v-scroll-animate="'fade-down'">
-    
     <!-- Par de seletores: país A e país B. -->
     <div class="cp-filter-pair">
-      
       <div class="cp-filter-group">
-        
         <label class="cp-filter-label">País A</label>
-        
+
         <AppCombobox
           :model-value="countryA"
           :options="countryOptions"
@@ -19,11 +15,10 @@
           @update:model-value="$emit('update:countryA', $event)"
         />
       </div>
-      
+
       <div class="cp-filter-group">
-        
         <label class="cp-filter-label">País B</label>
-        
+
         <AppCombobox
           :model-value="countryB"
           :options="countryOptions"
@@ -33,8 +28,6 @@
         />
       </div>
     </div>
-
-    
     <!-- Exporta a comparação atualmente selecionada. -->
     <AppExportMenu
       filename="comparacao-paises"
@@ -76,18 +69,17 @@ defineEmits(['update:countryA', 'update:countryB'])
 <style scoped>
 /* Barra branca com seletores e exportação. */
 .cp-filter-bar {
-  
   display: flex;
   align-items: flex-end;
-  
+
   justify-content: space-between;
-  
+
   background: var(--color-bg-white);
-  
+
   border: 1px solid var(--color-border);
-  
+
   border-radius: var(--radius-md);
-  
+
   padding: 16px;
   margin: 20px 32px 0;
   position: relative;
@@ -96,13 +88,11 @@ defineEmits(['update:countryA', 'update:countryB'])
 }
 /* Grupo dos dois seletores. */
 .cp-filter-pair {
-  
   display: flex;
   align-items: flex-end;
   gap: 16px;
 }
 .cp-filter-group {
-  
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -112,10 +102,9 @@ defineEmits(['update:countryA', 'update:countryB'])
   font-weight: 500;
   color: var(--color-text-secondary);
 }
-[data-theme="dark"] .cp-filter-bar {
-  
+[data-theme='dark'] .cp-filter-bar {
   background: var(--color-bg-white);
-  
+
   border-color: var(--color-border);
 }
 
