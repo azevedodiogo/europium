@@ -1,13 +1,9 @@
-
 <!-- Filtros e legenda da linha do tempo. -->
 <template>
-  
   <!-- Controlos superiores da linha do tempo. -->
   <div class="lt-controls" v-scroll-animate="'fade-down'">
-    
     <!-- Botões de filtro por categoria. -->
     <div class="lt-tabs" role="group" aria-label="Filtrar por categoria">
-      
       <button
         v-for="cat in categories"
         :key="cat.key"
@@ -19,13 +15,9 @@
         {{ cat.label }}
       </button>
     </div>
-
-    
     <!-- Legenda das cores usadas nos pontos da timeline. -->
     <div class="lt-legend">
-      
       <span v-for="item in legend" :key="item.key" class="lt-legend__item">
-        
         <span class="lt-legend__dot" :style="{ background: item.color }" />
         {{ item.label }}
       </span>
@@ -59,10 +51,9 @@ defineEmits(['update:modelValue'])
 <style scoped>
 /* Layout dos controlos. */
 .lt-controls {
-  
   display: flex;
   align-items: center;
-  
+
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
@@ -70,7 +61,6 @@ defineEmits(['update:modelValue'])
 }
 /* Grupo dos botões de categoria. */
 .lt-tabs {
-  
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
@@ -79,11 +69,11 @@ defineEmits(['update:modelValue'])
 .lt-tab {
   height: 32px;
   padding: 0 14px;
-  
+
   border: 1px solid var(--color-border);
-  
+
   border-radius: var(--radius-sm);
-  
+
   background: var(--color-bg-white);
   font-family: var(--font-family);
   font-size: var(--text-sm);
@@ -91,30 +81,26 @@ defineEmits(['update:modelValue'])
   color: var(--color-text-secondary);
   cursor: pointer;
   white-space: nowrap;
-  transition: all .15s;
+  transition: all 0.15s;
 }
 .lt-tab:hover {
-  
-  border-color: rgba(29, 69, 135, .35);
+  border-color: rgba(29, 69, 135, 0.35);
   color: var(--color-brand-blue);
 }
 .lt-tab--active {
-  
   background: var(--color-brand-blue);
-  
+
   border-color: var(--color-brand-blue);
   color: white;
 }
 /* Legenda das cores. */
 .lt-legend {
-  
   display: flex;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
 }
 .lt-legend__item {
-  
   display: flex;
   align-items: center;
   gap: 6px;
@@ -127,7 +113,6 @@ defineEmits(['update:modelValue'])
   border-radius: 50%;
   flex-shrink: 0;
 }
-
 
 @media (max-width: 640px) {
   .lt-controls {
