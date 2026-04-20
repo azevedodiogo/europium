@@ -1,4 +1,6 @@
-const API_BASE_URL = 'http://localhost:3000'
+const runtimeEnv = typeof process !== 'undefined' ? process.env : {}
+const API_BASE_URL = import.meta.env?.VITE_API_BASE_URL ?? runtimeEnv.VITE_API_BASE_URL ?? 'http://localhost:3000'
+const API_TIMEOUT_MS = Number(import.meta.env?.VITE_API_TIMEOUT_MS ?? runtimeEnv.VITE_API_TIMEOUT_MS ?? 2500)
 
 const EMPTY_RESOURCES = {
   dashboard: {
@@ -73,16 +75,50 @@ export function getEmptyResource(resourceKey) {
   return cloneData(EMPTY_RESOURCES[resourceKey] ?? {})
 }
 
-export async function loadJsonResource(resourceKey) {
-  const response = await fetch(`${API_BASE_URL}/${resourceKey}`)
-
-  if (!response.ok) {
-    throw new Error(`json-server respondeu com HTTP ${response.status}`)
+function normalizeError(error) {
+  if (error?.name === 'AbortError') {
+    return {
+      message: `A API local demorou mais de ${API_TIMEOUT_MS} ms a responder.`,
+      code: 'api-timeout',
+    }
   }
 
   return {
-    data: cloneData(await response.json()),
-    source: 'json-server',
+    message: error?.message ?? 'Erro desconhecido ao carregar dados.',
+    code: error?.code ?? 'api-error',
+  }
+}
+
+async function fetchWithTimeout(url) {
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT_MS)
+
+  try {
+    return await fetch(url, { signal: controller.signal })
+  } finally {
+    clearTimeout(timeoutId)
+  }
+}
+
+export async function loadJsonResource(resourceKey) {
+  try {
+    const response = await fetchWithTimeout(`${API_BASE_URL}/${resourceKey}`)
+
+    if (!response.ok) {
+      throw new Error(`json-server respondeu com HTTP ${response.status}`)
+    }
+
+    return {
+      data: cloneData(await response.json()),
+      source: 'json-server',
+      error: null,
+    }
+  } catch (error) {
+    return {
+      data: getEmptyResource(resourceKey),
+      source: 'api-error',
+      error: normalizeError(error),
+    }
   }
 }
 

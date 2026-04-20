@@ -1,5 +1,5 @@
 // Junta todos os datasets locais num único objeto.
-// Este objeto é usado como fallback da API e também para gerar o `db.json`.
+// Este objeto é usado para gerar o `db.json` consumido pelo json-server.
 import { dashboardData } from './painel.mjs'
 import { compareData } from './comparacao.mjs'
 import { disbursementsData } from './desembolsos.mjs'

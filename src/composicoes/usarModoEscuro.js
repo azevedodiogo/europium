@@ -11,9 +11,7 @@ const CHAVE_STORAGE_EXPLICITA = 'europium-theme-explicit'
 const QUERY_SISTEMA = '(prefers-color-scheme: dark)'
 
 // `matchMedia` só existe no browser, por isso protegemos o acesso.
-const mediaQuery = typeof window !== 'undefined'
-  ? window.matchMedia(QUERY_SISTEMA)
-  : null
+const mediaQuery = typeof window !== 'undefined' ? window.matchMedia(QUERY_SISTEMA) : null
 
 // Ref que acompanha a preferência atual do sistema.
 const systemPrefersDark = ref(mediaQuery?.matches ?? false)
@@ -41,9 +39,7 @@ const themePreference = ref(lerPreferenciaInicial())
 
 // Estado derivado final: verdadeiro quando o tema ativo é escuro.
 const isDark = computed(() =>
-  themePreference.value === 'system'
-    ? systemPrefersDark.value
-    : themePreference.value === 'dark'
+  themePreference.value === 'system' ? systemPrefersDark.value : themePreference.value === 'dark'
 )
 
 // Escreve o tema no elemento `<html>`.
@@ -60,15 +56,19 @@ function sincronizarPreferenciaSistema(event) {
 // Nos browsers recentes usamos `addEventListener`.
 if (typeof mediaQuery?.addEventListener === 'function') {
   mediaQuery.addEventListener('change', sincronizarPreferenciaSistema)
-// Nos browsers antigos ainda existe `addListener`.
+  // Nos browsers antigos ainda existe `addListener`.
 } else if (typeof mediaQuery?.addListener === 'function') {
   mediaQuery.addListener(sincronizarPreferenciaSistema)
 }
 
 // Sempre que o tema ativo muda, escreve o novo valor no `<html>`.
-watch(isDark, (novoValor) => {
-  aplicarTema(novoValor)
-}, { immediate: true })
+watch(
+  isDark,
+  (novoValor) => {
+    aplicarTema(novoValor)
+  },
+  { immediate: true }
+)
 
 // Guarda no `localStorage` apenas quando o utilizador escolhe manualmente.
 watch(themePreference, (novoValor) => {

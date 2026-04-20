@@ -15,12 +15,14 @@ function createDashboardState() {
 export const useDashboardStore = defineStore('dashboard', {
   // Estado reativo base.
   state: () => ({
-    // Começa vazio e é preenchido pelo json-server.
+    // Começa vazio e é preenchido pelo json-server, a API local usada para simular dados.
     ...createDashboardState(),
     // Diz se já tentámos carregar os dados.
     isLoaded: false,
     // Guarda a origem do que está atualmente em uso.
     dataSource: 'empty',
+    // Guarda informação de erro quando a API local falha.
+    loadError: null,
   }),
 
   // Getters usados pelas páginas e componentes.
@@ -41,12 +43,17 @@ export const useDashboardStore = defineStore('dashboard', {
     async loadFromApi() {
       const results = await loadJsonResources(['dashboard', 'map'])
       const alignedData = alignDashboardWithRrfSummary(results.dashboard.data, results.map.data.countryMeta)
+      const dataSource = [results.dashboard.source, results.map.source].every((source) => source === 'json-server')
+        ? 'json-server'
+        : 'api-error'
+      const loadError = results.dashboard.error ?? results.map.error ?? null
 
       // Aplica os dados recebidos à store atual.
       this.$patch({
         ...cloneData(alignedData),
         isLoaded: true,
-        dataSource: 'json-server',
+        dataSource,
+        loadError,
       })
     },
   },

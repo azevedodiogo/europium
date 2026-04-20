@@ -5,9 +5,9 @@ import { ref } from 'vue'
 // Toda a lógica é mantida aqui para o componente visual ficar simples.
 export const useNotificationStore = defineStore('notification', () => {
   // Título principal da notificação.
-  const title    = ref('')
+  const title = ref('')
   // Controla se a notificação está visível.
-  const visible  = ref(false)
+  const visible = ref(false)
   // Nome do ficheiro exportado.
   const filename = ref('')
   // Linha secundária com detalhe do documento.
@@ -15,21 +15,27 @@ export const useNotificationStore = defineStore('notification', () => {
   // Percentagem de progresso.
   const progress = ref(0)
   // Marca a exportação como concluída.
-  const done     = ref(false)
+  const done = ref(false)
   // Marca a exportação como falhada.
-  const isError  = ref(false)
+  const isError = ref(false)
   // Guarda a mensagem de erro.
   const errorMsg = ref('')
 
   // Timer usado para fechar a notificação.
   let _timerDismiss = null
   // Timer usado para a transição para o estado "concluído".
-  let _timerDone    = null
+  let _timerDone = null
 
   // Limpa qualquer timer anterior antes de iniciar um novo fluxo.
   function _limparTimers() {
-    if (_timerDismiss) { clearTimeout(_timerDismiss); _timerDismiss = null }
-    if (_timerDone)    { clearTimeout(_timerDone);    _timerDone    = null }
+    if (_timerDismiss) {
+      clearTimeout(_timerDismiss)
+      _timerDismiss = null
+    }
+    if (_timerDone) {
+      clearTimeout(_timerDone)
+      _timerDone = null
+    }
   }
 
   // Inicia uma nova exportação.
@@ -37,37 +43,38 @@ export const useNotificationStore = defineStore('notification', () => {
     _limparTimers()
 
     // Aceita tanto uma string simples como um objeto com metadados.
-    const resolved = typeof meta === 'string'
-      ? { filename: meta, title: 'Documento', subtitle: '' }
-      : {
-          filename: meta?.filename ?? '',
-          title: meta?.title ?? 'Documento',
-          subtitle: meta?.subtitle ?? '',
-        }
+    const resolved =
+      typeof meta === 'string'
+        ? { filename: meta, title: 'Documento', subtitle: '' }
+        : {
+            filename: meta?.filename ?? '',
+            title: meta?.title ?? 'Documento',
+            subtitle: meta?.subtitle ?? '',
+          }
 
     // Repõe o estado visual para um novo progresso.
-    title.value    = resolved.title
+    title.value = resolved.title
     filename.value = resolved.filename
     subtitle.value = resolved.subtitle
     errorMsg.value = ''
     progress.value = 0
-    done.value     = false
-    isError.value  = false
-    visible.value  = true
+    done.value = false
+    isError.value = false
+    visible.value = true
   }
 
   // Mostra a notificação em estado de erro.
   function error(mensagem, meta = {}) {
     _limparTimers()
 
-    title.value    = meta.title ?? 'Erro na exportação'
+    title.value = meta.title ?? 'Erro na exportação'
     subtitle.value = meta.subtitle ?? ''
     filename.value = meta.filename ?? ''
-    isError.value  = true
+    isError.value = true
     errorMsg.value = mensagem
-    done.value     = false
+    done.value = false
     progress.value = 0
-    visible.value  = true
+    visible.value = true
 
     // Fecha automaticamente ao fim de alguns segundos.
     _timerDismiss = setTimeout(() => {
@@ -109,7 +116,18 @@ export const useNotificationStore = defineStore('notification', () => {
 
   // Expõe o estado e as ações para os componentes.
   return {
-    title, visible, filename, subtitle, progress, done, isError, errorMsg,
-    start, setProgress, finish, error, dismiss
+    title,
+    visible,
+    filename,
+    subtitle,
+    progress,
+    done,
+    isError,
+    errorMsg,
+    start,
+    setProgress,
+    finish,
+    error,
+    dismiss,
   }
 })

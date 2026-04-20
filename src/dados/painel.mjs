@@ -19,7 +19,8 @@ const commitmentTemplates = [
     ref: 'M002',
     type: 'Meta',
     name: 'Reforço da eficiência energética',
-    description: 'Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.',
+    description:
+      'Conclusão de intervenções de eficiência energética em edifícios residenciais, públicos ou de utilização coletiva.',
     pillar: 'Ecologia',
     component: 'C02',
     deadline: 'Q4 2024',
@@ -29,7 +30,8 @@ const commitmentTemplates = [
     ref: 'M003',
     type: 'Marco',
     name: 'Execução de reformas estruturais',
-    description: 'Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.',
+    description:
+      'Aprovação e execução de reformas estruturais previstas no plano nacional de recuperação e resiliência.',
     pillar: 'Crescimento',
     component: 'C03',
     deadline: 'Q2 2025',
@@ -39,7 +41,8 @@ const commitmentTemplates = [
     ref: 'M004',
     type: 'Meta',
     name: 'Reforço da coesão social e territorial',
-    description: 'Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.',
+    description:
+      'Execução de investimentos em serviços sociais, mobilidade regional e apoio a territórios vulneráveis.',
     pillar: 'Coesão',
     component: 'C04',
     deadline: 'Q4 2025',
@@ -49,7 +52,8 @@ const commitmentTemplates = [
     ref: 'M005',
     type: 'Marco',
     name: 'Modernização dos serviços de saúde',
-    description: 'Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.',
+    description:
+      'Entrada em funcionamento de equipamentos, plataformas e reformas que aumentam a resiliência dos sistemas de saúde.',
     pillar: 'Saúde',
     component: 'C05',
     deadline: 'Q2 2026',
@@ -59,7 +63,8 @@ const commitmentTemplates = [
     ref: 'M006',
     type: 'Meta',
     name: 'Políticas para a próxima geração',
-    description: 'Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.',
+    description:
+      'Conclusão de medidas orientadas para educação, competências digitais, juventude e inclusão de crianças e jovens.',
     pillar: 'Próxima geração',
     component: 'C06',
     deadline: 'Q3 2026',
@@ -113,7 +118,7 @@ function buildMilestones(countryMeta) {
         component: template.component,
         history: commitmentHistory(template.type, status),
       }
-    }),
+    })
   )
 }
 
@@ -121,10 +126,38 @@ function buildMilestones(countryMeta) {
 const dashboardBaseData = {
   // KPIs principais mostrados no topo da página inicial.
   kpis: [
-    { id: 'fundos-alocados', label: 'Fundos atribuídos', value: '589 mil M€', description: 'Total agregado dos Estados-Membros no mapa', badge: null, icon: 'euro' },
-    { id: 'total-desembolsado', label: 'Total Desembolsado', value: '279 mil M€', description: 'Pagamentos já efetuados pela UE', badge: { text: '47% do total', color: 'green' }, icon: 'arrow-down' },
-    { id: 'marcos-metas', label: 'Marcos e Metas', value: '4944', description: '2769 já cumpridos', badge: null, icon: 'target' },
-    { id: 'progresso-global', label: 'Progresso Global', value: '58%', description: 'Progresso médio dos Estados-Membros', badge: { text: '+8% vs. semestre anterior', color: 'green' }, icon: 'chart' },
+    {
+      id: 'fundos-alocados',
+      label: 'Fundos atribuídos',
+      value: '589 mil M€',
+      description: 'Total agregado dos Estados-Membros no mapa',
+      badge: null,
+      icon: 'euro',
+    },
+    {
+      id: 'total-desembolsado',
+      label: 'Total Desembolsado',
+      value: '279 mil M€',
+      description: 'Pagamentos já efetuados pela UE',
+      badge: { text: '47% do total', color: 'green' },
+      icon: 'arrow-down',
+    },
+    {
+      id: 'marcos-metas',
+      label: 'Marcos e Metas',
+      value: '4944',
+      description: '2769 já cumpridos',
+      badge: null,
+      icon: 'target',
+    },
+    {
+      id: 'progresso-global',
+      label: 'Progresso Global',
+      value: '58%',
+      description: 'Progresso médio dos Estados-Membros',
+      badge: { text: '+8% vs. semestre anterior', color: 'green' },
+      icon: 'chart',
+    },
   ],
   // Estatísticas curtas usadas dentro do hero da homepage.
   heroStats: [
@@ -137,10 +170,28 @@ const dashboardBaseData = {
   pillars: [
     { id: 'ecologia', name: 'Ecologia', description: 'Transição ecológica', progress: 37.5, icon: 'leaf' },
     { id: 'digital', name: 'Digital', description: 'Transformação digital', progress: 26.4, icon: 'monitor' },
-    { id: 'crescimento', name: 'Crescimento', description: 'Crescimento inteligente, sustentável e inclusivo.', progress: 33.1, icon: 'trending-up' },
+    {
+      id: 'crescimento',
+      name: 'Crescimento',
+      description: 'Crescimento inteligente, sustentável e inclusivo.',
+      progress: 33.1,
+      icon: 'trending-up',
+    },
     { id: 'coesao', name: 'Coesão', description: 'Coesão social & territorial', progress: 28.2, icon: 'users' },
-    { id: 'saude', name: 'Saúde', description: 'Resiliência sanitária, económica, social e institucional', progress: 19.8, icon: 'heart' },
-    { id: 'proxima-geracao', name: 'Próxima geração', description: 'Políticas para a próxima geração', progress: 15, icon: 'star' },
+    {
+      id: 'saude',
+      name: 'Saúde',
+      description: 'Resiliência sanitária, económica, social e institucional',
+      progress: 19.8,
+      icon: 'heart',
+    },
+    {
+      id: 'proxima-geracao',
+      name: 'Próxima geração',
+      description: 'Políticas para a próxima geração',
+      progress: 15,
+      icon: 'star',
+    },
   ],
   // Tabela resumida de países por fundos totais, desembolsos e progresso.
   countries: [
@@ -170,10 +221,34 @@ const dashboardBaseData = {
   ],
   // Atalhos da secção "Explorar Dados" na página inicial.
   exploreLinks: [
-    { id: 'marcos-metas', title: 'Marcos e Metas', description: 'Explore objetivos específicos de cada país, prazos e estado de execução.', route: '/marcos-metas', icon: 'target' },
-    { id: 'indicadores', title: 'Indicadores Comuns', description: '14 indicadores de reporte obrigatório com dados por país.', route: '/indicadores', icon: 'bar-chart' },
-    { id: 'desembolsos', title: 'Desembolsos', description: 'Pagamentos efetuados, datas e montantes discriminados por país.', route: '/desembolsos', icon: 'credit-card' },
-    { id: 'comparacao', title: 'Comparação', description: 'Compare o desempenho e investimento entre diferentes países.', route: '/comparar-paises', icon: 'globe' },
+    {
+      id: 'marcos-metas',
+      title: 'Marcos e Metas',
+      description: 'Explore objetivos específicos de cada país, prazos e estado de execução.',
+      route: '/marcos-metas',
+      icon: 'target',
+    },
+    {
+      id: 'indicadores',
+      title: 'Indicadores Comuns',
+      description: '14 indicadores de reporte obrigatório com dados por país.',
+      route: '/indicadores',
+      icon: 'bar-chart',
+    },
+    {
+      id: 'desembolsos',
+      title: 'Desembolsos',
+      description: 'Pagamentos efetuados, datas e montantes discriminados por país.',
+      route: '/desembolsos',
+      icon: 'credit-card',
+    },
+    {
+      id: 'comparacao',
+      title: 'Comparação',
+      description: 'Compare o desempenho e investimento entre diferentes países.',
+      route: '/comparar-paises',
+      icon: 'globe',
+    },
   ],
   // Resumo nacional usado no cartão de marcos e metas da homepage.
   countryStats: {
@@ -201,8 +276,10 @@ const dashboardBaseData = {
       unit: 'GWh/ano',
       name: 'Poupança no consumo energético anual',
       description: 'Redução do consumo de energia nos edifícios renovados',
-      techDefinition: 'Redução total no consumo de energia primária resultante de intervenções de eficiência energética em edifícios residenciais e públicos financiados pelo MRR.',
-      methodology: 'Medição baseada na diferença de consumo energético antes e após renovações em edifícios, utilizando medições de contadores inteligentes e auditorias energéticas.',
+      techDefinition:
+        'Redução total no consumo de energia primária resultante de intervenções de eficiência energética em edifícios residenciais e públicos financiados pelo MRR.',
+      methodology:
+        'Medição baseada na diferença de consumo energético antes e após renovações em edifícios, utilizando medições de contadores inteligentes e auditorias energéticas.',
       source: 'Eurostat, Agências Nacionais de Energia',
       frequency: 'Semestral',
       related: ['Habitações renovadas', 'Edifícios públicos renovados'],
@@ -222,8 +299,10 @@ const dashboardBaseData = {
       unit: 'MW',
       name: 'Capacidade adicional de energia renovável',
       description: 'Capacidade instalada adicional de fontes de energia renovável',
-      techDefinition: 'Capacidade de geração elétrica adicional instalada a partir de fontes renováveis (solar, eólica, hídrica, etc.) como resultado direto de investimentos MRR.',
-      methodology: 'Capacidade nominal instalada reportada pelos operadores de rede e verificada por entidades reguladoras nacionais.',
+      techDefinition:
+        'Capacidade de geração elétrica adicional instalada a partir de fontes renováveis (solar, eólica, hídrica, etc.) como resultado direto de investimentos MRR.',
+      methodology:
+        'Capacidade nominal instalada reportada pelos operadores de rede e verificada por entidades reguladoras nacionais.',
       source: 'Agências Nacionais de Energia, ENTSO-E',
       frequency: 'Semestral',
       related: ['Poupança energética', 'Emissões CO₂ evitadas'],
@@ -243,8 +322,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Empresas apoiadas',
       description: 'Número de empresas apoiadas em processos de inovação e digitalização',
-      techDefinition: 'Empresas que receberam apoio financeiro direto (subsídios, empréstimos garantidos) para projetos de inovação, digitalização ou transição energética no âmbito do MRR.',
-      methodology: 'Contagem de entidades empresariais únicas que beneficiaram de apoios MRR, com base nos registos dos organismos pagadores nacionais.',
+      techDefinition:
+        'Empresas que receberam apoio financeiro direto (subsídios, empréstimos garantidos) para projetos de inovação, digitalização ou transição energética no âmbito do MRR.',
+      methodology:
+        'Contagem de entidades empresariais únicas que beneficiaram de apoios MRR, com base nos registos dos organismos pagadores nacionais.',
       source: 'Organismos Pagadores Nacionais, IAPMEI',
       frequency: 'Semestral',
       related: ['Investigadores I&D', 'Digitalização PMEs'],
@@ -263,8 +344,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Investigadores com melhores condições',
       description: 'Investigadores em instituições de I&D apoiadas pelo MRR',
-      techDefinition: 'Número de investigadores (equivalente a tempo completo) em instituições de I&D que receberam financiamento MRR para melhoria de infraestruturas e condições de trabalho.',
-      methodology: 'Equivalente a Tempo Completo (ETC) reportado por instituições beneficiárias com base nos contratos de trabalho e bolsas ativas durante o período de referência.',
+      techDefinition:
+        'Número de investigadores (equivalente a tempo completo) em instituições de I&D que receberam financiamento MRR para melhoria de infraestruturas e condições de trabalho.',
+      methodology:
+        'Equivalente a Tempo Completo (ETC) reportado por instituições beneficiárias com base nos contratos de trabalho e bolsas ativas durante o período de referência.',
       source: 'Fundações de Ciência nacionais, Eurostat',
       frequency: 'Anual',
       related: ['Empresas apoiadas', 'Patentes registadas'],
@@ -283,8 +366,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Jovens com formação',
       description: 'Jovens que concluíram programas de formação financiados pelo MRR',
-      techDefinition: 'Jovens (15-29 anos) que completaram com aproveitamento programas de formação profissional ou educação vocacional financiados pelo MRR.',
-      methodology: 'Contagem de certificados de conclusão emitidos em programas MRR para jovens, reportada por entidades formadoras credenciadas.',
+      techDefinition:
+        'Jovens (15-29 anos) que completaram com aproveitamento programas de formação profissional ou educação vocacional financiados pelo MRR.',
+      methodology:
+        'Contagem de certificados de conclusão emitidos em programas MRR para jovens, reportada por entidades formadoras credenciadas.',
       source: 'Ministérios da Educação e Trabalho',
       frequency: 'Semestral',
       related: ['Salas de aula digitais', 'Participantes formação'],
@@ -303,8 +388,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Salas de aula digitais',
       description: 'Salas de aula equipadas com tecnologias digitais via MRR',
-      techDefinition: 'Salas de aula em estabelecimentos de ensino (básico, secundário e superior) que receberam equipamento digital (quadros interativos, tablets, etc.) financiado pelo MRR.',
-      methodology: 'Contagem de salas de aula validadas como equipadas segundo critérios mínimos estabelecidos pela Comissão Europeia.',
+      techDefinition:
+        'Salas de aula em estabelecimentos de ensino (básico, secundário e superior) que receberam equipamento digital (quadros interativos, tablets, etc.) financiado pelo MRR.',
+      methodology:
+        'Contagem de salas de aula validadas como equipadas segundo critérios mínimos estabelecidos pela Comissão Europeia.',
       source: 'Ministérios da Educação nacionais',
       frequency: 'Semestral',
       related: ['Jovens com formação', 'Estudantes abrangidos'],
@@ -323,8 +410,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Habitações renovadas',
       description: 'Habitações com melhoria da classe energética após renovação MRR',
-      techDefinition: 'Habitações que melhoraram a sua classificação de eficiência energética em pelo menos uma classe (ex: D→C) como resultado de obras de reabilitação financiadas pelo MRR.',
-      methodology: 'Baseado em certificados energéticos emitidos antes e após obras, verificados por auditores certificados nacionais.',
+      techDefinition:
+        'Habitações que melhoraram a sua classificação de eficiência energética em pelo menos uma classe (ex: D→C) como resultado de obras de reabilitação financiadas pelo MRR.',
+      methodology:
+        'Baseado em certificados energéticos emitidos antes e após obras, verificados por auditores certificados nacionais.',
       source: 'Agências nacionais de energia, ADENE (PT)',
       frequency: 'Semestral',
       related: ['Poupança energética', 'Edifícios públicos renovados'],
@@ -343,8 +432,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Pontos de carregamento EV',
       description: 'Pontos de carregamento para veículos elétricos instalados',
-      techDefinition: 'Pontos de carregamento para veículos elétricos (normal e rápido) instalados em espaços públicos e semi-públicos com apoio direto de fundos MRR.',
-      methodology: 'Contagem de pontos de carregamento interoperáveis registados na plataforma OCPI nacional, com financiamento MRR verificável.',
+      techDefinition:
+        'Pontos de carregamento para veículos elétricos (normal e rápido) instalados em espaços públicos e semi-públicos com apoio direto de fundos MRR.',
+      methodology:
+        'Contagem de pontos de carregamento interoperáveis registados na plataforma OCPI nacional, com financiamento MRR verificável.',
       source: 'Operadores nacionais de rede, MOBI.E (PT)',
       frequency: 'Semestral',
       related: ['Capacidade renovável', 'Emissões CO₂'],
@@ -363,8 +454,10 @@ const dashboardBaseData = {
       unit: 'ha',
       name: 'Área protegida/restaurada',
       description: 'Área natural protegida ou restaurada com apoio do MRR',
-      techDefinition: 'Área terrestre ou marinha (em hectares) sujeita a medidas de proteção, restauração de ecossistemas ou combate à desertificação financiadas pelo MRR.',
-      methodology: 'Medição de área via sistemas de informação geográfica (SIG) certificados, com validação por entidades ambientais competentes.',
+      techDefinition:
+        'Área terrestre ou marinha (em hectares) sujeita a medidas de proteção, restauração de ecossistemas ou combate à desertificação financiadas pelo MRR.',
+      methodology:
+        'Medição de área via sistemas de informação geográfica (SIG) certificados, com validação por entidades ambientais competentes.',
       source: 'Agências Ambiente nacionais, APA (PT)',
       frequency: 'Anual',
       related: ['Emissões CO₂', 'Biodiversidade'],
@@ -383,8 +476,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'População com acesso a banda larga',
       description: 'Pessoas com acesso a banda larga de alta velocidade via MRR',
-      techDefinition: 'Número de residentes com acesso a serviços de banda larga de pelo menos 100 Mbps como resultado de investimentos em infraestrutura MRR.',
-      methodology: 'Baseado em cobertura de rede reportada por operadores de telecomunicações e verificada por autoridades reguladoras nacionais.',
+      techDefinition:
+        'Número de residentes com acesso a serviços de banda larga de pelo menos 100 Mbps como resultado de investimentos em infraestrutura MRR.',
+      methodology:
+        'Baseado em cobertura de rede reportada por operadores de telecomunicações e verificada por autoridades reguladoras nacionais.',
       source: 'Autoridades reguladoras telecomunicações, ANACOM (PT)',
       frequency: 'Semestral',
       related: ['Salas aula digitais', 'Digitalização empresas'],
@@ -403,8 +498,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Participantes em educação/formação',
       description: 'Adultos que participaram em formação financiada pelo MRR',
-      techDefinition: 'Adultos (30+ anos) que participaram em pelo menos uma ação de formação ou educação de adultos financiada pelo MRR, independentemente da sua conclusão.',
-      methodology: 'Contagem de inscrições únicas em ações de formação MRR, reportadas por entidades formadoras acreditadas aos ministérios competentes.',
+      techDefinition:
+        'Adultos (30+ anos) que participaram em pelo menos uma ação de formação ou educação de adultos financiada pelo MRR, independentemente da sua conclusão.',
+      methodology:
+        'Contagem de inscrições únicas em ações de formação MRR, reportadas por entidades formadoras acreditadas aos ministérios competentes.',
       source: 'Ministérios Trabalho/Educação, IEFP (PT)',
       frequency: 'Semestral',
       related: ['Jovens formação', 'Qualificações digitais'],
@@ -423,8 +520,10 @@ const dashboardBaseData = {
       unit: 'n.º',
       name: 'Capacidade de cuidados de saúde',
       description: 'Novas camas hospitalares ou equivalente em capacidade de saúde',
-      techDefinition: 'Aumento de capacidade de internamento (camas hospitalares equivalentes) resultante de construção ou reabilitação de infraestruturas de saúde financiadas pelo MRR.',
-      methodology: 'Inventário de camas certificadas por autoridades de saúde nacionais em unidades inauguradas ou renovadas com fundos MRR.',
+      techDefinition:
+        'Aumento de capacidade de internamento (camas hospitalares equivalentes) resultante de construção ou reabilitação de infraestruturas de saúde financiadas pelo MRR.',
+      methodology:
+        'Inventário de camas certificadas por autoridades de saúde nacionais em unidades inauguradas ou renovadas com fundos MRR.',
       source: 'Ministérios da Saúde nacionais, DGS (PT)',
       frequency: 'Anual',
       related: ['Pessoas abrangidas saúde', 'Infraestrutura hospitalar'],
@@ -443,8 +542,10 @@ const dashboardBaseData = {
       unit: 'm²',
       name: 'Edifícios públicos renovados',
       description: 'Área de edifícios públicos sujeita a reabilitação energética',
-      techDefinition: 'Área (m²) de edifícios da Administração Pública sujeita a obras de reabilitação com componente de eficiência energética, financiadas pelo MRR.',
-      methodology: 'Medição de área intervencionada declarada por entidades públicas e verificada por auditorias energéticas pré e pós-obras.',
+      techDefinition:
+        'Área (m²) de edifícios da Administração Pública sujeita a obras de reabilitação com componente de eficiência energética, financiadas pelo MRR.',
+      methodology:
+        'Medição de área intervencionada declarada por entidades públicas e verificada por auditorias energéticas pré e pós-obras.',
       source: 'Ministérios das Finanças e Ambiente nacionais',
       frequency: 'Semestral',
       related: ['Poupança energética', 'Habitações renovadas'],
@@ -463,8 +564,10 @@ const dashboardBaseData = {
       unit: 'km',
       name: 'Km de rede ferroviária',
       description: 'Quilómetros de linha ferroviária nova ou reabilitada',
-      techDefinition: 'Extensão de linha ferroviária (km) nova, reabilitada ou modernizada (incluindo eletrificação e sinalização digital) com financiamento MRR.',
-      methodology: 'Medição de extensão de via reportada pelos gestores de infraestrutura ferroviária nacionais, verificada por entidades reguladoras do setor.',
+      techDefinition:
+        'Extensão de linha ferroviária (km) nova, reabilitada ou modernizada (incluindo eletrificação e sinalização digital) com financiamento MRR.',
+      methodology:
+        'Medição de extensão de via reportada pelos gestores de infraestrutura ferroviária nacionais, verificada por entidades reguladoras do setor.',
       source: 'Gestores infraestrutura ferroviária, IP (PT)',
       frequency: 'Semestral',
       related: ['Emissões CO₂', 'Mobilidade sustentável'],

@@ -41,7 +41,11 @@ export function alignDashboardWithRrfSummary(dashboard, countryMeta) {
     ...dashboard,
     kpis: dashboard.kpis.map((kpi) => {
       if (kpi.id === 'fundos-alocados') {
-        return { ...kpi, value: formatBillions(summary.funds), description: 'Total agregado dos Estados-Membros no mapa' }
+        return {
+          ...kpi,
+          value: formatBillions(summary.funds),
+          description: 'Total agregado dos Estados-Membros no mapa',
+        }
       }
 
       if (kpi.id === 'total-desembolsado') {
