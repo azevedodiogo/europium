@@ -75,6 +75,16 @@ npm test
 npm run build
 ```
 
+## Ficheiros de raiz
+
+Os ficheiros de configuracao fora de `src/` ficam versionados porque suportam a execucao e a verificacao do projeto:
+
+- `.env.example` documenta as variaveis usadas pelo Vite e pelo servico mock.
+- `.prettierrc.json` define o formato comum usado por `npm run format`.
+- `.prettierignore` evita formatar artefactos gerados ou pesados, como `db.json` e `package-lock.json`.
+- `.gitattributes` mantem os videos de demonstracao tratados pelo Git LFS.
+- `.gitignore` deixa fora dependencias, builds, caches e ficheiros locais do sistema.
+
 ## Dados e fontes
 
 Os dados usados pelo projeto são uma base simulada e estruturada para IPM, inspirada no modelo publico do **Recovery and Resilience Scoreboard** da Comissão Europeia:
