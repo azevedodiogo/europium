@@ -12,11 +12,13 @@ const isDryRun = args.has('--dry-run')
 const maxArg = getArgValue('--max')
 const maxCommits = maxArg === null ? Infinity : Number.parseInt(maxArg, 10)
 const remote = getArgValue('--remote', 'origin')
+const commitDate = getArgValue('--date', process.env.AUTO_COMMIT_DATE || null)
 
 const run = (command, commandArgs, options = {}) => {
   const result = spawnSync(command, commandArgs, {
     encoding: 'utf8',
     stdio: options.capture ? ['ignore', 'pipe', 'pipe'] : 'inherit',
+    env: { ...process.env, ...(options.env || {}) },
   })
 
   if (result.status !== 0) {
@@ -163,7 +165,7 @@ const groups = [
 
 const commitGroup = (message, files) => {
   if (isDryRun) {
-    console.log(`[dry-run] ${message}`)
+    console.log(`[dry-run] ${message}${commitDate ? ` (${commitDate})` : ''}`)
     files.forEach((file) => console.log(`  ${file}`))
     return true
   }
@@ -175,7 +177,14 @@ const commitGroup = (message, files) => {
     return false
   }
 
-  git(['commit', '-m', message])
+  git(['commit', '-m', message, ...(commitDate ? ['--date', commitDate] : [])], {
+    env: commitDate
+      ? {
+          GIT_AUTHOR_DATE: commitDate,
+          GIT_COMMITTER_DATE: commitDate,
+        }
+      : undefined,
+  })
   return true
 }
 

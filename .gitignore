@@ -42,10 +42,12 @@ Desktop.ini
 .eslintcache
 *.tsbuildinfo
 
+# Artefactos locais da base de dados usada pelo json-server.
+.db-new.json
+
 # A pasta docs fica disponível para o relatório do projeto.
 !docs/
 !docs/**
-docs/.DS_Store
+docs/**/.DS_Store
 
 # O ficheiro db.json fica versionável porque é a base usada pelo json-server.
-.db-new.json
