@@ -1,8 +1,13 @@
+# Dependencias e builds.
 node_modules/
 dist/
+
+# Resultados de verificacao e ficheiros temporarios.
 coverage/
 tmp/
 temp/
+
+# Artefactos de dados gerados ou volumosos.
 .db-new.json
 db.json
 package-lock.json
