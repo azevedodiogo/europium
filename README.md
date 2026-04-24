@@ -100,3 +100,7 @@ npm run db:build
 ```
 
 Em execucao normal, o frontend le os recursos pelo `json-server` em `VITE_API_BASE_URL`. Se a API local estiver indisponivel, as paginas ficam sem dados carregados; para a demonstracao e necessario manter `npm run db:start` num terminal e `npm run dev` noutro.
+
+## Registo de manutencao
+
+- 2026-02-01: revisão documental do projeto.
