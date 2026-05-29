@@ -202,3 +202,4 @@ Em execucao normal, o frontend le os recursos pelo `json-server` em `VITE_API_BA
 - 2026-05-08: revisão documental do projeto.
 - 2026-05-09: revisão documental do projeto.
 - 2026-05-10: revisão documental do projeto.
+- 2026-05-11: revisão documental do projeto.
