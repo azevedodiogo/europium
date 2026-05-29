@@ -88,7 +88,7 @@ const groups = [
   },
   {
     message: 'style: update application styles',
-    match: (file) => file.startsWith('src/assets/') || file.startsWith('src/diretivas/'),
+    match: (file) => file.startsWith('src/assets/') || file.startsWith('src/directives/'),
   },
   {
     message: 'feat: update application shell',

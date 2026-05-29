@@ -18,7 +18,7 @@ import './assets/animations.css'
 import './configuracoes/chart'
 
 // Diretiva usada para animar elementos ao entrar no ecrã.
-import { scrollAnimateDirective } from '@/diretivas/animarScroll'
+import { scrollAnimateDirective } from '@/directives/animarScroll'
 import IconePublico from '@/componentes/app/IconePublico.vue'
 
 // Aplica o tema antes da montagem para evitar mudanças visuais bruscas.
