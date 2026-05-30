@@ -93,73 +93,73 @@ const groups = [
   {
     message: 'feat: update application shell',
     match: (file) =>
-      ['src/App.vue', 'src/main.js', 'src/rotas/index.js'].includes(file) || file.startsWith('src/componentes/layout/'),
+      ['src/App.vue', 'src/main.js', 'src/router/index.js'].includes(file) || file.startsWith('src/components/layout/'),
   },
   {
     message: 'feat: update shared components',
-    match: (file) => file.startsWith('src/componentes/app/'),
+    match: (file) => file.startsWith('src/components/app/'),
   },
   {
     message: 'feat: update home page',
-    match: (file) => file.startsWith('src/componentes/inicio/') || file === 'src/paginas/PaginaInicial.vue',
+    match: (file) => file.startsWith('src/components/home/') || file === 'src/pages/PaginaInicial.vue',
   },
   {
     message: 'feat: update milestones page',
-    match: (file) => file.startsWith('src/componentes/marcos-metas/') || file === 'src/paginas/PaginaMarcosMetas.vue',
+    match: (file) => file.startsWith('src/components/milestones-goals/') || file === 'src/pages/PaginaMarcosMetas.vue',
   },
   {
     message: 'feat: update indicators page',
-    match: (file) => file.startsWith('src/componentes/indicadores/') || file === 'src/paginas/PaginaIndicadores.vue',
+    match: (file) => file.startsWith('src/components/indicators/') || file === 'src/pages/PaginaIndicadores.vue',
   },
   {
     message: 'feat: update disbursements page',
     match: (file) =>
-      file.startsWith('src/componentes/desembolsos/') ||
-      file === 'src/paginas/PaginaDesembolsos.vue' ||
-      file === 'src/dados/desembolsos.mjs',
+      file.startsWith('src/components/disbursements/') ||
+      file === 'src/pages/PaginaDesembolsos.vue' ||
+      file === 'src/data/desembolsos.mjs',
   },
   {
     message: 'feat: update country comparison page',
     match: (file) =>
-      file.startsWith('src/componentes/comparar-paises/') ||
-      file === 'src/paginas/PaginaCompararPaises.vue' ||
-      file === 'src/dados/comparacao.mjs',
+      file.startsWith('src/components/compare-countries/') ||
+      file === 'src/pages/PaginaCompararPaises.vue' ||
+      file === 'src/data/comparacao.mjs',
   },
   {
     message: 'feat: update map page',
-    match: (file) => file === 'src/paginas/PaginaMapa.vue' || file === 'src/dados/mapa.mjs',
+    match: (file) => file === 'src/pages/PaginaMapa.vue' || file === 'src/data/mapa.mjs',
   },
   {
     message: 'feat: update timeline page',
     match: (file) =>
-      file.startsWith('src/componentes/linha-tempo/') ||
-      file === 'src/paginas/PaginaLinhaTempo.vue' ||
-      file === 'src/dados/linhaTempo.mjs',
+      file.startsWith('src/components/timeline/') ||
+      file === 'src/pages/PaginaLinhaTempo.vue' ||
+      file === 'src/data/linhaTempo.mjs',
   },
   {
     message: 'feat: update glossary page',
     match: (file) =>
-      file.startsWith('src/componentes/glossario/') ||
-      file === 'src/paginas/PaginaGlossario.vue' ||
-      file === 'src/dados/glossario.mjs',
+      file.startsWith('src/components/glossary/') ||
+      file === 'src/pages/PaginaGlossario.vue' ||
+      file === 'src/data/glossario.mjs',
   },
   {
     message: 'feat: update resource pages',
     match: (file) =>
-      file.startsWith('src/componentes/mais/') ||
-      file === 'src/paginas/PaginaMais.vue' ||
-      file === 'src/dados/mais.mjs',
+      file.startsWith('src/components/more/') ||
+      file === 'src/pages/PaginaMais.vue' ||
+      file === 'src/data/mais.mjs',
   },
   {
     message: 'refactor: update data and state helpers',
     match: (file) =>
-      file.startsWith('src/composicoes/') ||
-      file.startsWith('src/estado/') ||
-      file.startsWith('src/servicos/') ||
-      file.startsWith('src/utilitarios/') ||
-      file.startsWith('src/configuracoes/') ||
+      file.startsWith('src/composables/') ||
+      file.startsWith('src/stores/') ||
+      file.startsWith('src/services/') ||
+      file.startsWith('src/utils/') ||
+      file.startsWith('src/config/') ||
       file === 'db.json' ||
-      file.startsWith('src/dados/'),
+      file.startsWith('src/data/'),
   },
 ]
 

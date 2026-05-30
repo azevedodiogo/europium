@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 process.env.VITE_API_BASE_URL = 'http://127.0.0.1:9'
 process.env.VITE_API_TIMEOUT_MS = '100'
 
-const { loadJsonResource } = await import('../src/servicos/api.js')
+const { loadJsonResource } = await import('../src/services/api.js')
 const dashboard = await loadJsonResource('dashboard')
 
 assert.equal(dashboard.source, 'api-error', 'A app deve marcar erro quando o json-server não responde.')

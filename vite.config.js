@@ -14,7 +14,7 @@ export default defineConfig({
   resolve: {
     // Alias usado para importar a partir de `src` sem caminhos relativos longos.
     alias: {
-      // Faz `@/componentes/...` apontar para a pasta `src/componentes/...`.
+      // Faz `@/components/...` apontar para a pasta `src/components/...`.
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },

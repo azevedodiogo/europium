@@ -6,20 +6,20 @@ import { createPinia } from 'pinia'
 // Componente raiz.
 import App from './App.vue'
 // Rotas com todas as páginas.
-import router from './rotas/index.js'
+import router from './router/index.js'
 // Função que aplica logo o tema correto no arranque.
-import { inicializarModoEscuro } from '@/composicoes/usarModoEscuro'
+import { inicializarModoEscuro } from '@/composables/usarModoEscuro'
 
 // Estilos globais do projeto.
 import './assets/main.css'
 // Animações reutilizadas em várias páginas.
 import './assets/animations.css'
 // Registo global do Chart.js.
-import './configuracoes/chart'
+import './config/chart'
 
 // Diretiva usada para animar elementos ao entrar no ecrã.
 import { scrollAnimateDirective } from '@/directives/animarScroll'
-import IconePublico from '@/componentes/app/IconePublico.vue'
+import IconePublico from '@/components/app/IconePublico.vue'
 
 // Aplica o tema antes da montagem para evitar mudanças visuais bruscas.
 inicializarModoEscuro()

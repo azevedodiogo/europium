@@ -20,13 +20,13 @@
 // Hook usado para carregar dados logo no arranque da app.
 import { onMounted } from 'vue'
 // Cabeçalho principal do site.
-import CabecalhoPrincipal from '@/componentes/layout/CabecalhoPrincipal.vue'
+import CabecalhoPrincipal from '@/components/layout/CabecalhoPrincipal.vue'
 // Rodapé principal do site.
-import RodapePrincipal from '@/componentes/layout/RodapePrincipal.vue'
+import RodapePrincipal from '@/components/layout/RodapePrincipal.vue'
 // Notificação usada para mostrar progresso, sucesso e erro.
-import NotificacaoApp from '@/componentes/app/NotificacaoApp.vue'
+import NotificacaoApp from '@/components/app/NotificacaoApp.vue'
 // Store principal com os dados usados na página inicial e noutras secções.
-import { useDashboardStore as usePainelStore } from '@/estado/painel'
+import { useDashboardStore as usePainelStore } from '@/stores/painel'
 
 // Instância local da store.
 const painelStore = usePainelStore()

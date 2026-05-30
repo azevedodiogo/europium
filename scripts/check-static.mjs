@@ -3,7 +3,7 @@ import { readdir, readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
 const packageJson = JSON.parse(await readFile('package.json', 'utf8'))
-const routerSource = await readFile('src/rotas/index.js', 'utf8')
+const routerSource = await readFile('src/router/index.js', 'utf8')
 const readme = await readFile('README.md', 'utf8')
 
 async function listSourceFiles(dir) {

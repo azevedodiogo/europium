@@ -93,7 +93,7 @@ Os dados usados pelo projeto são uma base simulada e estruturada para IPM, insp
 https://ec.europa.eu/economy_finance/recovery-and-resilience-scoreboard/
 ```
 
-A base local vive em `src/dados/` e é usada para gerar o `db.json`:
+A base local vive em `src/data/` e é usada para gerar o `db.json`:
 
 ```bash
 npm run db:build

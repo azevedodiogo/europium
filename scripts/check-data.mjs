@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mockDb } from '../src/dados/baseSimulada.mjs'
+import { mockDb } from '../src/data/baseSimulada.mjs'
 
 const requiredResources = ['dashboard', 'compare', 'disbursements', 'glossary', 'timeline', 'map', 'more']
 

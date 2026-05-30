@@ -6,7 +6,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 // Importa os dados agregados que servem de base ao json-server.
-import { mockDb } from '../src/dados/baseSimulada.mjs'
+import { mockDb } from '../src/data/baseSimulada.mjs'
 
 // Descobre a pasta raiz do projeto a partir da localização deste script.
 const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
