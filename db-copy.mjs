@@ -1,3 +1,6 @@
 import { copyFile } from 'node:fs/promises'
 
-await copyFile('db.json', '.db-new.json')
+const sourceFile = 'db.json'
+const targetFile = '.db-new.json'
+
+await copyFile(sourceFile, targetFile)
