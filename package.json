@@ -17,7 +17,6 @@
     "test:api": "node scripts/check-api-required.mjs",
     "test:static": "node scripts/check-static.mjs",
     "test": "npm run test:data && npm run test:api && npm run test:static",
-    "commit:auto": "node scripts/auto-commit.mjs",
     "verify": "npm run lint && npm run format:check && npm run test && npm run build",
     "build": "vite build",
     "preview": "vite preview"
