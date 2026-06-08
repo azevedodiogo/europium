@@ -20,7 +20,7 @@ A plataforma inclui ainda uma página de comparação entre países, um mapa int
 
 O projeto foi implementado com Vue, Vite, Pinia, Vue Router, Chart.js, D3 Geo e json-server. A aplicação utiliza uma base de dados local simulada, inspirada no modelo público do Recovery and Resilience Scoreboard da Comissão Europeia, permitindo testar a experiência de navegação, os estados de carregamento e a integração entre frontend e API mock. A arquitetura separa páginas, componentes, stores, serviços, dados e utilitários, mantendo a interface organizada e facilitando a evolução do projeto.
 
-Made with ❤️ by Diogo Azevedo
+Made with ❤️ by Diogo Azevedo, Bruno Magalhães & Vera Almeida
 
 ## English
 
@@ -40,7 +40,7 @@ The platform also includes a country comparison page, an interactive European Un
 
 The project was implemented with Vue, Vite, Pinia, Vue Router, Chart.js, D3 Geo and json-server. The application uses a simulated local database inspired by the public model of the European Commission Recovery and Resilience Scoreboard, allowing the navigation experience, loading states and integration between the frontend and the mock API to be tested. The architecture separates pages, components, stores, services, data and utilities, keeping the interface organized and making the project easier to evolve.
 
-Made with ❤️ by Diogo Azevedo
+Made with ❤️ by Diogo Azevedo, Bruno Magalhães & Vera Almeida
 
 ## Comandos - Commands
 
