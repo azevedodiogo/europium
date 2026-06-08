@@ -1,7 +1,6 @@
 # Europium
 
 > 1st phase: 20/20
->
 > 2nd phase: ?/20
 
 ## Português
